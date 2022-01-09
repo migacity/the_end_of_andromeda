@@ -1,0 +1,21 @@
+{
+    "project_dir": "",
+    "view": {
+        "checkDebugPreview": {
+            "type": "checkbox",
+            "val": false
+        },
+        "selectDebugPos": {
+            "type": "select",
+            "val": "bottom"
+        }
+    },
+    "map_watch": {},
+    "pobj": {
+        "path": "D:\\creation\\miga\\game_andromeda\\the_end_of_andromeda",
+        "project_id": "20211226_22150",
+        "title": "The End of Andromeda",
+        "type": "tyrano"
+    },
+    "rules": []
+}
