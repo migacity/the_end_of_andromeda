@@ -1,7 +1,6 @@
 /*ウェブフォントを使用する場合はここに定義を追加して下さい*/
 
 /*
-    
 @font-face {
 	font-family:"mfrules";
 	src:url("../../data/others/Mf_Break_The_Rules.eot?") format("eot"),
@@ -10,7 +9,14 @@
 	url("../../data/others/Mf_Break_The_Rules.svg#MfBreakTheRules") format("svg");
 	font-weight:normal;font-style:normal;
 }
-
 */
 
-
+/* ライセンス表示
+"源暎ラテミン" licensed under the SIL Open Font License 1.1
+https://okoneya.jp/font/genei-latin.html
+*/
+@font-face {
+	font-family:"gennei-latemin";
+	src:url("../../data/others/GenEiLateMinN_v2.ttf") format("truetype");
+	font-weight:normal;font-style:normal;
+}

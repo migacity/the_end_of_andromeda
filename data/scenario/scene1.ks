@@ -8,18 +8,29 @@
 [freeimage layer="base" time=100]
 
 ;メッセージウィンドウの設定
-[position layer="message0" left=160 top=500 width=1000 height=200 page="fore"]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;colorに透明色を指定して直接cssでmessage_outerクラスを指定して上書きしている.
+;colorに何も指定しないとデフォルト設定での上書きが優先されるらしくcssを読み込んでくれない. 
+;"red","white"などと書いた場合は上からbackgroundで描いたものが乗っかる感じになりうまくいかない.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[position layer="message0" left=60 top=500 width=1200 height=200 page="fore" visible=false opacity=255 color="rgba(0,0,0,0)"]
 ;文字が表示される領域を調整
-[position layer="message0" page="fore" margint=45 marginl=50 marginr=70 marginb=60]
+[position layer="message0" page="fore" margint=35 marginl=150 marginr=150 marginb=60]
 ;メッセージボックスは初期状態では非表示
 @layopt layer="message" visible=true
-
+;フォントを設定
+[deffont size=26 color="white" face="gennei-latemin" edge="none" shadow="rgba(0,0,0,0.5)" effect="fadeIn" effect_speed="0.2s"]
+[resetfont]
 ;メニューボタンを表示
 @showmenubutton
 ;キャラクターの名前が表示される文字領域
-[ptext name="chara_name_area" layer="message0" color="white" size=28 bold=true x=180 y=510]
+[ptext name="chara_name_area" layer="message0" color="white" face="gennei-latemin" shadow="rgba(0,0,0,0.5)" size=30 bold=false x=180 y=510]
 ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
 [chara_config ptext="chara_name_area"]
+
+
+;cssの読み込み
+[loadcss file="./data/others/css/message.css"]
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;本文(背景未表示)
 充填されていた気体が溢れ出す。[l][r]

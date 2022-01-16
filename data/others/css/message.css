@@ -1,0 +1,19 @@
+/* メッセージ枠の設定*/
+/* radial-gradient の複数色で縞模様を作るときに使う 'px' や '%' の指定は使えない. */
+.message_outer{
+    background: radial-gradient(circle farthest-side, rgba(34, 33, 31,0.8),rgba(34, 33, 31,0.8),rgba(34, 33, 31,0.5),rgba(34, 33, 31,0));
+    filter: blur(2px);
+}
+/* メッセージウィンドウ内の本文の設定 */
+/* letter-spacingは設定できるが, shadow などはjsに上書きされてしまう*/
+/* おそらく tyrano/plugin/kag/ 内のjsで上書きされているものは扱えない模様 */
+.current_span{
+    letter-spacing: 0.2em;
+}
+/* 文字表示枠の設定 */
+/* .message_inner{
+} */
+
+/* 名前表示枠の文字の設定 */
+/* .chara_name_area{
+} */
