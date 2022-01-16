@@ -1,10 +1,6 @@
-;純硫黄のとりあえず作ってみたマクロ群
+; 手作りしたマクロはここに書く
 
 *start
-
-[macro name="chara_clean"]
-
-[endmacro]
 
 ; エンディングの演出
 [macro name="ending_text"]
