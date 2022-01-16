@@ -2,8 +2,6 @@
 
 #？
 まだできてないよ～～～～～～～～～！！！！！！！[l][r]
-ゲームを終了します。
-*endloop
-[l]
-[close ask=true]
-@jump target = endloop
+
+[ending_text text="To&nbsp;be&nbsp;continued..."]
+[jump storage="title.ks"]
