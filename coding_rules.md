@@ -30,7 +30,7 @@ js, htmlの記述が必要な場合のみ利用する．
 - キャラ名，メッセージウィンドウの処理は本文の真上につける
 - 詳細はプロローグを組みつつ考える
 
-```json
+```json:コード例
 [chara_part name="safia" face=a1]
 [chara_part name="safia" body=2]
 [サフィア登場]
@@ -60,13 +60,21 @@ js, htmlの記述が必要な場合のみ利用する．
 - titleBeforeClear.png:×
 - title_bef_cl.png:?
 
-## ファイル形式について
+## GitHubの使い方について（開発手法）
+
+### GitHub Flow
+
+本開発はGitHub Flowという手法を用いて進行します．  
+説明については以下がざっくりわかりやすいです．ただし今回はforkを必須としていませんので，branch名は被らないように注意してください．  
+[GitHub Flowとは (Qiita)](https://qiita.com/tatane616/items/aec00cdc1b659761cf88)
+
+## 素材について
 
 ### 画像
 
-透過が必要.  
 **webP**,もしくは png  
-絵を描く人と要相談. できればwebP.  
+透過すること．  
+絵を描く人と要相談．
 
 ### 音声ファイル
 
