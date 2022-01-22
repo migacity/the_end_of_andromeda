@@ -54,11 +54,11 @@ js, htmlの記述が必要な場合のみ利用する．
 
 ### 素材の命名規則
 
-未定．今のところスモールスネークケース？省略可？
+未定．今のところスモールスネークケース 省略なし
 
 - title_before_clear.png:〇
 - titleBeforeClear.png:×
-- title_bef_cl.png:?
+- title_bef_cl.png:×
 
 ## GitHubの使い方について（開発手法）
 
@@ -78,7 +78,8 @@ js, htmlの記述が必要な場合のみ利用する．
 
 ### 音声ファイル
 
-基本ogg
+最終的にoggを使う．  
+集める際はwav等でもok．音質は細かく気にしない方向．
 
 **!OSごとに対応する形式が異なるので注意**  
 [公式リファレンス-音楽を再生しよう](https://tyrano.jp/usage/tutorial/bgm)  
