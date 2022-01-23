@@ -8,16 +8,16 @@
 [freeimage layer="base" time=100]
 
 ;メッセージウィンドウの設定
-[position layer="message0" left=160 top=500 width=1000 height=200 page="fore"]
+[position layer="message0" left=0 top=500 width=1280 height=760 page="fore" marginl=80 marginr=80 margint=50 marginb=50]
 ;文字が表示される領域を調整
-[position layer="message0" page="fore" margint=45 marginl=50 marginr=70 marginb=60]
+[position layer="message0" page="fore" margint=45 marginl=100 marginr=100 marginb=60]
 ;メッセージボックスは初期状態では非表示
-@layopt layer="message" visible=true
+[layopt layer="message" visible=true]
 
 ;メニューボタンを表示
-@showmenubutton
+[showmenubutton]
 ;キャラクターの名前が表示される文字領域
-[ptext name="chara_name_area" layer="message0" color="white" size=28 bold=true x=180 y=510]
+[ptext name="chara_name_area" layer="message0" color="white" size=28 bold=true x=130 y=510]
 ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
 [chara_config ptext="chara_name_area"]
 
@@ -155,5 +155,5 @@
 
 [chara_hide_all time=1000 wait=true]
 
-@jump storage="scene2.ks"
+[jump storage="home.ks"]
 [s]
