@@ -4,12 +4,12 @@
 ;背景変更マクロ　storage と time を指定する
 [macro name="back"]
 
-;@layopt layer=message0 visible=false
+;[layopt layer=message0 visible=false]
 [backlay]
 [image layer=base page=back storage=%storage]
 [trans layer="base" method=%method|crossfade children=false time=%time|2000]
 [wt]
-;@layopt layer=message0 visible=true
+;[layopt layer=message0 visible=true]
 
 [endmacro]
 
@@ -20,7 +20,7 @@
 [backlay]
 [image storage=%storage left=%left|0 top=%top|0 layer=%layer page=back visible=true]
 [trans time=%time|1]
-@wt
+[wt]
 
 [endmacro]
 
@@ -170,11 +170,11 @@ tf.savetext = "<span style='font-size:10px'>"+tf.save_date+"</span><br />"+tf.ti
 
     [if exp="tf.flag_replay == true"]
         
-        @layopt page="fore" layer="message0" visible=false
+        [layopt page="fore" layer="message0" visible=false]
         ;システムボタンを非表示にするなど
         [hidemenubutton]
         
-        @jump storage="replay.ks" 
+        [jump storage="replay.ks" ]
         
     [endif]
 
