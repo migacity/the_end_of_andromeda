@@ -155,5 +155,5 @@
 
 [chara_hide_all time=1000 wait=true]
 
-[jump storage="scene2.ks"]
+[jump storage="home.ks"]
 [s]
