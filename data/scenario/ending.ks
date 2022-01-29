@@ -21,7 +21,7 @@ tf.endrolltext = [
 
 ; エンドロール
 [layopt layer="message0" visible=true]
-[ptext layer="message0" page="fore" text="&tf.endrolltext" size=30 x=780 y=800 color="white" name="endrolltext" width=720]
+[ptext layer="message0" page="fore" text="&tf.endrolltext" size=30 x=780 y=800 width=500 align="center" color="white" name="endrolltext"]
 [anim name="endrolltext" top=-200 time=10000]
 
 ; スチルスライドショー
