@@ -1,6 +1,7 @@
+*start
 [cm]
 
 #
-ダミーのテキストです。[p]
+これは博士ルートのダミーのテキストです。[p]
 
-[jump storage="ending.ks"]
+[jump storage="home.ks"]
