@@ -23,26 +23,83 @@
 ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
 [chara_config ptext="chara_name_area"]
 
+;キャラクターを登録 
+[chara_new name="hakase" storage="chara/doctor/hakase_none.png"  width=617 height=720 jname="博士_正面"]
+;体
+[chara_layer name="hakase" part="body" id="front" storage="chara/doctor/hakase_front_body.png" zindex=1]
+[chara_layer name="hakase" part="body" id="side" storage="chara/doctor/hakase_side_body.png" zindex=1]
+;ポーズ
+[chara_layer name="hakase" part="pose" id="f1" storage="chara/doctor/hakase_front_pose1.png" zindex=2]
+[chara_layer name="hakase" part="pose" id="f2" storage="chara/doctor/hakase_front_pose2.png" zindex=2]
+[chara_layer name="hakase" part="pose" id="f3" storage="chara/doctor/hakase_front_pose3.png" zindex=2]
+[chara_layer name="hakase" part="pose" id="s1" storage="chara/doctor/hakase_side_pose1.png" zindex=2]
+[chara_layer name="hakase" part="pose" id="s2" storage="chara/doctor/hakase_side_pose2.png" zindex=2]
+[chara_layer name="hakase" part="pose" id="s3" storage="chara/doctor/hakase_side_pose3.png" zindex=2]
+;目
+[chara_layer name="hakase" part="eye" id="f1" storage="chara/doctor/hakase_front_eye1.png" zindex=3]
+[chara_layer name="hakase" part="eye" id="f2" storage="chara/doctor/hakase_front_eye2.png" zindex=3]
+[chara_layer name="hakase" part="eye" id="f3" storage="chara/doctor/hakase_front_eye3.png" zindex=3]
+[chara_layer name="hakase" part="eye" id="f4" storage="chara/doctor/hakase_front_eye4.png" zindex=3]
+[chara_layer name="hakase" part="eye" id="f5" storage="chara/doctor/hakase_front_eye5.png" zindex=3]
+[chara_layer name="hakase" part="eye" id="s1" storage="chara/doctor/hakase_side_eye1.png" zindex=3]
+[chara_layer name="hakase" part="eye" id="s2" storage="chara/doctor/hakase_side_eye2.png" zindex=3]
+[chara_layer name="hakase" part="eye" id="s3" storage="chara/doctor/hakase_side_eye3.png" zindex=3]
+[chara_layer name="hakase" part="eye" id="s4" storage="chara/doctor/hakase_side_eye4.png" zindex=3]
+[chara_layer name="hakase" part="eye" id="s5" storage="chara/doctor/hakase_side_eye5.png" zindex=3]
+;口
+[chara_layer name="hakase" part="mouth" id="f1" storage="chara/doctor/hakase_front_mouth1.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="f2" storage="chara/doctor/hakase_front_mouth2.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="f3" storage="chara/doctor/hakase_front_mouth3.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="f4" storage="chara/doctor/hakase_front_mouth4.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="f5" storage="chara/doctor/hakase_front_mouth5.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="f6" storage="chara/doctor/hakase_front_mouth6.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="f7" storage="chara/doctor/hakase_front_mouth7.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="s1" storage="chara/doctor/hakase_side_mouth1.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="s2" storage="chara/doctor/hakase_side_mouth2.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="s3" storage="chara/doctor/hakase_side_mouth3.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="s4" storage="chara/doctor/hakase_side_mouth4.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="s5" storage="chara/doctor/hakase_side_mouth5.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="s6" storage="chara/doctor/hakase_side_mouth6.png" zindex=4]
+[chara_layer name="hakase" part="mouth" id="s7" storage="chara/doctor/hakase_side_mouth7.png" zindex=4]
+;眉
+[chara_layer name="hakase" part="eyebrow" id="f1" storage="chara/doctor/hakase_front_eyebrow1.png" zindex=5]
+[chara_layer name="hakase" part="eyebrow" id="f2" storage="chara/doctor/hakase_front_eyebrow2.png" zindex=5]
+[chara_layer name="hakase" part="eyebrow" id="f3" storage="chara/doctor/hakase_front_eyebrow3.png" zindex=5]
+[chara_layer name="hakase" part="eyebrow" id="s1" storage="chara/doctor/hakase_side_eyebrow1.png" zindex=5]
+[chara_layer name="hakase" part="eyebrow" id="s2" storage="chara/doctor/hakase_side_eyebrow2.png" zindex=5]
+[chara_layer name="hakase" part="eyebrow" id="s3" storage="chara/doctor/hakase_side_eyebrow3.png" zindex=5]
+
+;背景を表示
+[bg storage="black.png" time=1000 wait=true]
+
 #
 充填されていた気体が溢れ出す。[p]
 機械の稼働音がしてカプセルがゆっくりと開いた。[p]
-中に横たわっていた女性がゆっくりと体を起こす。[p]
-その女性──博士が気だるそうに口を開いた。[p]
 
 ;背景の生成
 [bg storage="labo.jpg" time=1000 wait=true]
 
-;キャラ登場
-[chara_new name="robot" storage="chara/robot/robot.png" height=700 jname="僕"]
-[chara_new name="dr" storage="chara/doctor/doctor.png"  width=532 height=720 jname="博士"]
-[chara_show name="dr"]
+[chara_part name="hakase" body="side" pose="s1" eye="s4" mouth="s1" eyebrow="s2"] 
+[chara_show name="hakase" time=1000 wait=false]
+
+中に横たわっていた女性がゆっくりと体を起こす。[p]
+
+[chara_part name="hakase" body="side" pose="s1" eye="s3" mouth="s1" eyebrow="s2"] 
+
+その女性──博士が気だるそうに口を開いた。[p]
+
+[chara_part name="hakase" body="size" pose="side1" eye="s2" mouth="s5" eyebrow="s2"] 
 
 #博士
 「キミか、ロイド」[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f1" eyebrow="f2"] 
+
 #
 発せられた言葉は驚きでも戸惑いでもない。[p]
 まるで状況を完全に把握しているかのようだ。[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f5" eyebrow="f2"] 
 
 #博士
 「あれから何年たった？」[p]
@@ -51,8 +108,12 @@
 僕は天井を見上げる。[p]
 そして決して短くはない時を数えた。[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f1" eyebrow="f1"] 
+
 #ロイド
 「博士が眠ってから１０２４年です」[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f5" eyebrow="f1"] 
 
 #博士
 「人類はどうなった？」[p]
