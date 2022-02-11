@@ -72,21 +72,7 @@
     [image layer=0 x=100 y=180 width=640 height=360 storage="black.png" folder="bgimage" name="endrollimage"]
     [wait time=200]
 
-    [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="&tf.endrollimage[0][0]" folder="&tf.endrollimage[0][1]" name="endrollimage"]
-    [trans layer=0 time=1000 method="fadeIn"]
-    [wait time=2000]
-
-    [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="black.png" folder="bgimage" name="endrollimage"]
-    [trans layer=0 time=1000 method="fadeIn"]
-    [wait time=1200]
-
-    [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="&tf.endrollimage[1][0]" folder="&tf.endrollimage[1][1]" name="endrollimage"]
-    [trans layer=0 time=1000 method="fadeIn"]
-    [wait time=2000]
-
-    [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="black.png" folder="bgimage" name="endrollimage"]
-    [trans layer=0 time=1000 method="fadeIn"]
-    [wait time=1200]
+    [endroll_slide_loop counter=2]
 
     ; 文字と画像をクリアする。
     [free layer="message1" name="endrolltext"]
@@ -96,6 +82,33 @@
         delete tf.endrolltext;
         delete tf.endrollimage;
     [endscript]
+[endmacro]
+
+; エンドロールの画像スライドショーのループ
+[macro name="endroll_slide_loop"]
+    *endroll_slide_loop_start
+    [if exp="mp.counter > 0"]
+        [iscript]
+            const length = tf.endrollimage.length
+            const i = length - mp.counter
+            tf.imagefile = tf.endrollimage[i]
+        [endscript]
+
+        [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="&tf.imagefile[0]" folder="&tf.imagefile[1]" name="endrollimage"]
+        [trans layer=0 time=1000 method="fadeIn"]
+        [wait time=2000]
+
+        [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="black.png" folder="bgimage" name="endrollimage"]
+        [trans layer=0 time=1000 method="fadeIn"]
+        [wait time=1200]
+        
+        [eval exp="mp.counter = mp.counter - 1"]
+        [jump target="*endroll_slide_loop_start"]
+    [endif]
+
+    ; delete tf.imagefile しようとするとif文でエラーが出る。
+    ; バグなのかも？
+    ; [eval exp="delete tf.imagefile"]
 [endmacro]
 
 [return]
