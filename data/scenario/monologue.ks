@@ -23,16 +23,16 @@
         '盗人が棲む。',
         'とうとうしまいには、引取り手のない死人を、この門へ持って来て、棄てて行くと云う習慣さえ出来た。',
         'そこで、日の目が見えなくなると、誰でも気味を悪るがって、この門の近所へは足ぶみをしない事になってしまったのである。',
-    ]
-    tf.count = 0
+    ];
+    tf.count = 0;
 [endscript]
 
 *monologueLoop
 [iscript]
-    tf.line = tf.monologueText[tf.count]
+    tf.line = tf.monologueText[tf.count];
 [endscript]
 
-[mtext layer=0 page="fore" text="&tf.line" x=0 y=346 size=28 color="rgb(255, 255, 255)" width=1280 align="center" name="monologueText" fadeout=true time=1500 wait=true in_effect="fadeIn" in_delay=2000 in_sync=true in_shuffle=false in_reverse=false out_effect="fadeOut" out_sync=true out_shuffle=false out_reverse=false]
+[mtext layer=0 page="fore" text="&tf.line" x=0 y=346 size=28 color="rgb(255, 255, 255)" width=1280 align="center" name="monologueText" fadeout=true time=1500 wait=true in_effect="fadeIn" in_delay=2000 in_sync=true in_shuffle=false in_reverse=false out_effect="fadeOut" out_delay=2000 out_sync=true out_shuffle=false out_reverse=false]
 
 [if exp="tf.count < tf.monologueText.length - 1"]
     [eval exp="tf.count += 1"]
