@@ -40,7 +40,7 @@
 [endif]
 
 ; 全部消す
-[layopt layer="message1" visible="false"]
-[free name="monologueText" layer="message1"]
+[layopt layer=0 visible="false"]
+[free name="monologueText" layer=0]
 
 [jump storage = "prologue.ks"]
