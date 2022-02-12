@@ -54,9 +54,7 @@
         tf.n = tf.endrollimage.length;
 
         const s = (mp.time - 200) / tf.n;
-        const now = new Date();
         tf.loopEndTime = Array.from(Array(tf.n), (_, i) => Math.round(s * (i + 1)));
-        tf.startTime = now.getTime();
     [endscript]
 
     ; 暗転
@@ -93,7 +91,13 @@
 
 ; エンドロールの画像スライドショーのループ
 [macro name="endroll_slide_loop"]
+    [iscript]
+        const now = new Date();
+        tf.startTime = now.getTime();
+    [endscript]
+
     *endroll_slide_loop_start
+
     [if exp="mp.counter > 0"]
         [iscript]
             const i = tf.n - mp.counter;
