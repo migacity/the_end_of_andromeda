@@ -34,7 +34,7 @@
 
 [mtext layer=0 page="fore" text="&tf.line" x=0 y=346 size=28 color="rgb(255, 255, 255)" width=1280 align="center" name="monologueText" fadeout=true time=1500 wait=true in_effect="fadeIn" in_delay=2000 in_sync=true in_shuffle=false in_reverse=false out_effect="fadeOut" out_sync=true out_shuffle=false out_reverse=false]
 
-[if exp="tf.count < tf.monologueText.length"]
+[if exp="tf.count < tf.monologueText.length - 1"]
     [eval exp="tf.count += 1"]
     [jump target="*monologueLoop"]
 [endif]
