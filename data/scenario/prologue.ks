@@ -74,10 +74,10 @@
 
 #
 充填されていた気体が溢れ出す。[p]
-機械の稼働音がしてカプセルがゆっくりと開いた。[p]
 
-;背景の生成
-[bg storage="labo.jpg" time=1000 wait=true]
+[bg storage="sleep_room.png" time=1000 wait=true]
+
+機械の稼働音がしてカプセルがゆっくりと開いた。[p]
 
 [chara_part name="hakase" body="side" pose="s1" eye="s4" mouth="s1" eyebrow="s2"] 
 [chara_show name="hakase" time=1000 wait=false]
@@ -118,6 +118,8 @@
 #博士
 「人類はどうなった？」[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f1" eyebrow="f2"] 
+
 #
 博士の口から淡々と質問が紡がれる。[p]
 ただ、その言葉が意味するところは重い。[p]
@@ -144,6 +146,11 @@
 
 #
 博士は大きく息を吐いた。[p]
+
+[chara_hide name="hakase" time=1000 wait=true]
+[bg storage="black.png" time=1000 wait=true]
+[bg storage="laboratory.png" time=1000 wait=true]
+[chara_show name="hakase" time=1000 wait=true]
 
 #
 沈黙が部屋の中に満ちている。[p]
@@ -252,6 +259,11 @@
 博士はそれを見て満足そうに頷く。[p]
 まるで昔の日々に戻ったようだった。[p]
 僕は久しく忘れていた嬉しいという感情を思い出していた。[p]
+
+[chara_hide name="hakase" time=1000 wait=true]
+[bg storage="black.png" time=1000 wait=true]
+[bg storage="laboratory.png" time=1000 wait=true]
+[chara_show name="hakase" time=1000 wait=true]
 
 #
 博士はこれまでに何が起きたかを知りたがった。[p]
@@ -532,6 +544,11 @@
 博士の話をすべて理解できたわけではないけれど。[p]
 久しぶりに博士と話すことができて気持ちが楽になった。[p]
 
+[chara_hide name="hakase" time=1000 wait=true]
+[bg storage="black.png" time=1000 wait=true]
+[bg storage="bedroom_after.png" time=1000 wait=true]
+[chara_show name="hakase" time=1000 wait=true]
+
 #
 博士と僕は居住スペースの確保に努めた。[p]
 
@@ -599,6 +616,11 @@
 そう言って博士は愛おしそうにそれを撫でた。[p]
 博士もそのようなものが好きなのだろうか。[p]
 どこかで同じようなものを見つけたら、博士にプレゼントしようと心に決めた。[p]
+
+[chara_hide name="hakase" time=1000 wait=true]
+[bg storage="black.png" time=1000 wait=true]
+[bg storage="entrance.png" time=1000 wait=true]
+[chara_show name="hakase" time=1000 wait=true]
 
 #
 一人分の住居スペースを確保できたところで、博士は周辺を見てみたいと言い出した。[p]
@@ -702,6 +724,11 @@
 #
 博士の考え方は今でも変わっていないようである。[p]
 
+[chara_hide name="hakase" time=1000 wait=true]
+[bg storage="black.png" time=1000 wait=true]
+[bg storage="hill.png" time=1000 wait=true]
+[chara_show name="hakase" time=1000 wait=true]
+
 #
 丘の上から景色を眺める。[p]
 その間も博士の好奇心は収まらない。[p]
@@ -776,6 +803,11 @@
 そう答えると、博士は小さく微笑んだ。[p]
 それから僕たちは食事を摂ることにした。[p]
 いつもより美味しかった気がする。[p]
+
+[chara_hide name="hakase" time=1000 wait=true]
+[bg storage="black.png" time=1000 wait=true]
+[bg storage="ruins.png" time=1000 wait=true]
+[chara_show name="hakase" time=1000 wait=true]
 
 #
 食事の後に僕たちは遺跡群に向かった。[p]
@@ -887,6 +919,13 @@
 「うん、そうしよう」[p]
 
 #
+
+[chara_hide name="hakase" time=1000 wait=true]
+[bg storage="black.png" time=1000 wait=true]
+[bg storage="school.png" time=1000 wait=true]
+[chara_show name="hakase" time=1000 wait=true]
+
+#
 続いて向かったのがシェルター跡地だ。[p]
 
 #博士
@@ -948,6 +987,11 @@
 博士は何よりも研究が好きだ。[p]
 もし研究に没頭できる学校があったのなら、楽しく過ごせただろうか。[p]
 そんなことを思いながら学校跡地をあとにした。[p]
+
+[chara_hide name="hakase" time=1000 wait=true]
+[bg storage="black.png" time=1000 wait=true]
+[bg storage="station.png" time=1000 wait=true]
+[chara_show name="hakase" time=1000 wait=true]
 
 #
 駅前跡地に向かう。[p]
@@ -1044,6 +1088,11 @@
 僕はその先を尋ねることができなかった。[p]
 真剣な瞳が博士の決意を物語っているように見えたからだ。[p]
 
+[chara_hide name="hakase" time=1000 wait=true]
+[bg storage="black.png" time=1000 wait=true]
+[bg storage="laboratory.png" time=1000 wait=true]
+[chara_show name="hakase" time=1000 wait=true]
+
 #
 研究所に戻るころには夜になっていた。[p]
 
@@ -1074,7 +1123,13 @@
 
 #
 ついにその時が来たようだ。[p]
-博士は立ち上がり、少女たちの眠る場所に向かおうとする。[p]
+博士は立ち上がり、少女たちの眠る場所に向かう。[p]
+
+[chara_hide name="hakase" time=1000 wait=true]
+[bg storage="black.png" time=1000 wait=true]
+[bg storage="corridor.png" time=1000 wait=true]
+[chara_show name="hakase" time=1000 wait=true]
+
 僕はたまらず声をかけた。[p]
 
 #ロイド
@@ -1115,6 +1170,11 @@
 少女たちが目覚めた時にパニックにならないように助ける術。[p]
 優しく寄り添ってあげるのに必要な気遣い。[p]
 僕が質問すると、安心させるようになんでも教えてくれた。[p]
+
+[chara_hide name="hakase" time=1000 wait=true]
+[bg storage="black.png" time=1000 wait=true]
+[bg storage="sleep_room.png" time=1000 wait=true]
+[chara_show name="hakase" time=1000 wait=true]
 
 #
 ついにこの場所にやってきた。[p]
@@ -1168,10 +1228,13 @@
 「キミに委ねよう」[p]
 
 #
-──どうか彼女たち一人一人を。[p]
-──最後まで見届けてやってくれ。[p]
 
 [chara_hide_all time=1000 wait=true]
+[bg storage="black.png" time=1000 wait=true]
+
+#
+──どうか彼女たち一人一人を。[p]
+──最後まで見届けてやってくれ。[p]
 
 [jump storage="home.ks"]
 [s]
