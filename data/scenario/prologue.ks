@@ -69,37 +69,41 @@
 [chara_layer name="hakase" part="eyebrow" id="s2" storage="chara/doctor/hakase_side_eyebrow2.png" zindex=5]
 [chara_layer name="hakase" part="eyebrow" id="s3" storage="chara/doctor/hakase_side_eyebrow3.png" zindex=5]
 
+;BGMを停止
+[stopbgm]
+
 ;背景を表示
 [bg storage="black.png" time=1000 wait=true]
 
+
 #
 充填されていた気体が溢れ出す。[p]
-
-[bg storage="sleep_room.png" time=1000 wait=true]
-
 機械の稼働音がしてカプセルがゆっくりと開いた。[p]
 
-[chara_part name="hakase" body="side" pose="s1" eye="s4" mouth="s1" eyebrow="s2"] 
-[chara_show name="hakase" time=1000 wait=false]
+[playbgm storage="BGM_Room1.ogg"]
+[bg storage="still/hakase_awake.png" time=1000 wait=true]
+
+;[chara_part name="hakase" body="side" pose="s1" eye="s4" mouth="s1" eyebrow="s2"] 
+;[chara_show name="hakase" time=1000 wait=false]
 
 中に横たわっていた女性がゆっくりと体を起こす。[p]
 
-[chara_part name="hakase" body="side" pose="s1" eye="s3" mouth="s1" eyebrow="s2"] 
+;[chara_part name="hakase" body="side" pose="s1" eye="s3" mouth="s1" eyebrow="s2"] 
 
 その女性──博士が気だるそうに口を開いた。[p]
 
-[chara_part name="hakase" body="size" pose="side1" eye="s2" mouth="s5" eyebrow="s2"] 
+;[chara_part name="hakase" body="size" pose="side1" eye="s2" mouth="s5" eyebrow="s2"] 
 
 #博士
 「キミか、ロイド」[p]
 
-[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f1" eyebrow="f2"] 
+;[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f1" eyebrow="f2"] 
 
 #
 発せられた言葉は驚きでも戸惑いでもない。[p]
 まるで状況を完全に把握しているかのようだ。[p]
 
-[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f5" eyebrow="f2"] 
+;[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f5" eyebrow="f2"] 
 
 #博士
 「あれから何年たった？」[p]
@@ -108,17 +112,17 @@
 僕は天井を見上げる。[p]
 そして決して短くはない時を数えた。[p]
 
-[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f1" eyebrow="f1"] 
+;[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f1" eyebrow="f1"] 
 
 #ロイド
 「博士が眠ってから１０２４年です」[p]
 
-[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f5" eyebrow="f1"] 
+;[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f5" eyebrow="f1"] 
 
 #博士
 「人類はどうなった？」[p]
 
-[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f1" eyebrow="f2"] 
+;[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f1" eyebrow="f2"] 
 
 #
 博士の口から淡々と質問が紡がれる。[p]
@@ -147,9 +151,16 @@
 #
 博士は大きく息を吐いた。[p]
 
+[stopbgm]
+
 [chara_hide name="hakase" time=1000 wait=true]
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="laboratory.png" time=1000 wait=true]
+;[chara_show name="hakase" time=1000 wait=true]
+
+[playbgm storage="BGM_Prologue.ogg"]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s4" eyebrow="s3"]
 [chara_show name="hakase" time=1000 wait=true]
 
 #
@@ -160,6 +171,8 @@
 
 #ロイド
 「これでよかったのでしょうか」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s1" eyebrow="s2"]
 
 #博士
 「うむ？」[p]
@@ -616,6 +629,8 @@
 そう言って博士は愛おしそうにそれを撫でた。[p]
 博士もそのようなものが好きなのだろうか。[p]
 どこかで同じようなものを見つけたら、博士にプレゼントしようと心に決めた。[p]
+
+[stopbgm]
 
 [chara_hide name="hakase" time=1000 wait=true]
 [bg storage="black.png" time=1000 wait=true]
