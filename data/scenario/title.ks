@@ -2,6 +2,7 @@
 [cm]
 
 [clearstack]
+[playbgm storage="BGM_Tytle1.ogg"]
 [bg storage ="title_bg.png" time=100]
 [wait time = 200]
 
