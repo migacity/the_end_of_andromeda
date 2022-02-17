@@ -83,27 +83,15 @@
 [playbgm storage="BGM_Room1.ogg"]
 [bg storage="still/hakase_awake.png" time=1000 wait=true]
 
-;[chara_part name="hakase" body="side" pose="s1" eye="s4" mouth="s1" eyebrow="s2"] 
-;[chara_show name="hakase" time=1000 wait=false]
-
 中に横たわっていた女性がゆっくりと体を起こす。[p]
-
-;[chara_part name="hakase" body="side" pose="s1" eye="s3" mouth="s1" eyebrow="s2"] 
-
 その女性──博士が気だるそうに口を開いた。[p]
-
-;[chara_part name="hakase" body="size" pose="side1" eye="s2" mouth="s5" eyebrow="s2"] 
 
 #博士
 「キミか、ロイド」[p]
 
-;[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f1" eyebrow="f2"] 
-
 #
 発せられた言葉は驚きでも戸惑いでもない。[p]
 まるで状況を完全に把握しているかのようだ。[p]
-
-;[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f5" eyebrow="f2"] 
 
 #博士
 「あれから何年たった？」[p]
@@ -112,17 +100,11 @@
 僕は天井を見上げる。[p]
 そして決して短くはない時を数えた。[p]
 
-;[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f1" eyebrow="f1"] 
-
 #ロイド
 「博士が眠ってから１０２４年です」[p]
 
-;[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f5" eyebrow="f1"] 
-
 #博士
 「人類はどうなった？」[p]
-
-;[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f1" eyebrow="f2"] 
 
 #
 博士の口から淡々と質問が紡がれる。[p]
@@ -153,10 +135,8 @@
 
 [stopbgm]
 
-[chara_hide name="hakase" time=1000 wait=true]
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="laboratory.png" time=1000 wait=true]
-;[chara_show name="hakase" time=1000 wait=true]
 
 [playbgm storage="BGM_Prologue.ogg"]
 
@@ -183,6 +163,8 @@
 #ロイド
 「きちんと務めを果たせたのでしょうか」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s1" eyebrow="s2"]
+
 #博士
 「キミの疑問はもっともだ」[p]
 
@@ -190,29 +172,45 @@
 博士は僕の意図を察して説明を始める。[p]
 部屋の中をゆっくりと歩きながら話すのは博士の癖だ。[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s5" eyebrow="s2"]
+
 #博士
 「キミは私が作ったアンドロイドだ」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s1" mouth="s5" eyebrow="s2"]
 
 #博士
 「その目的を覚えているかい？」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s1" mouth="s1" eyebrow="s2"]
+
 #ロイド
 「人類の行く末を見守ることです」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s2" eyebrow="s2"]
 
 #博士
 「その通りだ」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s2" eyebrow="s2"]
+
 #博士
 「そしてキミは私の指示通りに行動した」[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s1" mouth="s2" eyebrow="s2"]
+
 #
 博士は慈しむような眼差しを僕に向ける。[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f2" eyebrow="f2"]
 
 #博士
 「キミは務めを立派に果たしたよ」[p]
 
 #博士
 「本当によくやった」[p]
+
+[chara_part name="hakase" body="front" pose="f2" eye="f1" mouth="f2" eyebrow="f2"]
 
 #博士
 「他でもない、この私が保証しよう」[p]
@@ -223,11 +221,17 @@
 それでも不安が拭えないのは、僕の弱さなのだろうか。[p]
 博士の慧眼は、そんな気持ちさえも見抜いてしまう。[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s1" mouth="s2" eyebrow="s2"]
+
 #博士
 「キミは私の最高傑作だ」[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s4" mouth="s5" eyebrow="s2"]
+
 #博士
 「年を取らないことと子孫を残せないことを除けば、人間と大して変わりがない」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s1" mouth="s1" eyebrow="s2"]
 
 #博士
 「とはいえ気持ちの整理はすぐにはできないだろう」[p]
@@ -239,20 +243,30 @@
 #ロイド
 「僕はこれから何をすればいいのでしょうか」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s5" eyebrow="s2"]
+
 #博士
 「そう焦るな」[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f5" eyebrow="f2"]
 
 #博士
 「ほら、これを見たまえ」[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f2" eyebrow="f2"]
+
 #博士
 「備蓄されていたコーヒーを発見したぞ」[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f6" eyebrow="f2"]
 
 #博士
 「久しぶりに一服しようじゃないか」[p]
 
 #
 その言葉に懐かしい響きを感じて、僕は悩むのをやめた。[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f2" eyebrow="f2"]
 
 #ロイド
 「僕が注ぎますよ」[p]
@@ -261,8 +275,12 @@
 コーヒーを淹れるのは千年前から僕の役目だ。[p]
 博士の味の好みは今でも完璧に覚えている。[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f4" mouth="f2" eyebrow="f2"]
+
 #博士
 「そうしてくれると助かる」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s4" mouth="s2" eyebrow="s2"]
 
 #博士
 「キミの淹れるコーヒーは上手いからな」[p]
@@ -273,10 +291,10 @@
 まるで昔の日々に戻ったようだった。[p]
 僕は久しく忘れていた嬉しいという感情を思い出していた。[p]
 
+#
 [chara_hide name="hakase" time=1000 wait=true]
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="laboratory.png" time=1000 wait=true]
-[chara_show name="hakase" time=1000 wait=true]
 
 #
 博士はこれまでに何が起きたかを知りたがった。[p]
@@ -285,11 +303,18 @@
 博士はただ黙ってそれを聞く。[p]
 説明が終わると、博士は何かを描くかのような身振りをした。[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s3" mouth="s5" eyebrow="s2"]
+[chara_show name="hakase" time=1000 wait=true]
+
 #博士
 「キミの説明を要約するとこうだ」[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s4" mouth="s5" eyebrow="s2"]
+
 #博士
 「人類の争いは絶えず、やがて地上は生物に適さない場所となり、ついに人類は滅びてしまった」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s4" mouth="s1" eyebrow="s2"]
 
 #ロイド
 「その通りです」[p]
@@ -297,14 +322,22 @@
 #
 僕が頷くと、博士は深いため息をついた。[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s5" eyebrow="s3"]
+
 #博士
 「はあ」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s4" eyebrow="s3"]
 
 #博士
 「こうなるんじゃないかとは予想していたが……」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s3" mouth="s4" eyebrow="s3"]
+
 #博士
 「現実になってしまえば、なんと名状し難いことだろう」[p]
+
+[chara_part name="hakase" body="side" pose="s1" eye="s3" mouth="s4" eyebrow="s3"]
 
 #博士
 「これを無念と呼ぶのだろうな」[p]
@@ -312,8 +345,12 @@
 #
 その言葉には、やりきれない思いが込められていた。[p]
 
+[chara_part name="hakase" body="side" pose="s1" eye="s2" mouth="s5" eyebrow="s2"]
+
 #博士
 「キミ自身についてはどんな変化があった？」[p]
+
+[chara_part name="hakase" body="side" pose="s1" eye="s2" mouth="s1" eyebrow="s2"]
 
 #ロイド
 「僕ですか」[p]
@@ -328,12 +365,16 @@
 そこで言葉が詰まる。[p]
 僕を作ってくれた博士にこんなことを言っても良いのだろうか。[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f5" eyebrow="f2"]
+
 #博士
 「辛いだろうが続けなさい」[p]
 
 #
 穏やかな声色が続きを促す。[p]
 不思議なくらいに、すんなりと言葉が出てきた。[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f1" eyebrow="f2"]
 
 #ロイド
 「僕は年を取ることがありません」[p]
@@ -344,8 +385,12 @@
 #ロイド
 「いつか僕はひとりぼっちになってしまうのでしょうか」[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f3" mouth="f1" eyebrow="f2"]
+
 #博士
 「なるほど」[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f2" eyebrow="f2"]
 
 #博士
 「キミは永遠を知ったのだな」[p]
@@ -355,6 +400,8 @@
 
 #
 博士は子供に対する親のように、僕に優しく語りかけた。[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f4" mouth="f2" eyebrow="f2"]
 
 #博士
 「それはキミがとても人間的だということさ」[p]
@@ -366,11 +413,15 @@
 僕の問いに対して、彼女は優しく微笑むだけだった。[p]
 博士の話はときどき難しい。[p]
 
+[chara_part name="hakase" body="front" pose="f2" eye="f1" mouth="f4" eyebrow="f2"]
+
 #博士
 「とはいえ、キミを一人にしてしまったことには責任を感じている」[p]
 
 #ロイド
 「博士はなにも悪くありません」[p]
+
+[chara_part name="hakase" body="front" pose="f2" eye="f1" mouth="f2" eyebrow="f3"]
 
 #博士
 「皮肉なことに、その通りだ」[p]
@@ -381,6 +432,8 @@
 #ロイド
 「なぜ皮肉なのですか」[p]
 
+[chara_part name="hakase" body="front" pose="f2" eye="f4" mouth="f2" eyebrow="f3"]
+
 #博士
 「私たちを咎める人類はもう存在しないということさ」[p]
 
@@ -390,8 +443,12 @@
 #ロイド
 「人類は誰かに叱られるべきだったのでしょうか」[p]
 
+[chara_part name="hakase" body="front" pose="f2" eye="f2" mouth="f6" eyebrow="f1"]
+
 #博士
 「キミはたまに可愛いことを言う」[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f2" eyebrow="f1"]
 
 #
 博士は両手を広げて僕を招いた。[p]
@@ -401,6 +458,8 @@
 
 #
 促されるまま近づくと優しく抱擁された。[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f4" mouth="f2" eyebrow="f2"]
 
 #博士
 「一人にして悪かった」[p]
@@ -414,6 +473,8 @@
 #ロイド
 「一人でいるのは辛かったです」[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f2" eyebrow="f2"]
+
 #博士
 「それが寂しさだよ」[p]
 
@@ -423,8 +484,12 @@
 #ロイド
 「死んでしまうのですか」[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f4" mouth="f2" eyebrow="f3"]
+
 #博士
 「いいや」[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f3" mouth="f2" eyebrow="f3"]
 
 #博士
 「生きているからこそ、寂しいのさ」[p]
@@ -433,11 +498,15 @@
 やっぱり博士の言うことはわからない。[p]
 いつか僕に理解できる日が来るのだろうか。[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f4" eyebrow="f2"]
+
 #ロイド
 「僕にはもう博士しかいません」[p]
 
 #ロイド
 「博士しかいないんです」[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f5" eyebrow="f2"]
 
 #博士
 「ロイド……」[p]
@@ -446,6 +515,8 @@
 僕には寿命がない。[p]
 でも人間である博士は違う。[p]
 博士のいない永遠はどんなに辛いことだろう。[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f1" eyebrow="f2"]
 
 #ロイド
 「一人で永遠を生きるのは辛すぎます」[p]
@@ -464,6 +535,8 @@
 #ロイド
 「どうか僕を眠らせてください」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s4" eyebrow="s3"]
+
 #博士
 「……キミの言いたいことはわかった」[p]
 
@@ -471,6 +544,8 @@
 博士はとても悲しそうな顔をした。[p]
 それを見て、僕も辛くなる。[p]
 傷つけるようなことを言ってしまったのだろうか。[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s2" eyebrow="s3"]
 
 #博士
 「ただ、それを叶えてやるには条件がある」[p]
