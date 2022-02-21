@@ -545,16 +545,22 @@
 それを見て、僕も辛くなる。[p]
 傷つけるようなことを言ってしまったのだろうか。[p]
 
-[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s2" eyebrow="s3"]
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s5" eyebrow="s3"]
 
 #博士
 「ただ、それを叶えてやるには条件がある」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s1" eyebrow="s3"]
+
 #ロイド
 「条件ですか？」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s2" eyebrow="s2"]
+
 #博士
 「そうだ」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s1" mouth="s2" eyebrow="s2"]
 
 #博士
 「私の他にも眠っている者たちが残っているだろう？」[p]
@@ -567,10 +573,14 @@
 僕が保護していたエリアで眠っていたので、たまたま機器の破損を免れたのだ。[p]
 彼女たちは人類が再興したのちに目覚めさせる手筈であった。[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f2" eyebrow="f3"]
+
 #博士
 「キミに新しい任務を与えよう」[p]
 
 博士は慈愛に満ちた、しかし寂しそうな表情で言った。[p]
+
+[chara_part name="hakase" body="front" pose="f2" eye="f1" mouth="f2" eyebrow="f3"]
 
 #博士
 「それは彼女たちを目覚めさせることだ」[p]
@@ -582,11 +592,15 @@
 人類の再興は果たされなかった。[p]
 もし目覚めさせたとして、ここは彼女たちの望んだ未来ではない。[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f5" eyebrow="f2"]
+
 #博士
 「それはキミが心配することではないよ」[p]
 
 #
 博士は優しく断言した。[p]
+
+[chara_part name="hakase" body="front" pose="f2" eye="f4" mouth="f2" eyebrow="f2"]
 
 #博士
 「私もまた人類なのだ」[p]
@@ -594,8 +608,12 @@
 #ロイド
 「ええと」[p]
 
+[chara_part name="hakase" body="front" pose="f2" eye="f3" mouth="f2" eyebrow="f2"]
+
 #博士
 「こう言えば分かるかな」[p]
+
+[chara_part name="hakase" body="front" pose="f2" eye="f2" mouth="f2" eyebrow="f2"]
 
 #博士
 「どう生きるかを彼女たち自身に決めさせるためだ」[p]
@@ -607,11 +625,17 @@
 僕はその意図を掴みかねる。[p]
 しかし、博士は気にせず話を進めた。[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s4" mouth="s2" eyebrow="s2"]
+
 #博士
 「まあいいさ」[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s2" mouth="s5" eyebrow="s2"]
+
 #博士
 「キミの新しい務めは彼女たちを目覚めさせ、彼女たちの望みを叶えてあげることだ」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s5" eyebrow="s2"]
 
 #博士
 「これは私からの命令だよ」[p]
@@ -619,8 +643,12 @@
 #
 博士からの命令であれば拒否などできない。[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s3" mouth="s5" eyebrow="s2"]
+
 #博士
 「とはいえ、せめて彼女たちを迎え入れる準備をしなければな」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s2" eyebrow="s3"]
 
 #博士
 「こんな殺風景な部屋に招き入れるのは良くない」[p]
@@ -632,16 +660,24 @@
 博士の話をすべて理解できたわけではないけれど。[p]
 久しぶりに博士と話すことができて気持ちが楽になった。[p]
 
+[stopbgm]
+
 [chara_hide name="hakase" time=1000 wait=true]
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="bedroom_after.png" time=1000 wait=true]
-[chara_show name="hakase" time=1000 wait=true]
+
+[playbgm storage="BGM_Sampo.ogg"]
 
 #
 博士と僕は居住スペースの確保に努めた。[p]
 
+[chara_part name="hakase" body="side" pose="s1" eye="s2" mouth="s3" eyebrow="s3"]
+[chara_show name="hakase" time=1000 wait=true]
+
 #博士
 「手伝ってくれ、ロイド」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s2" mouth="s3" eyebrow="s3"]
 
 #博士
 「重くて動かせないんだ」[p]
@@ -649,8 +685,12 @@
 #ロイド
 「それは僕が運びますよ」[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f5" eyebrow="f1"]
+
 #博士
 「キミは力持ちだな」[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f6" eyebrow="f2"]
 
 #博士
 「さすが私の自信作だ」[p]
@@ -663,8 +703,12 @@
 #ロイド
 「本当にこんなに物が必要なのですか」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s1" eyebrow="s2"]
+
 #博士
 「ふむ」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s1" mouth="s1" eyebrow="s1"]
 
 #博士
 「キミはこれで多いと感じるのかね」[p]
@@ -676,11 +720,17 @@
 運び入れた物の多くは生命維持に不可欠ではないように思える。[p]
 僕が間違っているのだろうか。[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s2" eyebrow="s2"]
+
 #博士
 「変ではないさ」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s2" eyebrow="s2"]
+
 #博士
 「だが、人間は繊細だからね」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s4" mouth="s2" eyebrow="s2"]
 
 #博士
 「パンと水だけで生きていけるわけではないのだよ」[p]
@@ -691,11 +741,17 @@
 #ロイド
 「この動物を模した造形物も生命活動に不可欠なのでしょうか」[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f2" eyebrow="f2"]
+
 #博士
 「そうだよ」[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f3" mouth="f2" eyebrow="f3"]
+
 #博士
 「こんな世界では特に必要なのさ」[p]
+
+[chara_part name="hakase" body="front" pose="f2" eye="f2" mouth="f2" eyebrow="f3"]
 
 #博士
 「女の子たちなら尚更ね」[p]
@@ -706,17 +762,21 @@
 どこかで同じようなものを見つけたら、博士にプレゼントしようと心に決めた。[p]
 
 [stopbgm]
-
 [chara_hide name="hakase" time=1000 wait=true]
+
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="entrance.png" time=1000 wait=true]
-[chara_show name="hakase" time=1000 wait=true]
 
 #
 一人分の住居スペースを確保できたところで、博士は周辺を見てみたいと言い出した。[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s1" eyebrow="s2"]
+[chara_show name="hakase" time=1000 wait=true]
+
 #博士
 「計画を進めるためには地理を把握しておく必要がある」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s1" eyebrow="s2"]
 
 #博士
 「ロイド、案内を頼めるか」[p]
@@ -726,6 +786,8 @@
 
 #
 僕は博士に促されるまま施設の外に出た。[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f5" eyebrow="f1"]
 
 #博士
 「ほう、これは……」[p]
@@ -737,8 +799,12 @@
 #ロイド
 「博士？」[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f4" mouth="f2" eyebrow="f3"]
+
 #博士
 「そうか」[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f3" mouth="f2" eyebrow="f3"]
 
 #博士
 「地球は再生したんだな」[p]
@@ -749,11 +815,17 @@
 #ロイド
 「はい」[p]
 
+[chara_part name="hakase" body="front" pose="f2" eye="f2" mouth="f2" eyebrow="f3"]
+
 #博士
 「空気も緑も水も、何もかもが美しい」[p]
 
+[chara_part name="hakase" body="front" pose="f2" eye="f4" mouth="f2" eyebrow="f3"]
+
 #博士
 「こんなに綺麗な場所は今まで見たことがない」[p]
+
+[chara_part name="hakase" body="front" pose="f2" eye="f2" mouth="f2" eyebrow="f3"]
 
 #博士
 「ああ、この景色を他の人類と共有できないのが本当に残念だ」[p]
@@ -765,14 +837,20 @@
 #ロイド
 「共有ですか」[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s2" mouth="s2" eyebrow="s2"]
+
 #博士
 「そうさ」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s4" mouth="s2" eyebrow="s2"]
 
 #博士
 「独り占めするより、みんなで分けあったほうが楽しいというやつさ」[p]
 
 #ロイド
 「僕にはわかりません」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s2" eyebrow="s2"]
 
 #博士
 「そうかね？」[p]
@@ -781,14 +859,20 @@
 博士は僕の顔を覗き込んだ。[p]
 そして何かを閃いたような表情をする。[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s1" mouth="s1" eyebrow="s1"]
+
 #博士
 「キミの味覚は今も正常に機能しているかい？」[p]
 
 #ロイド
 「はい、正常です」[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s1" mouth="s2" eyebrow="s1"]
+
 #博士
 「なら、あの丘の上で試そうじゃないか」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s5" mouth="s2" eyebrow="s2"]
 
 #博士
 「私と食べるご飯は美味しいに違いない」[p]
@@ -796,14 +880,21 @@
 #ロイド
 「僕は人類ほど補給を必要としません」[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f2" eyebrow="f2"]
+
 #博士
 「そう言うな」[p]
+
+[chara_part name="hakase" body="front" pose="f2" eye="f2" mouth="f6" eyebrow="f2"]
 
 #博士
 「せっかくの消化器系を活かさないともったいないぞ」[p]
 
 #
 その言葉を聞いて、僕は昔の出来事を思い出していた。[p]
+
+[chara_hide name="hakase" time=1000 wait=true]
+
 研究がうまくいかなかったときのことだ。[p]
 博士はやけになってお酒をたくさん飲んでいた。[p]
 飲み過ぎを注意すると博士はこう答えたのだ。[p]
@@ -814,14 +905,17 @@
 #
 博士の考え方は今でも変わっていないようである。[p]
 
-[chara_hide name="hakase" time=1000 wait=true]
+[stopbgm]
+
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="hill.png" time=1000 wait=true]
-[chara_show name="hakase" time=1000 wait=true]
 
 #
 丘の上から景色を眺める。[p]
 その間も博士の好奇心は収まらない。[p]
+
+[chara_part name="hakase" body="front" pose="f2" eye="f2" mouth="f1" eyebrow="f2"]
+[chara_show name="hakase" time=1000 wait=true]
 
 #博士
 「いま気づいたのだが、だいぶ生態系が変わっているようだね」[p]
