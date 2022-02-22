@@ -72,6 +72,8 @@
 ;BGMを停止
 [stopbgm]
 
+[jump target=*skip]
+
 ;背景を表示
 [bg storage="black.png" time=1000 wait=true]
 
@@ -914,17 +916,23 @@
 丘の上から景色を眺める。[p]
 その間も博士の好奇心は収まらない。[p]
 
-[chara_part name="hakase" body="front" pose="f2" eye="f2" mouth="f1" eyebrow="f2"]
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f1" eyebrow="f1"]
 [chara_show name="hakase" time=1000 wait=true]
 
 #博士
 「いま気づいたのだが、だいぶ生態系が変わっているようだね」[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f5" eyebrow="f1"]
+
 #博士
 「例えば、あの鳥」[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f1" mouth="f5" eyebrow="f1"]
+
 #博士
 「あのような鳥は周辺に生息していなかったはずだ」[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f5" eyebrow="f2"]
 
 #博士
 「ロイド、変遷を聞かせてくれないか」[p]
@@ -938,14 +946,20 @@
 その結果、生態系が崩れてしまった。[p]
 しかし鳥類や魚類は被害を免れ、順調に回復してきている。[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s1" eyebrow="s2"]
+
 #博士
 「そういうことだったのか」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s2" eyebrow="s2"]
 
 #博士
 「それは悪くない知らせだ」[p]
 
 #
 博士は手をポンと打った。[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s2" mouth="s2" eyebrow="s2"]
 
 #博士
 「よし」[p]
@@ -959,8 +973,12 @@
 #ロイド
 「備蓄量から計算しても、食料が不足することはありません」[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s4" mouth="s2" eyebrow="s2"]
+
 #博士
 「食は人の心を豊かにしてくれる」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s2" eyebrow="s2"]
 
 #博士
 「そして備えが心の平穏を与えてくれるということさ」[p]
@@ -968,14 +986,20 @@
 #
 博士は、またよくわからないことを言う。[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f2" eyebrow="f2"]
+
 #博士
 「わからなくてもいいさ」[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f1" mouth="f4" eyebrow="f1"]
 
 #博士
 「だが、そうだな」[p]
 
 #
 ふいに博士は僕を見つめた。[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f1" mouth="f2" eyebrow="f1"]
 
 #博士
 「少女たちを目覚めさせたら、できるだけ一緒にご飯を食べるように」[p]
@@ -985,19 +1009,25 @@
 
 #
 そう答えると、博士は小さく微笑んだ。[p]
+
+[chara_hide name="hakase" time=1000 wait=true]
+
 それから僕たちは食事を摂ることにした。[p]
 いつもより美味しかった気がする。[p]
 
-[chara_hide name="hakase" time=1000 wait=true]
+[stopbgm]
+
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="ruins.png" time=1000 wait=true]
-[chara_show name="hakase" time=1000 wait=true]
 
 #
 食事の後に僕たちは遺跡群に向かった。[p]
 そこには建物や機械の残骸が無数に残っている。[p]
 辛うじて風化に抗っているものだけが、寂しく取り残されていた。[p]
 博士は役に立つものがあるかもしれないと言っていたが、期待はできないだろう。[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s3" mouth="s4" eyebrow="s2"]
+[chara_show name="hakase" time=1000 wait=true]
 
 #博士
 「思ったよりも腐敗が進んでいるな」[p]
@@ -1008,6 +1038,8 @@
 #ロイド
 「これらの機械は使えますか」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s4" eyebrow="s2"]
+
 #博士
 「ダメだな」[p]
 
@@ -1017,8 +1049,12 @@
 #
 僕が尋ねると博士は軽く鼻を鳴らす。[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s4" eyebrow="s2"]
+
 #博士
 「ふん」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s2" mouth="s4" eyebrow="s2"]
 
 #博士
 「私が本気を出せば十年後には宇宙にだって行けるようになるさ」[p]
@@ -1026,8 +1062,12 @@
 #ロイド
 「博士はすごいです」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s2" eyebrow="s2"]
+
 #博士
 「当然だ」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s2" eyebrow="s3"]
 
 #博士
 「とはいえ、いまさら宇宙に行く理由など、どこにもないのだがね」[p]
@@ -1038,8 +1078,12 @@
 #
 遺跡を歩き回りながら、博士は思い出したように尋ねる。[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f5" eyebrow="f1"]
+
 #博士
 「ロイド」[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f2" eyebrow="f1"]
 
 #博士
 「千年の間に夢のような道具は作られたか」[p]
@@ -1050,11 +1094,17 @@
 #
 心なしか博士は目を輝かせているような気がする。[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f4" mouth="f2" eyebrow="f2"]
+
 #博士
 「そうだ」[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s1" mouth="s2" eyebrow="s1"]
+
 #博士
 「例えば、どんな場所でも行けてしまう不思議なドアとか」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s5" mouth="s2" eyebrow="s2"]
 
 #博士
 「過去と未来を旅する素晴らしい乗り物とかのことだ」[p]
@@ -1065,8 +1115,12 @@
 #ロイド
 「残念ながら、科学の発展はほとんど見られませんでした」[p]
 
+[chara_part name="hakase" body="side" pose="s1" eye="s3" mouth="s4" eyebrow="s3"]
+
 #博士
 「……そうか」[p]
+
+[chara_part name="hakase" body="side" pose="s1" eye="s4" mouth="s5" eyebrow="s3"]
 
 #博士
 「そうなのかぁ」[p]
@@ -1079,11 +1133,17 @@
 #ロイド
 「大丈夫ですか？」[p]
 
+[chara_part name="hakase" body="side" pose="s1" eye="s2" mouth="s2" eyebrow="s3"]
+
 #博士
 「ははは、気にするな」[p]
 
+[chara_part name="hakase" body="front" pose="f2" eye="f4" mouth="f2" eyebrow="f3"]
+
 #博士
 「子供の頃の夢が散ってしまっただけさ」[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f3" mouth="f2" eyebrow="f3"]
 
 #博士
 「……ははは」[p]
@@ -1096,21 +1156,29 @@
 #ロイド
 「次の場所へ向かいましょう」[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f4" eyebrow="f3"]
+
 #博士
 「……そうだな」[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f2" eyebrow="f3"]
 
 #博士
 「うん、そうしよう」[p]
 
 #
 
+[stopbgm]
+
 [chara_hide name="hakase" time=1000 wait=true]
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="school.png" time=1000 wait=true]
-[chara_show name="hakase" time=1000 wait=true]
 
 #
 続いて向かったのがシェルター跡地だ。[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s1" eyebrow="s2"]
+[chara_show name="hakase" time=1000 wait=true]
 
 #博士
 「ここは学校だった場所かな」[p]
@@ -1124,11 +1192,15 @@
 #ロイド
 「結果として今でも現存しています」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s5" eyebrow="s2"]
+
 #博士
 「言われてみると学校としての面影が残っているな」[p]
 
 #
 博士はシェルターを眺めながらポツリと溢す。[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s3" mouth="s5" eyebrow="s2"]
 
 #博士
 「……最後の生徒たちは何を学んだのだろうな」[p]
@@ -1140,11 +1212,17 @@
 #ロイド
 「博士も学校に通っていたんですか？」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s2" eyebrow="s2"]
+
 #博士
 「そうだよ」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s4" eyebrow="s2"]
+
 #博士
 「とはいえ、私が学生だった頃はとても窮屈な場所だった」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s2" mouth="s4" eyebrow="s2"]
 
 #博士
 「凝り固まった考え方を教え込まれ、軍隊みたいな均衡を強いられた」[p]
@@ -1152,30 +1230,42 @@
 #
 軍事施設のような場所を思い浮かべた。[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s4" eyebrow="s2"]
+
 #博士
 「あまり良い思い出はないな」[p]
 
 #ロイド
 「大変な場所だったんですね」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s4" eyebrow="s2"]
+
 #博士
 「どうなんだろうな」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s2" mouth="s5" eyebrow="s2"]
 
 #博士
 「青春を謳歌する若者たちも少なくはなかっただろうよ」[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s2" mouth="s2" eyebrow="s3"]
+
 #博士
 「ただ相性が悪かっただけの話かもしれない」[p]
+
+#
+
+[chara_hide name="hakase" time=1000 wait=true]
 
 #
 博士は何よりも研究が好きだ。[p]
 もし研究に没頭できる学校があったのなら、楽しく過ごせただろうか。[p]
 そんなことを思いながら学校跡地をあとにした。[p]
 
-[chara_hide name="hakase" time=1000 wait=true]
+[stopbgm]
+
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="station.png" time=1000 wait=true]
-[chara_show name="hakase" time=1000 wait=true]
 
 #
 駅前跡地に向かう。[p]
@@ -1185,6 +1275,9 @@
 #ロイド
 「ここより先は徒歩では厳しいかもしれません」[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f5" eyebrow="f3"]
+[chara_show name="hakase" time=1000 wait=true]
+
 #博士
 「そのようだ」[p]
 
@@ -1192,8 +1285,12 @@
 ここは瓦礫が多くて非常に歩きづらい。[p]
 博士は立ち止まって一帯を見渡した。[p]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f4" mouth="f2" eyebrow="f3"]
+
 #博士
 「賑わっていた場所ほど朽ちた時の寂しさが大きいな」[p]
+
+[chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f2" eyebrow="f3"]
 
 #博士
 「閉園後の遊園地に例えようか」[p]
@@ -1201,8 +1298,12 @@
 #ロイド
 「僕はそれを知りません」[p]
 
+[chara_part name="hakase" body="front" pose="f2" eye="f2" mouth="f3" eyebrow="f3"]
+
 #博士
 「気にするな」[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f3" mouth="f1" eyebrow="f2"]
 
 #博士
 「しかし、瓦礫の山にしては物が少ないように見えるな」[p]
@@ -1216,17 +1317,25 @@
 #ロイド
 「たぶん、そのせいだと思います」[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f4" mouth="f4" eyebrow="f3"]
+
 #博士
 「なるほどな」[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f4" mouth="f5" eyebrow="f3"]
+
 #博士
 「容易に想像できてしまうことが実に悲しいな」[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f1" mouth="f5" eyebrow="f1"]
 
 #博士
 「……おや？」[p]
 
 #
 博士は何かを見つけたようだ。[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s1" mouth="s5" eyebrow="s1"]
 
 #博士
 「あの柱は何かね」[p]
@@ -1240,6 +1349,8 @@
 #ロイド
 「僕が立てました」[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s1" mouth="s5" eyebrow="s1"]
+
 #博士
 「ほう、キミが？」[p]
 
@@ -1252,6 +1363,8 @@
 ここで多くの争いが起き、やがて人々がいなくなったのを僕は目の当たりにした。[p]
 そしてなぜか僕はこの柱を立てようと思ったのだ。[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s1" mouth="s2" eyebrow="s1"]
+
 #博士
 「これはキミなりの追悼碑なのだな」[p]
 
@@ -1261,18 +1374,29 @@
 #
 博士は僕の問いには答えず、じっと追悼碑を見つめていた。[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s3" mouth="s5" eyebrow="s2"]
+
 #博士
 「もし私がいつか……」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s1" eyebrow="s2"]
 
 #博士
 「……いや、やめておこう」[p]
 
 #
 博士は何かを言いかけて、言葉をつぐんだ。[p]
+
+[chara_hide name="hakase" time=1000 wait=true]
+
+#
 僕はその先を尋ねることができなかった。[p]
 真剣な瞳が博士の決意を物語っているように見えたからだ。[p]
 
-[chara_hide name="hakase" time=1000 wait=true]
+*skip
+
+[stopbgm]
+
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="laboratory.png" time=1000 wait=true]
 [chara_show name="hakase" time=1000 wait=true]
