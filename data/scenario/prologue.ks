@@ -72,8 +72,6 @@
 ;BGMを停止
 [stopbgm]
 
-[jump target=*skip]
-
 ;背景を表示
 [bg storage="black.png" time=1000 wait=true]
 
@@ -1393,16 +1391,16 @@
 僕はその先を尋ねることができなかった。[p]
 真剣な瞳が博士の決意を物語っているように見えたからだ。[p]
 
-*skip
-
 [stopbgm]
 
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="laboratory.png" time=1000 wait=true]
-[chara_show name="hakase" time=1000 wait=true]
 
 #
 研究所に戻るころには夜になっていた。[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s1" eyebrow="s2"]
+[chara_show name="hakase" time=1000 wait=true]
 
 #博士
 「ふむ……」[p]
@@ -1413,15 +1411,25 @@
 彼女は今、深い思考の海に潜っているのだ。[p]
 僕は博士の考え事が終わるまで、身の回りの世話を続けた。[p]
 
+[chara_hide name="hakase" time=1000 wait=true]
+
+[bg storage="black.png" time=1000 wait=true]
+[bg storage="laboratory.png" time=1000 wait=true]
+
 #
 あれから数日が経った、早朝のこと。[p]
 夜が白んでくる頃、博士がようやく口を開いた。[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s1" eyebrow="s2"]
+[chara_show name="hakase" time=1000 wait=true]
 
 #博士
 「ロイド」[p]
 
 #ロイド
 「はい」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s2" mouth="s1" eyebrow="s2"]
 
 #博士
 「お姫様たちを起こしにいくぞ」[p]
@@ -1430,24 +1438,37 @@
 「！」[p]
 
 #
+
+[chara_hide name="hakase" time=1000 wait=true]
+
+#
 ついにその時が来たようだ。[p]
 博士は立ち上がり、少女たちの眠る場所に向かう。[p]
 
-[chara_hide name="hakase" time=1000 wait=true]
+[stopbgm]
+
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="corridor.png" time=1000 wait=true]
-[chara_show name="hakase" time=1000 wait=true]
 
 僕はたまらず声をかけた。[p]
 
 #ロイド
 「僕に、できるでしょうか？」[p]
 
+#
+
+[chara_part name="hakase" body="side" pose="s1" eye="s2" mouth="s1" eyebrow="s2"]
+[chara_show name="hakase" time=1000 wait=true]
+
 #博士
 「できるさ」[p]
 
+[chara_part name="hakase" body="side" pose="s1" eye="s2" mouth="s2" eyebrow="s2"]
+
 #博士
 「キミは抜けているところはあるが、とても素直で良い子だ」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s2" mouth="s2" eyebrow="s2"]
 
 #博士
 「キミなら彼女たちとも仲良くできるだろう」[p]
@@ -1455,11 +1476,17 @@
 #ロイド
 「それでも不安です」[p]
 
+[chara_part name="hakase" body="front" pose="f2" eye="f1" mouth="f5" eyebrow="f1"]
+
 #博士
 「私がキミを作ったんだぞ？」[p]
 
+[chara_part name="hakase" body="front" pose="f2" eye="f4" mouth="f5" eyebrow="f1"]
+
 #博士
 「私が可能だと言えば可能になるのだ」[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f4" mouth="f5" eyebrow="f1"]
 
 #博士
 「とはいえ、そうだな」[p]
@@ -1467,11 +1494,19 @@
 #
 博士は僕に向き直る。[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f5" eyebrow="f2"]
+
 #博士
 「いくつかの心得を教えてあげよう」[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f2" eyebrow="f2"]
+
 #博士
 「キミの心の平安のためにな」[p]
+
+#
+
+[chara_hide name="hakase" time=1000 wait=true]
 
 #
 それから博士は僕に幾つかのことを教えてくれた。[p]
@@ -1479,20 +1514,25 @@
 優しく寄り添ってあげるのに必要な気遣い。[p]
 僕が質問すると、安心させるようになんでも教えてくれた。[p]
 
-[chara_hide name="hakase" time=1000 wait=true]
+[stopbgm]
+
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="sleep_room.png" time=1000 wait=true]
-[chara_show name="hakase" time=1000 wait=true]
 
 #
 ついにこの場所にやってきた。[p]
 唐突に博士が何かを思い出したようなそぶりをする。[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f2" mouth="f1" eyebrow="f2"]
+[chara_show name="hakase" time=1000 wait=true]
 
 #博士
 「大事なことを言い忘れていた」[p]
 
 #
 まるで確信犯のような口ぶりだ。[p]
+
+[chara_part name="hakase" body="front" pose="f2" eye="f2" mouth="f1" eyebrow="f2"]
 
 #博士
 「キミが少女たちと接する間、私は共にいることができない」[p]
@@ -1503,14 +1543,22 @@
 #
 僕は悲鳴に似た声をあげてしまう。[p]
 
+[chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s4" eyebrow="s3"]
+
 #博士
 「すまない」[p]
+
+[chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s4" eyebrow="s3"]
 
 #博士
 「だが、こればかりは仕方がないんだ」[p]
 
+[chara_part name="hakase" body="side" pose="s2" eye="s2" mouth="s4" eyebrow="s3"]
+
 #博士
 「キミとの約束を果たすためには、私はもう一度深く眠る必要がある」[p]
+
+[chara_part name="hakase" body="side" pose="s2" eye="s2" mouth="s2" eyebrow="s3"]
 
 #博士
 「理由は分かるね？」[p]
@@ -1523,14 +1571,20 @@
 それまで博士は生きていられるだろうか。[p]
 博士が僕との約束を確実に果たすためには、もう一度眠るしかないのだ。[p]
 
+[chara_part name="hakase" body="front" pose="f3" eye="f4" mouth="f1" eyebrow="f2"]
+
 #博士
 「さて」[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f4" mouth="f5" eyebrow="f2"]
 
 #博士
 「少女たちのうち、まず誰を起こすかだが」[p]
 
 #
 僕は息を呑む。[p]
+
+[chara_part name="hakase" body="front" pose="f3" eye="f1" mouth="f2" eyebrow="f2"]
 
 #博士
 「キミに委ねよう」[p]
