@@ -2,6 +2,30 @@
 
 *start
 
+; メッセージウィンドウの生成
+[macro name="message_create"]
+    ;メッセージレイヤの初期化
+    [cm]
+    ;メッセージウィンドウの設定
+    [position layer="message0" page="fore" left=0 top=493 width=1280 height=227]
+    ;フォントの設定
+    [font size=28 color="rgb(255, 255, 255)" shadow="rgba(0, 0, 0, 0.5)"]
+    ;文字が表示される領域を調整
+    [position layer="message0" page="fore" margint=60 marginl=280 marginr=280 marginb=50 frame="message/message_frame.webp"]
+    ;メッセージボックスは初期状態では非表示
+    [layopt layer="message" visible=true]
+[endmacro]
+
+; 名前表示領域の生成
+[macro name="name_create"]
+    ;キャラクターの名前が表示される領域に画像を用意
+    [image storage="../image/message/name_frame.png" layer="message0" zindex=100 visible="true" x=130 y=490]
+    ;キャラクターの名前が表示される文字領域
+    [ptext name="chara_name_area" layer="message0" color="white" shadow="rgba(0, 0, 0, 0.5)" size=32 bold=true x=283 y=510 width=160 align="center"]
+    ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
+    [chara_config ptext="chara_name_area"]
+[endmacro]
+
 ; エンディングの演出
 [macro name="ending_text"]
     [cm]
@@ -29,25 +53,6 @@
 [endmacro]
 
 ; エンドロールを流す
-; 引数time：継続時間
-; time以外の引数は一次変数に代入することで引き渡す。
-; tf.endrolltext: string[] -- エンドロールに流すテキストを1行ごとに区切った配列
-; tf.endrollimage: [imagefile, folder][] -- [エンドロールで表示する画像ファイル名, 画像フォルダ名]を使用順に並べた配列
-; 使用後の一次変数はマクロ終了時にクリアされる。
-;
-; 例：
-; [iscript]
-; tf.endrolltext = [
-;     'いちぎょうめ',
-;     'にぎょうめ',
-;     'さんぎょうめ',
-; ];
-; tf.endrollimage = [
-;     ['labo.jpg', 'bgimage'],
-;     ['title_bg.png', 'bgimage'],
-; ];
-; [endscript]
-; [endroll time=10000]
 [macro name="endroll"]
     [iscript]
         tf.endrolltext = tf.endrolltext.join('<br />');
