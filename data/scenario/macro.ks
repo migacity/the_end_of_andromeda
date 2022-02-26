@@ -53,25 +53,6 @@
 [endmacro]
 
 ; エンドロールを流す
-; 引数time：継続時間
-; time以外の引数は一次変数に代入することで引き渡す。
-; tf.endrolltext: string[] -- エンドロールに流すテキストを1行ごとに区切った配列
-; tf.endrollimage: [imagefile, folder][] -- [エンドロールで表示する画像ファイル名, 画像フォルダ名]を使用順に並べた配列
-; 使用後の一次変数はマクロ終了時にクリアされる。
-;
-; 例：
-; [iscript]
-; tf.endrolltext = [
-;     'いちぎょうめ',
-;     'にぎょうめ',
-;     'さんぎょうめ',
-; ];
-; tf.endrollimage = [
-;     ['labo.jpg', 'bgimage'],
-;     ['title_bg.png', 'bgimage'],
-; ];
-; [endscript]
-; [endroll time=10000]
 [macro name="endroll"]
     [iscript]
         tf.endrolltext = tf.endrolltext.join('<br />');
