@@ -1,5 +1,10 @@
 *start
+
 [cm]
+
+;メッセージウィンドウと名前表示領域を生成
+[message_create]
+[name_create]
 
 ;背景開始、コールドスリープ区画、ファイル名＝dammy_coldsleep.png、別途指示あるまで継続
 ;BGM開始、コールドスリープ区画、ファイル名＝BGM_Room1.ogg、別途指示あるまで継続
