@@ -27,7 +27,7 @@
 [link storage="route_rina.ks" target=*start]りな[endlink]｜
 [link storage="route_hakase.ks" target=*start]博士[endlink][r]
 [link storage="chara_compare.ks" target=*start]キャラ立ち絵[endlink]｜
-[link target=*goto_title"]タイトルに戻る[endlink]
+[link target="*goto_title"]タイトルに戻る[endlink]
 [endnowait]
 [s]
 
