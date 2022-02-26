@@ -28,6 +28,7 @@
 ;仮の選択肢
 [nowait]
 読みたいシナリオを選択してください。[r]
+[link storage="prologue.ks" target=*start]プロローグ[endlink]｜
 [link storage="route_atria.ks" target=*start]アトリア[endlink]｜ 
 [link storage="route_kei.ks" target=*start]心石継[endlink]｜
 [link storage="route_rina.ks" target=*start]りな[endlink]｜
