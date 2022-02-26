@@ -21,7 +21,7 @@
     ;キャラクターの名前が表示される領域に画像を用意
     [image storage="../image/message/name_frame.png" layer="message0" zindex=100 visible="true" x=130 y=490]
     ;キャラクターの名前が表示される文字領域
-    [ptext name="chara_name_area" layer="message0" color="white" shadow="rgba(0, 0, 0, 0.5)" size=28 bold=true x=288 y=520]
+    [ptext name="chara_name_area" layer="message0" color="white" shadow="rgba(0, 0, 0, 0.5)" size=32 bold=true x=283 y=510 width=160 align="center"]
     ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
     [chara_config ptext="chara_name_area"]
 [endmacro]
