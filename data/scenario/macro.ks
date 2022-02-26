@@ -2,6 +2,30 @@
 
 *start
 
+; メッセージウィンドウの生成
+[macro name="message_create"]
+    ;メッセージレイヤの初期化
+    [cm]
+    ;メッセージウィンドウの設定
+    [position layer="message0" page="fore" left=0 top=493 width=1280 height=227]
+    ;フォントの設定
+    [font size=28 color="rgb(255, 255, 255)" shadow="rgba(0, 0, 0, 0.5)"]
+    ;文字が表示される領域を調整
+    [position layer="message0" page="fore" margint=60 marginl=280 marginr=280 marginb=50 frame="message/message_frame.webp"]
+    ;メッセージボックスは初期状態では非表示
+    [layopt layer="message" visible=true]
+[endmacro]
+
+; 名前表示領域の生成
+[macro name="name_create"]
+    ;キャラクターの名前が表示される領域に画像を用意
+    [image storage="../image/message/name_frame.png" layer="message0" zindex=100 visible="true" x=130 y=490]
+    ;キャラクターの名前が表示される文字領域
+    [ptext name="chara_name_area" layer="message0" color="white" shadow="rgba(0, 0, 0, 0.5)" size=28 bold=true x=288 y=520]
+    ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
+    [chara_config ptext="chara_name_area"]
+[endmacro]
+
 ; エンディングの演出
 [macro name="ending_text"]
     [cm]
