@@ -24,7 +24,7 @@
 [link storage="prologue.ks" target=*start]プロローグ[endlink]｜ 
 [link storage="atria/atria_01.ks" target=*start]アトリア[endlink]｜ 
 [link storage="kei/kei_01.ks" target=*start]心石継[endlink]｜
-[link storage="rina/rina_01.ks" target=*start]りな[endlink]｜
+[link storage="rina/rina_init.ks" target=*start]りな[endlink]｜
 [link storage="hakase/hakase_01.ks" target=*start]博士[endlink][r]
 [link storage="chara_compare.ks" target=*start]キャラ立ち絵[endlink]｜
 [link target="*goto_title"]タイトルに戻る[endlink]
