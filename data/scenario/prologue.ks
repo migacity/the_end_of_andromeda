@@ -73,7 +73,7 @@
 充填されていた気体が溢れ出す。[p]
 機械の稼働音がしてカプセルがゆっくりと開いた。[p]
 
-[playbgm storage="BGM_Room1.ogg"]
+[playbgm storage="common/BGM_Room1.ogg"]
 [bg storage="still/hakase_awake.png" time=1000 wait=true]
 
 中に横たわっていた女性がゆっくりと体を起こす。[p]
@@ -131,7 +131,7 @@
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="laboratory.png" time=1000 wait=true]
 
-[playbgm storage="BGM_Prologue.ogg"]
+[playbgm storage="common/BGM_Prologue.ogg"]
 
 [chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s4" eyebrow="s3"]
 [chara_show name="hakase" time=1000 wait=true]
@@ -659,7 +659,7 @@
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="bedroom_after.png" time=1000 wait=true]
 
-[playbgm storage="BGM_Sampo.ogg"]
+[playbgm storage="common/BGM_Sampo.ogg"]
 
 #
 博士と僕は居住スペースの確保に努めた。[p]
