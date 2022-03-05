@@ -1,7 +1,9 @@
 *start
 
 ;背景開始、プロローグのコールドスリープ区画、ファイル名＝sleep_room.png、別途指示あるまで継続
+[bg storage="sleep_room.png" time="1000" method="fadeIn"]
 ;BGM開始、コールドスリープ区画、ファイル名＝BGM_Room1.ogg、別途指示あるまで継続
+[playbgm storage="common/BGM_Room1.ogg"]
 
 #
 解凍するにあたって、この子を選択した。[p]
@@ -32,8 +34,11 @@
 
 ;SE再生、ファイル名＝spray1.mp3、回数＝1回
 ;BGM消失
+[stopbgm]
 ;BGM開始、りなのコミカル、ファイル名＝BGM_IKEIKE.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_IKEIKE.ogg"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-sekikomi.png、指示あるまで表示継続
+[chara_show name="rina" face="sekikomi" top=1 time=1000 wait=false]
 
 #少女
 「げほげほげほげほー！」[p]
