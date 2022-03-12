@@ -35,7 +35,7 @@
 [endmacro]
 [macro name="bg_fade_in"]
 ;   背景画像表示
-    [bg storage=%bg_storage time="100"]
+    [bg storage=%bg_storage time=100]
     [mask_off time=%time|2000]
 [endmacro]
 
