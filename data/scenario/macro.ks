@@ -26,6 +26,19 @@
     [chara_config ptext="chara_name_area"]
 [endmacro]
 
+; 暗転
+; (bg_fade_out で暗転, bg_fade_in で解除)
+[macro name="bg_fade_out"]
+    [mask time=%time|2000]
+;   暗転時は全キャラを削除
+    [chara_hide_all time=10]
+[endmacro]
+[macro name="bg_fade_in"]
+;   背景画像表示
+    [bg storage=%bg_storage time="100"]
+    [mask_off time=%time|2000]
+[endmacro]
+
 ; エンディングの演出
 [macro name="ending_text"]
     [cm]
