@@ -1,7 +1,7 @@
 *start
 
 ;背景開始、プロローグのコールドスリープ区画、ファイル名＝sleep_room.png、別途指示あるまで継続
-[bg storage="sleep_room.png" time="1000" method="fadeIn"]
+[bg storage="sleep_room.png" time=1000 method="fadeIn"]
 ;BGM開始、コールドスリープ区画、ファイル名＝BGM_Room1.ogg、別途指示あるまで継続
 [playbgm storage="common/BGM_Room1.ogg"]
 
@@ -91,8 +91,10 @@
 ;SEループ停止、ファイル名＝shaking-and-clattering-1.mp3
 ;立ち絵、小刻みに震える効果を終了
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-zitome.png、停止指示あるまで継続
+[chara_mod name="rina" face="zitome" cross=false]
 ;BGM消失
 ;BGM開始、りなのテーマ、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Rina1.ogg"]
 
 #少女
 「……りな、だよ」[p]
@@ -106,6 +108,7 @@
 「りなさん僕はアンドロイドです、呼称はロイドとなっております、よろしくお願いします」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-odoroki.png、停止指示あるまで継続
+[chara_mod name="rina" face="odoroki" cross=false]
 
 #
 彼女はきょとんとした表情をして尋ねた。[p]
@@ -117,8 +120,11 @@
 「はい、そうですね」[p]
 
 ;BGM消失
+[stopbgm]
 ;BGM開始、りなプロファイル、ファイル名＝BGM_Profiling.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Profiling.ogg"]
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-default.png、停止指示あるまで継続
+[chara_mod name="rina" face="default" cross=false]
 
 #りな
 「ロイドって呼ぶね、そこで眠っている人、博士かな、博士は工学が超得意で、だから作られたの？」[p]
@@ -160,11 +166,16 @@
 「亡くなられました」[p]
 
 ;立ち絵消失
+[chara_hide name="rina" wait=false time=500]
 ;BGM消失
+[stopbgm]
 ;背景消失
+[bg storage="black.png" time=1000]
 ;画面暗転
 ;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
+[bg storage="bedroom_after.png" time=1000]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
 
 #
@@ -173,6 +184,7 @@
 彼女、りなは黙って聞いていたが思いのほか落ち着いているようだった。[p]
 
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-tameiki.png、指示あるまで表示継続
+[chara_show name="rina" face="tameiki" top=1]
 
 #りな
 「実感がわかない……」[p]
@@ -181,6 +193,7 @@
 「臨床心理学的に正常な反応です」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-komari.png、指示あるまで表示継続
+[chara_mod name="rina" face="komari" cross=false]
 
 #りな
 「聞いてもいいかな、局所的な例外って何だろう、人間はここ以外は本当に誰もいないのかな？」[p]
@@ -222,6 +235,7 @@
 「ご両親の意向でどちらか片方でも生存できるように異なる計画にそれぞれ、あなた方姉妹は割り振られたと記録にあります」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-odoroki.png、指示あるまで表示継続
+[chara_mod name="rina" face="odoroki" cross=false]
 
 #りな
 「待って、りか姉ちゃんがどうなったの？」[p]
@@ -236,6 +250,7 @@
 「現在のりなさんと同じ１７歳前後の容姿のまま亡くなられました」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-tameiki.png、指示あるまで表示継続
+[chara_mod name="rina" face="tameiki" cross=false]
 
 #りな
 「りか姉ちゃん……」[p]
@@ -244,6 +259,7 @@
 「お姉さまとは存命中に僕も面識があります」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-odoroki.png、指示あるまで表示継続
+[chara_mod name="rina" face="odoroki" cross=false]
 
 #りな
 「え、マジ？」[p]
@@ -261,11 +277,13 @@
 「お姉さまの遺物が残存していますがご身内のりなさんであれば特に問題ないでしょう」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-nigawarai.png、指示あるまで表示継続
+[chara_mod name="rina" face="nigawarai" cross=false]
 
 #りな
 「うん……ありがとう」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-nakigao.png、指示あるまで表示継続
+[chara_mod name="rina" face="nakigao" cross=false]
 
 #
 そして、りなはようやく涙を流した。[p]
@@ -274,6 +292,7 @@
 「ひとつ、りなさんにお約束をしてほしいことがあります」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-default.png、指示あるまで表示継続
+[chara_mod name="rina" face="default" cross=false]
 
 #りな
 「うん、なにかな……大抵のことはするよ、お掃除とか手伝う」[p]
@@ -306,6 +325,7 @@
 「しかし覚醒時のりなさんの人格分析は奇妙なほど事実と符合しています」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-hokorashige.png、指示あるまで表示継続
+[chara_mod name="rina" face="hokorashige" cross=false]
 
 #りな
 「実はわたしは職業はFBI心理プロファイラ、副業は新宿の母に並ぶ占い師かつ正体はエスパーだ！」[p]
@@ -314,6 +334,7 @@
 「勤労学生だったのですね、しかしＥ適正を隠しながらの生活は苦労が多かったとお察しします」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-nigawarai.png、指示あるまで表示継続
+[chara_mod name="rina" face="nigawarai" cross=false]
 
 #りな
 「冗談冗談あはは、冗談でも言わないとやってられないよ、この状況」[p]
@@ -325,6 +346,7 @@
 「これはわたしの特技の一つ、本当だよ」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-hokorashige.png、指示あるまで表示継続
+[chara_mod name="rina" face="hokorashige" cross=false]
 
 #りな
 「その人が書いた文章でも作者の性格がよく分かる、これでもわたし読書家なの、えっへん！」[p]
@@ -345,6 +367,7 @@
 「しかしアンドロイドや書籍からは不可解です、例えばサイコメトラなどに類するのでしょうか？」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-default.png、指示あるまで表示継続
+[chara_mod name="rina" face="default" cross=false]
 
 #りな
 「ううん、ちがうと思うよ」[p]
@@ -402,6 +425,7 @@
 「僕は一日で１億文字ほどです」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-warai.png、指示あるまで表示継続
+[chara_mod name="rina" face="warai" cross=false]
 
 #りな
 「すごい、練習量は十分だねファイト！」[p]
@@ -414,12 +438,17 @@
 長く話し過ぎた。夜が訪れる。[p]
 
 ;立ち絵消失
+[chara_hide name="rina" wait=false]
 ;SEループ消失、ファイル名＝cricket-grassland-1.mp3
 ;BGM消失
+[stopbgm]
 ;背景消失
+[bg storage="black.png" time=1000]
 ;画面暗転
 ;背景開始、机の上と紙の日記、ファイル名＝nikki.png、別途指示あるまで継続
+[bg storage="rina/nikki.webp" time=1000]
 ;BGM開始、夜半の読書、ファイル名＝BGM_Diary.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Diary.ogg"]
 ;SE再生、ファイル名＝clock-second-hand-2.mp3、回数＝別途指示あるまでループ
 
 #
@@ -438,6 +467,7 @@
 「なのでお姉さまには紙の日記で精神な落ち着きを得ることを推奨しました」[p]
 
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-warai.png、指示あるまで表示継続
+[chara_show name="rina" face="warai" top=1]
 
 #りな
 「そっか、ロイド賢い」[p]
@@ -446,6 +476,7 @@
 「言語ＩＱは１１０と設定されています、平均上位に過ぎません……おやすみなさい」[p]
 
 ;立ち絵消失
+[chara_hide name="rina"]
 
 #
 そう言ってロイドはりなに一人になる時間をくれた。就寝時間も近い。[p]
@@ -481,9 +512,12 @@
 ;SEループ消失、ファイル名＝clock-second-hand-2.mp3
 ;SE再生、ファイル名＝wall-clock1.mp3、回数＝11回(午後11時の意)
 ;BGM消失
+[stopbgm]
 ;背景消失
+[bg storage="black.png" time=1000]
 ;画面暗転
 ;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
+[bg storage="bedroom_after.png" time=1000]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
 
@@ -491,6 +525,7 @@
 「りなさん、とりあえず１万冊ほど書籍データベースを分析し人格プロファイリングの練習しました」[p]
 
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-warai.png、指示あるまで表示継続
+[chara_show name="rina" face="warai" top=1]
 
 #りな
 「ロイドは努力家だね……それじゃあ練習テスト、わたしを分析してみよう」[p]
@@ -500,6 +535,7 @@
 
 ;BGM消失
 ;BGM開始、りなプロファイル、ファイル名＝BGM_Profiling.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Profiling.ogg"]
 
 #ロイド
 「では不躾ながら……りなさんはロザリオを常に形態しています」[p]
@@ -526,8 +562,11 @@
 「また学校の教師から無暗に人を分析しないように忠告をされているかもしれません」[p]
 
 ;BGM消失
+[stopbgm]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Rina1.ogg"]
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-nigawarai.png、指示あるまで表示継続
+[chara_mod name="rina" face="nigawarai" cross=false]
 
 #りな
 「当たりも多いけど外れも大きいから３０点かな……及第点まで頑張ってね！」[p]
@@ -536,6 +575,7 @@
 「それは手厳しい、精進します」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-default.png、指示あるまで表示継続
+[chara_mod name="rina" face="default" cross=false]
 
 #りな
 「ミッション系は小中高で受験したけど不合格、大学は今度こそ神学で進学……のつもりだった」[p]
@@ -586,6 +626,7 @@
 「不必要に心理状態が対象に傾倒する恐れがあります、特に観察力が強いりなさんの場合そのリスクは有意です」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-komari.png、指示あるまで表示継続
+[chara_mod name="rina" face="komari" cross=false]
 
 #りな
 「えー大丈夫だよ、もう１００年分くらい、りか姉ちゃんの日記を読んだ、でもわたしは元気元気」[p]
@@ -618,6 +659,7 @@
 「りなさん、それは秘密です」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-zitome.png、指示あるまで表示継続
+[chara_mod name="rina" face="zitome" cross=false]
 
 #りな
 「焼却炉といい崖といい立ち入り禁止が多いね」[p]
@@ -644,6 +686,7 @@
 「りなさん、やはり僕は今でも半透明でそれらは分からないですか？」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-default.png、指示あるまで表示継続
+[chara_mod name="rina" face="default" cross=false]
 
 #りな
 「だいぶ分かるようにはなってきた、ロイド最初は３点くらいだったけど点数が１０倍になったからね！」[p]
@@ -658,6 +701,7 @@
 「りなさん、僕は次も１０倍の点数……３００点を目指します」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-nigawarai.png、指示あるまで表示継続
+[chara_mod name="rina" face="nigawarai" cross=false]
 
 #りな
 「ロイド本気になった、それは分かる！」[p]
