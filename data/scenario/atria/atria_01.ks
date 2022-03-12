@@ -1,7 +1,7 @@
 *start
 
 ;背景_施設-装置室, 立ち絵_ねむねむ, 場所_デフォルト, BGM_BGM_Atria1, 
-[bg storage="sleep_room.png" time="1000" wait=true cross=true method="fadeIn"]
+[bg storage="sleep_room.png" time=1000 wait=true cross=true method="fadeIn"]
 [chara_show name="atria" top=94 time=1000 face="sleepy" wait=false]
 [playbgm storage="atria/BGM_Atria1.ogg"]
 
@@ -14,9 +14,10 @@
 
 
 ;1秒くらい経ってからアトリア立ち絵「デフォルト」に
-[wait time=]
+[wait time=1000]
 
 ;立ち絵_デフォルト, 
+[chara_mod name="atria" face="default" wait=true cross=false]
 少女はぼーっとしており、まだ状況が理解できていないようだ。[p]
 
 #ロイド
@@ -57,6 +58,8 @@
 「でも初めに会った人にこれを見せるようにって言われたのは覚えてる」[p]
 
 ;場所_小さく上下, BGM_BGM_Profiling, SE_紙出す音, 
+[anim name="atria" top="+=50" time=500 ]
+[anim name="atria" top="-=50" time=500]
 
 #
 ポケットから小さなメモ書きを取り出す。[p]
@@ -67,6 +70,7 @@
 書類の一部が切り抜かれたもののようだ。[p]
 
 ;文字を一括で表示, 
+[nowait]
 『特定地域に住む一部の人類は病や毒への耐性が高いことが確認された。[p]
 
 
@@ -76,6 +80,7 @@
 
 ;文字を一括で表示, 
 よって、これまでの研究成果とともに長期保護し、未来の技術力にて再検証することとする。』[p]
+[endnowait]
 
 一通り読み終えたところで、ぐぅ・・っと音が鳴る。[p]
 聞きなれない音だったが、どうやらアトリアのおなかが空いた音らしい。[p]
@@ -89,6 +94,7 @@
 「食糧でしたらあちらの部屋にありますよ、案内しますね」[p]
 
 ;暗転
+
 
 ;背景_施設-食糧庫, 立ち絵_デフォルト, 場所_デフォルト, BGM_BGM_Atria1, 
 
