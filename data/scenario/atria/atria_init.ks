@@ -7,7 +7,7 @@
 [name_create]
 
 ;キャラクターを登録 
-[chara_new name="atria" storage="chara/atria/デフォルト.webp" width=631 height=1488 jname="アトリア"]
+[chara_new name="atria" storage="chara/atria/デフォルト.webp" width=757 height=1276 jname="アトリア"]
 [chara_face name="atria" face="default" storage="chara/atria/デフォルト.webp"]
 [chara_face name="atria" face="sad" storage="chara/atria/かなしみ.webp"]
 [chara_face name="atria" face="surprise" storage="chara/atria/おどろき.webp"]
