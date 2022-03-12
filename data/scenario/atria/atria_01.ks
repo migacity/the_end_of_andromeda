@@ -1,7 +1,9 @@
 *start
 
 ;背景_施設-装置室, 立ち絵_ねむねむ, 場所_デフォルト, BGM_BGM_Atria1, 
-; [bg storage="sleep_room.png" time="" wait="" cross="" method=""]
+[bg storage="sleep_room.png" time="1000" wait=true cross=true method="fadeIn"]
+[chara_show name="atria" top=94 time=1000 face="sleepy" wait=false]
+[playbgm storage="atria/BGM_Atria1.ogg"]
 
 #
 小柄な女の子を目覚めさせることにした。[p]
