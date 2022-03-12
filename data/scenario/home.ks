@@ -22,7 +22,7 @@
 [nowait]
 読みたいシナリオを選択してください。[r]
 [link storage="prologue.ks" target=*start]プロローグ[endlink]｜ 
-[link storage="atria/atria_01.ks" target=*start]アトリア[endlink]｜ 
+[link storage="atria/atria_init.ks" target=*start]アトリア[endlink]｜ 
 [link storage="kei/kei_01.ks" target=*start]心石継[endlink]｜
 [link storage="rina/rina_init.ks" target=*start]りな[endlink]｜
 [link storage="hakase/hakase_01.ks" target=*start]博士[endlink][r]
