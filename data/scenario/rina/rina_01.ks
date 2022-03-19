@@ -1290,11 +1290,14 @@
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-ikari.png、指示あるまで表示継続
 [chara_mod name="rina" face="ikari" cross=false]
 ;次段落の台詞のみ可能な限り拡大
+[position layer="message0" page="fore" margint=120 marginl=60 marginr=60 marginb=50 frame="message/message_frame.webp"]
+[font size=84]
 
 #りな
 『及第点だ、褒めてやる！』[p]
 
 ;台詞の拡大終了
+[message_create]
 
 #
 人格の崩落、緊急停止。[p]
@@ -1326,10 +1329,15 @@
 「わたしは、わたしの頭の中は、心は、死者の宮殿だ、私がオシリスだ、りか姉ちゃんもそこにいる！」[p]
 
 ;立ち絵消失
+[chara_hide name="rina" wait=false time=500]
 ;BGM消失
+[stopbgm]
 ;背景消失
+[bg storage="black.png" time=1000 wait=false]
 ;画面暗転
+[bg_fade_out]
 ;背景開始、ひとの心、ファイル名＝white.png、別途指示あるまで継続
+[bg_fade_in bg_storage="white.png"]
 ;BGM無音開始
 
 #
@@ -1358,7 +1366,9 @@
 第四プロセス開始。[p]
 
 ;背景消失
+[bg_fade_out]
 ;背景開始、廃棄物処理区画、ファイル名＝haiki.png、別途指示あるまで継続
+[bg_fade_in bg_storage="rina/haiki.webp"]
 
 #ロイド
 「お姉さまはそんな場所にはいません、もっときれいな場所に」[p]
@@ -1374,9 +1384,13 @@
 ;SE再生、ファイル名＝spray1.mp3、回数＝1回
 ;BGM無音終了
 ;背景消失
+[bg_fade_out]
 ;背景開始、花と墓標、ファイル名＝hana.png、別途指示あるまで継続
+[bg_fade_in bg_storage="rina/hana.webp"]
 ;BGM開始、オルゴール、ファイル名=BGM_Rika.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Rika.ogg"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-odoroki.png、指示あるまで表示継続
+[chara_show name="rina" face="odoroki" top=1]
 
 #
 そこには、花があった。[p]
@@ -1420,6 +1434,7 @@
 「感謝と後悔は機械と人間で埋められない溝はありますか」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-nakigao.png、指示あるまで表示継続
+[chara_mod name="rina" face="nakigao" cross=false]
 
 #
 りなは菫の花をひとつ手に取ると。[p]
@@ -1430,9 +1445,12 @@
 
 ;立ち絵消失
 ;BGM消失
+[stopbgm]
 ;背景消失
 ;画面暗転
+[bg_fade_out]
 ;BGM無音開始
+[bg_fade_in bg_storage="black.png"]
 
 #
 ―――『憑き物落とし』プロセス完了―――[p]
@@ -1443,7 +1461,9 @@
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
 ;BGM無音消失
 ;背景開始、森林、ファイル名＝forest.png、別途指示あるまで継続
+[bg storage="rina/forest.webp" time=1000]
 ;BGM開始、りなのテーマ、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝mountain-with-coal-tits-and-winter-wrens-1.mp3、回数＝別途指示あるまでループ
 
 #
@@ -1461,6 +1481,7 @@
 「紙の日記群は周辺に埋めておきます」[p]
 
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-default.png、指示あるまで表示継続
+[chara_show name="rina" face="default" top=1]
 
 #りな
 「うん、ありがとう」[p]
@@ -1523,11 +1544,13 @@
 「やっぱりロイドはすごいよ」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-warai.png、指示あるまで表示継続
+[chara_mod name="rina" face="warai" cross=false]
 
 #りな
 「さすが、わたしのともだち！」[p]
 
 ;立ち絵消失
+[chara_hide name="rina"]
 
 #
 二人はほほ笑んだ。[p]
@@ -1535,5 +1558,8 @@
 
 ;SEループ消失、ファイル名＝mountain-with-coal-tits-and-winter-wrens-1.mp3
 ;BGM消失
+[stopbgm]
 ;背景消失
+[bg_fade_out]
+[bg_fade_in bg_storage="black.png" time=100]
 [jump storage="home.ks"]
