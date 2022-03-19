@@ -13,6 +13,7 @@
 解凍プロセスのコンソールを確認する。[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #
 解凍の成功率は６１％、ステータスはオールグリーンではなく、ところどころが赤や黄色の警戒色を示す。[p]
@@ -20,6 +21,7 @@
 人工冬眠と相性が悪い個体だったのだろう。[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #
 だがこの数百年でロイドは折をみて解凍プロセスに修正を加えてきた。[p]
@@ -33,8 +35,10 @@
 解凍プロセス開始。[p]
 
 ;SE再生、ファイル名＝spray1.mp3、回数＝1回
+[playse storage="rina/spray1.ogg" buf=0]
 ;BGM消失
 [stopbgm]
+[wait time=1500]
 ;BGM開始、りなのコミカル、ファイル名＝BGM_IKEIKE.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_IKEIKE.ogg"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-sekikomi.png、指示あるまで表示継続
@@ -44,8 +48,13 @@
 「げほげほげほげほー！」[p]
 
 ;SE再生、ファイル名＝glass-break1.mp3、回数＝1回
+[playse storage="rina/glass-break1.ogg" buf=0]
+[wait time=10]
 ;SE再生、ファイル名＝iron-stick1.mp3、回数＝1回
+[playse storage="rina/iron-stick1.ogg" buf=1]
 ;SE再生、ファイル名＝shaking-and-clattering-1.mp3、回数＝ループ
+[wait time=1000]
+[playse storage="rina/shaking-and-clattering-1.ogg" buf=2 loop=true volume=50]
 ;可能であれば、立ち絵に小刻みに震えるエフェクトを加える、停止指示があるまで継続
 
 #
@@ -55,7 +64,10 @@
 賭けは成功したが酷く彼女は具合が悪そうだ。[p]
 
 ;SE再生、ファイル名＝glass-break1.mp3、回数＝1回
+[playse storage="rina/glass-break1.ogg" buf=0]
+[wait time=500]
 ;SE再生、ファイル名＝iron-stick1.mp3、回数＝1回
+[playse storage="rina/iron-stick1.ogg" buf=1]
 
 #少女
 「なにこれ、きもちわるい気分わるい吐く、洗面器もってきてお姉ちゃん！」[p]
@@ -70,7 +82,10 @@
 「典型的な早期覚醒による低体温症での……」[p]
 
 ;SE再生、ファイル名＝glass-break1.mp3、回数＝1回
+[playse storage="rina/glass-break1.ogg" buf=0]
+[wait time=250]
 ;SE再生、ファイル名＝iron-stick1.mp3、回数＝1回
+[playse storage="rina/iron-stick1.ogg" buf=1]
 
 #少女
 「吐くー！」[p]
@@ -89,6 +104,7 @@
 「お疲れ様でした、はじめまして、お名前を伺ってもよろしいでしょうか」[p]
 
 ;SEループ停止、ファイル名＝shaking-and-clattering-1.mp3
+[fadeoutse time=500 buf=2]
 ;立ち絵、小刻みに震える効果を終了
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-zitome.png、停止指示あるまで継続
 [chara_mod name="rina" face="zitome" cross=false]
@@ -100,6 +116,7 @@
 「……りな、だよ」[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #ロイド
 「お名前はデータベースと一致します」[p]
@@ -177,6 +194,7 @@
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
+[playse storage="rina/cricket-grassland-1.ogg" buf=0 loop=true]
 
 #
 ロイドは人類滅亡の事実を端的に説明した。[p]
@@ -440,6 +458,7 @@
 ;立ち絵消失
 [chara_hide name="rina" wait=false]
 ;SEループ消失、ファイル名＝cricket-grassland-1.mp3
+[stopse buf=0]
 ;BGM消失
 [stopbgm]
 ;背景消失
@@ -450,6 +469,7 @@
 ;BGM開始、夜半の読書、ファイル名＝BGM_Diary.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Diary.ogg"]
 ;SE再生、ファイル名＝clock-second-hand-2.mp3、回数＝別途指示あるまでループ
+[playse storage="rina/clock-second-hand-2.ogg" buf=0 loop=true volume=50]
 
 #
 りなは彼女の姉が使用していた部屋で生活を始めた。[p]
@@ -484,6 +504,7 @@
 彼女の姉が研究所に訪れた頃はロイドの説明通り、やや情緒不安定な傾向が文章から見て取れた。[p]
 
 ;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
+[playse storage="rina/flipping-pages-quickly-1.ogg" buf=1]
 
 #りか
 『怖い、不安、あのアンドロイドは何だろう、信用していいのか』[p]
@@ -494,6 +515,7 @@
 なかには自作の短文小説なども挿入されており読み進めるのが苦にならない。[p]
 
 ;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
+[playse storage="rina/flipping-pages-quickly-1.ogg" buf=1]
 
 #りか
 『りなはまだ眠っている、目を覚ますことはできないことが残念だ』[p]
@@ -510,7 +532,31 @@
 はるか昔に生きた８９９歳の姉、その思考を出来る限りトレースしたいと感じた。[p]
 
 ;SEループ消失、ファイル名＝clock-second-hand-2.mp3
+[stopse buf=0]
+[wait time=800]
 ;SE再生、ファイル名＝wall-clock1.mp3、回数＝11回(午後11時の意)
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
 ;BGM消失
 [stopbgm]
 ;背景消失
