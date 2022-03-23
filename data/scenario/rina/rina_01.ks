@@ -183,14 +183,15 @@
 「亡くなられました」[p]
 
 ;立ち絵消失
-[chara_hide name="rina" wait=false time=500]
 ;BGM消失
 [stopbgm]
 ;背景消失
-[bg storage="black.png" time=1000]
 ;画面暗転
+[bg_fade_out]
+[chara_hide name="rina" wait=false]
 ;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
-[bg storage="bedroom_after.png" time=1000]
+#
+[bg_fade_in bg_storage="bedroom_after.png"]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
@@ -456,16 +457,16 @@
 長く話し過ぎた。夜が訪れる。[p]
 
 ;立ち絵消失
-[chara_hide name="rina" wait=false]
 ;SEループ消失、ファイル名＝cricket-grassland-1.mp3
 [stopse buf=0]
 ;BGM消失
 [stopbgm]
 ;背景消失
-[bg storage="black.png" time=1000]
 ;画面暗転
+[bg_fade_out]
+[chara_hide name="rina" wait=false]
 ;背景開始、机の上と紙の日記、ファイル名＝nikki.png、別途指示あるまで継続
-[bg storage="rina/nikki.webp" time=1000]
+[bg_fade_in bg_storage="rina/nikki.webp"]
 ;BGM開始、夜半の読書、ファイル名＝BGM_Diary.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Diary.ogg"]
 ;SE再生、ファイル名＝clock-second-hand-2.mp3、回数＝別途指示あるまでループ
@@ -560,10 +561,10 @@
 ;BGM消失
 [stopbgm]
 ;背景消失
-[bg storage="black.png" time=1000]
 ;画面暗転
+[bg_fade_out]
 ;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
-[bg storage="bedroom_after.png" time=1000]
+[bg_fade_in bg_storage="bedroom_after.png"]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
@@ -756,16 +757,17 @@
 「ロイド本気になった、それは分かる！」[p]
 
 ;立ち絵消失
-[chara_hide name="rina" time=500 wait=false]
 ;SEループ消失、ファイル名＝cricket-grassland-1.mp3
 [stopse buf=0]
 ;BGM消失
 [stopbgm]
 ;背景消失
-[bg storage="black.png" time=1000 wait=true]
 ;画面暗転
+[bg_fade_out]
+[chara_hide name="rina" time=500 wait=false]
 ;背景開始、机の上と紙の日記、ファイル名＝nikki.png、指示あるまで表示継続
-[bg storage="rina/nikki.webp" time=1000]
+#
+[bg_fade_in bg_storage="rina/nikki.webp"]
 ;BGM開始、夜半の読書、ファイル名＝BGM_Diary.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Diary.ogg"]
 ;SE再生、ファイル名＝clock-second-hand-2.mp3、回数＝別途指示あるまでループ
@@ -841,10 +843,11 @@
 ;BGM消失
 [stopbgm]
 ;背景消失
-[bg storage="black.png" time=1000 wait=true]
 ;画面暗転
+[bg_fade_out]
 ;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
-[bg storage="bedroom_after.png" time=1000 wait=true]
+#
+[bg_fade_in bg_storage="bedroom_after.png"]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
@@ -1020,13 +1023,14 @@
 「ロイドは嘘が付けないんだね」[p]
 
 ;立ち絵消失
-[chara_hide name="rina" wait=false time=500]
-
 ;背景消失
 [bg storage="black.png" time=1000 wait=false]
 ;画面暗転
+[bg_fade_out]
+[chara_hide name="rina" wait=false time=500]
 ;背景開始、机の上と紙の日記、ファイル名＝nikki.png
-[bg storage="rina/nikki.webp" time=1000 wait=false]
+#
+[bg_fade_in bg_storage="rina/nikki.webp"]
 ;SE再生、ファイル名＝pendulum-clock-echo1.mp3、回数＝別途指示あるまでループ
 [playse storage="rina/pendulum-clock-echo1.ogg" buf=0 loop=true]
 ;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
@@ -1063,7 +1067,7 @@
 [playse storage="rina/wall-clock1.ogg" buf=0]
 [wait time=1500]
 [playse storage="rina/wall-clock1.ogg" buf=0]
-[wait time=1500]
+[wait time=2500]
 ;SE再生、ファイル名＝opening-wooden-door-1.mp3、回数＝1回
 [playse storage="rina/opening-wooden-door-1.ogg" buf=0]
 [wait time=2000]
@@ -1072,12 +1076,14 @@
 [wait time=2000]
 ;SE再生、ファイル名＝climbing-stairs-in-house-1.mp3、回数＝1回
 [playse storage="rina/climbing-stairs-in-house-1.ogg" buf=0]
+[wait time=2000]
 ;BGM無音消失
 ;背景消失
-[bg storage="black.png" time=1000 wait=true]
 ;画面暗転
+[bg_fade_out]
 ;背景開始、プロローグの研究区画、ファイル名＝laboratory.png、別途指示あるまで継続
-[bg storage="laboratory.png" time=1000 wait=true]
+#
+[bg_fade_in bg_storage="laboratory.png"]
 ;SE再生、ファイル名＝phone-tone1.mp3、回数＝別途指示あるまでループ
 [playse storage="rina/phone-tone1.ogg" buf=0 loop=true]
 
@@ -1156,10 +1162,11 @@
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
 [playse storage="rina/cancel-2.ogg" buf=0]
 ;背景消失
-[bg storage="black.png" time=1000 wait=true]
 ;画面暗転
+[bg_fade_out]
 ;背景開始、廃棄物処理区画、ファイル名＝haiki.png、別途指示あるまで継続
-[bg storage="rina/haiki.webp" time=1000 wait=true]
+#
+[bg_fade_in bg_storage="rina/haiki.webp"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-utsumuki.png、指示あるまで表示継続
 [chara_show name="rina" face="utsumuki" top=1]
 
@@ -1260,21 +1267,23 @@
 「これがどういう意味か、おまえに分かるか、機械に分かるか、日記にはこう書いてあった」[p]
 
 ;立ち絵消失
-[chara_hide name="rina" wait=false time=500]
 ;背景消失
-[bg storage="black.png" time=1000 wait=true]
 ;画面暗転
+[bg_fade_out]
+[chara_hide name="rina" wait=false time=500]
 ;背景開始、机の上と紙の日記、ファイル名＝nikki.png、別途指示あるまで継続
-[bg storage="rina/nikki.webp" time=1000 wait=false]
+#
+[bg_fade_in bg_storage="rina/nikki.webp"]
 
 #――
 『りな、ごめんね、私は天国にいけない』[p]
 
 ;背景消失
-[bg storage="black.png" time=1000 wait=true]
 ;画面暗転
+[bg_fade_out]
 ;背景開始、廃棄物処理区画、ファイル名＝haiki.png、別途指示あるまで継続
-[bg storage="rina/haiki.webp" time=1000 wait=true]
+#
+[bg_fade_in bg_storage="rina/haiki.webp"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-ikari.png、指示あるまで表示継続
 [chara_show name="rina" face="ikari" top=1]
 
@@ -1436,14 +1445,14 @@
 「わたしは、わたしの頭の中は、心は、死者の宮殿だ、私がオシリスだ、りか姉ちゃんもそこにいる！」[p]
 
 ;立ち絵消失
-[chara_hide name="rina" wait=false time=500]
 ;BGM消失
 [stopbgm]
 ;背景消失
-[bg storage="black.png" time=1000 wait=false]
 ;画面暗転
 [bg_fade_out]
+[chara_hide name="rina" wait=false time=500]
 ;背景開始、ひとの心、ファイル名＝white.png、別途指示あるまで継続
+#
 [bg_fade_in bg_storage="white.png"]
 ;BGM無音開始
 
