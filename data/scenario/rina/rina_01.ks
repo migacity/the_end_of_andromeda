@@ -13,6 +13,7 @@
 解凍プロセスのコンソールを確認する。[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #
 解凍の成功率は６１％、ステータスはオールグリーンではなく、ところどころが赤や黄色の警戒色を示す。[p]
@@ -20,6 +21,7 @@
 人工冬眠と相性が悪い個体だったのだろう。[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #
 だがこの数百年でロイドは折をみて解凍プロセスに修正を加えてきた。[p]
@@ -33,8 +35,10 @@
 解凍プロセス開始。[p]
 
 ;SE再生、ファイル名＝spray1.mp3、回数＝1回
+[playse storage="rina/spray1.ogg" buf=0]
 ;BGM消失
 [stopbgm]
+[wait time=1500]
 ;BGM開始、りなのコミカル、ファイル名＝BGM_IKEIKE.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_IKEIKE.ogg"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-sekikomi.png、指示あるまで表示継続
@@ -44,8 +48,13 @@
 「げほげほげほげほー！」[p]
 
 ;SE再生、ファイル名＝glass-break1.mp3、回数＝1回
+[playse storage="rina/glass-break1.ogg" buf=0]
+[wait time=10]
 ;SE再生、ファイル名＝iron-stick1.mp3、回数＝1回
+[playse storage="rina/iron-stick1.ogg" buf=1]
 ;SE再生、ファイル名＝shaking-and-clattering-1.mp3、回数＝ループ
+[wait time=1000]
+[playse storage="rina/shaking-and-clattering-1.ogg" buf=2 loop=true volume=50]
 ;可能であれば、立ち絵に小刻みに震えるエフェクトを加える、停止指示があるまで継続
 
 #
@@ -55,7 +64,10 @@
 賭けは成功したが酷く彼女は具合が悪そうだ。[p]
 
 ;SE再生、ファイル名＝glass-break1.mp3、回数＝1回
+[playse storage="rina/glass-break1.ogg" buf=0]
+[wait time=500]
 ;SE再生、ファイル名＝iron-stick1.mp3、回数＝1回
+[playse storage="rina/iron-stick1.ogg" buf=1]
 
 #少女
 「なにこれ、きもちわるい気分わるい吐く、洗面器もってきてお姉ちゃん！」[p]
@@ -70,7 +82,10 @@
 「典型的な早期覚醒による低体温症での……」[p]
 
 ;SE再生、ファイル名＝glass-break1.mp3、回数＝1回
+[playse storage="rina/glass-break1.ogg" buf=0]
+[wait time=250]
 ;SE再生、ファイル名＝iron-stick1.mp3、回数＝1回
+[playse storage="rina/iron-stick1.ogg" buf=1]
 
 #少女
 「吐くー！」[p]
@@ -89,6 +104,7 @@
 「お疲れ様でした、はじめまして、お名前を伺ってもよろしいでしょうか」[p]
 
 ;SEループ停止、ファイル名＝shaking-and-clattering-1.mp3
+[fadeoutse time=500 buf=2]
 ;立ち絵、小刻みに震える効果を終了
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-zitome.png、停止指示あるまで継続
 [chara_mod name="rina" face="zitome" cross=false]
@@ -100,6 +116,7 @@
 「……りな、だよ」[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #ロイド
 「お名前はデータベースと一致します」[p]
@@ -166,17 +183,19 @@
 「亡くなられました」[p]
 
 ;立ち絵消失
-[chara_hide name="rina" wait=false time=500]
 ;BGM消失
 [stopbgm]
 ;背景消失
-[bg storage="black.png" time=1000]
 ;画面暗転
+[bg_fade_out]
+[chara_hide name="rina" wait=false]
 ;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
-[bg storage="bedroom_after.png" time=1000]
+#
+[bg_fade_in bg_storage="bedroom_after.png"]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
+[playse storage="rina/cricket-grassland-1.ogg" buf=0 loop=true]
 
 #
 ロイドは人類滅亡の事実を端的に説明した。[p]
@@ -438,18 +457,20 @@
 長く話し過ぎた。夜が訪れる。[p]
 
 ;立ち絵消失
-[chara_hide name="rina" wait=false]
 ;SEループ消失、ファイル名＝cricket-grassland-1.mp3
+[stopse buf=0]
 ;BGM消失
 [stopbgm]
 ;背景消失
-[bg storage="black.png" time=1000]
 ;画面暗転
+[bg_fade_out]
+[chara_hide name="rina" wait=false]
 ;背景開始、机の上と紙の日記、ファイル名＝nikki.png、別途指示あるまで継続
-[bg storage="rina/nikki.webp" time=1000]
+[bg_fade_in bg_storage="rina/nikki.webp"]
 ;BGM開始、夜半の読書、ファイル名＝BGM_Diary.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Diary.ogg"]
 ;SE再生、ファイル名＝clock-second-hand-2.mp3、回数＝別途指示あるまでループ
+[playse storage="rina/clock-second-hand-2.ogg" buf=0 loop=true volume=50]
 
 #
 りなは彼女の姉が使用していた部屋で生活を始めた。[p]
@@ -484,6 +505,7 @@
 彼女の姉が研究所に訪れた頃はロイドの説明通り、やや情緒不安定な傾向が文章から見て取れた。[p]
 
 ;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
+[playse storage="rina/flipping-pages-quickly-1.ogg" buf=1]
 
 #りか
 『怖い、不安、あのアンドロイドは何だろう、信用していいのか』[p]
@@ -494,6 +516,7 @@
 なかには自作の短文小説なども挿入されており読み進めるのが苦にならない。[p]
 
 ;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
+[playse storage="rina/flipping-pages-quickly-1.ogg" buf=1]
 
 #りか
 『りなはまだ眠っている、目を覚ますことはできないことが残念だ』[p]
@@ -510,16 +533,42 @@
 はるか昔に生きた８９９歳の姉、その思考を出来る限りトレースしたいと感じた。[p]
 
 ;SEループ消失、ファイル名＝clock-second-hand-2.mp3
+[stopse buf=0]
+[wait time=800]
 ;SE再生、ファイル名＝wall-clock1.mp3、回数＝11回(午後11時の意)
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
 ;BGM消失
 [stopbgm]
 ;背景消失
-[bg storage="black.png" time=1000]
 ;画面暗転
+[bg_fade_out]
 ;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
-[bg storage="bedroom_after.png" time=1000]
+[bg_fade_in bg_storage="bedroom_after.png"]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
+[playse storage="rina/cricket-grassland-1.ogg" buf=0 loop=true]
 
 #ロイド
 「りなさん、とりあえず１万冊ほど書籍データベースを分析し人格プロファイリングの練習しました」[p]
@@ -534,6 +583,7 @@
 「分かること全部言葉にするの！」[p]
 
 ;BGM消失
+[stopbgm]
 ;BGM開始、りなプロファイル、ファイル名＝BGM_Profiling.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Profiling.ogg"]
 
@@ -708,13 +758,22 @@
 
 ;立ち絵消失
 ;SEループ消失、ファイル名＝cricket-grassland-1.mp3
+[stopse buf=0]
 ;BGM消失
+[stopbgm]
 ;背景消失
 ;画面暗転
+[bg_fade_out]
+[chara_hide name="rina" time=500 wait=false]
 ;背景開始、机の上と紙の日記、ファイル名＝nikki.png、指示あるまで表示継続
+#
+[bg_fade_in bg_storage="rina/nikki.webp"]
 ;BGM開始、夜半の読書、ファイル名＝BGM_Diary.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Diary.ogg"]
 ;SE再生、ファイル名＝clock-second-hand-2.mp3、回数＝別途指示あるまでループ
+[playse storage="rina/clock-second-hand-2.ogg" buf=0 loop=true volume=50]
 ;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
+[playse storage="rina/flipping-pages-quickly-1.ogg" buf=1]
 
 #りか
 『りなに会いたい、話がしたい、りな、私はもうふつうの人間では無くなった』[p]
@@ -729,6 +788,7 @@
 『それでも、りなは私と話をしてくれるのかな、りなに会いたい』[p]
 
 ;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
+[playse storage="rina/flipping-pages-quickly-1.ogg" buf=1]
 
 #りか
 『今日は６００回目の誕生日、ロイドがケーキを作ってくれた、蠟燭はさすがに揃えるのは無理だった』[p]
@@ -737,6 +797,7 @@
 『鏡を見ると歳を取らない自分が映っている、ガラス越しにりなの眠っている顔を見ているかのよう』[p]
 
 ;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
+[playse storage="rina/flipping-pages-quickly-1.ogg" buf=1]
 
 #りか
 『りなに会いたい、今日エレベーターの安全装置が故障して挟まれた、私は腰から下を切り離されてロイドに見つかるまでの７時間ずっと動けなかった』[p]
@@ -748,19 +809,51 @@
 『ねえ、りな、私はもう人間じゃない、でも昔から人間だったか、それすらも自信が無くなってきた』[p]
 
 ;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
+[playse storage="rina/flipping-pages-quickly-1.ogg" buf=1]
 
 #りか
 『りな、私はずっと前からゾンビだったのかも』[p]
 
 ;SEループ消失、ファイル名＝clock-second-hand-2.mp3
+[stopse buf=0]
+[wait time=800]
 ;SE再生、ファイル名＝wall-clock1.mp3、回数＝11回(午後11時の意)
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
 ;BGM消失
+[stopbgm]
 ;背景消失
 ;画面暗転
+[bg_fade_out]
 ;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
+#
+[bg_fade_in bg_storage="bedroom_after.png"]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
+[playse storage="rina/cricket-grassland-1.ogg" buf=0 loop=true]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-warai.png、指示あるまで表示継続
+[chara_show name="rina" face="warai" top=1]
 
 #りな
 「ロイド、人格プロファイリングの練習は進んでいるみたいだね、読書量はどれくらい？」[p]
@@ -799,6 +892,7 @@
 「ロイドとは読書の趣味が合いそうだね、ところでねえねえロイド」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-komari.png、指示あるまで表示継続
+[chara_mod name="rina" face="komari" cross=false]
 
 #ロイド
 「なんでしょう、りなさん」[p]
@@ -813,9 +907,12 @@
 「総じて幸福だったかと分析できますが個体の幸福度は計測が困難です」[p]
 
 ;SEループ消失、cricket-grassland-1.mp3
+[stopse buf=0]
 ;BGM消失
+[stopbgm]
 ;BGM無音開始
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-zitome.png、指示あるまで表示継続
+[chara_mod name="rina" face="zitome" cross=false]
 
 #りな
 「そうなんだ、エレベーターに挟まれて真っ二つになっても？」[p]
@@ -836,6 +933,7 @@
 「はい、そうです」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-komari.png、指示あるまで表示継続
+[chara_mod name="rina" face="komari" cross=false]
 
 #りな
 「ロイド、りか姉ちゃんの身体ってどんな感じだったのかな？」[p]
@@ -874,6 +972,7 @@
 「その間の苦痛除去は麻酔や鎮痛剤など通常手段のみとなり血流が機能していることが前提です」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-zitome.png、指示あるまで表示継続
+[chara_mod name="rina" face="zitome" cross=false]
 
 #りな
 「……それは吸血鬼とどうちがうの？」[p]
@@ -918,17 +1017,24 @@
 「はい残念ながら」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-utsumuki.png、指示あるまで表示継続
+[chara_mod name="rina" face="utsumuki" cross=false]
 
 #りな
 「ロイドは嘘が付けないんだね」[p]
 
 ;立ち絵消失
-
 ;背景消失
+[bg storage="black.png" time=1000 wait=false]
 ;画面暗転
+[bg_fade_out]
+[chara_hide name="rina" wait=false time=500]
 ;背景開始、机の上と紙の日記、ファイル名＝nikki.png
+#
+[bg_fade_in bg_storage="rina/nikki.webp"]
 ;SE再生、ファイル名＝pendulum-clock-echo1.mp3、回数＝別途指示あるまでループ
+[playse storage="rina/pendulum-clock-echo1.ogg" buf=0 loop=true]
 ;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
+[playse storage="rina/flipping-pages-quickly-1.ogg" buf=1]
 
 #りか
 『りな、今日は崖から落ちた、不注意による事故、身体は木端微塵になった』[p]
@@ -949,26 +1055,44 @@
 『ねえ、りな』[p]
 
 ;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
+[playse storage="rina/flipping-pages-quickly-1.ogg" buf=1]
 
 #――
 『わたしは、だれ？』[p]
 
 ;SEループ消失、ファイル名＝pendulum-clock-echo1.mp3
+[stopse buf=0]
+[wait time=800]
 ;SE再生、ファイル名＝wall-clock1.mp3、回数＝2回(午前2時の意)
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=1500]
+[playse storage="rina/wall-clock1.ogg" buf=0]
+[wait time=2500]
 ;SE再生、ファイル名＝opening-wooden-door-1.mp3、回数＝1回
+[playse storage="rina/opening-wooden-door-1.ogg" buf=0]
+[wait time=2000]
 ;SE再生、ファイル名＝closing-wooden-door-1.mp3、回数＝1回
+[playse storage="rina/closing-wooden-door-1.ogg" buf=0]
+[wait time=2000]
 ;SE再生、ファイル名＝climbing-stairs-in-house-1.mp3、回数＝1回
+[playse storage="rina/climbing-stairs-in-house-1.ogg" buf=0]
+[wait time=2000]
 ;BGM無音消失
 ;背景消失
 ;画面暗転
+[bg_fade_out]
 ;背景開始、プロローグの研究区画、ファイル名＝laboratory.png、別途指示あるまで継続
+#
+[bg_fade_in bg_storage="laboratory.png"]
 ;SE再生、ファイル名＝phone-tone1.mp3、回数＝別途指示あるまでループ
+[playse storage="rina/phone-tone1.ogg" buf=0 loop=true]
 
 #
 ロイドに内蔵されている内線電話に無線コールが来た。時刻は午前２：１９、発信場所は。[p]
 ……廃棄物処理区画。[p]
 
 ;BGM開始、緊張、ファイル名＝BGM_extension.ogg、別途指示あるまで継続
+[playbgm storage="common/BGM_Extension.ogg"]
 
 #
 いけない。[p]
@@ -979,12 +1103,14 @@
 研究所コンピューター及び自身のＡＩ行動範囲に非常警戒体制を要請。[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=1]
 
 #
 急を要する、無線シグナルで通信開始。[p]
 暗号化プロセスは無視、時間が惜しい。[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=1]
 
 #
 ……認証成功、認可応答。[p]
@@ -992,14 +1118,19 @@
 ロイドは内線電話に自身の処理回路で応答する。[p]
 
 ;SEループ消失、ファイル名＝phone-tone1.mp3
+[stopse buf=0]
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 ;背景消失
+[bg storage="black.png" time=1000 wait=true]
 ;背景開始、内線電話ホロ、ファイル名＝call.png、別途指示あるまで継続
+[bg storage="rina/call.webp" time=1000 wait=true]
 
 #ロイド
 「りなさんですよね？」[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #
 返事は無い、無言を貫いているようだ。[p]
@@ -1008,6 +1139,7 @@
 「いま焼却炉の目の前にいる、そうですね？」[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #
 返事は無い、ただ呼吸音のみ。[p]
@@ -1016,20 +1148,27 @@
 ロイドは研究所のインフラ管理システムに介入する。[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #
 焼却炉がある廃棄物区画に関して非常灯以外の電源に１２時間のブロックを施す。[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #ロイド
 「りなさん、今からそちらへ向かいます、動かないでいてください」[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 ;背景消失
 ;画面暗転
+[bg_fade_out]
 ;背景開始、廃棄物処理区画、ファイル名＝haiki.png、別途指示あるまで継続
+#
+[bg_fade_in bg_storage="rina/haiki.webp"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-utsumuki.png、指示あるまで表示継続
+[chara_show name="rina" face="utsumuki" top=1]
 
 #
 りなは焼却炉を背に立っていた。下を俯いてずっと震えている。[p]
@@ -1039,11 +1178,13 @@
 データベースを臨床心理学から犯罪心理学に切り替え全検索を開始。[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #
 立てこもり犯に対する説得法をディープスキャンする。[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #
 ゆっくりとロイドはりなに語りかけた。[p]
@@ -1070,14 +1211,17 @@
 「りなさん、とりあえず、ここを離れましょう」[p]
 
 ;BGM消失
+[stopbgm]
 ;BGM無音開始
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-nirami.png、指示あるまで表示継続
+[chara_mod name="rina" face="nirami" cross=false]
 
 #りな
 「生きたまま、焼かれたの？」[p]
 
 ;BGM無音消失
 ;BGM開始、焼却炉、ファイル名＝BGM_Incinerator.ogg、別途指示あるまで継続
+[playbgm storage="common/BGM_Incinerator.ogg"]
 
 #
 りなはロイドを正面から見据えた。[p]
@@ -1098,6 +1242,7 @@
 「お姉さまは自らその中に入った記録があります、僕が気付いた頃には全身は完全に炭化しており……」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-ikari.png、指示あるまで表示継続
+[chara_mod name="rina" face="ikari" cross=false]
 
 #りな
 「りか姉ちゃんは燃えるゴミじゃない！」[p]
@@ -1124,15 +1269,23 @@
 ;立ち絵消失
 ;背景消失
 ;画面暗転
+[bg_fade_out]
+[chara_hide name="rina" wait=false time=500]
 ;背景開始、机の上と紙の日記、ファイル名＝nikki.png、別途指示あるまで継続
+#
+[bg_fade_in bg_storage="rina/nikki.webp"]
 
 #――
 『りな、ごめんね、私は天国にいけない』[p]
 
 ;背景消失
 ;画面暗転
+[bg_fade_out]
 ;背景開始、廃棄物処理区画、ファイル名＝haiki.png、別途指示あるまで継続
+#
+[bg_fade_in bg_storage="rina/haiki.webp"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-ikari.png、指示あるまで表示継続
+[chara_show name="rina" face="ikari" top=1]
 
 #りな
 「わたしが、お姉ちゃんを、ここから出してあげるんだ、埋葬してあげるんだ」[p]
@@ -1174,7 +1327,9 @@
 ―――『憑き物落とし』プロセス開始―――[p]
 
 ;BGM消失
+[stopbgm]
 ;BGM開始、憑き物落とし、ファイル名＝BGM_TsukimonoOtoshi.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_TsukimonoOtoshi.ogg"]
 
 #ロイド
 「りなさん賭けをしましょう、以前、僕は人格プロファイリング技術で落第点を頂いた」[p]
@@ -1189,6 +1344,7 @@
 『あなたの、憑き物、落とします』[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-nirami.png、指示あるまで表示継続
+[chara_mod name="rina" face="nirami" cross=false]
 
 #りな
 「……やってみなよ、アンドロイド」[p]
@@ -1248,12 +1404,16 @@
 「乾いた砂で喉を潤す、こんな賢そうな愚か者は見たことがない、あなたの能力の原点は……疎外感だ」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-ikari.png、指示あるまで表示継続
+[chara_mod name="rina" face="ikari" cross=false]
 ;次段落の台詞のみ可能な限り拡大
+[position layer="message0" page="fore" margint=120 marginl=60 marginr=60 marginb=50 frame="message/message_frame.webp"]
+[font size=84]
 
 #りな
 『及第点だ、褒めてやる！』[p]
 
 ;台詞の拡大終了
+[message_create]
 
 #
 人格の崩落、緊急停止。[p]
@@ -1286,9 +1446,14 @@
 
 ;立ち絵消失
 ;BGM消失
+[stopbgm]
 ;背景消失
 ;画面暗転
+[bg_fade_out]
+[chara_hide name="rina" wait=false time=500]
 ;背景開始、ひとの心、ファイル名＝white.png、別途指示あるまで継続
+#
+[bg_fade_in bg_storage="white.png"]
 ;BGM無音開始
 
 #
@@ -1317,7 +1482,9 @@
 第四プロセス開始。[p]
 
 ;背景消失
+[bg_fade_out]
 ;背景開始、廃棄物処理区画、ファイル名＝haiki.png、別途指示あるまで継続
+[bg_fade_in bg_storage="rina/haiki.webp"]
 
 #ロイド
 「お姉さまはそんな場所にはいません、もっときれいな場所に」[p]
@@ -1326,16 +1493,22 @@
 ロイドは焼却炉の扉に電力供給を無線指示した。[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 
 #
 焼却炉のコンソールが点灯し扉が開く。[p]
 
 ;SE再生、ファイル名＝spray1.mp3、回数＝1回
+[playse storage="rina/spray1.ogg" buf=0]
 ;BGM無音終了
 ;背景消失
+[bg_fade_out]
 ;背景開始、花と墓標、ファイル名＝hana.png、別途指示あるまで継続
+[bg_fade_in bg_storage="rina/hana.webp"]
 ;BGM開始、オルゴール、ファイル名=BGM_Rika.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Rika.ogg"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-odoroki.png、指示あるまで表示継続
+[chara_show name="rina" face="odoroki" top=1]
 
 #
 そこには、花があった。[p]
@@ -1379,6 +1552,7 @@
 「感謝と後悔は機械と人間で埋められない溝はありますか」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-nakigao.png、指示あるまで表示継続
+[chara_mod name="rina" face="nakigao" cross=false]
 
 #
 りなは菫の花をひとつ手に取ると。[p]
@@ -1389,9 +1563,12 @@
 
 ;立ち絵消失
 ;BGM消失
+[stopbgm]
 ;背景消失
 ;画面暗転
+[bg_fade_out]
 ;BGM無音開始
+[bg_fade_in bg_storage="black.png"]
 
 #
 ―――『憑き物落とし』プロセス完了―――[p]
@@ -1400,10 +1577,14 @@
 古いエジプトの神が、降りた。[p]
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
+[playse storage="rina/cancel-2.ogg" buf=0]
 ;BGM無音消失
 ;背景開始、森林、ファイル名＝forest.png、別途指示あるまで継続
+[bg storage="rina/forest.webp" time=1000]
 ;BGM開始、りなのテーマ、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
+[playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝mountain-with-coal-tits-and-winter-wrens-1.mp3、回数＝別途指示あるまでループ
+[playse storage="rina/mountain-with-coal-tits-and-winter-wrens-1.ogg" buf=0 loop=true]
 
 #
 朝が来た。森林の早朝はまだ寒い。[p]
@@ -1420,6 +1601,7 @@
 「紙の日記群は周辺に埋めておきます」[p]
 
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-default.png、指示あるまで表示継続
+[chara_show name="rina" face="default" top=1]
 
 #りな
 「うん、ありがとう」[p]
@@ -1482,17 +1664,23 @@
 「やっぱりロイドはすごいよ」[p]
 
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-warai.png、指示あるまで表示継続
+[chara_mod name="rina" face="warai" cross=false]
 
 #りな
 「さすが、わたしのともだち！」[p]
 
 ;立ち絵消失
+[chara_hide name="rina"]
 
 #
 二人はほほ笑んだ。[p]
 そよ風が頬を撫でたような気がした。[p]
 
 ;SEループ消失、ファイル名＝mountain-with-coal-tits-and-winter-wrens-1.mp3
+[stopse buf=0]
 ;BGM消失
+[stopbgm]
 ;背景消失
+[bg_fade_out]
+[bg_fade_in bg_storage="black.png" time=100]
 [jump storage="home.ks"]
