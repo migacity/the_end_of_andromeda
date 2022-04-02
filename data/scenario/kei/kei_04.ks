@@ -1,9 +1,5 @@
 *start
 
-;メッセージウィンドウと名前表示領域を生成
-[message_create]
-[name_create]
-
 ;背景　居間
 ;立ち絵２寝間着　目閉じ通常
 ;BGM　なし
