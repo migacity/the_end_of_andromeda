@@ -1,3 +1,27 @@
+*scene01
+[eval exp="tf.dest = 'kei_01'"]
+[jump target="*start"]
+
+*scene02
+[eval exp="tf.dest = 'kei_02'"]
+[jump target="*start"]
+
+*scene03
+[eval exp="tf.dest = 'kei_03'"]
+[jump target="*start"]
+
+*scene04
+[eval exp="tf.dest = 'kei_04'"]
+[jump target="*start"]
+
+*scene05
+[eval exp="tf.dest = 'kei_05'"]
+[jump target="*start"]
+
+*scene06
+[eval exp="tf.dest = 'kei_06'"]
+[jump target="*start"]
+
 *start
 
 [cm]
@@ -55,5 +79,30 @@
 [chara_face name="kei" face="立ち絵2_驚き" storage="chara\kei\立ち絵2_驚き.webp"]
 [chara_face name="kei" face="立ち絵2_焦り" storage="chara\kei\立ち絵2_焦り.webp"]
 [chara_face name="kei" face="立ち絵2_笑顔" storage="chara\kei\立ち絵2_笑顔.webp"]
+
+[if exp="tf.dest === 'kei_01'"]
+    [clearvar exp="tf.dest"]
+    [jump storage="kei/kei_01.ks" target="*start"]
+
+[elsif exp="tf.dest === 'kei_02'"]
+    [clearvar exp="tf.dest"]
+    [jump storage="kei/kei_02.ks" target="*start"]
+
+[elsif exp="tf.dest === 'kei_03'"]
+    [clearvar exp="tf.dest"]
+    [jump storage="kei/kei_03.ks" target="*start"]
+
+[elsif exp="tf.dest === 'kei_04'"]
+    [clearvar exp="tf.dest"]
+    [jump storage="kei/kei_04.ks" target="*start"]
+
+[elsif exp="tf.dest === 'kei_05'"]
+    [clearvar exp="tf.dest"]
+    [jump storage="kei/kei_05.ks" target="*start"]
+
+[elsif exp="tf.dest === 'kei_06'"]
+    [clearvar exp="tf.dest"]
+    [jump storage="kei/kei_06.ks" target="*start"]
+[endif]
 
 [jump storage="kei/kei_01.ks" target="*start"]

@@ -1,9 +1,5 @@
 *start
 
-;メッセージウィンドウと名前表示領域を生成
-[message_create]
-[name_create]
-
 ;背景　公園
 ;立ち絵２　目閉泣き顔
 
