@@ -53,7 +53,7 @@
 ;ゆぅさんメモ：仮？該当ファイル名のデータなし
 [playbgm storage="common/BGM_Forest1.ogg""]
 ;継　立ち絵　特殊
-[chara_show name="kei" face="立ち絵2_特殊" top=1 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵2_特殊" top=32 time=1000 wait=false]
 
 
 
@@ -213,7 +213,7 @@
 [bg storage="kei/森.webp" time="200"]
 ;SE　鳥の囀り音
 ;立ち絵　呆れ
-[chara_show name="kei" face="立ち絵1_目閉_悲しみ" top=1 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目閉_悲しみ" top=32 time=1000 wait=false]
 
 #継
 
@@ -364,7 +364,7 @@
 ;BGM　kei1 
 [playbgm storage="kei/BGM_kei1.ogg""]
 #
-[chara_show name="kei" face="立ち絵2_疑問" top=1 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵2_疑問" top=32 time=1000 wait=false]
 ひとりぶつぶつといってる姿を見ると[p]
 
 
@@ -600,7 +600,7 @@
 [bg_fade_in bg_storage="kei/車内.webp"]
 ;BGM sampo
 [playbgm storage="common/BGM_sampo.ogg""]
-[chara_show name="kei" face="立ち絵1_目開き通常" top=1 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
 #ロイド
 
 「運転は大丈夫でしょうか？」[p]
@@ -654,7 +654,7 @@
 [bg_fade_in bg_storage="kei/森.webp"]
 ;BGM  IKEIKE 
 [playbgm storage="rina/BGM_IKEIKE.ogg"]
-[chara_show name="kei" face="立ち絵1_目開き通常" top=1 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
 
 #ロイド
 
@@ -808,7 +808,7 @@
 [bg_fade_in bg_storage="kei/荒廃した街並み1.webp"]
 ;BGM kei<trance>
 [playbgm storage="kei/BGM_Kei(trance).ogg""]
-[chara_show name="kei" face="立ち絵1_目開き通常" top=1 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
 
 #
 
