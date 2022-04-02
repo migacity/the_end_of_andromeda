@@ -7,6 +7,7 @@
 ;背景　真っ暗
 
 ;背景　研究所
+[bg storage="laboratory.png"]
 ;BGM profiling開始
 
 ; キャラ立ち絵タグサンプル
