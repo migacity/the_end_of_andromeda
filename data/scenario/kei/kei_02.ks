@@ -1,11 +1,15 @@
 *start
 
 ;背景　荒廃した街並み２
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/荒廃した街並み2_内部.webp"]
 
+;BGMはkei_01から継続。　シナリオデータ結合するときに削除必要
+[playbgm storage="kei/BGM_Kei(trance).ogg"]
 
 
 ;立ち絵１　通常
-
+[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
 
 
 #継
@@ -20,7 +24,7 @@
 
 
 ;立ち絵２　通常
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 
 #継
@@ -35,7 +39,7 @@
 
 
 ;立ち絵１　目開き　笑顔
-
+[chara_mod name="kei" face="立ち絵1_目開き笑顔" cross=false]
 
 「素晴らしい景色だと思わない？」 [p]
 
@@ -45,7 +49,7 @@
 
 
 ;立ち絵２　目閉じ　笑顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ笑顔" cross=false]
 
 
 「最高じゃない！ 」[p]
@@ -60,7 +64,7 @@
 
 
 ;立ち絵１　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 
@@ -69,7 +73,7 @@
 
 
 ;立ち絵２　通常
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 
 「そんなことよりフィールドワークも終わったところでわかったことがあるわ・・」[p]
@@ -77,7 +81,7 @@
 
 
 ;立ち絵１　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 
 #継
@@ -95,14 +99,14 @@
 
 
 ;立ち絵２　通常
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 #継
 
 「貴方は人類は滅びた・・といっていたけれど」[p]
 
 
-「あなた自身が確認したのはどのあたりまでだったのかしら？　」[p]
+「あなた自身が確認したのはどのあたりまでだったのかしら？」[p]
 
 
 #ロイド
@@ -115,7 +119,7 @@
 
 
 ;立ち絵２　目閉じ通常
-
+[chara_mod name="kei" face="立ち絵2_目閉じ通常" cross=false]
 
 
 #継
@@ -134,7 +138,7 @@
 
 
 ;立ち絵１　疑問
-
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 
 #継
 
@@ -149,7 +153,7 @@
 
 
 ;立ち絵２　目開き通常
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 #継
 
@@ -158,7 +162,7 @@
 
 
 ;立ち絵１　目閉じ　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 
@@ -179,7 +183,7 @@
 
 
 ;立ち絵２　目開き通常
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 
 #継
@@ -196,7 +200,7 @@
 
 
 ;立ち絵１　目閉じ　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 「・・・・・・」[p]
@@ -208,7 +212,7 @@
 
 
 ;立ち絵１　目開き　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 
 #継
@@ -221,8 +225,9 @@
 
 
 ;立ち絵２　目開き　通常
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 ;BGM Incinerator
-
+[playbgm storage="common/BGM_Incinerator.ogg"]
 
 #継
 「・・・・ねえ…」[p]
@@ -246,7 +251,7 @@
 
 
 ;立ち絵１　目閉じ　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 
 #継
@@ -260,7 +265,7 @@
 
 
 ;立ち絵２　目開き　通常
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 
 #継承
@@ -272,7 +277,7 @@
 
 
 ;立ち絵２　目閉じ　通常
-
+[chara_mod name="kei" face="立ち絵2_目閉じ通常" cross=false]
 
 
 #
@@ -285,7 +290,7 @@
 
 
 ;立ち絵１　目開き　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 
 #継
@@ -297,7 +302,7 @@
 
 
 ;立ち絵２　目開き通常
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 
 #
@@ -313,7 +318,7 @@
 
 
 ;立ち絵１　目閉じ　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 
 #継
@@ -333,7 +338,7 @@
 
 
 ;立ち絵２　目閉じ　通常
-
+[chara_mod name="kei" face="立ち絵2_目閉じ通常" cross=false]
 
 #継
 
@@ -365,7 +370,7 @@
 
 
 ;立ち絵２　目閉じ悲しみ
-
+[chara_mod name="kei" face="立ち絵2_目閉じ悲しみ" cross=false]
 
 #継
 「全部がなくなるってことはないはずよね」[p]
@@ -380,7 +385,9 @@
 
 
 ;立ち絵１　目閉じ　笑顔
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 ;BGM なし
+[stopbgm]
 
 #継
 「よし！決めた！」[p]
@@ -393,7 +400,7 @@
 
 
 ;立ち絵２　目閉じ　笑顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ笑顔" cross=false]
 
 #継
 「大体のこれからの行動指針よ！」[p]
@@ -404,7 +411,7 @@
 
 
 ;立ち絵なし
-
+[chara_hide name="kei"]
 
 
 #
@@ -434,7 +441,11 @@
 
 
 ;背景　荒廃した道路
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/荒廃した道路.webp"]
+
 ;BGM Forest1
+[playbgm storage="common/BGM_Forest1.ogg"]
 #
 彼女の実家を目指し始めて既に数か月ほど経過した[p]
 
@@ -456,8 +467,13 @@
 
 
 ;背景　車内
-;BGM　なし
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/車内.webp"]
 
+[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
+
+;BGM　なし
+[stopbgm]
 #ロイド
 「・・・・・・」[p]
 
@@ -537,15 +553,19 @@
 
 
 ;背景　車内
-;BGM kei1
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/車内.webp"]
 
+[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
+;BGM kei1
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #継
-「そうそう、貴方は私に聞きたいことがないかしら？　」[p]
+「そうそう、貴方は私に聞きたいことがないかしら？」[p]
 
 
 #ロイド
-「唐突に何を言い出すかと思えば頭でも打ちましたか？　」[p]
+「唐突に何を言い出すかと思えば頭でも打ちましたか？」[p]
 
 
 #継
@@ -634,7 +654,7 @@
 
 
 #継
-「どうやってだと思う？　」[p]
+「どうやってだと思う？」[p]
 
 
 #ロイド
@@ -688,7 +708,15 @@
 ;CG　温泉1
 
 
+[bg_fade_out]
+;仮に温泉背景入れてます
+[bg_fade_in bg_storage="kei/温泉.webp"]
+
 ; BGM 魔王魂ヒーリング13
+;ゆぅさんより＞データ不明。どこかにデータありますか？
+
+[playbgm storage="common/BGM_Forest1.ogg"]
+
 #継
 「きもちいいぃ…」[p]
 
@@ -722,6 +750,8 @@
 
 ;CG　温泉２
 
+;仮に温泉背景入れてます
+[bg_fade_in bg_storage="kei/温泉.webp"]
 
 #継
 「ええ！折角だしあなたの想い人の博士が目覚めたらくればいいわ！」[p]
@@ -744,20 +774,30 @@
 
 
 ;背景　温泉
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/温泉.webp"]
 ;立ち絵　博士
+[chara_new name="hakase" storage="chara/doctor/hakase_none.png"  width=617 height=720 jname="博士_正面"]
+[chara_layer name="hakase" part="body" id="front" storage="chara/doctor/hakase_front_body.png" zindex=1]
+[chara_layer name="hakase" part="pose" id="f1" storage="chara/doctor/hakase_front_pose1.png" zindex=2]
+[chara_layer name="hakase" part="eye" id="f4" storage="chara/doctor/hakase_front_eye4.png" zindex=3]
+[chara_layer name="hakase" part="mouth" id="f2" storage="chara/doctor/hakase_front_mouth2.png" zindex=4]
+[chara_layer name="hakase" part="eyebrow" id="f2" storage="chara/doctor/hakase_front_eyebrow2.png" zindex=5]
 
+[chara_part name="hakase" body="front" pose="f1" eye="f4" mouth="f2" eyebrow="f2"]
+[chara_show name="hakase" time=1000 wait=true]
 
 #博士
 「ああ　素晴らしい景色だ　いい旅をしたんだな君は　ありがとう」[p]
 
-
+[chara_hide name="hakase"]
 #
 ・・・・少し胸が温かいそんな気がした[p]
 
 
 
 ;立ち絵　タオル　目閉じ　笑顔
-
+[chara_show name="kei" face="立ち絵_バスタオル_目閉じ笑顔" top=32 time=1000 wait=false]
 
 #継
 「いや～ほんと長旅の疲れが五臓六腑に染み渡るわ～」[p]
@@ -765,7 +805,7 @@
 
 
 ;立ち絵　タオル　目開　疑問
-
+[chara_mod name="kei" face="立ち絵_バスタオル_目開き疑問" cross=false]
 
 #継
 「ん？　やっぱりあなたも来たんじゃない」[p]
@@ -774,7 +814,7 @@
 
 
 ;立ち絵　タオル　目閉　笑顔
-
+[chara_mod name="kei" face="立ち絵_バスタオル_目閉じ笑顔" cross=false]
 
 #ロイド
 「素直じゃないんだから」[p]
@@ -788,7 +828,7 @@
 
 
 ;立ち絵　タオル　目開　疑問
-
+[chara_mod name="kei" face="立ち絵_バスタオル_目開き疑問" cross=false]
 
 #継
 「ってあなたこんな毛深かったかしら？」[p]
@@ -800,7 +840,7 @@
 
 
 ;立ち絵　タオル　恐怖
-
+[chara_mod name="kei" face="立ち絵_バスタオル_絶望" cross=false]
 
 #継
 「っ！！！！！！！！！！」[p]
@@ -808,20 +848,23 @@
 
 
 ;背景　温泉
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/温泉.webp"]
 ;立ち絵なし
 ;BGM ikeike
+[playbgm storage="rina/BGM_IKEIKE.ogg"]
 
 #継
 「いやあああああああああああああああ」[p]
 
 
 #ロイド
-「何事ですか　　！？　　」[p]
+「何事ですか！？」[p]
 
 
 
 ;立ち絵　タオル　泣き
-
+[chara_show name="kei" face="立ち絵_バスタオル_目閉じ泣き顔" top=32 time=1000 wait=false]
 
 #継
 「あ・あれ・・・あそこに！」[p]
@@ -837,7 +880,7 @@
 
 
 ;立ち絵　タオル　特殊
-
+[chara_mod name="kei" face="立ち絵_バスタオル_特殊" cross=false]
 
 #
 「「くまだー！！！！！」」[p]
@@ -845,7 +888,10 @@
 
 
 ;背景　森
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/森.webp"]
 ;立ち絵　タオル　特殊
+[chara_show name="kei" face="立ち絵_バスタオル_特殊" top=32 time=1000 wait=false]
 
 #継
 「くま！べあー！なんでこんなとこにいるの！？死ぬ！殺される！」[p]
@@ -853,8 +899,11 @@
 
 
 ;背景　車内
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/車内.webp"]
 ;立ち絵なし
 ;ＢＧＭ　Kei<hetoheto>
+[playbgm storage="kei/BGM_Kei(hetoheto).ogg"]
 
 #
 よくよく考えたら人間もいないので動物たちの娯楽の場になっていてもおかしくはない[p]
@@ -868,8 +917,12 @@
 
 
 ;背景　森
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/森.webp"]
 ;立ち絵１　どや顔
+[chara_show name="kei" face="立ち絵_どや顔" top=32 time=1000 wait=false]
 ;BGM　なし
+[stopbgm]
 
 #継
 「ふっ！身も心もきれいさっぱり！これでまた頑張れるわね！」[p]
@@ -880,14 +933,16 @@
 
 
 
----
+;---
 
 
-第二章
-
-
+;第二章
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/森.webp"]
+[chara_show name="kei" face="立ち絵_どや顔" top=32 time=1000 wait=false]
 ;CG　神の杖
 ;BGM kaminotue
+[playbgm storage="common/BGM_Kaminotsue.ogg"]
 
 #
 そこにあったのは人であったものの山だった[p]
@@ -898,11 +953,14 @@
 
 その中央には巨大な筒状の鉄が地面に突き刺さっている[p]
 
-あまりの光景に私はすぐその場を離れた
+あまりの光景に私はすぐその場を離れた[p]
 
 
 ;背景　廃れた地
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/廃れた地.webp"]
 ;立ち絵　絶望
+[chara_show name="kei" face="立ち絵2_絶望" top=32 time=1000 wait=false]
 
 
 #継
@@ -933,7 +991,7 @@
 
 
 ;立ち絵２　泣き顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
 
 #継
 「・・・これが落とされたの？」[p]
@@ -962,7 +1020,7 @@
 
 
 ;立ち絵１　泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 #継
 「なんてひどいことを・・」
@@ -976,6 +1034,7 @@
 
 
 ;立ち絵２　泣き顔
+[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
 
 #継
 「本当は・・誰かの幸せを願い・・良くしようと始めたはずだったのに…」[p]
@@ -1007,7 +1066,7 @@
 
 
 ;立ち絵１　悲しみ
-
+[chara_mod name="kei" face="立ち絵1_目開き悲しみ" cross=false]
 
 
 #継
@@ -1021,7 +1080,7 @@
 
 
 ;立ち絵２　悲しみ
-
+[chara_mod name="kei" face="立ち絵2_目開き悲しみ" cross=false]
 
 #継
 「でもね…それだけじゃないの…」[p]
@@ -1041,13 +1100,14 @@
 
 
 ;立ち絵１　悲しみ
-
+[chara_mod name="kei" face="立ち絵1_目開き悲しみ" cross=false]
 
 
 #継
 「いえ、なんでもないわ…」[p]
 
 ;立ち絵１　怒り
+[chara_mod name="kei" face="立ち絵1_目閉_怒り" cross=false]
 
 「というかなんで終わった前提になっているのよ！」[p]
 
@@ -1062,7 +1122,7 @@
 
 
 ;立ち絵１　疑問
-
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 
 
 
@@ -1070,7 +1130,10 @@
 
 
 ;背景　荒廃した街並み１
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/荒廃した街並み1.webp"]
 ;BGM なし
+[stopbgm]
 
 
 #
@@ -1085,7 +1148,8 @@
 
 
 ;背景　自宅　
-
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/自宅.webp"]
 
 
 
@@ -1098,7 +1162,7 @@
 
 
 ;立ち絵１　驚き
-
+[chara_mod name="kei" face="立ち絵_驚き" cross=false]
 
 #継
 「そうね」[p]

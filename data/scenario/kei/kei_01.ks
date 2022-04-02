@@ -6,7 +6,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="labo.jpg"]
 ;BGM profiling開始
-[playbgm storage="rina/BGM_profiling.ogg""]
+[playbgm storage="rina/BGM_profiling.ogg"]
 
 ; キャラ立ち絵タグサンプル
 ; [chara_show name="kei" face="立ち絵2_絶望" top=32]
@@ -51,7 +51,7 @@
 [bg_fade_in bg_storage="sleep_room.png"]
 ;BGM　Foresut2
 ;ゆぅさんメモ：仮？該当ファイル名のデータなし
-[playbgm storage="common/BGM_Forest1.ogg""]
+[playbgm storage="common/BGM_Forest1.ogg]
 ;継　立ち絵　特殊
 [chara_show name="kei" face="立ち絵2_特殊" top=32 time=1000 wait=false]
 
@@ -72,7 +72,7 @@
 [chara_mod name="kei" face="立ち絵1_目開き怒り" cross=false]
 #？？？
 
-「いやいやそんなことあるわけないじゃないの！？　」[p]
+「いやいやそんなことあるわけないじゃないの！？」[p]
 
 
 「つくならもっとましな嘘をつきなさい」[p]
@@ -102,7 +102,7 @@
 ;立ち絵２　不安
 [chara_mod name="kei" face="立ち絵2_疑問" cross=false]
 
-「というか私なんでこんなところにいるの？　」[p]
+「というか私なんでこんなところにいるの？」[p]
 
 
 #ロイド
@@ -166,7 +166,7 @@
 
 #継
 
-「めっちゃ痛いんだけど…え？なんなの？　」[p]
+「めっちゃ痛いんだけど…え？なんなの？」[p]
 
 
 #ロイド
@@ -184,7 +184,7 @@
 
 「でも人類が絶滅したなんてこの目で見るまで信じられない…」
 
-「出口はどこなの？　」[p]
+「出口はどこなの？」[p]
 
 
 #ロイド
@@ -230,7 +230,7 @@
 
 #継
 
-「あの遠くに見える大きな建物は何かしら？　」[p]
+「あの遠くに見える大きな建物は何かしら？」[p]
 
 #ロイド
 
@@ -263,7 +263,7 @@
 「何をするにも情報が少なすぎるわね…」[p]
 
 
-「というかここってなんの施設なわけ？　」[p]
+「というかここってなんの施設なわけ？」[p]
 
 
 #ロイド
@@ -279,7 +279,7 @@
 
 #継
 
-「怪しい…　やばい奴ではないでしょうね？ 」[p]
+「怪しい…　やばい奴ではないでしょうね？」[p]
 
 
 #ロイド
@@ -305,7 +305,7 @@
 
 #ロイド
 
-「書斎ですか？ 」[p]
+「書斎ですか？」[p]
 
 
 #継
@@ -316,7 +316,7 @@
 「今置かれている状況と世界情勢を把握したいの」[p]
 
 
-「だから資料を見させてくれない？ 」[p]
+「だから資料を見させてくれない？」[p]
 
 
 #ロイド
@@ -362,7 +362,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="labo.jpg"]
 ;BGM　kei1 
-[playbgm storage="kei/BGM_kei1.ogg""]
+[playbgm storage="kei/BGM_kei1.ogg"]
 #
 [chara_show name="kei" face="立ち絵2_疑問" top=32 time=1000 wait=false]
 ひとりぶつぶつといってる姿を見ると[p]
@@ -380,7 +380,7 @@
 一心不乱に資料を読み漁っていた[p]
 
 
-数時間立っても変わらず動きがない　[p]
+数時間立っても変わらず動きがない[p]
 
 
 流石に生きた人間には食事や水分が必要であるため声を掛ける…[p]
@@ -599,7 +599,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/車内.webp"]
 ;BGM sampo
-[playbgm storage="common/BGM_sampo.ogg""]
+[playbgm storage="common/BGM_sampo.ogg"]
 [chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
 #ロイド
 
@@ -739,7 +739,7 @@
 
 #継
 
-「あれだけの啖呵きったのにこのざまよ！　」[p]
+「あれだけの啖呵きったのにこのざまよ！」[p]
 
 
 「でもいいじゃない！結果的についたしどこも壊れてないわ！」[p]
@@ -755,7 +755,7 @@
 結論から言うと何度も死にかけた[p]
 
 
-というより破壊されそうになった　[p]
+というより破壊されそうになった[p]
 
 
 車もだけど僕自身も[p]
@@ -807,7 +807,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/荒廃した街並み1.webp"]
 ;BGM kei<trance>
-[playbgm storage="kei/BGM_Kei(trance).ogg""]
+[playbgm storage="kei/BGM_Kei(trance).ogg"]
 [chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
 
 #
