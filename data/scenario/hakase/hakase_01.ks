@@ -6,7 +6,7 @@
 ;[name_create]
 
 ;キャラクターの名前が表示される領域に画像を用意
-;[image storage="../image/message/name_frame.png" layer="message0" zindex=100 visible="true" x=130 y=490]
+[image storage="../image/message/name_frame.png" layer="message0" zindex=100 visible="true" x=130 y=490]
 ;キャラクターの名前が表示される文字領域
 [ptext name="chara_name_area" layer="message0" color="white" shadow="rgba(0, 0, 0, 0.5)" size=32 bold=true x=283 y=510 width=160 align="center"]
 ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
@@ -77,6 +77,7 @@
 
 ;スリープ室
 [bg storage="sleep_room.png" time=1000 wait=true]
+[playbgm storage="common/BGM_Room1.ogg"]
 
 #
 あの日のようにカプセルが開き、気体が溢れ出した。[p]
@@ -143,7 +144,9 @@
 僕はこの温もりが好きだった。[p]
 
 [bg storage="black.png" time=1000 wait=true]
+[stopbgm]
 [bg storage="laboratory.png" time=1000 wait=true]
+[playbgm storage="common/BGM_Prologue.ogg"]
 
 ;研究室
 
@@ -347,6 +350,10 @@
 
 #
 少女たちのことを言っているのだろうか。[p]
+
+[stopbgm]
+
+#
 それから博士は真剣な表情をした。[p]
 
 [chara_part name="hakase" body="side" pose="s3" eye="s3" mouth="s4" eyebrow="s3"]
@@ -358,6 +365,8 @@
 
 #博士
 「それを知ったらキミは後悔するだろう」[p]
+
+[playbgm storage="hakase/bgs.ogg"]
 
 #
 後悔。[p]
@@ -409,6 +418,8 @@
 ;はいを選んだ場合
 *choose_yes
 
+[stopbgm]
+
 [er]
 
 [chara_part name="hakase" body="front" pose="f1" eye="f5" mouth="f2" eyebrow="f3"]
@@ -422,6 +433,7 @@
 けれど、もう僕を試すような様子ではなかった。[p]
 
 [chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f2" eyebrow="f3"]
+[playbgm storage="hakase/galactic_tale.ogg"]
 
 #博士
 「さて、どこから説明したものか」[p]
@@ -942,8 +954,9 @@
 #博士
 「ここからが本題だよ」[p]
 
+[stopbgm]
+
 #
-博士は真剣な表情をした。[p]
 空気が変わる。[p]
 
 [chara_part name="hakase" body="front" pose="f3" eye="f1" mouth="f4" eyebrow="f2"]
@@ -952,6 +965,7 @@
 「覚悟はいいかい、ロイド」[p]
 
 ;場面転換
+[playbgm storage="hakase/dying_star.ogg"]
 
 [chara_part name="hakase" body="front" pose="f3" eye="f4" mouth="f4" eyebrow="f2"]
 
@@ -1231,6 +1245,7 @@
 「博士、いつかまた会えますか」[p]
 
 [chara_part name="hakase" body="front" pose="f1" eye="f3" mouth="f3" eyebrow="f3"]
+[stopbgm]
 
 #博士
 「……っ」[p]
@@ -1240,6 +1255,7 @@
 その表情は苦悩を表わしている。[p]
 
 [chara_part name="hakase" body="front" pose="f1" eye="f3" mouth="f5" eyebrow="f3"]
+[playbgm storage="hakase/her_tears.ogg"]
 
 #博士
 「……キミは人類滅亡がトリガーとなって現れた存在だ」[p]
@@ -1333,15 +1349,19 @@
 
 ;夜
 [bg storage="black.png" time=1000 wait=true]
-[bg storage="laboratory.png" time=1000 wait=true]
+[stopbgm]
 
 #
 真実を知った夜。[p]
 博士が研究所か出るのが見えたので、僕はそれに付いて行く。[p]
 彼女は草原で満点の星空を見上げていた。[p]
 
+[bg storage="home-background.png" time=1000 wait=true]
+
 [chara_part name="hakase" body="side" pose="s1" eye="s2" mouth="s5" eyebrow="s2"]
 [chara_show name="hakase" time=1000 wait=true]
+
+[playbgm storage="hakase/you_and_me.ogg"]
 
 #博士
 「これが星空か」[p]
@@ -1447,11 +1467,14 @@
 ──美しいミルクを零す天の川銀河と[p]
 ──アンドロメダ銀河が終焉を迎えるまでは[p]
 
+[stopbgm]
 [jump storage="ending.ks"]
 
 ;---
 ;いいえを選んだ場合
 *choose_no
+
+[stopbgm]
 
 [er]
 
@@ -1463,6 +1486,8 @@
 #
 博士は柔らかな表情をした。[p]
 もう迷いは捨てた、そんな顔だ。[p]
+
+[playbgm storage="hakase/what_to_do.ogg"]
 
 #ロイド
 「博士は僕の全てです」[p]
@@ -1678,6 +1703,7 @@
 
 ;場面転換
 [bg storage="black.png" time=1000 wait=true]
+[stopbgm]
 [bg storage="laboratory.png" time=1000 wait=true]
 
 #博士
@@ -1685,6 +1711,8 @@
 
 #ロイド
 「いえ、大丈夫です」[p]
+
+[playbgm storage="hakase/like_novel.ogg"]
 
 #
 僕は博士の膝で寝かされていた。[p]
@@ -1726,6 +1754,7 @@
 
 ;場面転換
 [bg storage="black.png" time=1000 wait=true]
+[stopbgm]
 [bg storage="laboratory.png" time=1000 wait=true]
 
 [chara_part name="hakase" body="front" pose="f2" eye="f4" mouth="f2" eyebrow="f2"]
@@ -1749,6 +1778,7 @@
 「博士がそれほどの愛情を僕に注いでくれるのはなぜですか？」[p]
 
 [chara_part name="hakase" body="front" pose="f1" eye="f2" mouth="f2" eyebrow="f2"]
+[playbgm storage="hakase/what_to_do.ogg"]
 
 #博士
 「前提として」[p]
@@ -1887,11 +1917,13 @@
 ぬいぐるみという名称があることを後で知った。[p]
 
 [chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f5" eyebrow="f1"]
+[stopbgm]
 
 #博士
 「これは……」[p]
 
 [chara_part name="hakase" body="front" pose="f2" eye="f5" mouth="f2" eyebrow="f3"]
+[playbgm storage="hakase/you_and_me.ogg"]
 
 #博士
 「ロイドっ」[p]
@@ -2031,4 +2063,5 @@
 ──誰よりも大切にしたい人が見つかったこと[p]
 ──それが一番の贈り物なのかもしれない[p]
 
+[stopbgm]
 [jump storage="ending.ks"]
