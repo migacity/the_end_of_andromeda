@@ -60,6 +60,8 @@
 ;場所_小さく上下, BGM_BGM_Profiling, SE_紙出す音, 
 [anim name="atria" top="+=50" time=500 ]
 [anim name="atria" top="-=50" time=500]
+[playbgm storage="rina/BGM_Profiling.ogg"]
+; TODO SE 未調整
 
 #
 ポケットから小さなメモ書きを取り出す。[p]
@@ -86,7 +88,8 @@
 聞きなれない音だったが、どうやらアトリアのおなかが空いた音らしい。[p]
 
 ;立ち絵_かなしみ, 場所_少し下, 
-
+[chara_mod name="atria" face="sad" wait=true cross=false]
+[anim name="atria" top="-=50" time=500]
 #アトリア
 「おなかすいた……なにか食べ物ある？」[p]
 
@@ -94,9 +97,16 @@
 「食糧でしたらあちらの部屋にありますよ、案内しますね」[p]
 
 ;暗転
+[bg_fade_out]
 
+#
 
 ;背景_施設-食糧庫, 立ち絵_デフォルト, 場所_デフォルト, BGM_BGM_Atria1, 
+;※スクリプト班注釈 [bg_fade_in bg_storage=""] 食糧庫という背景画像が無い
+[playbgm storage="atria/BGM_Atria1.ogg"]
+[bg_fade_in bg_storage="sleep_room.png"]
+
+[chara_show name="atria" top=94 time=1000 face="sad" wait=false]
 
 #
 施設の食糧庫には十分量が保管されている。[p]
@@ -107,8 +117,13 @@
 「どうぞ」[p]
 
 ;1秒間アトリア立ち絵を「もぐもぐ」→「かなしみ」
+[chara_mod name="atria" face="eating1" wait=true cross=false]
+[wait time=0.5]
+[chara_mod name="atria" face="eating2" wait=true cross=false]
+[wait time=0.5]
 
 ;立ち絵_かなしみ, 
+[chara_mod name="atria" face="sad" wait=true cross=false]
 
 #
 アトリアは1食分の量をすぐに食べ終えたが少し不満そうだ。[p]
@@ -121,6 +136,7 @@
 「すいません」[p]
 
 ;場所_少し下, 
+[anim name="atria" top="+=50" time=500]
 
 #アトリア
 「そっかぁ……[r]これだけあればおなか一杯食べられると思ったのに」[p]
@@ -129,6 +145,7 @@
 「よっぽどおなか一杯食べたかったのですね」[p]
 
 ;場所_デフォルト, 
+[anim name="atria" top="-=50" time=500 ]
 
 #アトリア
 「うん、村ではいつも食べる量が決められてたからいつかおなか一杯食べたいなって思って」[p]
@@ -153,6 +170,8 @@
 「この施設の外にも木の実や魚がいるはずなので探してみましょうか？」[p]
 
 ;立ち絵_おどろき, BGM_BGM_Atria(Cook), 
+[chara_mod name="atria" face="surprise" wait=true cross=false]
+[playbgm storage="atria/BGM_Atria(Cook).ogg"]
 
 #アトリア
 「魚！ 一回食べてみたかったの！」[p]
@@ -167,11 +186,13 @@
 「やったー！」[p]
 
 ;立ち絵_手上げ, 
+[chara_mod name="atria" face="hands_up" wait=true cross=true]
 
 #
 魚を食べられるからかアトリアはどんどん明るくなっているような気がする。[p]
 
 ;立ち絵_デフォルト, 
+[chara_mod name="atria" face="default" wait=true cross=true]
 
 #ロイド
 「そういえば博士が釣りについて話していたので施設の中にも釣りの道具があるかもしれませんね」[p]
@@ -195,13 +216,19 @@
 
 
 ;立ち絵_画面外, 場所_画面外, 
+[chara_hide_all time=1000]
 
 #ロイド
 「こけないように気を付けてくださいね」[p]
 
+#
+
 ;暗転
+[bg_fade_out]
 
 ;背景_施設-倉庫, BGM_BGM_Atria1, 
+;※スクリプト班注釈　倉庫の背景なし
+[bg_fade_in bg_storage="laboratory.png"]
 
 #
 倉庫に何か便利なものがあるかもしれないと考え、倉庫に向かう。釣り竿も倉庫の入り口に立てかけてあった。[p]
@@ -211,10 +238,12 @@
 「博士用と僕用でしょうか」[p]
 
 ;文字大きく, 
+[font size=50]
 
 #アトリア
 「冒険してる間の食べ物もいるよね！」[p]
 
+[resetfont]
 
 #
 道具を集めていると大きな声が聞こえてきた。[p]
@@ -230,8 +259,13 @@
 念のため火起こしの道具や武器となりそうなものを持っていくことにしよう。使わないに越したことはないが。[p]
 
 ;暗転
+[bg_fade_out]
 
 ;背景_施設-入口, 立ち絵_デフォルト, 場所_デフォルト, 
+;※スクリプト班注釈 施設-入口のファイルが無い
+[bg_fade_in bg_storage="laboratory.png"]
+[chara_show name="atria" top=94 time=1000 face="default" wait=false]
+
 忘れ物がないか入念にチェックした後、施設入り口に向かう。[p]
 
 #ロイド
@@ -263,13 +297,17 @@
 アトリアの村は野生動物が多かったらしい。危険性は十分理解しているようだ。[p]
 
 ;暗転
+[bg_fade_out]
 
 ;背景_森, BGM_BGM_Forest2, 
+[bg_fade_in bg_storage="atria/森.webp"]
+[playbgm storage="common/BGM_Forest2.ogg"]
 
 #ロイド
 「では山菜等を中心に食べられそうなものをいろいろ集めてみましょうか」[p]
 
 ;立ち絵_かなしみ, 
+[chara_mod name="atria" face="sad" wait=true cross=false]
 
 #アトリア
 「見た感じ見たことない草ばかりだなぁ……食べられるか分からないのばかりだ」[p]
@@ -281,6 +319,7 @@
 「山菜取りは村でやっていたのですか？ 慣れていそうに見えますが」[p]
 
 ;立ち絵_デフォルト, 
+[chara_mod name="atria" face="default" wait=true cross=false]
 
 #アトリア
 「わたしは村でずっと山菜取りの役目だったからね、結構慣れてると思うよ」[p]
@@ -304,6 +343,9 @@
 
 
 ;暗転
+[bg_fade_out]
+[bg_fade_in bg_storage="atria/森.webp"]
+[chara_show name="atria" top=94 time=1000 face="default" wait=false]
 
 #アトリア
 「ロイドさんはアンドロイドだったよね、何年くらい生きてるの？」[p]
@@ -338,10 +380,15 @@
 本当の事は黙っておこう。博士と入れ違いになってしまうので会えることはないだろう。[p]
 
 ;背景_スチル, 立ち絵_スチル, 場所_スチル, 
-たわいもない話をしながら木の実や山菜を集めていく。[p]
+[chara_hide_all]
+[bg storage="still/still_Atria.webp" time=100 wait=true cross=true]
+
+他愛もない話をしながら木の実や山菜を集めていく。[p]
 彼女が山菜取りに慣れていると言っていたのは本当のようだ。[p]
 
 ;背景_森, 立ち絵_かなしみ, 場所_少し下, 
+[bg storage="atria/森.webp" time=100 wait=true cross=true]
+[chara_show name="atria" top=144 time=1000 face="sad" wait=false]
 
 #アトリア
 「つかれたー」[p]
@@ -352,18 +399,23 @@
 「向こうに少し高い丘があるのでわたしはそこから周りを見てきますね」[p]
 
 ;立ち絵_デフォルト, 
+[chara_mod name="atria" face="default" wait=true cross=false]
 
 #アトリア
 「じゃあわたしはちょっとだけ寝るね、おやすみー」[p]
 
 ;立ち絵_ねむねむ, 場所_下, 
+[chara_mod name="atria" face="sleepy" wait=true cross=true]
+[anim name="atria" top="+=50" time=500 ]
 
 #
 アトリアの目が閉じたのを確認すると丘へ向かった。[p]
 
 ;暗転
+[bg_fade_out]
 
 ;背景_森-丘, 立ち絵_画面外, 場所_画面外, 
+[bg_fade_in bg_storage="hill.png"]
 周りを見渡すと施設の近くの海に防波堤のようなものがある。[p]
 若干朽ちているようにも見えるが釣りをするにはもってこいな場所だ。次はそこに向かうことにしよう。[p]
 
@@ -374,6 +426,7 @@
 アトリアが寝ている間に餌になりそうな虫を集めておくことにする。[p]
 
 ;暗転
+[bg_fade_out]
 
 #ロイド
 「これだけあれば大丈夫でしょうか」[p]
@@ -381,6 +434,8 @@
 ;暗転
 
 ;背景_森, 立ち絵_ねむねむ, 場所_下, 
+[bg_fade_in bg_storage="atria/森.webp"]
+[chara_show name="atria" top=194 time=1000 face="sleepy" wait=false]
 
 #
 アトリアのもとに戻ったがまだ寝ている。かなり動いていたためなかなか起きないのだろう。[p]
@@ -398,6 +453,8 @@
 「夜になると危ないので一度施設まで戻りましょうか」[p]
 
 ;立ち絵_デフォルト, 場所_デフォルト, 
+[chara_mod name="atria" face="default" wait=true cross=false]
+[anim name="atria" top="-=100" time=500 ]
 
 #アトリア
 「は～い」[p]
@@ -406,8 +463,11 @@
 「忘れ物はないですね」[p]
 
 ;暗転
+[bg_fade_out]
 
 ;背景_施設-食糧庫, BGM_BGM_Atria1, 
+[bg_fade_in bg_storage="laboratory.png"]
+[playbgm storage="atria/BGM_Atria1.ogg"]
 
 #
 施設まで帰ってきた。明日まとめて食べるため今日取った木の実類は保管庫に入れておこう。[p]
