@@ -25,12 +25,12 @@
 [link storage="prologue.ks" target=*start]プロローグ[endlink]｜ 
 [link storage="atria/atria_01.ks" target=*start]アトリア[endlink]｜[r] 
 心石継｜[r]
-[link storage="kei/kei_01.ks" target=*start]scene01[endlink]｜
-[link storage="kei/kei_02.ks" target=*start]scene02[endlink]｜
-[link storage="kei/kei_03.ks" target=*start]scene03[endlink]｜
-[link storage="kei/kei_04.ks" target=*start]scene04[endlink]｜
-[link storage="kei/kei_05.ks" target=*start]scene05[endlink]｜
-[link storage="kei/kei_06.ks" target=*start]scene06[endlink][r]
+[link storage="kei/kei_init.ks" target=*scene01]scene01[endlink]｜
+[link storage="kei/kei_init.ks" target=*scene02]scene02[endlink]｜
+[link storage="kei/kei_init.ks" target=*scene03]scene03[endlink]｜
+[link storage="kei/kei_init.ks" target=*scene04]scene04[endlink]｜
+[link storage="kei/kei_init.ks" target=*scene05]scene05[endlink]｜
+[link storage="kei/kei_init.ks" target=*scene06]scene06[endlink][r]
 
 [link storage="rina/rina_init.ks" target=*start]りな[endlink]｜
 [link storage="hakase/hakase_01.ks" target=*start]博士[endlink][r]
