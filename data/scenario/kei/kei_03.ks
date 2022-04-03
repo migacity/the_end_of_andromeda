@@ -4,7 +4,8 @@
 
 
 ;背景　自宅　玄関
-
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/自宅玄関.webp"]
 
 #継
 「鍵は・・開いているわね」[p]
@@ -225,6 +226,8 @@
 
 
 ;居間
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM ＜魔王魂ピアノ39>
 ;立ち絵なし
 
@@ -407,6 +410,8 @@
 
 
 ;背景　白
+[bg_fade_out]
+[bg_fade_in bg_storage="white.png"]
 ;BGM 魔王魂ピアノ37
 
 #継
@@ -449,6 +454,8 @@
 
 
 ;背景　公園
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/公園.webp"]
 ;演出指示　ノイズ
 
 
@@ -470,7 +477,11 @@
 
 
 ;演出指示ノイズ　セピア色
+
 ;背景　自室
+[bg_fade_out]
+[filter sepia="100" blur="5"]
+[bg_fade_in bg_storage="kei/自室.webp"]
 
 
 #継
@@ -494,9 +505,10 @@
 子供の相手は大変だ。[p]
 
 
-
+[filter]
 ;背景　居間
-
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 
 #継
 「見てみて！制服！どう？似合ってる？」[p]
@@ -527,7 +539,8 @@
 
 
 ;背景　自室
-
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/自室.webp"]
 
 
 #継
@@ -545,7 +558,8 @@
 
 
 ;背景　居間
-
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 
 #父
 「相談がある」[p]
@@ -606,7 +620,8 @@
 
 
 ;背景　居間
-
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 
 #
 それからというもの[p]
@@ -840,15 +855,16 @@
 
 僕は最後まで見届けなければいけないのだから[p]
 
----
+---[p]
 
 
 
-第三章
+第三章[p]
 
 
 ;背景　自室
-
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/自室.webp"]
 
 
 ;SE　目覚まし

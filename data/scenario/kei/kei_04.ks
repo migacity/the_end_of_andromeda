@@ -1,6 +1,8 @@
 *start
 
 ;背景　居間
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２寝間着　目閉じ通常
 ;BGM　なし
 
@@ -158,6 +160,8 @@
 
 
 ;背景　電車内部
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/電車内2.webp"]
 ;電車　音
 ;BGM　　なし
 
@@ -200,7 +204,8 @@
 
 
 ;背景　塔
-
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/塔_外観.webp"]
 
 ふと空を見上げるとやたらと高い建物が目に入った[p]
 
@@ -228,6 +233,8 @@
 
 #
 ;背景　ノイズ
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/ノイズ.webp"]
 ;BGM　ノイズ音
 ;立ち絵２　疑問
 
@@ -243,6 +250,8 @@
 「何か思い出そうとしたような・・」[p]
 
 ;背景　ノイズ
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/ノイズ.webp"]
 ;BGM　ノイズ音
 ;立ち絵２　目開き笑顔
 
@@ -251,6 +260,8 @@
 
 
 ;背景　居間
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２　目開き笑顔
 ;BGM　魔王魂ピアノ34
 
@@ -332,6 +343,8 @@
 
 ;BGM　ノイズ音
 ;背景　ノイズ
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/ノイズ.webp"]
 
 #
 かなめのことを考えたらまた頭が痛くなった[p]
@@ -342,6 +355,8 @@
 
 
 ;背景　居間
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM 魔王魂ピアノ37
 
 
@@ -369,6 +384,8 @@
 
 
 ;背景居間
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵寝間着　ねむい
 ;BGM なし
 
@@ -441,6 +458,8 @@
 頭が痛い[p]
 
 ;背景　ノイズ
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/ノイズ.webp"]
 ;BGM　なし
 
 
@@ -476,6 +495,8 @@
 
 
 ;背景　　　居間
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２　泣き顔
 ;BGM　Incineator
 
@@ -495,7 +516,9 @@
 行かなければ・・あの塔に・・[p]
 
 
-#背景　街並み
+;背景　街並み
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/街並み.webp"]
 ;SE　歩行
 ;BGM　なし
 
@@ -565,6 +588,8 @@
 
 
 ;背景　公園
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/公園.webp"]
 ;BGM　Kei1
 
 #
@@ -869,6 +894,8 @@
 
 
 ;背景　公園
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/公園.webp"]
 ;立ち絵２　悲しみ
 
 

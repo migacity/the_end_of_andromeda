@@ -1,6 +1,8 @@
 *start
 
 ;背景研究所
+[bg_fade_out]
+[bg_fade_in bg_storage="entrance.png"]
 
 ;立ち絵１　目閉笑顔
 
@@ -69,7 +71,8 @@
 
 
 ;背景　研究所内　
-
+[bg_fade_out]
+[bg_fade_in bg_storage="labo.jpg"]
 
 
 そこから暫く僕たちは施設で自分の身体のメンテナンス…[p]
@@ -98,6 +101,8 @@
 
 
 ;背景　森
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/森.webp"]
 ;立ち絵２　目閉　通常
 ;BGM kei1
 
@@ -216,6 +221,8 @@
 
 
 ;背景　森
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/森.webp"]
 ;立ち絵１　笑顔
 ;BGM kei<Family>
 
@@ -244,7 +251,8 @@
 
 
 ;背景　野原
-
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/野原.webp"]
 
 #
 彼女は歩き出す　今度は僕とは別の道を[p]
@@ -278,6 +286,8 @@
 
 
 ;背景　研究所
+[bg_fade_out]
+[bg_fade_in bg_storage="labo.jpg"]
 ;BGM  なし
 #
 僕が見た彼女の笑顔は　最後まで輝いていた[p]

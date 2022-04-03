@@ -933,12 +933,12 @@
 
 
 
-;---
+---[p]
 
 
-;第二章
+第二章[p]
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/森.webp"]
+[bg_fade_in bg_storage="kei/廃れた地.webp"]
 [chara_show name="kei" face="立ち絵_どや顔" top=32 time=1000 wait=false]
 ;CG　神の杖
 ;BGM kaminotue
@@ -1023,7 +1023,7 @@
 [chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 #継
-「なんてひどいことを・・」
+「なんてひどいことを・・」[p]
 
 #
 彼女は膝をつき　眼を閉じて　両手を合わせ　暫くその場から動かなかった。[p]
@@ -1162,8 +1162,7 @@
 
 
 ;立ち絵１　驚き
-[chara_mod name="kei" face="立ち絵_驚き" cross=false]
-
+[chara_show name="kei" face="立ち絵_驚き" top=32 time=1000 wait=false]
 #継
 「そうね」[p]
 

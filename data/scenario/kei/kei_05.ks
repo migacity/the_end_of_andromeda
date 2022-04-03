@@ -1,6 +1,8 @@
 *start
 
 ;背景　公園
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/公園.webp"]
 ;立ち絵２　目閉泣き顔
 
 
@@ -19,6 +21,8 @@
 
 
 ;背景　公園
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/公園.webp"]
 ;BGM なし
 
 #
@@ -40,6 +44,8 @@
 
 
 ;背景　居間
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM 魔王魂ピアノ34
 
 
@@ -388,6 +394,8 @@
 
 
 ;背景　塔外観
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/塔_外観.webp"]
 ;BGM 停止
 
 
@@ -408,6 +416,10 @@
 
 
 ;演出指示　画面が真っ白になる
+[bg_fade_out]
+[bg_fade_in bg_storage="white.png"]
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM 
 
 
@@ -443,15 +455,16 @@
 #父
 「私もだよ」[p]
 
----
+---[p]
 
 
 
-第四章
+第四章[p]
 
 
 
 ;背景　真っ暗
+[bg storage="black.png"]
 ;BGM　なし
 
 #
@@ -475,6 +488,8 @@
 
 
 ;背景　塔　内部　カプセルルーム
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/カプセル_ルーム.webp"]
 ;立ち絵１　泣き顔
 ;BGM　IKEIKE
 
@@ -521,6 +536,8 @@
 
 
 ;背景　塔　廊下
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/廊下2.webp"]
 ;立ち絵１　通常
 ;BGM　Monologue
 
@@ -642,6 +659,8 @@
 
 
 ;背景　塔　扉
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/塔_扉.webp"]
 
 
 #
@@ -706,10 +725,12 @@
 
 違うよね？[p]
 
-_________________________________________________________[
+;_________________________________________________________[
 
 
 ;背景　塔内部　マザールーム
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/マザールーム.webp"]
 ;立ち絵なし
 ; BGM なし
 
@@ -919,13 +940,15 @@ _________________________________________________________[
 #
 そういった彼女の瞳は　迷いのない強い意志をどこか感じさせた。[p]
 
----
+;---
 
----
+;---
 
 
 
 ;背景　森
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/森.webp"]
 ;BGM なし
 ;SE　鳥の声
 
