@@ -7,6 +7,8 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/自宅玄関.webp"]
 
+[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
+
 #継
 「鍵は・・開いているわね」[p]
 
@@ -18,7 +20,7 @@
 
 
 ;立ち絵２　怒
-
+[chara_mod name="kei" face="立ち絵2_目開き怒り" cross=false]
 
 
 #継
@@ -31,7 +33,7 @@
 
 
 ;立ち絵２　驚き
-
+[chara_mod name="kei" face="立ち絵2_驚き" cross=false]
 
 
 #継
@@ -74,7 +76,7 @@
 
 
 ;立ち絵１　泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 #ロイド
 「いえ・・あの・・もしかしたらそのロボット」[p]
@@ -87,7 +89,7 @@
 
 
 ;立ち絵２　驚き
-
+[chara_mod name="kei" face="立ち絵2_驚き" cross=false]
 
 
 #継
@@ -99,8 +101,9 @@
 
 
 ;立ち絵１　泣き顔
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 ;BGM なし
-
+[stopbgm]
 
 #継
 「え・・・あ・・・・そんなことって・・」[p]
@@ -113,7 +116,7 @@
 
 
 ;立ち絵２　泣き顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
 
 
 #継
@@ -127,7 +130,7 @@
 
 
 ;立ち絵１　笑顔
-
+[chara_mod name="kei" face="立ち絵1_目開き笑顔" cross=false]
 
 
 #継
@@ -151,7 +154,7 @@
 
 
 ;立ち絵１　泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 
 #継
@@ -161,34 +164,41 @@
 
 
 ;立ち絵　かなめ
+[chara_show name="kaname"]
 
 
-
+[filter name="kei" brightness="60"]
 #かなめ
 「遅すぎまス・・想定よりだいぶ・・」[p]
 
-
 ;立ち絵　焦り
+[chara_mod name="kei" face="立ち絵_焦り" cross=false]
 
-
-
+[filter name="kaname" brightness="60"]
+[filter name="kei" brightness="100"]
 #継
 「んなっ！だって仕方ないじゃない！」[p]
 
 「あれはどうやっても自分の力では起きられないわよ！」[p]
 
+[filter name="kei" brightness="60"]
+[filter name="kaname" brightness="100"]
+
 #かなめ
 「いじると大声で言い訳するのは健在なようですね」[p]
 
+[filter name="kaname" brightness="60"]
+[filter name="kei" brightness="100"]
 
 ;立ち絵２　怒
-
+[chara_mod name="kei" face="立ち絵2_目開き怒り" cross=false]
 
 
 #継
 「ぐぬぬ・・」[p]
 
-
+[filter name="kei" brightness="60"]
+[filter name="kaname" brightness="100"]
 
 ;かなめ立ち絵
 
@@ -198,27 +208,34 @@
 
 「それを伝えるためにここで待っていましタ」[p]
 
-
+[filter name="kaname" brightness="60"]
+[filter name="kei" brightness="100"]
 
 ;立ち絵１　疑問
-
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 
 #継
 「メッセージ？」[p]
 
+[filter name="kei" brightness="60"]
+[filter name="kaname" brightness="100"]
+
+
 #かなめ
 「はい・・あまり時間がないので・・再生させていただきます」[p]
 
+[filter name="kaname" brightness="60"]
+[filter name="kei" brightness="100"]
 
 ;立ち絵２　驚き
-
+[chara_mod name="kei" face="立ち絵2_驚き" cross=false]
 
 
 #継
 「え・・時間がないってどういう」[p]
 
 #
-その言葉を遮るように　空間にあ二人の男女が映る[p]
+その言葉を遮るように　空間には二人の男女が映る[p]
 
 おそらくこれが彼女の両親なのだろう　[p]
 
@@ -227,9 +244,15 @@
 
 ;居間
 [bg_fade_out]
+[filter]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM ＜魔王魂ピアノ39>
+;データ入っていない
+[playbgm storage="kei/BGM_kei1.ogg"]
 ;立ち絵なし
+
+;フィルタリセット
+
 
 #父
 「やあ、継…元気にしているかな？」[p]
@@ -285,7 +308,7 @@
 「あそこに向かえば全てではないが求めている答えの一つがわかる」[p]
 
 #父
-「人類は・・生きている）[p]
+「人類は・・生きている」[p]
 
 #母
 「最後に一つ」[p]
@@ -295,7 +318,9 @@
 
 
 ;立ち絵１　泣き顔
+[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=32 time=1000 wait=false]
 ;BGM なし
+[stopbgm]
 
 #継
 「お父さん・・お母さん」[p]
@@ -305,7 +330,7 @@
 
 
 ;立ち絵２　驚き
-
+[chara_mod name="kei" face="立ち絵2_驚き" cross=false]
 
 #継
 「え・・ちょっとどうしたのかなめ！？」[p]
@@ -318,14 +343,18 @@
 
 
 ;立ち絵　かなめ
+[chara_show name="kaname"]
 
-
+[filter name="kei" brightness="60"]
+[filter name="kaname" brightness="100"]
 #かなめ
 「どうやら僕もここまでのようでス・・」[p]
-
+[filter name="kaname" brightness="60"]
 
 ;立ち絵２　驚き
+[chara_mod name="kei" face="立ち絵2_驚き" cross=false]
 
+[filter name="kei" brightness="100"]
 
 #継
 「え・・・どういうこと・・なんでよ！」[p]
@@ -333,7 +362,7 @@
 
 
 ;立ち絵１　泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 「あなたまでいなくなったら私・・！」[p]
 
@@ -345,7 +374,7 @@
 
 
 ;立ち２　泣き顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
 
 #継
 「また一人ぼっちになっちゃうじゃない！」[p]
@@ -359,7 +388,7 @@
 
 
 ;立ち絵　絶望
-
+[chara_mod name="kei" face="立ち絵2_絶望" cross=false]
 
 #継
 「ねえ！どうにかならないの！？」[p]
@@ -371,13 +400,13 @@
 
 
 ;立ち絵１　泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 
 #継
 「そんな・・・」[p]
 
-かなめ視点
+;かなめ視点
 
 #
 声が聞こえる　聴きなれた声だ[p]
@@ -389,7 +418,7 @@
 
 
 ;立ち絵２　泣き顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
 
 #継
 「お願い一人にしないで・・」[p]
@@ -397,10 +426,13 @@
 #
 一人じゃありませんよ・・貴方も　私も　ずっと・・[p]
 
+[filter name="kei" brightness="60"]
+[filter name="kaname" brightness="100"]
 
 #かなめ
 「アア・・もう・・本当に泣き虫なんで・・すか・・ラ」[p]
 
+[filter name="kaname" brightness="60"]
 
 #
 思い出すのはこの家で家族として向かい入れられた、慌ただしくも充実した日々…[p]
@@ -411,8 +443,13 @@
 
 ;背景　白
 [bg_fade_out]
+[filter]
 [bg_fade_in bg_storage="white.png"]
 ;BGM 魔王魂ピアノ37
+[playbgm storage="kei/BGM_kei1.ogg"]
+
+;フィルタリセット
+
 
 #継
 「わあ！お父さん！どうしたのこれ！？」[p]
@@ -425,7 +462,7 @@
 
 「コミュニケーションもとれる優秀な子だ。」[p]
 
-「継がこの子の家族になってくれると嬉しい」
+「継がこの子の家族になってくれると嬉しい」[p]
 
 #継
 「うん！家族になる！！ありがとう！」[p]
@@ -435,13 +472,13 @@
 #継
 「名前は何にしようかな？」[p]
 
-#
+#父
 「そうだな、要なんてどうだ？うちの大黒柱になってもらおう！」[p]
 
-#
+#母
 「あらいいの？そんなこと言ったらあなた肩身狭くなってしまうわよ？」[p]
 
-#
+#父
 「それはこまる！やっぱり別の名前に・・」[p]
 
 #継
@@ -457,7 +494,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/公園.webp"]
 ;演出指示　ノイズ
-
+[filter blur="5"]
 
 #継
 「うわああああああん！痛いよおおお！」[p]
@@ -505,9 +542,10 @@
 子供の相手は大変だ。[p]
 
 
-[filter]
+
 ;背景　居間
 [bg_fade_out]
+[filter]
 [bg_fade_in bg_storage="kei/居間.webp"]
 
 #継
@@ -693,7 +731,7 @@
 
 
 ;立ち絵１　通常
-
+[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
 
 
 #継
@@ -708,8 +746,7 @@
 
 
 ;立ち絵２　焦り
-
-
+[chara_mod name="kei" face="立ち絵2_焦り" cross=false]
 
 #継
 「泥棒・・・まさかね・・」[p]
@@ -727,8 +764,7 @@
 
 
 ;立ち絵１　驚き
-
-
+[chara_mod name="kei" face="立ち絵_驚き" cross=false]
 #継
 「嘘でしょ？・・そんなこと・・あるわけ」[p]
 
@@ -739,8 +775,7 @@
 
 
 ;立ち絵２　泣き顔
-
-
+[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
 
 #継
 「ずっと守ってくれていたのね・・ありがとう・・」[p]
@@ -778,8 +813,7 @@
 
 
 ;立ち絵１　泣き顔
-
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 #継
 「・・・私こそあなたが家族の一員で…」[p]
@@ -788,8 +822,7 @@
 
 
 ;立ち絵１　笑顔
-
-
+[chara_mod name="kei" face="立ち絵1_目開き笑顔" cross=false]
 
 
 その後、何度声を掛けても目覚めることはなかった[p]
@@ -800,7 +833,7 @@
 
 
 ;立ち絵２　目閉じ泣き顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
 
 #継
 「うう・・・あああああああああああ！」[p]
@@ -820,15 +853,14 @@
 
 
 ;立ち絵１　目閉じ泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 #継
 「そうね…泣いてばかりはいられないわ」[p]
 
 
 ;立ち絵１　目閉じ通常
-
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #
 そういって涙をぬぐう[p]
@@ -837,8 +869,7 @@
 
 
 ;立ち絵２　目開き通常　
-
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 #継
 「・・行きましょう」[p]
@@ -890,7 +921,7 @@ pppppppppp[p]
 
 
 ;立ち絵寝間着　特殊
-
+[chara_show name="kei" face="立ち絵1_寝間着_特殊" top=32 time=1000 wait=false]
 
 
 #継

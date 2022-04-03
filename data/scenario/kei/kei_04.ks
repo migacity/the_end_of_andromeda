@@ -4,7 +4,9 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２寝間着　目閉じ通常
+
 ;BGM　なし
+[stopbgm]
 
 #継
 「おはよう・・父さん、母さん」[p]
@@ -38,6 +40,7 @@
 
 ;立ち絵なし
 ;BGM　魔王魂ヒーリング16
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 
 #父
@@ -164,7 +167,7 @@
 [bg_fade_in bg_storage="kei/電車内2.webp"]
 ;電車　音
 ;BGM　　なし
-
+[stopbgm]
 
 #
 私が通う大学は電車で15分くらい[p]
@@ -213,6 +216,7 @@
 
 ;立ち絵　疑問
 ;BGM なし
+[stopbgm]
 
 #継
 「あれ・・？あんなものあったっけ・・？」[p]
@@ -264,6 +268,7 @@
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２　目開き笑顔
 ;BGM　魔王魂ピアノ34
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #継
 「ただいまー！」[p]
@@ -311,6 +316,7 @@
 「ねえ…そういえばかなめはどこ？」[p]
 
 ;BGM　停止
+[stopbgm]
 
 #父
 「かなめはここにはいないよ」[p]
@@ -328,6 +334,7 @@
 
 
 ;BGM　魔王魂ピアノ34
+[playbgm storage="kei/BGM_kei1.ogg"]
 ;立ち絵１　通常
 
 
@@ -358,7 +365,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM 魔王魂ピアノ37
-
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #父
 「そうだ母さん…今日の弁当も美味しかった…特にハンバーグの一つが絶品だったよ」[p]
@@ -413,6 +420,7 @@
 
 ;立ち絵１　疑問
 ;BGM Incinerator
+[playbgm storage="kei/BGM_Incinerator.ogg"]
 
 #継
 「は？」[p]
@@ -461,7 +469,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/ノイズ.webp"]
 ;BGM　なし
-
+[stopbgm]
 
 #継
 「はあああああああああ！？人類が滅びた！？」[p]
@@ -499,6 +507,7 @@
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２　泣き顔
 ;BGM　Incineator
+[playbgm storage="kei/BGM_Incinerator.ogg"]
 
 
 #
@@ -521,6 +530,7 @@
 [bg_fade_in bg_storage="kei/街並み.webp"]
 ;SE　歩行
 ;BGM　なし
+[stopbgm]
 
 
 #？？？
@@ -591,6 +601,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/公園.webp"]
 ;BGM　Kei1
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #
 自販機を過ぎ、着いた先は地元の公園だ[p]
@@ -613,7 +624,7 @@
 
 
 ;BGM　なし
-
+[stopbgm]
 
 #父
 「うごっ・・！」[p]
@@ -702,6 +713,7 @@
 
 ;立ち絵１　目開き通常
 ;BGM　魔王魂ヒーリング16
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #父
 「昔、ここで遊んでいたことを覚えているか？」[p]
@@ -843,6 +855,7 @@
 
 ;CG 戦争
 ;BGM kaminotue
+[playbgm storage="common/BGM_kaminotsue.ogg"]
 
 #父
 「あの頃　かなり多くの問題が多発していた…」[p]
@@ -980,7 +993,7 @@
 「こうして娘にようやく会うことができたからな」[p]
 
 ;BGM kei<trance>
-
+[playbgm storage="kei/BGM_kei(trance).ogg"]
 
 #
 先程とは打って変わり吹っ切れたような顔で私を見つめる[p]
@@ -1024,6 +1037,7 @@
 
 ;CG　父との別れ１
 ;BGM kei <family>
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #
 抱きしめられる　確かに父の暖かさを感じる　でもこれも作られたものだと父は言う[p]
