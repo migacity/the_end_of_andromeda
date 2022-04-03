@@ -31,6 +31,7 @@
 [macro name="bg_fade_out"]
     [mask time=%time|2000]
 ;   暗転時は全キャラを削除
+    #
     [chara_hide_all time=10]
 [endmacro]
 [macro name="bg_fade_in"]
