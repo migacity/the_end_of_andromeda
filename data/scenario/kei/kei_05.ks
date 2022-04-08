@@ -1,17 +1,19 @@
 *start
 
+[playbgm storage="kei/BGM_kei1.ogg"]
+
 ;背景　公園
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/公園.webp"]
 ;立ち絵２　目閉泣き顔
-
+[chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=32 time=1000 wait=false]
 
 #継
 「私・・・！生きるから・・」[p]
 
 
 ;立ち絵１　目閉笑顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 「精一杯！生き続ける！」[p]
 
@@ -24,6 +26,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/公園.webp"]
 ;BGM なし
+[stopbgm]
 
 #
 向かう先にあるのは現実世界と同じ形をした塔[p]
@@ -47,7 +50,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM 魔王魂ピアノ34
-
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #母
 
@@ -56,7 +59,7 @@
 
 
 ;立ち絵１　目閉悲しみ
-
+[chara_show name="kei" face="立ち絵1_目閉_悲しみ" top=32 time=1000 wait=false]
 
 #継
 「うん・・」[p]
@@ -77,7 +80,7 @@
 
 
 ;立ち絵１　目閉通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 
 #継
@@ -85,6 +88,7 @@
 
 
 ;立ち絵１　目閉笑顔
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 
 「お母さんのつくったご飯は美味しいな」[p]
@@ -100,7 +104,10 @@
 
 
 ;立ち絵　疑問
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
+
 ;BGM Atira<braek>
+[playbgm storage="atria/BGM_Atria(break).ogg"]
 
 #継
 「今回は変な味付けにしてない？」[p]
@@ -114,7 +121,7 @@
 
 
 ;立ち絵　特殊
-
+[chara_mod name="kei" face="立ち絵2_特殊" cross=false]
 
 
 #継
@@ -127,7 +134,7 @@
 
 
 ;立ち絵２　目開き怒り
-
+[chara_mod name="kei" face="立ち絵2_目開き怒り" cross=false]
 
 #継
 「いつか唐揚げの中にいくつかハバネロ入れてたの忘れてないわよ・・」[p]
@@ -138,7 +145,7 @@
 
 
 ;立ち絵１　目開き　怒り
-
+[chara_mod name="kei" face="立ち絵1_目開き怒り" cross=false]
 
 #継
 「色までわからないようにしてるから完全にテロじゃないあれ！」[p]
@@ -152,7 +159,7 @@
 
 
 ;立ち絵　特殊
-
+[chara_mod name="kei" face="立ち絵2_特殊" cross=false]
 
 
 #継
@@ -160,7 +167,10 @@
 
 
 ;立ち絵２　目閉じ泣き顔
+[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
+
 ;BGM kei<trance>
+[playbgm storage="kei/BGM_kei(trance).ogg"]
 
 #継
 「・・うう・・・」[p]
@@ -173,7 +183,7 @@
 
 
 ;立ち絵１　目閉泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 
 #継
@@ -182,7 +192,7 @@
 
 
 ;立ち絵２　目開き泣き顔
-
+[chara_mod name="kei" face="立ち絵2_目開き泣き顔" cross=false]
 
 #継
 「・嫌だよ・・別れたくないよ…」[p]
@@ -195,7 +205,7 @@
 
 
 ;立ち絵１　目閉　笑顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 #継
 「母さん・・私幸せだったよ」[p]
@@ -213,7 +223,7 @@
 
 
 ;立ち絵１　目閉泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 #継
 「でも　何も返せなかった・・沢山のもの・・もらったのに」[p]
@@ -224,7 +234,7 @@
 
 
 ;立ち絵２　目開き泣き顔
-
+[chara_mod name="kei" face="立ち絵2_目開き泣き顔" cross=false]
 
 #母
 「何言ってるの？」[p]
@@ -244,7 +254,7 @@
 
 
 ;立ち絵２　目閉悲しみ
-
+[chara_mod name="kei" face="立ち絵2_目閉じ悲しみ" cross=false]
 
 #継
 「お母さん・・・・」[p]
@@ -254,7 +264,7 @@
 
 
 ;立ち絵１　困り顔
-
+[chara_mod name="kei" face="立ち絵1_目開き悲しみ" cross=false]
 
 #継
 「それ自分で言う？」[p]
@@ -286,7 +296,7 @@
 
 
 ;立ち絵１　目閉じ笑顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 #継
 「うん・・・ありがとう母さん」[p]
@@ -311,7 +321,7 @@
 
 
 ;立ち絵　目閉困り顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_悲しみ" cross=false]
 
 
 #継
@@ -330,6 +340,7 @@
 
 ;CG母との別れ
 ;BGM kei<Family>
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #母
 「「幸せってものはいつだって私たちの手の中にあるんだから！」」[p]
@@ -369,6 +380,8 @@
 #
 その言葉を聞くと　母は静かに笑って手を振る[p]
 
+[chara_mod name="kei" face="立ち絵1_目開き笑顔" cross=false]
+
 #継
 「いってきます！」[p]
 
@@ -397,6 +410,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/塔_外観.webp"]
 ;BGM 停止
+[stopbgm]
 
 
 周辺には不思議と人がおらず静かだ[p]
@@ -421,6 +435,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM 
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 
 #母
@@ -466,6 +481,7 @@
 ;背景　真っ暗
 [bg storage="black.png"]
 ;BGM　なし
+[stopbgm]
 
 #
 頭が重い　[p]
@@ -491,7 +507,9 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/カプセル_ルーム.webp"]
 ;立ち絵１　泣き顔
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 ;BGM　IKEIKE
+[playbgm storage="kei/BGM_kei(trance).ogg"]
 
 #継
 「っいったあああああああ！何よこれ！目がちぎれるかと思ったわ！」[p]
@@ -505,7 +523,7 @@
 
 
 ;立ち絵　特殊
-
+[chara_mod name="kei" face="立ち絵2_特殊" cross=false]
 
 #継
 「ったあああああああ」[p]
@@ -518,6 +536,7 @@
 
 
 ;立ち絵２　目閉怒り
+[chara_mod name="kei" face="立ち絵2_目開き怒り" cross=false]
 
 #継
 「・・・・・いるんだったら起こせやこらああ！？」[p]
@@ -539,7 +558,9 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/廊下2.webp"]
 ;立ち絵１　通常
+[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
 ;BGM　Monologue
+[playbgm storage="common/BGM_Monologue.ogg"]
 
 #継
 「どれくらい眠いっていたのかしら・・」[p]
@@ -553,7 +574,7 @@
 
 
 ;立ち絵２　目閉じ通常
-
+[chara_mod name="kei" face="立ち絵2_目閉じ通常" cross=false]
 
 #継
 「えー・・あ・・確か塔についたら案内用ロボットに誘導されて・・」[p]
@@ -565,7 +586,7 @@
 
 
 ;立ち絵２　泣き顔
-
+[chara_mod name="kei" face="立ち絵2_目開き泣き顔" cross=false]
 
 
 #継
@@ -576,14 +597,14 @@
 
 
 ;立ち絵１　目閉　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 「こっちの話・・」[p]
 
 
 ;立ち絵２　目開き通常
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 「詳しくこの設備のこと聞きたいけれど・・」[p]
 
@@ -592,14 +613,14 @@
 
 
 ;立ち絵１　目閉じ　笑顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 #継
 「有能！　」[p]
 
 
 ;立ち絵１　目開　疑問
-
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 
 「で…どうだった？　」[p]
 
@@ -614,7 +635,7 @@
 
 
 ;立ち絵２　目閉　泣き
-
+[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
 
 #継
 「・・・っ」[p]
@@ -630,7 +651,7 @@
 
 
 ;立ち絵１　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 「そういえば責任者みたいなものはいないかしら？」[p]
@@ -640,7 +661,9 @@
 
 
 ;立ち絵なし
+[chara_hide_all]
 ;BGM 
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 
 #
@@ -673,7 +696,7 @@
 
 
 ;立ち絵１　目閉じ　怒
-
+[chara_show name="kei" face="立ち絵1_目閉_怒り" top=32 time=1000 wait=false]
 
 
 #継
@@ -684,7 +707,7 @@
 
 
 ;立ち絵１　目開　怒
-
+[chara_mod name="kei" face="立ち絵1_目開き怒り" cross=false]
 
 #継
 「先にそれ言いなさいよ！」[p]
@@ -695,7 +718,7 @@
 
 
 ;立ち絵２　目閉　困り
-
+[chara_mod name="kei" face="立ち絵2_目閉じ悲しみ" cross=false]
 
 #継
 「どうしようかしら…探そうにも見当がつかないわ…」[p]
@@ -711,7 +734,7 @@
 
 
 ;立ち絵１　特殊
-
+[chara_mod name="kei" face="立ち絵2_特殊" cross=false]
 
 #継
 「いや何でもってんのよ！！！！」[p]
@@ -733,7 +756,7 @@
 [bg_fade_in bg_storage="kei/マザールーム.webp"]
 ;立ち絵なし
 ; BGM なし
-
+[stopbgm]
 
 
 #
@@ -747,7 +770,7 @@
 
 
 ;立ち絵１　目閉　怒
-
+[chara_show name="kei" face="立ち絵1_目閉_怒り" top=32 time=1000 wait=false]
 
 #継
 「聞きたいことがあるの」[p]
@@ -757,7 +780,7 @@
 
 
 ;立ち絵１　目開通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 「ここってどういう施設なのかしら？」[p]
@@ -770,13 +793,13 @@
 
 
 ;立ち絵２　目閉　通常
-
+[chara_mod name="kei" face="立ち絵2_目閉じ通常" cross=false]
 
 #継
 「眠っていた人間はどうなったの？」[p]
 
 #
-「はい、こちらでお眠り頂いた方に死ぬまで最高の人生を提供ます。」[p]
+「はい、こちらでお眠り頂いた方に死ぬまで最高の人生を提供します。」[p]
 
 「生存中は活動する臓器や神経伝達物質を電気エネルギーに変え…」[p]
 
@@ -787,14 +810,14 @@
 
 
 ;立ち絵１　目閉　泣
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 #継
 「まるで棺桶…」[p]
 
 
 ;立ち絵１　目開　泣
-
+[chara_mod name="kei" face="立ち絵1_目開き泣き顔" cross=false]
 
 「というより人間の墓標じゃない・・」[p]
 
@@ -807,7 +830,7 @@
 
 
 ;立ち絵　目開　怒
-
+[chara_mod name="kei" face="立ち絵1_目閉_怒り" cross=false]
 
 #継
 「貴方は何をしているのかわかっているの？」[p]
@@ -821,7 +844,7 @@
 
 
 ;立ち絵２　目開泣き
-
+[chara_mod name="kei" face="立ち絵2_目開き泣き顔" cross=false]
 
 #
 「それで・・そんなことが許されるわけが・・」[p]
@@ -829,7 +852,9 @@
 
 
 ;立ち絵１　目開き　怒り
+[chara_mod name="kei" face="立ち絵1_目開き怒り" cross=false]
 ;BGM なし
+[stopbgm]
 
 #
 継「こんなもの・・っ！」[p]
@@ -847,14 +872,16 @@
 
 
 ;立ち絵２　目閉じ　呆れ
-
+[chara_mod name="kei" face="立ち絵2_目閉じ笑顔" cross=false]
 
 #継
 「な～んてね！そんなことしないわよ」[p]
 
 
 ;立ち絵　目閉　笑顔
+[chara_mod name="kei" face="立ち絵2_目閉じ笑顔" cross=false]
 ;BGM kei1
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #継
 「だってこの世界もその人たちが良しとして選んだ道でしょう？　」[p]
@@ -866,7 +893,7 @@
 
 
 ;立ち絵１　目開　笑顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 #継
 「あの場所で父と母が言ってくれたこと…」[p]
@@ -875,7 +902,7 @@
 
 
 ;立ち絵２　目閉　笑顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ笑顔" cross=false]
 
 「確かに私の心には響いたもの…」[p]
 
@@ -883,7 +910,7 @@
 
 
 ;立ち絵１　目閉　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 「世の中良い悪いもないの…」[p]
@@ -899,14 +926,14 @@
 
 
 ;立ち絵　目開　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 「だから私は貴方たちを否定することはない…」[p]
 
 
 ;立ち絵２　目閉じ　笑顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ笑顔" cross=false]
 
 #継
 「もうここに用はないわ！　」　[p]
@@ -924,7 +951,7 @@
 
 
 ;立ち絵２　目閉じ　通常
-
+[chara_mod name="kei" face="立ち絵2_目閉じ通常" cross=false]
 
 #継
 「ええ…」[p]
@@ -932,8 +959,8 @@
 「最後の忘れ物はもう返してもらったから」[p]
 
 
-立ち絵１　目閉　笑顔
-
+;立ち絵１　目閉　笑顔
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 「皆の想いは私のここにある」[p]
 
@@ -950,6 +977,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/森.webp"]
 ;BGM なし
+[stopbgm]
 ;SE　鳥の声
 
 #
@@ -968,7 +996,9 @@
 
 
 ;立ち絵１　目閉　どや顔
+[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
 ;BGM　
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #継
 「さーて！次やることは決まったわ」[p]
@@ -980,7 +1010,9 @@
 
 
 ;立ち絵２　目開き笑顔
+[chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
 ;BGM　魔王魂ヒーリング13
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #継
 「旅に出るわ！」[p]
@@ -990,7 +1022,7 @@
 
 
 ;立ち絵１　目閉　笑顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 #継
 「生き残りの人間を探す旅なんてほんと映画の主人公になったみたい」[p]
@@ -1012,6 +1044,7 @@
 
 
 ;立ち絵１　目閉じ通常
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 「…そう…」[p]
@@ -1032,7 +1065,7 @@
 
 
 ;立ち絵２　通常
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 #継
 「でもここからだいぶ離れているわよ」[p]
@@ -1053,7 +1086,7 @@
 
 
 ;立ち絵１　目閉じ　笑顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 #継
 「よし！決めた！」[p]
@@ -1066,7 +1099,7 @@
 
 
 ;立ち絵２　目開　泣き
-
+[chara_mod name="kei" face="立ち絵2_目開き泣き顔" cross=false]
 
 #継
 「家に帰れないのはとても辛いことよ」[p]
@@ -1084,5 +1117,6 @@
 
 
 ;立ち絵１　目閉　通常
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 [jump storage="kei/kei_06.ks"]

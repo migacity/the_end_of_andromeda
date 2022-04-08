@@ -1,11 +1,12 @@
 *start
 
+[playbgm storage="kei/BGM_kei1.ogg"]
 ;背景研究所
 [bg_fade_out]
 [bg_fade_in bg_storage="entrance.png"]
 
 ;立ち絵１　目閉笑顔
-
+[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
 
 
 #継
@@ -21,7 +22,7 @@
 
 
 ;立ち絵１　どや顔
-
+[chara_mod name="kei" face="立ち絵_どや顔" cross=false]
 
 
 #継
@@ -31,7 +32,7 @@
 
 
 ;立ち絵１　目開泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目開き泣き顔" cross=false]
 
 
 #継
@@ -41,7 +42,7 @@
 
 
 ;立ち絵１　目閉じ　泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 
 「車が動かなくなったり…変なもの食べてお腹壊したり」[p]
@@ -54,7 +55,7 @@
 
 
 ;立ち絵２　目閉じ　笑顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ笑顔" cross=false]
 
 
 #継
@@ -104,7 +105,9 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/森.webp"]
 ;立ち絵２　目閉　通常
+[chara_show name="kei" face="立ち絵2_目閉じ通常" top=32 time=1000 wait=false]
 ;BGM kei1
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #継
 「私ね…」[p]
@@ -118,7 +121,7 @@
 
 
 ;立ち絵２　目開　通常
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 
 #継
@@ -128,12 +131,13 @@
 
 
 ;立ち絵１　目閉じ　笑顔
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 
 「ありがとう」[p]
 
 ;立ち絵なし
+[chara_hide_all]
 
 #
 深くお辞儀をする[p]
@@ -163,7 +167,7 @@
 
 
 ;立ち絵１　目閉じ　笑顔
-
+[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
 
 
 #継
@@ -173,7 +177,7 @@
 
 
 ;立ち絵２　目開き　笑顔
-
+[chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
 
 
 「ほんとそういうところね！」[p]
@@ -190,14 +194,14 @@
 
 
 ;立ち絵２　目閉じ　通常
-
+[chara_mod name="kei" face="立ち絵2_目閉じ通常" cross=false]
 
 #継
 「後・・この子もありがとうね」[p]
 
 
 ;立ち絵２　目開き　笑顔
-
+[chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
 
 
 #継
@@ -208,7 +212,7 @@
 
 
 ;立ち絵　かなめ
-
+[chara_show name="kaname" top=32 time=1000 wait=false]
 
 
 #かなめ
@@ -224,7 +228,9 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/森.webp"]
 ;立ち絵１　笑顔
+[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
 ;BGM kei<Family>
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #継
 「それじゃあ…もういくわ　！」[p]
@@ -243,7 +249,7 @@
 
 
 ;立ち絵1　困り笑顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 #継
 「あなたもね」[p]
@@ -268,7 +274,7 @@
 「最後に待つだけじゃなくて、自分でほしいものは自分の意志で手に入れるのよ！」[p]
 
 ;立ち絵１　目開き笑顔
-
+[chara_show name="kei" face="立ち絵1_目開き笑顔" top=32 time=1000 wait=false]
 
 #継
 「終末だからなによ！それで終わるなんてつまらないわ！」[p]
@@ -289,6 +295,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="labo.jpg"]
 ;BGM  なし
+[stopbgm]
 #
 僕が見た彼女の笑顔は　最後まで輝いていた[p]
 
