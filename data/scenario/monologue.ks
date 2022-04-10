@@ -7,6 +7,7 @@
 ;メッセージボックスは初期状態では非表示
 [layopt layer=0 visible=true]
 
+; 語りはvoiceとして登録・再生した方が（スキップすることになった時などに）楽かもしれないらしい。
 [iscript]
     tf.monologueText = [
         '少女は冷たい繭の中で眠り、',
@@ -23,6 +24,8 @@
     tf.count = 0;
 [endscript]
 
+[playbgm storage="common/BGM_Monologue.ogg"]
+
 *monologueLoop
 [iscript]
     tf.line = tf.monologueText[tf.count];
@@ -38,5 +41,7 @@
 ; 全部消す
 [layopt layer=0 visible="false"]
 [free name="monologueText" layer=0]
+[stopbgm]
+[wait time=2000]
 
 [jump storage = "prologue.ks"]
