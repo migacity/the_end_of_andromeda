@@ -61,7 +61,7 @@
 [anim name="atria" top="+=50" time=500 ]
 [anim name="atria" top="-=50" time=500]
 [playbgm storage="rina/BGM_Profiling.ogg"]
-; TODO SE 未調整
+[playse storage="atria/紙出す音.ogg"]
 
 #
 ポケットから小さなメモ書きを取り出す。[p]

@@ -23,7 +23,7 @@
 [nowait]
 読みたいシナリオを選択してください。[r]
 [link storage="prologue.ks" target=*start]プロローグ[endlink]｜ 
-[link storage="atria/atria_01.ks" target=*start]アトリア[endlink]｜[r] 
+[link storage="atria/atria_init.ks" target=*start]アトリア[endlink]｜[r] 
 心石継｜[r]
 [link storage="kei/kei_init.ks" target=*scene01]scene01[endlink]｜
 [link storage="kei/kei_init.ks" target=*scene02]scene02[endlink]｜
