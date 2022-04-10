@@ -659,7 +659,7 @@
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="bedroom_after.png" time=1000 wait=true]
 
-[playbgm storage="common/BGM_Sampo.ogg"]
+[playbgm storage="hakase/what_to_do.ogg"]
 
 #
 博士と僕は居住スペースの確保に努めた。[p]
@@ -754,10 +754,10 @@
 博士もそのようなものが好きなのだろうか。[p]
 どこかで同じようなものを見つけたら、博士にプレゼントしようと心に決めた。[p]
 
-[stopbgm]
 [chara_hide name="hakase" time=1000 wait=true]
 
 [bg storage="black.png" time=1000 wait=true]
+[stopbgm]
 [bg storage="entrance.png" time=1000 wait=true]
 
 #
@@ -781,6 +781,7 @@
 僕は博士に促されるまま施設の外に出た。[p]
 
 [chara_part name="hakase" body="front" pose="f1" eye="f1" mouth="f5" eyebrow="f1"]
+[playbgm storage="common/BGM_Sampo.ogg"]
 
 #博士
 「ほう、これは……」[p]
@@ -898,8 +899,6 @@
 #
 博士の考え方は今でも変わっていないようである。[p]
 
-[stopbgm]
-
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="hill.png" time=1000 wait=true]
 
@@ -1005,8 +1004,6 @@
 
 それから僕たちは食事を摂ることにした。[p]
 いつもより美味しかった気がする。[p]
-
-[stopbgm]
 
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="ruins.png" time=1000 wait=true]
@@ -1159,8 +1156,6 @@
 
 #
 
-[stopbgm]
-
 [chara_hide name="hakase" time=1000 wait=true]
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="school.png" time=1000 wait=true]
@@ -1252,8 +1247,6 @@
 博士は何よりも研究が好きだ。[p]
 もし研究に没頭できる学校があったのなら、楽しく過ごせただろうか。[p]
 そんなことを思いながら学校跡地をあとにした。[p]
-
-[stopbgm]
 
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="station.png" time=1000 wait=true]
@@ -1384,9 +1377,8 @@
 僕はその先を尋ねることができなかった。[p]
 真剣な瞳が博士の決意を物語っているように見えたからだ。[p]
 
-[stopbgm]
-
 [bg storage="black.png" time=1000 wait=true]
+[stopbgm]
 [bg storage="laboratory.png" time=1000 wait=true]
 
 #
@@ -1394,6 +1386,7 @@
 
 [chara_part name="hakase" body="side" pose="s3" eye="s4" mouth="s1" eyebrow="s2"]
 [chara_show name="hakase" time=1000 wait=true]
+[playbgm storage="common/BGM_Prologue.ogg"]
 
 #博士
 「ふむ……」[p]
@@ -1438,12 +1431,13 @@
 ついにその時が来たようだ。[p]
 博士は立ち上がり、少女たちの眠る場所に向かう。[p]
 
-[stopbgm]
-
 [bg storage="black.png" time=1000 wait=true]
+[stopbgm]
 [bg storage="corridor.png" time=1000 wait=true]
 
 僕はたまらず声をかけた。[p]
+
+[playbgm storage="common/BGM_Room1.ogg"]
 
 #ロイド
 「僕に、できるでしょうか？」[p]
@@ -1506,8 +1500,6 @@
 少女たちが目覚めた時にパニックにならないように助ける術。[p]
 優しく寄り添ってあげるのに必要な気遣い。[p]
 僕が質問すると、安心させるようになんでも教えてくれた。[p]
-
-[stopbgm]
 
 [bg storage="black.png" time=1000 wait=true]
 [bg storage="sleep_room.png" time=1000 wait=true]
@@ -1591,5 +1583,6 @@
 ──どうか彼女たち一人一人を。[p]
 ──最後まで見届けてやってくれ。[p]
 
+[stopbgm]
 [jump storage="home.ks"]
 [s]
