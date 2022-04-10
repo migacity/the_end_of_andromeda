@@ -103,7 +103,7 @@
 ;立ち絵１　泣き顔
 [chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 ;BGM なし
-[stopbgm]
+;[stopbgm]
 
 #継
 「え・・・あ・・・・そんなことって・・」[p]
@@ -164,7 +164,7 @@
 
 
 ;立ち絵　かなめ
-[chara_show name="kaname"]
+[chara_show name="kaname" top="-120"]
 
 
 [filter name="kei" brightness="60"]
@@ -172,7 +172,7 @@
 「遅すぎまス・・想定よりだいぶ・・」[p]
 
 ;立ち絵　焦り
-[chara_mod name="kei" face="立ち絵_焦り" cross=false]
+[chara_mod name="kei" face="立ち絵_焦り" cross=false wait=false]
 
 [filter name="kaname" brightness="60"]
 [filter name="kei" brightness="100"]
@@ -187,12 +187,13 @@
 #かなめ
 「いじると大声で言い訳するのは健在なようですね」[p]
 
-[filter name="kaname" brightness="60"]
-[filter name="kei" brightness="100"]
+
 
 ;立ち絵２　怒
 [chara_mod name="kei" face="立ち絵2_目開き怒り" cross=false]
 
+[filter name="kaname" brightness="60"]
+[filter name="kei" brightness="100"]
 
 #継
 「ぐぬぬ・・」[p]
@@ -208,11 +209,13 @@
 
 「それを伝えるためにここで待っていましタ」[p]
 
-[filter name="kaname" brightness="60"]
-[filter name="kei" brightness="100"]
+
 
 ;立ち絵１　疑問
-[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false wait=false]
+
+[filter name="kaname" brightness="60"]
+[filter name="kei" brightness="100"]
 
 #継
 「メッセージ？」[p]
@@ -224,11 +227,13 @@
 #かなめ
 「はい・・あまり時間がないので・・再生させていただきます」[p]
 
-[filter name="kaname" brightness="60"]
-[filter name="kei" brightness="100"]
+
 
 ;立ち絵２　驚き
-[chara_mod name="kei" face="立ち絵2_驚き" cross=false]
+[chara_mod name="kei" face="立ち絵2_驚き" cross=false wait=false]
+
+[filter name="kaname" brightness="60"]
+[filter name="kei" brightness="100"]
 
 
 #継
@@ -313,6 +318,8 @@
 #母
 「最後に一つ」[p]
 
+
+#父、母
 「愛してる（わ）！継」[p]
 
 
@@ -343,7 +350,7 @@
 
 
 ;立ち絵　かなめ
-[chara_show name="kaname"]
+[chara_show name="kaname" top="-120"]
 
 [filter name="kei" brightness="60"]
 [filter name="kaname" brightness="100"]
@@ -394,7 +401,7 @@
 「ねえ！どうにかならないの！？」[p]
 
 #ロイド
-「申し訳ありませんが僕には・・」
+「申し訳ありませんが僕には・・」[p]
 
 「ここにはスペアのパーツもありませんから」[p]
 
@@ -408,11 +415,12 @@
 
 ;かなめ視点
 
+#かなめ
+(声が聞こえる　聴きなれた声だ)[p]
+
+(手を伸ばしたいのに・・)[p]
+
 #
-声が聞こえる　聴きなれた声だ[p]
-
-手を伸ばしたいのに・・[p]
-
 もうその力もなくだらりとぶら下がったアームはただの鉄の塊とかしている。[p]
 
 
@@ -423,8 +431,8 @@
 #継
 「お願い一人にしないで・・」[p]
 
-#
-一人じゃありませんよ・・貴方も　私も　ずっと・・[p]
+#かなめ
+(一人じゃありませんよ・・貴方も　私も　ずっと・・)[p]
 
 [filter name="kei" brightness="60"]
 [filter name="kaname" brightness="100"]
@@ -492,9 +500,10 @@
 
 ;背景　公園
 [bg_fade_out]
+[filter blur="5"]
 [bg_fade_in bg_storage="kei/公園.webp"]
 ;演出指示　ノイズ
-[filter blur="5"]
+
 
 #継
 「うわああああああん！痛いよおおお！」[p]
@@ -545,7 +554,7 @@
 
 ;背景　居間
 [bg_fade_out]
-[filter]
+[filter blur="5"]
 [bg_fade_in bg_storage="kei/居間.webp"]
 
 #継
@@ -605,7 +614,7 @@
 #
 そんなある日、ご主人が真剣な面持ちで語りかけてきた[p]
 
-#
+#かなめ
 「如何いたしましたか？」[p]
 
 #
@@ -771,8 +780,11 @@
 #
 この声は・・ずっと待ち望んでいた彼女の声だ[p]
 
-あの時を変わらない暖かな手で抱きかかえられる[p]
+あの時と変わらない暖かな手で抱きかかえられる[p]
 
+[bg_fade_out]
+[filter]
+[bg_fade_in bg_storage="kei/居間.webp"]
 
 ;立ち絵２　泣き顔
 [chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
@@ -824,7 +836,7 @@
 ;立ち絵１　笑顔
 [chara_mod name="kei" face="立ち絵1_目開き笑顔" cross=false]
 
-
+#
 その後、何度声を掛けても目覚めることはなかった[p]
 
 #ロイド
@@ -886,11 +898,11 @@
 
 僕は最後まで見届けなければいけないのだから[p]
 
----[p]
+;---
 
 
 
-第三章[p]
+;第三章
 
 
 ;背景　自室
@@ -908,7 +920,7 @@ pppppppppp[p]
 「あともう少しだけ・・」[p]
 
 #母
-「起きなさい！　朝よ！　」[p]
+「起きなさい！　朝よ！」[p]
 
 #
 おもいっきり布団をはがされた[p]

@@ -1,6 +1,5 @@
 *start
 
-[playbgm storage="kei/BGM_kei1.ogg"]
 ;背景研究所
 [bg_fade_out]
 [bg_fade_in bg_storage="entrance.png"]
@@ -59,7 +58,7 @@
 
 
 #継
-「細かいことはいいじゃない！　」[p]
+「細かいことはいいじゃない！」[p]
 
 「結果オーライってやつね！」[p]
 
@@ -212,7 +211,7 @@
 
 
 ;立ち絵　かなめ
-[chara_show name="kaname" top=32 time=1000 wait=false]
+[chara_show name="kaname" top=-120 time=1000 wait=false]
 
 
 #かなめ
@@ -243,7 +242,7 @@
 
 この一年、色々なことがあったが[p]
 
-僕は　心石　継　という自分のことを忘れないだろう[p]
+僕は　心石　継　という人のことを忘れないだろう[p]
 
 ぼくが存在した中で数少ない大事な思いでの一つだ。[p]
 
@@ -282,7 +281,7 @@
 「貴方がやりたいこと　望むことはすべて叶うんだから！」[p]
 
 
-だって…
+(だって…)[p]
 ;CG　5
 
 

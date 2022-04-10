@@ -1,7 +1,5 @@
 *start
 
-[playbgm storage="kei/BGM_kei1.ogg"]
-
 ;背景　公園
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/公園.webp"]
@@ -239,13 +237,13 @@
 #母
 「何言ってるの？」[p]
 
-「私たち親は見返りがほしく手育てたわけじゃないのよ」[p]
+「私たち親は見返りがほしくて育てたわけじゃないのよ」[p]
 
 
 #母
 「ただ幸せになってほしくて私たちが私たちの親からもらったものを」[p]
 
-「今度は子供たちに　そうやって同じことをしてきただけなんだから　」[p]
+「今度は子供たちに　そうやって同じことをしてきただけなんだから」[p]
 
 #母
 「だから謝らないで…むしろ貴方が生まれてきてくれて…」[p]
@@ -430,10 +428,7 @@
 
 
 ;演出指示　画面が真っ白になる
-[bg_fade_out]
-[bg_fade_in bg_storage="white.png"]
-[bg_fade_out]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg storage="white.png"]
 ;BGM 
 [playbgm storage="kei/BGM_kei1.ogg"]
 
@@ -459,7 +454,7 @@
 でも私たちのほうが沢山のことをあの子からもらったのだ[p]
 
 #
-「「継・・生まれてきてくれてありがとう」[p]
+「「継・・生まれてきてくれてありがとう」」[p]
 
 #父
 「さあ・・私たちもいこうか　本当に帰るべき場所に」[p]
@@ -470,16 +465,18 @@
 #父
 「私もだよ」[p]
 
----[p]
+;---
 
 
 
-第四章[p]
+;第四章
 
 
 
 ;背景　真っ暗
-[bg storage="black.png"]
+[bg_fade_out]
+[bg_fade_in bg_storage="black.png"]
+
 ;BGM　なし
 [stopbgm]
 
@@ -507,7 +504,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/カプセル_ルーム.webp"]
 ;立ち絵１　泣き顔
-[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
+[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=32 time=1000 wait=false]
 ;BGM　IKEIKE
 [playbgm storage="kei/BGM_kei(trance).ogg"]
 
@@ -555,8 +552,7 @@
 
 
 ;背景　塔　廊下
-[bg_fade_out]
-[bg_fade_in bg_storage="kei/廊下2.webp"]
+[bg storage="kei/廊下2.webp" time="1000"]
 ;立ち絵１　通常
 [chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
 ;BGM　Monologue
@@ -616,13 +612,13 @@
 [chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 #継
-「有能！　」[p]
+「有能！」[p]
 
 
 ;立ち絵１　目開　疑問
 [chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 
-「で…どうだった？　」[p]
+「で…どうだった？」[p]
 
 #ロイド
 「ここにいるのは基本的に設備の維持をするメンテナンスロボが大半です」[p]
@@ -682,8 +678,7 @@
 
 
 ;背景　塔　扉
-[bg_fade_out]
-[bg_fade_in bg_storage="kei/塔_扉.webp"]
+[bg storage="kei/塔_扉.webp" time="1000"]
 
 
 #
@@ -854,10 +849,10 @@
 ;立ち絵１　目開き　怒り
 [chara_mod name="kei" face="立ち絵1_目開き怒り" cross=false]
 ;BGM なし
-[stopbgm]
 
-#
-継「こんなもの・・っ！」[p]
+
+#継
+「こんなもの・・っ！」[p]
 
 #
 そういって近くにあったイスを持ち　コンピューターに叩きつけようとする[p]
@@ -906,7 +901,7 @@
 
 「確かに私の心には響いたもの…」[p]
 
-「だからここが悪いものではないとも思わない」[p]
+「だからここが悪いものだとは思わない」[p]
 
 
 ;立ち絵１　目閉　通常

@@ -3,7 +3,7 @@
 ;背景　真っ暗
 
 ;背景　研究所
-[bg_fade_out]
+
 [bg_fade_in bg_storage="labo.jpg"]
 ;BGM profiling開始
 [playbgm storage="rina/BGM_profiling.ogg"]
@@ -47,8 +47,8 @@
 
 
 ;背景　研究所
-[bg_fade_out]
-[bg_fade_in bg_storage="sleep_room.png"]
+
+[bg storage="sleep_room.png" time="1000"]
 ;BGM　Foresut2
 ;ゆぅさんメモ：仮？該当ファイル名のデータなし
 [playbgm storage="common/BGM_Forest1.ogg]
@@ -94,7 +94,7 @@
 [chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 
 
-#継
+#？？？
 
 「そんなことよりここはどこなのよ…」[p]
 
@@ -182,7 +182,7 @@
 「貴方がロボットなのはわかったわ！」　[p]
 
 
-「でも人類が絶滅したなんてこの目で見るまで信じられない…」
+「でも人類が絶滅したなんてこの目で見るまで信じられない…」[p]
 
 「出口はどこなの？」[p]
 
@@ -798,14 +798,13 @@
 あんまり反省してなかったうえにやる気満々だった。[p]
 
 
----[p]
+;---
 
 
 
 
 ;背景　荒廃した街並み
-[bg_fade_out]
-[bg_fade_in bg_storage="kei/荒廃した街並み1.webp"]
+[bg storage="kei/荒廃した街並み1.webp" time="100"]
 ;BGM kei<trance>
 [playbgm storage="kei/BGM_Kei(trance).ogg"]
 [chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]

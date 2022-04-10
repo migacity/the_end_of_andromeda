@@ -57,7 +57,7 @@
 
 いつもの家族団らんだ[p]
 
-#
+#父
 「ぐふっ！」[p]
 
 
@@ -97,7 +97,8 @@
 #母
 「いっきに飲むからでしょ」[p]
 
-咽た父を心配する様子もなく食器を洗い続ける母
+#
+咽た父を心配する様子もなく食器を洗い続ける母[p]
 
 #父
 「・・・あい・・」[p]
@@ -123,7 +124,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２寝間着　目閉じ通常
-[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_寝間着_通常" top=32 time=1000 wait=false]
 
 
 
@@ -155,7 +156,7 @@
 #継
 「うん、オンラインじゃなくて生での講義を受けたい気分だし」[p]
 
-#
+#母
 「そう、今日はあなたが好きなもの作っちゃうから早く帰ってくるのよ！」[p]
 
 
@@ -236,7 +237,7 @@
 
 
 ;立ち絵１　泣き顔
-[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=32 time=1000 wait=false]
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 #継
 「っ・・・いたっ」[p]
@@ -244,8 +245,7 @@
 
 #
 ;背景　ノイズ
-[bg_fade_out]
-[bg_fade_in bg_storage="kei/ノイズ.webp"]
+[bg storage="kei/ノイズ.webp" time="1000"]
 ;BGM　ノイズ音
 ;立ち絵２　疑問
 [chara_show name="kei" face="立ち絵2_疑問" top=32 time=1000 wait=false]
@@ -255,18 +255,18 @@
 
 
 ;立ち絵１　困り
-[chara_show name="kei" face="立ち絵1_疑問" top=32 time=1000 wait=false]
-
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 
 #継
 「何か思い出そうとしたような・・」[p]
 
 ;背景　ノイズ
-[bg_fade_out]
-[bg_fade_in bg_storage="kei/ノイズ.webp"]
+;[bg storage="kei/ノイズ.webp" time="1000"]
+
 ;BGM　ノイズ音
 ;立ち絵２　目開き笑顔
-[chara_show name="kei" face="立ち絵2_目開き笑顔" top=32 time=1000 wait=false]
+
+[chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
 
 「まあいっか」[p]
 
@@ -299,8 +299,7 @@
 
 
 ;立ち絵２　目閉じ笑顔
-[chara_show name="kei" face="立ち絵2_目閉じ笑顔" top=32 time=1000 wait=false]
-
+[chara_mod name="kei" face="立ち絵2_目閉じ笑顔" cross=false]
 #継
 「今日の御飯はなにー！？」[p]
 
@@ -359,8 +358,7 @@
 
 ;BGM　ノイズ音
 ;背景　ノイズ
-[bg_fade_out]
-[bg_fade_in bg_storage="kei/ノイズ.webp"]
+[bg storage="kei/ノイズ.webp" time="1000"]
 
 #
 かなめのことを考えたらまた頭が痛くなった[p]
@@ -403,8 +401,9 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵寝間着　ねむい
-[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_寝間着_眠い" top=32 time=1000 wait=false]
 ;BGM なし
+[stopbgm]
 
 
 #継
@@ -476,8 +475,7 @@
 頭が痛い[p]
 
 ;背景　ノイズ
-[bg_fade_out]
-[bg_fade_in bg_storage="kei/ノイズ.webp"]
+[bg storage="kei/ノイズ.webp" time="1000"]
 ;BGM　なし
 [stopbgm]
 
@@ -518,7 +516,7 @@
 ;立ち絵２　泣き顔
 [chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=32 time=1000 wait=false]
 ;BGM　Incineator
-[playbgm storage="kei/BGM_Incinerator.ogg"]
+[playbgm storage="common/BGM_Incinerator.ogg"]
 
 
 #
@@ -659,7 +657,7 @@
 「ほら謝りなさい！」[p]
 
 #子供
-「ごめんなさいーい」[p]
+「ごめんなさーい」[p]
 
 #父
 「いえ・・大丈夫です・・」[p]
@@ -706,7 +704,8 @@
 [chara_mod name="kei" face="立ち絵2_特殊" cross=false]
 
 
-継「私のお気に入りのパーカーがあああああっ！」[p]
+#継
+「私のお気に入りのパーカーがあああああっ！」[p]
 
 #父
 「ふっ・・」[p]
@@ -905,10 +904,10 @@
 #父
 「恨まれると思っていたが我が子を生き延びさせるためにはこれしか方法がなかった。」[p]
 
-#
+
 「だから私たち人類は記録として残っているが生きてはいない」[p]
 
-#
+
 「この世界の住人は基本的に決められた行動しかとらない…」[p]
 
 「今を繰り返し続けるだけだ」[p]
