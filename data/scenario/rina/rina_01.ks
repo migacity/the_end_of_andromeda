@@ -50,12 +50,13 @@
 ;SE再生、ファイル名＝glass-break1.mp3、回数＝1回
 [playse storage="rina/glass-break1.ogg" buf=0]
 [wait time=10]
+;可能であれば、立ち絵に小刻みに震えるエフェクトを加える、停止指示があるまで継続
+[kanim name="rina" keyframe="rina_shake" easing="linear" count="infinite" mode="none" time=200]
 ;SE再生、ファイル名＝iron-stick1.mp3、回数＝1回
 [playse storage="rina/iron-stick1.ogg" buf=1]
 ;SE再生、ファイル名＝shaking-and-clattering-1.mp3、回数＝ループ
 [wait time=1000]
 [playse storage="rina/shaking-and-clattering-1.ogg" buf=2 loop=true volume=50]
-;可能であれば、立ち絵に小刻みに震えるエフェクトを加える、停止指示があるまで継続
 
 #
 いきなり彼女は起きた。[p]
@@ -106,6 +107,7 @@
 ;SEループ停止、ファイル名＝shaking-and-clattering-1.mp3
 [fadeoutse time=500 buf=2]
 ;立ち絵、小刻みに震える効果を終了
+[stop_kanim name="rina"]
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-zitome.png、停止指示あるまで継続
 [chara_mod name="rina" face="zitome" cross=false]
 ;BGM消失
