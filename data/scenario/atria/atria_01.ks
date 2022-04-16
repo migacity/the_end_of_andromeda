@@ -118,9 +118,9 @@
 
 ;1秒間アトリア立ち絵を「もぐもぐ」→「かなしみ」
 [chara_mod name="atria" face="eating1" wait=true cross=false]
-[wait time=0.5]
+[wait time=500]
 [chara_mod name="atria" face="eating2" wait=true cross=false]
-[wait time=0.5]
+[wait time=500]
 
 ;立ち絵_かなしみ, 
 [chara_mod name="atria" face="sad" wait=true cross=false]
@@ -186,13 +186,15 @@
 「やったー！」[p]
 
 ;立ち絵_手上げ, 
-[chara_mod name="atria" face="hands_up" wait=true cross=true]
+[chara_hide_all wait=true time=100]
+[chara_show name="atria" time=300 wait=true face="hands_up" top=-34]
 
 #
 魚を食べられるからかアトリアはどんどん明るくなっているような気がする。[p]
 
 ;立ち絵_デフォルト, 
-[chara_mod name="atria" face="default" wait=true cross=true]
+[chara_hide_all wait=true time=100]
+[chara_show name="atria" time=300 wait=true face="default" top=94]
 
 #ロイド
 「そういえば博士が釣りについて話していたので施設の中にも釣りの道具があるかもしれませんね」[p]
@@ -308,7 +310,7 @@
 「では山菜等を中心に食べられそうなものをいろいろ集めてみましょうか」[p]
 
 ;立ち絵_かなしみ, 
-[chara_mod name="atria" face="sad" wait=true cross=false]
+[chara_show name="atria" top=94 time=1000 face="sad" wait=false]
 
 #アトリア
 「見た感じ見たことない草ばかりだなぁ……食べられるか分からないのばかりだ」[p]
@@ -501,7 +503,7 @@
 「うん！おやすみなさい！」[p]
 
 ;立ち絵_画面外, 場所_画面外, 
-[chara_hide_all wait=true time="1000"]
+[chara_hide_all wait=true time=1000]
 
 #
 しばらくは一人の時間になる。施設の巡回整備や明日の準備等、やることは多いので退屈はしないだろう。[p]
@@ -529,7 +531,7 @@
 「この施設の裏手に海があるのでそこで魚を釣ることにしましょう」[p]
 
 ;立ち絵_デフォルト, 場所_デフォルト, 
-[chara_mod name="atria" face="default" wait=true cross=false]
+[chara_mod name="atria" top=94 face="default" wait=true cross=false]
 
 #アトリア
 「うみー！」[p]
