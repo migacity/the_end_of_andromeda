@@ -210,6 +210,8 @@
 
 ;SE　扉を開ける音
 [playse storage="kei/自動ドアが開く.ogg" buf=0]
+
+[wait time="500" ]
 ;背景　森
 [bg storage="kei/森.webp" time="200"]
 ;SE　鳥の囀り音

@@ -45,7 +45,7 @@
 
 [chara_hide_all ]
 ;CGかなめ発見
-[bg storage="still/kei_CGかなめ.webp" time=1000 wait=true]
+[bg storage="still/kei_CGかなめ.webp" time=1000 wait=true cross=true ]
 
 #
 ありえないはずと思いながらもどこか期待している自分がいる[p]
@@ -73,7 +73,7 @@
 #継
 「ずっと守ってくれていたのね・・ありがとう・・」[p]
 
-[bg storage="kei/自宅玄関.webp" time="1000"]
+[bg storage="kei/居間.webp" time="1000"]
 
 ;立ち絵１　泣き顔
 [chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=32 time=1000 wait=false]
@@ -787,7 +787,7 @@
 [bg_fade_in bg_storage="kei/居間.webp"]
 
 ;立ち絵２　泣き顔
-[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
+[chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=32 time=1000 wait=false]
 
 #継
 「ずっと守ってくれていたのね・・ありがとう・・」[p]
