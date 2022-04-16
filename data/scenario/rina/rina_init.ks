@@ -23,4 +23,16 @@
 [chara_face name="rina" face="zinkotomin" storage="chara/rina/rina-zinkotomin.webp"]
 [chara_face name="rina" face="zitome" storage="chara/rina/rina-zitome.webp"]
 
+[keyframe name="rina_shake"]
+    [frame p=0% x=0]
+    [frame p=12% x=-10]
+    [frame p=25% x=0]
+    [frame p=38% x=10]
+    [frame p=50% x=0]
+    [frame p=62% x=-10]
+    [frame p=75% x=0]
+    [frame p=88% x=10]
+    [frame p=100% x=0]
+[endkeyframe]
+
 [jump storage="rina/rina_01.ks" target="*start"]

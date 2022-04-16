@@ -50,12 +50,13 @@
 ;SE再生、ファイル名＝glass-break1.mp3、回数＝1回
 [playse storage="rina/glass-break1.ogg" buf=0]
 [wait time=10]
+;可能であれば、立ち絵に小刻みに震えるエフェクトを加える、停止指示があるまで継続
+[kanim name="rina" keyframe="rina_shake" easing="linear" count="infinite" mode="none" time=200]
 ;SE再生、ファイル名＝iron-stick1.mp3、回数＝1回
 [playse storage="rina/iron-stick1.ogg" buf=1]
 ;SE再生、ファイル名＝shaking-and-clattering-1.mp3、回数＝ループ
 [wait time=1000]
 [playse storage="rina/shaking-and-clattering-1.ogg" buf=2 loop=true volume=50]
-;可能であれば、立ち絵に小刻みに震えるエフェクトを加える、停止指示があるまで継続
 
 #
 いきなり彼女は起きた。[p]
@@ -106,6 +107,7 @@
 ;SEループ停止、ファイル名＝shaking-and-clattering-1.mp3
 [fadeoutse time=500 buf=2]
 ;立ち絵、小刻みに震える効果を終了
+[stop_kanim name="rina"]
 ;立ち絵切替、位置＝画面中央、ファイル名＝rina-zitome.png、停止指示あるまで継続
 [chara_mod name="rina" face="zitome" cross=false]
 ;BGM消失
@@ -335,7 +337,7 @@
 「りなさんは人口冬眠を施す以前から博士や僕と面識がありましたか？」[p]
 
 #ロイド
-「僕たちの人柄についてもご存知でしたようですが？」[p]
+「僕たちの人柄についてもご存知の様子でしたが？」[p]
 
 #りな
 「全然知らなかったよロイドと話すまで」[p]
@@ -588,7 +590,7 @@
 [playbgm storage="rina/BGM_Profiling.ogg"]
 
 #ロイド
-「では不躾ながら……りなさんはロザリオを常に形態しています」[p]
+「では不躾ながら……りなさんはロザリオを常に携帯しています」[p]
 
 #ロイド
 「おそらくミッション系の学校に通われていたかと、特に聖書や福音書には造形が深く信仰心がとても強そうです」[p]
@@ -715,7 +717,7 @@
 「焼却炉といい崖といい立ち入り禁止が多いね」[p]
 
 #りな
-「わたし焼却炉で火傷したりとかしないよ、学校でさんざん使っもん」[p]
+「わたし焼却炉で火傷したりとかしないよ、学校でさんざん使ったもん」[p]
 
 #ロイド
 「わずかな不運も研げば死神の鎌になる、これも博士の言葉です」[p]
@@ -796,8 +798,10 @@
 #りか
 『鏡を見ると歳を取らない自分が映っている、ガラス越しにりなの眠っている顔を見ているかのよう』[p]
 
-;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
-[playse storage="rina/flipping-pages-quickly-1.ogg" buf=1]
+;BGM消失
+[stopbgm]
+;SEループ消失、ファイル名＝clock-second-hand-2.mp3
+[stopse buf=0]
 
 #りか
 『りなに会いたい、今日エレベーターの安全装置が故障して挟まれた、私は腰から下を切り離されてロイドに見つかるまでの７時間ずっと動けなかった』[p]
@@ -814,8 +818,6 @@
 #りか
 『りな、私はずっと前からゾンビだったのかも』[p]
 
-;SEループ消失、ファイル名＝clock-second-hand-2.mp3
-[stopse buf=0]
 [wait time=800]
 ;SE再生、ファイル名＝wall-clock1.mp3、回数＝11回(午後11時の意)
 [playse storage="rina/wall-clock1.ogg" buf=0]
@@ -840,8 +842,6 @@
 [wait time=1500]
 [playse storage="rina/wall-clock1.ogg" buf=0]
 [wait time=1500]
-;BGM消失
-[stopbgm]
 ;背景消失
 ;画面暗転
 [bg_fade_out]
@@ -1054,8 +1054,10 @@
 #りか
 『ねえ、りな』[p]
 
-;SE再生、ファイル名＝flipping-pages-quickly-1.mp3、回数＝1回
-[playse storage="rina/flipping-pages-quickly-1.ogg" buf=1]
+;背景消失
+;画面暗転
+[bg_fade_out]
+[bg_fade_in bg_storage="black.png"]
 
 #――
 『わたしは、だれ？』[p]
@@ -1076,7 +1078,7 @@
 [wait time=2000]
 ;SE再生、ファイル名＝climbing-stairs-in-house-1.mp3、回数＝1回
 [playse storage="rina/climbing-stairs-in-house-1.ogg" buf=0]
-[wait time=2000]
+[wait time=8000]
 ;BGM無音消失
 ;背景消失
 ;画面暗転
@@ -1453,7 +1455,7 @@
 [chara_hide name="rina" wait=false time=500]
 ;背景開始、ひとの心、ファイル名＝white.png、別途指示あるまで継続
 #
-[bg_fade_in bg_storage="white.png"]
+[bg_fade_in bg_storage="rina/white.webp"]
 ;BGM無音開始
 
 #
@@ -1503,6 +1505,7 @@
 ;BGM無音終了
 ;背景消失
 [bg_fade_out]
+[wait time=3000]
 ;背景開始、花と墓標、ファイル名＝hana.png、別途指示あるまで継続
 [bg_fade_in bg_storage="rina/hana.webp"]
 ;BGM開始、オルゴール、ファイル名=BGM_Rika.ogg、別途指示あるまで継続
@@ -1578,6 +1581,7 @@
 
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
 [playse storage="rina/cancel-2.ogg" buf=0]
+[wait time=3000]
 ;BGM無音消失
 ;背景開始、森林、ファイル名＝forest.png、別途指示あるまで継続
 [bg storage="rina/forest.webp" time=1000]
@@ -1680,6 +1684,7 @@
 [stopse buf=0]
 ;BGM消失
 [stopbgm]
+[wait time=3000]
 ;背景消失
 [bg_fade_out]
 [bg_fade_in bg_storage="black.png" time=100]
