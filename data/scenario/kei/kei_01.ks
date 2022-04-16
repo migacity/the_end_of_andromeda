@@ -3,7 +3,10 @@
 ;背景　真っ暗
 
 ;背景　研究所
+
+[bg_fade_in bg_storage="labo.jpg"]
 ;BGM profiling開始
+[playbgm storage="rina/BGM_profiling.ogg"]
 
 ; キャラ立ち絵タグサンプル
 ; [chara_show name="kei" face="立ち絵2_絶望" top=32]
@@ -44,9 +47,13 @@
 
 
 ;背景　研究所
-;BGM　Foresut2
-;継　立ち絵　特殊
 
+[bg storage="sleep_room.png" time="1000"]
+;BGM　Foresut2
+;ゆぅさんメモ：仮？該当ファイル名のデータなし
+[playbgm storage="common/BGM_Forest1.ogg]
+;継　立ち絵　特殊
+[chara_show name="kei" face="立ち絵2_特殊" top=32 time=1000 wait=false]
 
 
 
@@ -62,9 +69,10 @@
 
 
 ;立ち絵１　怒
+[chara_mod name="kei" face="立ち絵1_目開き怒り" cross=false]
 #？？？
 
-「いやいやそんなことあるわけないじゃないの！？　」[p]
+「いやいやそんなことあるわけないじゃないの！？」[p]
 
 
 「つくならもっとましな嘘をつきなさい」[p]
@@ -72,6 +80,7 @@
 
 
 ;立ち絵1　呆れ
+[chara_mod name="kei" face="立ち絵1_目閉_悲しみ" cross=false]
 
 #
 
@@ -82,17 +91,18 @@
 
 
 ;立ち絵　不安
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 
 
-#継
+#？？？
 
 「そんなことよりここはどこなのよ…」[p]
 
 
 ;立ち絵２　不安
+[chara_mod name="kei" face="立ち絵2_疑問" cross=false]
 
-
-「というか私なんでこんなところにいるの？　」[p]
+「というか私なんでこんなところにいるの？」[p]
 
 
 #ロイド
@@ -105,7 +115,7 @@
 
 
 ;立ち絵1　目閉　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #
 
@@ -117,6 +127,7 @@
 
 
 ;立ち絵1　目
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 名前は心石　継[p]
 
@@ -126,7 +137,7 @@
 
 
 ;立ち絵1　怒
-
+[chara_mod name="kei" face="立ち絵1_目開き怒り" cross=false]
 
 
 #継
@@ -140,7 +151,8 @@
 
 
 
-立ち絵2　泣き
+;立ち絵2　泣き
+[chara_mod name="kei" face="立ち絵2_目閉じ悲しみ" cross=false]
 
 #継
 
@@ -154,7 +166,7 @@
 
 #継
 
-「めっちゃ痛いんだけど…え？なんなの？　」[p]
+「めっちゃ痛いんだけど…え？なんなの？」[p]
 
 
 #ロイド
@@ -170,9 +182,9 @@
 「貴方がロボットなのはわかったわ！」　[p]
 
 
-「でも人類が絶滅したなんてこの目で見るまで信じられない…」
+「でも人類が絶滅したなんてこの目で見るまで信じられない…」[p]
 
-「出口はどこなの？　」[p]
+「出口はどこなの？」[p]
 
 
 #ロイド
@@ -182,6 +194,8 @@
 
 #
 ;背景　研究所　廊下
+[bg_fade_out]
+[bg_fade_in bg_storage="labo.jpg"]
 
 
 外出がご希望のようなので案内する[p]
@@ -192,10 +206,14 @@
 
 
 ;背景　真っ白
+[bg storage="white.png"]
+
 ;SE　扉を開ける音
 ;背景　森
+[bg storage="kei/森.webp" time="200"]
 ;SE　鳥の囀り音
 ;立ち絵　呆れ
+[chara_show name="kei" face="立ち絵1_目閉_悲しみ" top=32 time=1000 wait=false]
 
 #継
 
@@ -208,10 +226,11 @@
 
 
 ;立ち絵２　通常
+[chara_mod name="kei" face="立ち絵2_通常" cross=false]
 
 #継
 
-「あの遠くに見える大きな建物は何かしら？　」[p]
+「あの遠くに見える大きな建物は何かしら？」[p]
 
 #ロイド
 
@@ -220,6 +239,7 @@
 
 
 ;立ち絵１　呆れ
+[chara_mod name="kei" face="立ち絵1_目閉_悲しみ" cross=false]
 #継
 
 「だいぶ曖昧ね…」[p]
@@ -235,6 +255,7 @@
 
 
 ;立ち絵２　目閉じ　呆れ
+[chara_mod name="kei" face="立ち絵2_目閉じ悲しみ" cross=false]
 
 
 #継
@@ -242,7 +263,7 @@
 「何をするにも情報が少なすぎるわね…」[p]
 
 
-「というかここってなんの施設なわけ？　」[p]
+「というかここってなんの施設なわけ？」[p]
 
 
 #ロイド
@@ -254,10 +275,11 @@
 
 
 ;立ち絵１　目開　怒
+[chara_mod name="kei" face="立ち絵1_目開き怒り" cross=false]
 
 #継
 
-「怪しい…　やばい奴ではないでしょうね？ 」[p]
+「怪しい…　やばい奴ではないでしょうね？」[p]
 
 
 #ロイド
@@ -266,6 +288,7 @@
 
 
 ;立ち絵１　目閉　通常　
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 
@@ -273,6 +296,7 @@
 
 
 ;立ち絵2　目開　疑問
+[chara_mod name="kei" face="立ち絵2_疑問" cross=false]
 
 「ところで書斎とかないのかしら？」[p]
 
@@ -281,7 +305,7 @@
 
 #ロイド
 
-「書斎ですか？ 」[p]
+「書斎ですか？」[p]
 
 
 #継
@@ -292,7 +316,7 @@
 「今置かれている状況と世界情勢を把握したいの」[p]
 
 
-「だから資料を見させてくれない？ 」[p]
+「だから資料を見させてくれない？」[p]
 
 
 #ロイド
@@ -335,9 +359,12 @@
 
 
 ;背景　研究所　扉
+[bg_fade_out]
+[bg_fade_in bg_storage="labo.jpg"]
 ;BGM　kei1 
+[playbgm storage="kei/BGM_kei1.ogg"]
 #
-
+[chara_show name="kei" face="立ち絵2_疑問" top=32 time=1000 wait=false]
 ひとりぶつぶつといってる姿を見ると[p]
 
 
@@ -353,7 +380,7 @@
 一心不乱に資料を読み漁っていた[p]
 
 
-数時間立っても変わらず動きがない　[p]
+数時間立っても変わらず動きがない[p]
 
 
 流石に生きた人間には食事や水分が必要であるため声を掛ける…[p]
@@ -361,7 +388,7 @@
 
 
 ;立ち絵１　目閉じ笑顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 
 #継
@@ -372,7 +399,7 @@
 
 
 ;立ち絵１　目閉じ通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 
@@ -398,7 +425,7 @@
 
 
 ;立ち絵１　目開き通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 
 #継
@@ -424,7 +451,7 @@
 
 
 ;立ち絵２　通常
-
+[chara_mod name="kei" face="立ち絵2_通常" cross=false]
 
 
 #継
@@ -439,7 +466,7 @@
 
 
 ;立ち絵２　目閉じ泣き
-
+[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
 
 
 #継
@@ -449,7 +476,7 @@
 
 
 ;立ち絵１　目閉じ　焦り
-
+[chara_mod name="kei" face="立ち絵1_目閉_怒り" cross=false]
 
 
 「あの時はいきなり知らないところで目覚めてどうかしてたのよ」[p]
@@ -468,7 +495,7 @@
 
 
 ;立ち絵２　焦り
-
+[chara_mod name="kei" face="立ち絵2_焦り" cross=false]
 
 
 #継
@@ -494,7 +521,7 @@
 
 
 ;立ち絵１　目開き通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 
 #継
@@ -512,7 +539,7 @@
 
 
 ;立ち絵２　焦り
-
+[chara_mod name="kei" face="立ち絵2_焦り" cross=false]
 
 
 #継
@@ -535,7 +562,7 @@
 
 
 ;立ち絵１　焦り
-
+[chara_mod name="kei" face="立ち絵_焦り" cross=false]
 
 
 #継
@@ -558,7 +585,7 @@
 
 
 ;立ち絵１　驚き
-
+[chara_mod name="kei" face="立ち絵_驚き" cross=false]
 
 
 #継
@@ -569,8 +596,11 @@
 
 
 ;背景　車内
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/車内.webp"]
 ;BGM sampo
-
+[playbgm storage="common/BGM_sampo.ogg"]
+[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
 #ロイド
 
 「運転は大丈夫でしょうか？」[p]
@@ -620,7 +650,11 @@
 
 
 ;背景　森
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/森.webp"]
 ;BGM  IKEIKE 
+[playbgm storage="rina/BGM_IKEIKE.ogg"]
+[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
 
 #ロイド
 
@@ -644,7 +678,7 @@
 
 
 ;立ち絵１　どや顔
-
+[chara_mod name="kei" face="立ち絵_どや顔" cross=false]
 
 
 #継
@@ -674,7 +708,7 @@
 
 
 ;立ち絵２　目開き　怒り
-
+[chara_mod name="kei" face="立ち絵2_目開き怒り" cross=false]
 
 
 #継
@@ -690,7 +724,7 @@
 「いいじゃない免許あるだけましでしょ！」[p]
 
 
-「私の時代なんてほとんど自動運転だったんだから！　　」[p]
+「私の時代なんてほとんど自動運転だったんだから！」[p]
 
 
 #
@@ -700,12 +734,12 @@
 
 
 ;立ち絵２　目閉じ怒り
-
+[chara_mod name="kei" face="立ち絵2_目開き怒り" cross=false]
 
 
 #継
 
-「あれだけの啖呵きったのにこのざまよ！　」[p]
+「あれだけの啖呵きったのにこのざまよ！」[p]
 
 
 「でもいいじゃない！結果的についたしどこも壊れてないわ！」[p]
@@ -721,7 +755,7 @@
 結論から言うと何度も死にかけた[p]
 
 
-というより破壊されそうになった　[p]
+というより破壊されそうになった[p]
 
 
 車もだけど僕自身も[p]
@@ -729,7 +763,7 @@
 
 
 ;立ち絵１　目閉じ　笑顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 
 #継
@@ -748,7 +782,7 @@
 
 
 ;立ち絵１　目開き　笑顔
-
+[chara_mod name="kei" face="立ち絵1_目開き笑顔" cross=false]
 
 
 #継
@@ -764,13 +798,17 @@
 あんまり反省してなかったうえにやる気満々だった。[p]
 
 
----
+;---
 
 
 
 
 ;背景　荒廃した街並み
+[bg storage="kei/荒廃した街並み1.webp" time="100"]
 ;BGM kei<trance>
+[playbgm storage="kei/BGM_Kei(trance).ogg"]
+[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
+
 #
 
 街についてまずは初めに感じた感想は[p]
@@ -782,8 +820,8 @@
 多くの家屋は比較的状態がよく破損個所はあるものの風化したものが多いといった印象だ[p]
 
 
-恐らく限界集落のように少しづつ減った結果住人はより人が多いところへ移住していったのだろ[p]
-う
+恐らく限界集落のように少しづつ減った結果住人はより人が多いところへ移住していったのだろう[p]
+
 
 インフラの管理も莫大な費用がかかるため[p]
 

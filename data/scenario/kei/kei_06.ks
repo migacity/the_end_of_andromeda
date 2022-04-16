@@ -1,9 +1,11 @@
 *start
 
 ;背景研究所
+[bg_fade_out]
+[bg_fade_in bg_storage="entrance.png"]
 
 ;立ち絵１　目閉笑顔
-
+[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
 
 
 #継
@@ -19,7 +21,7 @@
 
 
 ;立ち絵１　どや顔
-
+[chara_mod name="kei" face="立ち絵_どや顔" cross=false]
 
 
 #継
@@ -29,7 +31,7 @@
 
 
 ;立ち絵１　目開泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目開き泣き顔" cross=false]
 
 
 #継
@@ -39,7 +41,7 @@
 
 
 ;立ち絵１　目閉じ　泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 
 「車が動かなくなったり…変なもの食べてお腹壊したり」[p]
@@ -52,11 +54,11 @@
 
 
 ;立ち絵２　目閉じ　笑顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ笑顔" cross=false]
 
 
 #継
-「細かいことはいいじゃない！　」[p]
+「細かいことはいいじゃない！」[p]
 
 「結果オーライってやつね！」[p]
 
@@ -69,7 +71,8 @@
 
 
 ;背景　研究所内　
-
+[bg_fade_out]
+[bg_fade_in bg_storage="labo.jpg"]
 
 
 そこから暫く僕たちは施設で自分の身体のメンテナンス…[p]
@@ -98,8 +101,12 @@
 
 
 ;背景　森
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/森.webp"]
 ;立ち絵２　目閉　通常
+[chara_show name="kei" face="立ち絵2_目閉じ通常" top=32 time=1000 wait=false]
 ;BGM kei1
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #継
 「私ね…」[p]
@@ -113,7 +120,7 @@
 
 
 ;立ち絵２　目開　通常
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 
 #継
@@ -123,12 +130,13 @@
 
 
 ;立ち絵１　目閉じ　笑顔
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 
 「ありがとう」[p]
 
 ;立ち絵なし
+[chara_hide_all]
 
 #
 深くお辞儀をする[p]
@@ -158,7 +166,7 @@
 
 
 ;立ち絵１　目閉じ　笑顔
-
+[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
 
 
 #継
@@ -168,7 +176,7 @@
 
 
 ;立ち絵２　目開き　笑顔
-
+[chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
 
 
 「ほんとそういうところね！」[p]
@@ -185,14 +193,14 @@
 
 
 ;立ち絵２　目閉じ　通常
-
+[chara_mod name="kei" face="立ち絵2_目閉じ通常" cross=false]
 
 #継
 「後・・この子もありがとうね」[p]
 
 
 ;立ち絵２　目開き　笑顔
-
+[chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
 
 
 #継
@@ -203,7 +211,7 @@
 
 
 ;立ち絵　かなめ
-
+[chara_show name="kaname" top=-120 time=1000 wait=false]
 
 
 #かなめ
@@ -216,11 +224,15 @@
 
 
 ;背景　森
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/森.webp"]
 ;立ち絵１　笑顔
+[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
 ;BGM kei<Family>
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #継
-「それじゃあ…もういくわ　！」[p]
+「それじゃあ…もういくわ！」[p]
 
 #ロイド
 「ええ　元気で」[p]
@@ -230,13 +242,13 @@
 
 この一年、色々なことがあったが[p]
 
-僕は　心石　継　という自分のことを忘れないだろう[p]
+僕は　心石　継　という人のことを忘れないだろう[p]
 
 ぼくが存在した中で数少ない大事な思いでの一つだ。[p]
 
 
 ;立ち絵1　困り笑顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 #継
 「あなたもね」[p]
@@ -244,7 +256,8 @@
 
 
 ;背景　野原
-
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/野原.webp"]
 
 #
 彼女は歩き出す　今度は僕とは別の道を[p]
@@ -260,7 +273,7 @@
 「最後に待つだけじゃなくて、自分でほしいものは自分の意志で手に入れるのよ！」[p]
 
 ;立ち絵１　目開き笑顔
-
+[chara_show name="kei" face="立ち絵1_目開き笑顔" top=32 time=1000 wait=false]
 
 #継
 「終末だからなによ！それで終わるなんてつまらないわ！」[p]
@@ -268,7 +281,7 @@
 「貴方がやりたいこと　望むことはすべて叶うんだから！」[p]
 
 
-だって…
+(だって…)[p]
 ;CG　5
 
 
@@ -278,7 +291,10 @@
 
 
 ;背景　研究所
+[bg_fade_out]
+[bg_fade_in bg_storage="labo.jpg"]
 ;BGM  なし
+[stopbgm]
 #
 僕が見た彼女の笑顔は　最後まで輝いていた[p]
 

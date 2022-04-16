@@ -1,8 +1,13 @@
 *start
 
 ;背景　居間
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２寝間着　目閉じ通常
+[chara_show name="kei" face="立ち絵1_寝間着_眠い" top=32 time=1000 wait=false]
+
 ;BGM　なし
+[stopbgm]
 
 #継
 「おはよう・・父さん、母さん」[p]
@@ -16,7 +21,7 @@
 
 
 ;立ち絵１寝間着　目開き通常
-
+[chara_mod name="kei" face="立ち絵1_寝間着_通常" cross=false]
 
 #継
 「うん・・ありがとう」[p]
@@ -35,7 +40,9 @@
 
 
 ;立ち絵なし
+[chara_hide_all]
 ;BGM　魔王魂ヒーリング16
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 
 #父
@@ -50,13 +57,13 @@
 
 いつもの家族団らんだ[p]
 
-#
+#父
 「ぐふっ！」[p]
 
 
 
 ;立ち絵１寝間着　驚き
-
+[chara_show name="kei" face="立ち絵1_寝間着_特殊" top=32 time=1000 wait=false]
 
 #継
 「え！なに！？」[p]
@@ -90,7 +97,8 @@
 #母
 「いっきに飲むからでしょ」[p]
 
-咽た父を心配する様子もなく食器を洗い続ける母
+#
+咽た父を心配する様子もなく食器を洗い続ける母[p]
 
 #父
 「・・・あい・・」[p]
@@ -113,8 +121,11 @@
 
 その二人の背を見ながら私も朝食を食べ始める[p]
 
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
+;立ち絵２寝間着　目閉じ通常
+[chara_show name="kei" face="立ち絵1_寝間着_通常" top=32 time=1000 wait=false]
 
-;立ち絵１　目閉じ笑顔
 
 
 
@@ -129,7 +140,7 @@
 
 
 ;立ち絵１　目開き笑顔
-
+[chara_mod name="kei" face="立ち絵1_目開き笑顔" cross=false]
 
 #継
 「私も大学にいってきます」[p]
@@ -139,18 +150,18 @@
 
 
 ;立ち絵２　目閉じ通常
-
+[chara_mod name="kei" face="立ち絵2_目閉じ通常" cross=false]
 
 
 #継
 「うん、オンラインじゃなくて生での講義を受けたい気分だし」[p]
 
-#
+#母
 「そう、今日はあなたが好きなもの作っちゃうから早く帰ってくるのよ！」[p]
 
 
 ;立ち絵１　目閉じ笑顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_笑顔" cross=false]
 
 #継
 「うん、わかった。今日はまっすぐ帰るね」[p]
@@ -158,9 +169,11 @@
 
 
 ;背景　電車内部
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/電車内2.webp"]
 ;電車　音
 ;BGM　　なし
-
+[stopbgm]
 
 #
 私が通う大学は電車で15分くらい[p]
@@ -200,14 +213,18 @@
 
 
 ;背景　塔
-
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/塔_外観.webp"]
 
 ふと空を見上げるとやたらと高い建物が目に入った[p]
 
 
 
 ;立ち絵　疑問
+[chara_show name="kei" face="立ち絵1_疑問" top=32 time=1000 wait=false]
+
 ;BGM なし
+[stopbgm]
 
 #継
 「あれ・・？あんなものあったっけ・・？」[p]
@@ -220,7 +237,7 @@
 
 
 ;立ち絵１　泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 #継
 「っ・・・いたっ」[p]
@@ -228,31 +245,39 @@
 
 #
 ;背景　ノイズ
+[bg storage="kei/ノイズ.webp" time="1000"]
 ;BGM　ノイズ音
 ;立ち絵２　疑問
+[chara_show name="kei" face="立ち絵2_疑問" top=32 time=1000 wait=false]
 
 #継
 「あれ・・？なんだったっけ？」[p]
 
 
 ;立ち絵１　困り
-
-
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 
 #継
 「何か思い出そうとしたような・・」[p]
 
 ;背景　ノイズ
+;[bg storage="kei/ノイズ.webp" time="1000"]
+
 ;BGM　ノイズ音
 ;立ち絵２　目開き笑顔
 
+[chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
 
 「まあいっか」[p]
 
 
 ;背景　居間
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２　目開き笑顔
+[chara_show name="kei" face="立ち絵2_目開き笑顔" top=32 time=1000 wait=false]
 ;BGM　魔王魂ピアノ34
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #継
 「ただいまー！」[p]
@@ -274,8 +299,7 @@
 
 
 ;立ち絵２　目閉じ笑顔
-
-
+[chara_mod name="kei" face="立ち絵2_目閉じ笑顔" cross=false]
 #継
 「今日の御飯はなにー！？」[p]
 
@@ -286,27 +310,28 @@
 
 
 ;立ち絵１　目閉じ通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 「はーい」[p]
 
 
 ;立ち絵２　疑問
-
+[chara_mod name="kei" face="立ち絵2_疑問" cross=false]
 
 
 #継
 「ねえ…そういえばかなめはどこ？」[p]
 
 ;BGM　停止
+[stopbgm]
 
 #父
 「かなめはここにはいないよ」[p]
 
 
 ;立ち絵１　驚き
-
+[chara_mod name="kei" face="立ち絵_驚き" cross=false]
 
 
 #継
@@ -317,21 +342,23 @@
 
 
 ;BGM　魔王魂ピアノ34
+[playbgm storage="kei/BGM_kei1.ogg"]
 ;立ち絵１　通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 「わかったー！」[p]
 
 
 ;立ち絵１　泣き顔
-
+[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
 
 #継
 「っ・・また」[p]
 
 ;BGM　ノイズ音
 ;背景　ノイズ
+[bg storage="kei/ノイズ.webp" time="1000"]
 
 #
 かなめのことを考えたらまた頭が痛くなった[p]
@@ -342,8 +369,10 @@
 
 
 ;背景　居間
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM 魔王魂ピアノ37
-
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #父
 「そうだ母さん…今日の弁当も美味しかった…特にハンバーグの一つが絶品だったよ」[p]
@@ -369,8 +398,12 @@
 
 
 ;背景居間
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵寝間着　ねむい
+[chara_show name="kei" face="立ち絵1_寝間着_眠い" top=32 time=1000 wait=false]
 ;BGM なし
+[stopbgm]
 
 
 #継
@@ -393,9 +426,10 @@
 本日は4月25日　○曜日　今日も頑張りましょう！[p]
 
 
-
 ;立ち絵１　疑問
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 ;BGM Incinerator
+[playbgm storage="common/BGM_Incinerator.ogg"]
 
 #継
 「は？」[p]
@@ -409,7 +443,7 @@
 
 
 ;立ち絵１　目開き通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 
 #継
@@ -425,7 +459,7 @@
 
 
 ;立ち絵１　困り
-
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 
 
 #継
@@ -433,7 +467,7 @@
 
 
 ;立ち絵２　目閉じ泣き顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
 
 「いたっ・・！」[p]
 
@@ -441,8 +475,9 @@
 頭が痛い[p]
 
 ;背景　ノイズ
+[bg storage="kei/ノイズ.webp" time="1000"]
 ;BGM　なし
-
+[stopbgm]
 
 #継
 「はあああああああああ！？人類が滅びた！？」[p]
@@ -476,8 +511,12 @@
 
 
 ;背景　　　居間
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２　泣き顔
+[chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=32 time=1000 wait=false]
 ;BGM　Incineator
+[playbgm storage="common/BGM_Incinerator.ogg"]
 
 
 #
@@ -495,9 +534,12 @@
 行かなければ・・あの塔に・・[p]
 
 
-#背景　街並み
+;背景　街並み
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/街並み.webp"]
 ;SE　歩行
 ;BGM　なし
+[stopbgm]
 
 
 #？？？
@@ -512,7 +554,7 @@
 
 
 ;立ち絵１　泣き顔
-
+[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=32 time=1000 wait=false]
 
 
 #継
@@ -525,7 +567,7 @@
 
 
 ;立ち絵２　困り
-
+[chara_mod name="kei" face="立ち絵2_疑問" cross=false]
 
 
 #継
@@ -541,7 +583,7 @@
 
 
 ;立ち絵１　目閉通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 
 #継
@@ -556,7 +598,7 @@
 
 
 ;立ち絵２　目開き通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 
 #継
@@ -565,7 +607,10 @@
 
 
 ;背景　公園
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/公園.webp"]
 ;BGM　Kei1
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #
 自販機を過ぎ、着いた先は地元の公園だ[p]
@@ -588,14 +633,14 @@
 
 
 ;BGM　なし
-
+[stopbgm]
 
 #父
 「うごっ・・！」[p]
 
 
 ;立ち絵　驚き
-
+[chara_show name="kei" face="立ち絵_驚き" top=32 time=1000 wait=false]
 
 
 #継
@@ -609,10 +654,10 @@
 #
 「申し訳ございませんっ！」[p]
 
-「ほら謝りなさい！　」[p]
+「ほら謝りなさい！」[p]
 
 #子供
-「ごめんなさいーい」[p]
+「ごめんなさーい」[p]
 
 #父
 「いえ・・大丈夫です・・」[p]
@@ -622,7 +667,7 @@
 
 
 ;立ち絵１　困り
-
+[chara_mod name="kei" face="立ち絵1_目開き悲しみ" cross=false]
 
 
 #継
@@ -643,7 +688,7 @@
 
 
 ;立ち絵２　困り
-
+[chara_mod name="kei" face="立ち絵2_目開き悲しみ" cross=false]
 
 
 #継
@@ -656,17 +701,18 @@
 
 
 ;立ち絵　特殊
+[chara_mod name="kei" face="立ち絵2_特殊" cross=false]
 
 
-
-継「私のお気に入りのパーカーがあああああっ！」[p]
+#継
+「私のお気に入りのパーカーがあああああっ！」[p]
 
 #父
 「ふっ・・」[p]
 
 
 ;立ち絵１　目閉怒り
-
+[chara_mod name="kei" face="立ち絵1_目閉_怒り" cross=false]
 
 
 #継
@@ -676,14 +722,16 @@
 軽く小突いてやった[p]
 
 ;立ち絵１　目開き通常
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 ;BGM　魔王魂ヒーリング16
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #父
 「昔、ここで遊んでいたことを覚えているか？」[p]
 
 
 ;立ち絵１　目閉じ通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継
 「うん・・懐かしいなぁ」[p]
@@ -691,11 +739,11 @@
 「あの頃はまだ同年代の子も沢山いたからこのあたりもにぎやかだった」[p]
 
 #父
-「そうだな　」[p]
+「そうだな」[p]
 
 
 ;立ち絵２　目開き　通常
-
+[chara_mod name="kei" face="立ち絵2_目開き通常" cross=false]
 
 
 #継
@@ -708,7 +756,7 @@
 
 
 ;立ち絵２　疑問
-
+[chara_mod name="kei" face="立ち絵2_疑問" cross=false]
 
 「あれいつ頃からできたのか知ってる？」[p]
 
@@ -717,7 +765,7 @@
 
 
 ;立ち絵１　驚き
-
+[chara_mod name="kei" face="立ち絵_驚き" cross=false]
 
 
 #
@@ -733,7 +781,7 @@
 
 
 ;立ち絵２　困り
-
+[chara_mod name="kei" face="立ち絵2_疑問" cross=false]
 
 
 #継
@@ -756,7 +804,7 @@
 
 
 ;立ち絵　驚き
-
+[chara_mod name="kei" face="立ち絵_驚き" cross=false]
 
 #継
 「なっ・・」[p]
@@ -772,14 +820,14 @@
 
 
 ;立ち絵２　悲しみ
-
+[chara_mod name="kei" face="立ち絵2_悲しみ" cross=false]
 
 #継
 「人は滅んだわ…そういうことになってる」[p]
 
 
 ;立ち絵１　疑問
-
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 
 
 #継
@@ -789,7 +837,7 @@
 
 
 ;立ち絵１　目閉通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 #継　
 「気が付いたらここいいたの」[p]
@@ -808,7 +856,7 @@
 
 
 ;立ち絵２　目閉通常
-
+[chara_mod name="kei" face="立ち絵2_目閉じ通常" cross=false]
 
 
 #継
@@ -818,6 +866,7 @@
 
 ;CG 戦争
 ;BGM kaminotue
+[playbgm storage="common/BGM_kaminotsue.ogg"]
 
 #父
 「あの頃　かなり多くの問題が多発していた…」[p]
@@ -855,10 +904,10 @@
 #父
 「恨まれると思っていたが我が子を生き延びさせるためにはこれしか方法がなかった。」[p]
 
-#
+
 「だから私たち人類は記録として残っているが生きてはいない」[p]
 
-#
+
 「この世界の住人は基本的に決められた行動しかとらない…」[p]
 
 「今を繰り返し続けるだけだ」[p]
@@ -869,8 +918,10 @@
 
 
 ;背景　公園
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/公園.webp"]
 ;立ち絵２　悲しみ
-
+[chara_show name="kei" face="立ち絵2_悲しみ" top=32 time=1000 wait=false]
 
 #継
 「そんな・・」[p]
@@ -878,7 +929,7 @@
 
 
 ;立ち絵２　目閉泣き顔
-
+[chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
 
 #継
 「どうしてとめられなかったの？これじゃあ生きているなんて」[p]
@@ -898,7 +949,7 @@
 
 
 ;立ち絵１　目開き悲しみ
-
+[chara_mod name="kei" face="立ち絵1_目開き悲しみ" cross=false]
 
 
 #継
@@ -906,7 +957,7 @@
 
 
 ;立ち絵　目開き通常
-
+[chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
 
 「でも私たちの時代はその反省からBIやロボット産業革命からその流れは大きく変わっていたはず」[p]
@@ -933,7 +984,7 @@
 
 
 ;立ち絵１　疑問
-
+[chara_mod name="kei" face="立ち絵1_疑問" cross=false]
 
 #継
 「それじゃあお父さんもお母さんも…望んでここにいるの？」[p]
@@ -953,7 +1004,7 @@
 「こうして娘にようやく会うことができたからな」[p]
 
 ;BGM kei<trance>
-
+[playbgm storage="kei/BGM_kei(trance).ogg"]
 
 #
 先程とは打って変わり吹っ切れたような顔で私を見つめる[p]
@@ -967,7 +1018,7 @@
 
 
 ;立ち絵２　驚き
-
+[chara_mod name="kei" face="立ち絵2_驚き" cross=false]
 
 #継
 「え・・」[p]
@@ -997,6 +1048,7 @@
 
 ;CG　父との別れ１
 ;BGM kei <family>
+[playbgm storage="kei/BGM_kei1.ogg"]
 
 #
 抱きしめられる　確かに父の暖かさを感じる　でもこれも作られたものだと父は言う[p]
