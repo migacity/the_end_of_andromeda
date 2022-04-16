@@ -419,7 +419,7 @@
 [bg_fade_out]
 
 ;背景_森-丘, 立ち絵_画面外, 場所_画面外, 
-[bg_fade_in bg_storage="hill.png"]
+[bg_fade_in bg_storage="atria/丘.webp"]
 周りを見渡すと施設の近くの海に防波堤のようなものがある。[p]
 若干朽ちているようにも見えるが釣りをするにはもってこいな場所だ。次はそこに向かうことにしよう。[p]
 
@@ -733,7 +733,7 @@
 ;se停止
 [stopse]
 
-[bg_fade_in bg_storage="black.png"]
+[bg_fade_in bg_storage="station.png"]
 ;立ち絵_ねむねむ, BGM_BGM_Atria(break), 
 [chara_show name="atria" top=94 time=1000 face="sleepy" wait=false]
 [playbgm storage="atria/BGM_Atria(break).ogg"]
@@ -786,7 +786,8 @@
 よく動いて限界まで食べていたのでなかなか起きないだろう。[p]
 
 ;立ち絵_画面外, 場所_画面外, 
-[chara_hide_all wait=true time=1000]
+[bg_fade_out]
+[bg_fade_in bg_storage="black.png"]
 
 #ロイド
 「さて次は何をしてあげましょうか」[p]
