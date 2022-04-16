@@ -8,6 +8,10 @@
 [layopt layer=0 visible=true]
 
 ; 語りはvoiceとして登録・再生した方が（スキップすることになった時などに）楽かもしれないらしい。
+
+; 語りは要望に合わせてseとして登録
+; tf.time：各セリフの開始タイミング
+;  最後の要素のみ全セリフが終了するタイミング
 [iscript]
     tf.monologueText = [
         '少女は冷たい繭の中で眠り、',
@@ -21,17 +25,33 @@
         '愛すべき旅人たちよ、',
         'せめて悔いのない終末を。',
     ];
+    tf.time = [
+        0,
+        3500,
+        8000,
+        10000,
+        12500,
+        14000,
+        15500,
+        16500,
+        18500,
+        20500,
+        24000
+    ]
     tf.count = 0;
 [endscript]
 
 [playbgm storage="common/BGM_Monologue.ogg"]
+[playse storage="monologue.ogg" volume = 100]
 
 *monologueLoop
+; tf.lengthの最後の減算はオーバーヘッド分の解消
 [iscript]
     tf.line = tf.monologueText[tf.count];
+    tf.tlength = (tf.time[tf.count+1] - tf.time[tf.count])*0.7;
 [endscript]
 
-[mtext layer=0 page="fore" text="&tf.line" x=0 y=346 size=28 color="rgb(255, 255, 255)" width=1280 align="center" name="monologueText" fadeout=true time=1500 wait=true in_effect="fadeIn" in_sync=true in_shuffle=false in_reverse=false out_effect="fadeOut" out_sync=true out_shuffle=false out_reverse=false]
+[mtext layer=0 page="fore" text="&tf.line" x=0 y=346 size=28 color="rgb(255, 255, 255)" width=1280 align="center" name="monologueText" fadeout=true time="&tf.tlength" wait=true in_effect="fadeIn" in_sync=true in_shuffle=false in_reverse=false out_effect="fadeOut" out_sync=true out_shuffle=false out_reverse=false]
 
 [if exp="tf.count < tf.monologueText.length - 1"]
     [eval exp="tf.count += 1"]
