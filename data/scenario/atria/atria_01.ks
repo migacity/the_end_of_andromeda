@@ -89,7 +89,7 @@
 
 ;立ち絵_かなしみ, 場所_少し下, 
 [chara_mod name="atria" face="sad" wait=true cross=false]
-[anim name="atria" top="-=50" time=500]
+[anim name="atria" top="+=50" time=500]
 #アトリア
 「おなかすいた……なにか食べ物ある？」[p]
 
