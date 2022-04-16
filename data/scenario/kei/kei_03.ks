@@ -43,9 +43,9 @@
 
 
 
-
+[chara_hide_all ]
 ;CGかなめ発見
-
+[bg storage="still/kei_CGかなめ.webp" time=1000 wait=true]
 
 #
 ありえないはずと思いながらもどこか期待している自分がいる[p]
@@ -73,10 +73,10 @@
 #継
 「ずっと守ってくれていたのね・・ありがとう・・」[p]
 
-
+[bg storage="kei/自宅玄関.webp" time="1000"]
 
 ;立ち絵１　泣き顔
-[chara_mod name="kei" face="立ち絵1_目閉_泣き顔" cross=false]
+[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=32 time=1000 wait=false]
 
 #ロイド
 「いえ・・あの・・もしかしたらそのロボット」[p]
@@ -85,7 +85,7 @@
 「ごめんなさい・・今はもう少しこうさせ・・」[p]
 
 ;SE　起動音
-
+[playse storage="kei/機械音.ogg" buf=0]
 
 
 ;立ち絵２　驚き
@@ -256,7 +256,7 @@
 [playbgm storage="kei/BGM_kei1.ogg"]
 ;立ち絵なし
 
-;フィルタリセット
+
 
 
 #父
@@ -911,6 +911,8 @@
 
 
 ;SE　目覚まし
+
+[playse storage="kei/目覚まし時計のアラーム.ogg" buf=0]
 pppppppppp[p]
 
 #継
