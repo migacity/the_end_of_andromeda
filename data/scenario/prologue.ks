@@ -1584,5 +1584,5 @@
 ──最後まで見届けてやってくれ。[p]
 
 [stopbgm]
-[jump storage="home.ks"]
+[jump storage="select.ks"]
 [s]
