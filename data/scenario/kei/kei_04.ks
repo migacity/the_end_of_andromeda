@@ -246,9 +246,9 @@
 
 #
 ;背景　ノイズ
-[bg storage="kei/ノイズ.webp" time="1000"]
+[bg storage="kei/ノイズ.webp" time="1000" wait=false]
 ;BGM　ノイズ音
-[playse storage="kei/ノイズ音.ogg" buf=0 wait=false]
+[playse storage="kei/ノイズ音.ogg" buf=0]
 ;立ち絵２　疑問
 [chara_show name="kei" face="立ち絵2_疑問" top=32 time=1000 wait=false]
 
@@ -266,7 +266,7 @@
 ;[bg storage="kei/ノイズ.webp" time="1000"]
 
 ;BGM　ノイズ音
-[playse storage="kei/ノイズ音.ogg" buf=0 wait=false]
+[playse storage="kei/ノイズ音.ogg" buf=0]
 ;立ち絵２　目開き笑顔
 
 [chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
@@ -361,8 +361,8 @@
 
 ;BGM　ノイズ音
 ;背景　ノイズ
-[bg storage="kei/ノイズ.webp" time="1000"]
-[playse storage="kei/ノイズ音.ogg" buf=0 wait=false]
+[bg storage="kei/ノイズ.webp" time="1000" wait=false]
+[playse storage="kei/ノイズ音.ogg" buf=0]
 
 #
 かなめのことを考えたらまた頭が痛くなった[p]
@@ -480,8 +480,8 @@
 頭が痛い[p]
 
 ;背景　ノイズ
-[bg storage="kei/ノイズ.webp" time="1000"]
-[playse storage="kei/ノイズ音.ogg" buf=0 wait=false]
+[bg storage="kei/ノイズ.webp" time="1000" wait=false]
+[playse storage="kei/ノイズ音.ogg" buf=0]
 ;BGM　なし
 [stopbgm]
 
