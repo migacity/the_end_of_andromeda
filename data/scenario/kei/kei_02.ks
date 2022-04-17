@@ -703,13 +703,11 @@
 
 
 
-
+[chara_hide_all]
 ;CG　温泉1
+[bg storage="still/kei_温泉1.webp" time=1000 wait=true]
 
 
-[bg_fade_out]
-;仮に温泉背景入れてます
-[bg_fade_in bg_storage="kei/温泉.webp"]
 
 ; BGM 魔王魂ヒーリング13
 ;ゆぅさんより＞データ不明。どこかにデータありますか？
@@ -748,9 +746,7 @@
 
 
 ;CG　温泉２
-
-;仮に温泉背景入れてます
-[bg_fade_in bg_storage="kei/温泉.webp"]
+[bg storage="still/kei_温泉2.webp" time=1000 wait=true]
 
 #継
 「ええ！折角だしあなたの想い人の博士が目覚めたらくればいいわ！」[p]
@@ -934,6 +930,9 @@
 
 ;---
 
+[bg_fade_out]
+[bg storage="still/kei_神の杖1.webp" time=1000 wait=true]
+[playbgm storage="common/BGM_Kaminotsue.ogg"]
 
 ;第二章
 [bg_fade_out]
@@ -941,7 +940,6 @@
 [chara_show name="kei" face="立ち絵_どや顔" top=32 time=1000 wait=false]
 ;CG　神の杖
 ;BGM kaminotue
-[playbgm storage="common/BGM_Kaminotsue.ogg"]
 
 #
 そこにあったのは人であったものの山だった[p]

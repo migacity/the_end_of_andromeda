@@ -209,9 +209,13 @@
 [bg storage="white.png"]
 
 ;SE　扉を開ける音
+[playse storage="kei/自動ドアが開く.ogg" buf=0]
+
+[wait time="500" ]
 ;背景　森
 [bg storage="kei/森.webp" time="200"]
 ;SE　鳥の囀り音
+[playse storage="kei/鳥の声.ogg" buf=0]
 ;立ち絵　呆れ
 [chara_show name="kei" face="立ち絵1_目閉_悲しみ" top=32 time=1000 wait=false]
 
@@ -332,6 +336,7 @@
 
 
 ;SE　起動音
+[playse storage="kei/機械音.ogg" buf=0]
 
 #
 

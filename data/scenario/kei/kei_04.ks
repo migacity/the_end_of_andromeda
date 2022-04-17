@@ -28,6 +28,7 @@
 
 
 ;SE　ニュースの音
+[playse storage="kei/ニュース音声.ogg" buf=0]
 
 #
 本日は4月25日●曜日！天気は晴れ　今日も一日頑張りましょう！[p]
@@ -245,8 +246,9 @@
 
 #
 ;背景　ノイズ
-[bg storage="kei/ノイズ.webp" time="1000"]
+[bg storage="kei/ノイズ.webp" time="1000" wait=false]
 ;BGM　ノイズ音
+[playse storage="kei/ノイズ音.ogg" buf=0]
 ;立ち絵２　疑問
 [chara_show name="kei" face="立ち絵2_疑問" top=32 time=1000 wait=false]
 
@@ -264,6 +266,7 @@
 ;[bg storage="kei/ノイズ.webp" time="1000"]
 
 ;BGM　ノイズ音
+[playse storage="kei/ノイズ音.ogg" buf=0]
 ;立ち絵２　目開き笑顔
 
 [chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
@@ -358,7 +361,8 @@
 
 ;BGM　ノイズ音
 ;背景　ノイズ
-[bg storage="kei/ノイズ.webp" time="1000"]
+[bg storage="kei/ノイズ.webp" time="1000" wait=false]
+[playse storage="kei/ノイズ音.ogg" buf=0]
 
 #
 かなめのことを考えたらまた頭が痛くなった[p]
@@ -421,6 +425,7 @@
 今日も特に見るわけでもないテレビの音が聞こえる[p]
 
 ;ニュースの音
+[playse storage="kei/ニュース音声.ogg" buf=0]
 
 #
 本日は4月25日　○曜日　今日も頑張りましょう！[p]
@@ -475,7 +480,8 @@
 頭が痛い[p]
 
 ;背景　ノイズ
-[bg storage="kei/ノイズ.webp" time="1000"]
+[bg storage="kei/ノイズ.webp" time="1000" wait=false]
+[playse storage="kei/ノイズ音.ogg" buf=0]
 ;BGM　なし
 [stopbgm]
 
@@ -538,6 +544,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/街並み.webp"]
 ;SE　歩行
+[playse storage="kei/歩行音.ogg" buf=0]
 ;BGM　なし
 [stopbgm]
 
@@ -865,6 +872,8 @@
 
 
 ;CG 戦争
+[chara_hide_all ]
+[bg storage="still/kei_戦争.webp" time=1000 wait=true]
 ;BGM kaminotue
 [playbgm storage="common/BGM_kaminotsue.ogg"]
 
@@ -1047,6 +1056,8 @@
 
 
 ;CG　父との別れ１
+[chara_hide_all ]
+[bg storage="still/kei_CG_父1.webp" time=1000 wait=true]
 ;BGM kei <family>
 [playbgm storage="kei/BGM_kei1.ogg"]
 
