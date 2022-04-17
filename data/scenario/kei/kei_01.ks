@@ -6,7 +6,7 @@
 
 [bg_fade_in bg_storage="labo.jpg"]
 ;BGM profiling開始
-[playbgm storage="rina/BGM_profiling.ogg"]
+[playbgm storage="rina/BGM_Profiling.ogg"]
 
 ; キャラ立ち絵タグサンプル
 ; [chara_show name="kei" face="立ち絵2_絶望" top=32]
