@@ -531,7 +531,8 @@
 「この施設の裏手に海があるのでそこで魚を釣ることにしましょう」[p]
 
 ;立ち絵_デフォルト, 場所_デフォルト, 
-[chara_mod name="atria" top=94 face="default" wait=true cross=false]
+[chara_mod name="atria" face="default" wait=true cross=false]
+[anim name="atria" top=94 time=250 ]
 
 #アトリア
 「うみー！」[p]
