@@ -35,6 +35,7 @@
 [link storage="rina/rina_init.ks" target=*start]りな[endlink]｜
 [link storage="hakase/hakase_01.ks" target=*start]博士[endlink][r]
 [link storage="chara_compare.ks" target=*start]キャラ立ち絵[endlink]｜
+[link storage="select.ks" target=*home]キャラ選択画面[endlink]｜
 [link target="*goto_title"]タイトルに戻る[endlink]
 [endnowait]
 [s]
