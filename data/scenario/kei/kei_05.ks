@@ -337,6 +337,8 @@
 
 
 ;CG母との別れ
+[chara_hide_all ]
+[bg storage="still/kei_母_別れ1.webp" time=1000 wait=true]
 ;BGM kei<Family>
 [playbgm storage="kei/BGM_kei1.ogg"]
 
@@ -378,7 +380,8 @@
 #
 その言葉を聞くと　母は静かに笑って手を振る[p]
 
-[chara_mod name="kei" face="立ち絵1_目開き笑顔" cross=false]
+
+;[chara_mod name="kei" face="立ち絵1_目開き笑顔" cross=false]
 
 #継
 「いってきます！」[p]
@@ -720,7 +723,7 @@
 
 
 ;SE　自動ドア開閉
-
+[playse storage="kei/自動ドアが開く.ogg" buf=0]
 
 
 #ロイド
@@ -974,6 +977,7 @@
 ;BGM なし
 [stopbgm]
 ;SE　鳥の声
+[playse storage="kei/鳥の声.ogg" buf=0]
 
 #
 
