@@ -43,7 +43,7 @@
 ;立ち絵なし
 [chara_hide_all]
 ;BGM　魔王魂ヒーリング16
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 
 #父
@@ -280,7 +280,7 @@
 ;立ち絵２　目開き笑顔
 [chara_show name="kei" face="立ち絵2_目開き笑顔" top=32 time=1000 wait=false]
 ;BGM　魔王魂ピアノ34
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #継
 「ただいまー！」[p]
@@ -345,7 +345,7 @@
 
 
 ;BGM　魔王魂ピアノ34
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 ;立ち絵１　通常
 [chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
@@ -376,7 +376,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM 魔王魂ピアノ37
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #父
 「そうだ母さん…今日の弁当も美味しかった…特にハンバーグの一つが絶品だったよ」[p]
@@ -617,7 +617,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/公園.webp"]
 ;BGM　Kei1
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #
 自販機を過ぎ、着いた先は地元の公園だ[p]
@@ -731,7 +731,7 @@
 ;立ち絵１　目開き通常
 [chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 ;BGM　魔王魂ヒーリング16
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #父
 「昔、ここで遊んでいたことを覚えているか？」[p]
@@ -1013,7 +1013,7 @@
 「こうして娘にようやく会うことができたからな」[p]
 
 ;BGM kei<trance>
-[playbgm storage="kei/BGM_kei(trance).ogg"]
+[playbgm storage="kei/BGM_Kei(trance).ogg"]
 
 #
 先程とは打って変わり吹っ切れたような顔で私を見つめる[p]
@@ -1059,7 +1059,7 @@
 [chara_hide_all ]
 [bg storage="still/kei_CG_父1.webp" time=1000 wait=true]
 ;BGM kei <family>
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #
 抱きしめられる　確かに父の暖かさを感じる　でもこれも作られたものだと父は言う[p]

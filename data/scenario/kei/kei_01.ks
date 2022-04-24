@@ -367,7 +367,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="labo.jpg"]
 ;BGM　kei1 
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 #
 [chara_show name="kei" face="立ち絵2_疑問" top=32 time=1000 wait=false]
 ひとりぶつぶつといってる姿を見ると[p]
