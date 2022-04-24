@@ -253,7 +253,7 @@
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM ＜魔王魂ピアノ39>
 ;データ入っていない
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 ;立ち絵なし
 
 
@@ -454,7 +454,7 @@
 [filter]
 [bg_fade_in bg_storage="white.png"]
 ;BGM 魔王魂ピアノ37
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 ;フィルタリセット
 

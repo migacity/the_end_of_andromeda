@@ -48,7 +48,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM 魔王魂ピアノ34
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #母
 
@@ -168,7 +168,7 @@
 [chara_mod name="kei" face="立ち絵2_目閉じ泣き顔" cross=false]
 
 ;BGM kei<trance>
-[playbgm storage="kei/BGM_kei(trance).ogg"]
+[playbgm storage="kei/BGM_Kei(trance).ogg"]
 
 #継
 「・・うう・・・」[p]
@@ -340,7 +340,7 @@
 [chara_hide_all ]
 [bg storage="still/kei_母_別れ1.webp" time=1000 wait=true]
 ;BGM kei<Family>
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #母
 「「幸せってものはいつだって私たちの手の中にあるんだから！」」[p]
@@ -433,7 +433,7 @@
 ;演出指示　画面が真っ白になる
 [bg storage="white.png"]
 ;BGM 
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 
 #母
@@ -509,7 +509,7 @@
 ;立ち絵１　泣き顔
 [chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=32 time=1000 wait=false]
 ;BGM　IKEIKE
-[playbgm storage="kei/BGM_kei(trance).ogg"]
+[playbgm storage="kei/BGM_Kei(trance).ogg"]
 
 #継
 「っいったあああああああ！何よこれ！目がちぎれるかと思ったわ！」[p]
@@ -662,7 +662,7 @@
 ;立ち絵なし
 [chara_hide_all]
 ;BGM 
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 
 #
@@ -879,7 +879,7 @@
 ;立ち絵　目閉　笑顔
 [chara_mod name="kei" face="立ち絵2_目閉じ笑顔" cross=false]
 ;BGM kei1
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #継
 「だってこの世界もその人たちが良しとして選んだ道でしょう？　」[p]
@@ -997,7 +997,7 @@
 ;立ち絵１　目閉　どや顔
 [chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
 ;BGM　
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #継
 「さーて！次やることは決まったわ」[p]
@@ -1011,7 +1011,7 @@
 ;立ち絵２　目開き笑顔
 [chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
 ;BGM　魔王魂ヒーリング13
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #継
 「旅に出るわ！」[p]
