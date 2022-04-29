@@ -875,7 +875,7 @@
 [chara_hide_all ]
 [bg storage="still/kei_戦争.webp" time=1000 wait=true]
 ;BGM kaminotue
-[playbgm storage="common/BGM_kaminotsue.ogg"]
+[playbgm storage="common/BGM_Kaminotsue.ogg"]
 
 #父
 「あの頃　かなり多くの問題が多発していた…」[p]
