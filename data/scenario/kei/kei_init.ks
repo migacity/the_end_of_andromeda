@@ -25,6 +25,7 @@
 *start
 
 [cm]
+[freeimage layer=0]
 
 [mask time=100]
 

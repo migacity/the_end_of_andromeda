@@ -1,6 +1,7 @@
 * start
 
 [cm]
+[freeimage layer=0]
 
 ;メッセージウィンドウと名前表示領域を生成
 [message_create]
