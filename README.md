@@ -14,6 +14,7 @@
 ゲームの起動手順:
 
 github pagesを用いてプレイ可能です。下記にアクセスしてください。
+
 <https://migacity.github.io/the_end_of_andromeda/>
 
 ## 規約, 免責
@@ -38,3 +39,13 @@ BGM: 止由
 <!-- WEB制作: idomshi   -->
 アドバイザー: タク  
 テスト: みが市民
+
+フリー素材配布元:
+BGM,SE
+　効果音ラボ( https://soundeffect-lab.info/ )
+　効果音辞典( https://sounddictionary.info/ )
+　効果音工房( https://umipla.com/ )
+　魔王魂( https://maou.audio/category/bgm/ )
+背景
+　ぱくたそ( https://www.pakutaso.com/ )
+　ニコ二・コモンズ( https://commons.nicovideo.jp/ )
