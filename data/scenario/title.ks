@@ -1,5 +1,6 @@
 
 [cm]
+[freeimage layer=0]
 
 [clearstack]
 [playbgm storage="common/BGM_Title1.ogg"]
