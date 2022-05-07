@@ -38,7 +38,7 @@
     [button graphic="home-kei.png" storage="kei/kei_init.ks" target="*start" name="button_kei" x=667 y=70 width=253 height=360 folder="image/button" exp="f.route_kei_selected=true" enterimg="home-kei_hover.png" visible=true]
 [endif]
 
-[if exp="f.route_rina_selected && f.route_rina_selected && f.route_rina_selected"]
+[if exp="f.route_rina_selected && f.route_atria_selected && f.route_kei_selected"]
     [button graphic="home-hakase.png" storage="hakase/hakase_01.ks" target="*start" name="button_hakase" x=973 y=70 width=253 height=360 folder="image/button" enterimg="home-hakase_hover.png" visible=true]
 [else]
     [button graphic="home-hakase.png" target="*hakase" name="button_hakase" x=973 y=70 width=253 height=360 folder="image/button" enterimg="home-hakase_hover.png" visible=true]
@@ -56,6 +56,7 @@
 
 *hakase
 [cm]
+[freeimage layer=0]
 
 ……まだ博士を起こす時間じゃない。[p]
 
