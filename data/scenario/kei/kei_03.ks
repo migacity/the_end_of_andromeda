@@ -252,8 +252,8 @@
 [filter]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM ＜魔王魂ピアノ39>
-;データ入っていない
-[playbgm storage="kei/BGM_Kei1.ogg"]
+
+[playbgm storage="kei/BGM_魔王魂_ピアノ39.ogg"]
 ;立ち絵なし
 
 
@@ -454,7 +454,7 @@
 [filter]
 [bg_fade_in bg_storage="white.png"]
 ;BGM 魔王魂ピアノ37
-[playbgm storage="kei/BGM_Kei1.ogg"]
+[playbgm storage="kei/BGM_魔王魂_ピアノ37.ogg"]
 
 ;フィルタリセット
 
@@ -695,7 +695,7 @@
 
 稼働できている[p]
 
-この家を維持し続けて入るもののいつあの子が戻ってくるかわからない以上[p]
+この家を維持し続けているもののいつあの子が戻ってくるかわからない以上[p]
 
 機能を最低限にし消費を抑えなければならない[p]
 

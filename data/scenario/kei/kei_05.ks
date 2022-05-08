@@ -48,7 +48,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;BGM 魔王魂ピアノ34
-[playbgm storage="kei/BGM_Kei1.ogg"]
+[playbgm storage="kei/BGM_魔王魂_ピアノ34.ogg"]
 
 #母
 
@@ -1011,7 +1011,7 @@
 ;立ち絵２　目開き笑顔
 [chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
 ;BGM　魔王魂ヒーリング13
-[playbgm storage="kei/BGM_Kei1.ogg"]
+[playbgm storage="kei/BGM_魔王魂_ヒーリング13.ogg"]
 
 #継
 「旅に出るわ！」[p]
