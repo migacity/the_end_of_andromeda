@@ -69,7 +69,7 @@
 ; エンドロールを流す
 [macro name="endroll"]
     [iscript]
-        tf.textline = 800-tf.endrolltext.length*60;
+        tf.textline = 800-tf.endrolltext.length*55;
         tf.endrolltext = tf.endrolltext.join('<br />');
         tf.n = tf.endrollimage.length;
 
@@ -125,16 +125,12 @@
 
             const now = new Date();
             const partTime = Math.max(2200, tf.loopEndTime[i] - (now.getTime() - tf.startTime));
-            tf.imageTime = Math.max(1000, partTime - 1200);
+            tf.imageTime = Math.max(1000, partTime - 1000);
         [endscript]
 
         [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="&tf.imageFile[0]" folder="&tf.imageFile[1]" name="endrollimage"]
         [trans layer=0 time=1000 method="fadeIn"]
         [wait time=&tf.imageTime]
-
-        [image layer=0 page="fore" x=100 y=180 width=640 height=360 storage="black.png" folder="bgimage" name="endrollimage"]
-        [trans layer=0 time=1000 method="fadeIn"]
-        [wait time=1200]
         
         [eval exp="mp.counter = mp.counter - 1"]
         [jump target="*endroll_slide_loop_start"]
