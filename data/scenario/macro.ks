@@ -69,6 +69,7 @@
 ; エンドロールを流す
 [macro name="endroll"]
     [iscript]
+        tf.textline = 800-tf.endrolltext.length*60;
         tf.endrolltext = tf.endrolltext.join('<br />');
         tf.n = tf.endrollimage.length;
 
@@ -87,8 +88,8 @@
     ; エンドロール
     [layopt layer="message1" visible=true]
     [position layer="message1" page="fore" left=0 top=0 width=0 height=0 visible=false]
-    [ptext layer="message1" page="fore" text="&tf.endrolltext" size=30 x=780 y=800 width=500 align="center" color="white" name="endrolltext"]
-    [anim name="endrolltext" top=-200 time=%time]
+    [ptext layer="message1" page="fore" text="&tf.endrolltext" size=30 x=780 y=800 width=500 align="left" color="white" name="endrolltext"]
+    [anim name="endrolltext" top="&tf.textline" time=%time]
 
     ; スチルスライドショー
     [layopt layer=0 visible=true]
@@ -131,7 +132,7 @@
         [trans layer=0 time=1000 method="fadeIn"]
         [wait time=&tf.imageTime]
 
-        [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="black.png" folder="bgimage" name="endrollimage"]
+        [image layer=0 page="fore" x=100 y=180 width=640 height=360 storage="black.png" folder="bgimage" name="endrollimage"]
         [trans layer=0 time=1000 method="fadeIn"]
         [wait time=1200]
         
