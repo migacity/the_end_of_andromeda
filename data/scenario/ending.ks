@@ -2,6 +2,11 @@
 
 *start
 
+[stopbgm]
+[cm]
+[wait time=3000]
+[playbgm storage="ed_demo.wav" loop=false]
+
 ; エンドロールに流す文字列はここに書く。
 ; 配列中のケツカンマはValidらしい。
 [iscript]
@@ -19,6 +24,12 @@ tf.endrolltext = [
     '&emsp;みやまくわがた',
     '&emsp;dolphilia',
     '&emsp;hisayosi',
+    '',
+    '',
+    '',
+    'デザイン協力',
+    '&emsp;頭痛',
+    '&emsp;ぬのひと',
     '',
     '',
     '',
@@ -63,6 +74,12 @@ tf.endrolltext = [
     '',
     '',
     '',
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
     '制作',
     '&emsp;らいあ市',
 ];
@@ -92,8 +109,8 @@ tf.endrollimage = [
     ['hakase_coffee.png', 'bgimage/still'],
 ];
 [endscript]
-[endroll time=10000]
+[endroll time=115000]
 
-[ending_text text="To&nbsp;be&nbsp;continued..."]
+[ending_text text="Thank&nbsp;you&nbsp;for&nbsp;your&nbsp;playing!""]
 
 [jump storage="title.ks"]
