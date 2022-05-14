@@ -108,10 +108,9 @@ tf.endrollimage = [
 ];
 [endscript]
 
-[wait time=3000]
 [playbgm storage="ed_demo.wav" loop=false]
 
-[endroll time=15000]
+[endroll time=115000]
 
 [ending_text text="Thank&nbsp;you&nbsp;for&nbsp;your&nbsp;playing!"]
 
