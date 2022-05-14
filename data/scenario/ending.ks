@@ -4,8 +4,6 @@
 
 [stopbgm]
 [cm]
-[wait time=3000]
-[playbgm storage="ed_demo.wav" loop=false]
 
 ; エンドロールに流す文字列はここに書く。
 ; 配列中のケツカンマはValidらしい。
@@ -109,8 +107,12 @@ tf.endrollimage = [
     ['hakase_coffee.png', 'bgimage/still'],
 ];
 [endscript]
-[endroll time=115000]
 
-[ending_text text="Thank&nbsp;you&nbsp;for&nbsp;your&nbsp;playing!""]
+[wait time=3000]
+[playbgm storage="ed_demo.wav" loop=false]
+
+[endroll time=15000]
+
+[ending_text text="Thank&nbsp;you&nbsp;for&nbsp;your&nbsp;playing!"]
 
 [jump storage="title.ks"]

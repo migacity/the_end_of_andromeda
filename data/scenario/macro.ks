@@ -60,7 +60,7 @@
     ; - エンディング曲を流す
 
     ; textに指定した文字列のスペースが表示されないので文字実体参照で記入します
-    [mtext text="%text" x=0 y=240 width=1280 align="center" size=120 color="0x111111" edge="0xffffff" in_effect="flipInX"]
+    [mtext text="%text" x=0 y=240 width=1280 align="center" size=100 color="0x111111" edge="0xffffff" in_effect="flipInX"]
 
     ; 一定時間が経過したのち自動的にタイトルへ戻る
     [wait time="1000"]
