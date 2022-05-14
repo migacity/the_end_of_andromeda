@@ -77,7 +77,7 @@
 
 ;背景を表示
 [bg storage="black.png" time=1000 wait=true]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="lab_researchroom.png" time=1000 wait=true]
 
 ; キャラクターを表示する
 

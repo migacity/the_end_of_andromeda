@@ -48,7 +48,7 @@
 
 ;背景　研究所
 
-[bg storage="sleep_room.png" time="1000"]
+[bg storage="lab_hibernationroom.png" time="1000"]
 ;BGM　Foresut2
 ;ゆぅさんメモ：仮？該当ファイル名のデータなし
 [playbgm storage="common/BGM_Forest1.ogg"]

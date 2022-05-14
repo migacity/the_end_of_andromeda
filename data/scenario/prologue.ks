@@ -129,7 +129,7 @@
 [stopbgm]
 
 [bg storage="black.png" time=1000 wait=true]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="lab_researchroom.png" time=1000 wait=true]
 
 [playbgm storage="common/BGM_Prologue.ogg"]
 
@@ -287,7 +287,7 @@
 #
 [chara_hide name="hakase" time=1000 wait=true]
 [bg storage="black.png" time=1000 wait=true]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="lab_researchroom.png" time=1000 wait=true]
 
 #
 博士はこれまでに何が起きたかを知りたがった。[p]
@@ -657,7 +657,7 @@
 
 [chara_hide name="hakase" time=1000 wait=true]
 [bg storage="black.png" time=1000 wait=true]
-[bg storage="bedroom_after.png" time=1000 wait=true]
+[bg storage="lab_privateroom.png" time=1000 wait=true]
 
 [playbgm storage="hakase/what_to_do.ogg"]
 
@@ -1379,7 +1379,7 @@
 
 [bg storage="black.png" time=1000 wait=true]
 [stopbgm]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="lab_researchroom.png" time=1000 wait=true]
 
 #
 研究所に戻るころには夜になっていた。[p]
@@ -1400,7 +1400,7 @@
 [chara_hide name="hakase" time=1000 wait=true]
 
 [bg storage="black.png" time=1000 wait=true]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="lab_researchroom.png" time=1000 wait=true]
 
 #
 あれから数日が経った、早朝のこと。[p]
@@ -1433,7 +1433,7 @@
 
 [bg storage="black.png" time=1000 wait=true]
 [stopbgm]
-[bg storage="corridor.png" time=1000 wait=true]
+[bg storage="lab_corridor.png" time=1000 wait=true]
 
 僕はたまらず声をかけた。[p]
 
@@ -1502,7 +1502,7 @@
 僕が質問すると、安心させるようになんでも教えてくれた。[p]
 
 [bg storage="black.png" time=1000 wait=true]
-[bg storage="sleep_room.png" time=1000 wait=true]
+[bg storage="lab_hibernationroom.png" time=1000 wait=true]
 
 #
 ついにこの場所にやってきた。[p]

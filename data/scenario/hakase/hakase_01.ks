@@ -77,7 +77,7 @@
 それでも僕は博士に会いたかった。[p]
 
 ;スリープ室
-[bg storage="sleep_room.png" time=1000 wait=true]
+[bg storage="lab_hibernationroom.png" time=1000 wait=true]
 [playbgm storage="common/BGM_Room1.ogg"]
 
 #
@@ -146,7 +146,7 @@
 
 [bg storage="black.png" time=1000 wait=true]
 [stopbgm]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="lab_researchroom.png" time=1000 wait=true]
 [playbgm storage="common/BGM_Prologue.ogg"]
 
 ;研究室
@@ -1705,7 +1705,7 @@
 ;場面転換
 [bg storage="black.png" time=1000 wait=true]
 [stopbgm]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="lab_researchroom.png" time=1000 wait=true]
 
 #博士
 「ロイド、頭は痛くないかい」[p]
@@ -1756,7 +1756,7 @@
 ;場面転換
 [bg storage="black.png" time=1000 wait=true]
 [stopbgm]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="lab_researchroom.png" time=1000 wait=true]
 
 [chara_part name="hakase" body="front" pose="f2" eye="f4" mouth="f2" eyebrow="f2"]
 [chara_show name="hakase" time=1000 wait=true]

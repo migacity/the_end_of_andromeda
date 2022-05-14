@@ -1,7 +1,7 @@
 *start
 
-;背景開始、プロローグのコールドスリープ区画、ファイル名＝sleep_room.png、別途指示あるまで継続
-[bg storage="sleep_room.png" time=1000 method="fadeIn"]
+;背景開始、プロローグのコールドスリープ区画、ファイル名＝lab_hibernationroom.png、別途指示あるまで継続
+[bg storage="lab_hibernationroom.png" time=1000 method="fadeIn"]
 ;BGM開始、コールドスリープ区画、ファイル名＝BGM_Room1.ogg、別途指示あるまで継続
 [playbgm storage="common/BGM_Room1.ogg"]
 
@@ -191,9 +191,9 @@
 ;画面暗転
 [bg_fade_out]
 [chara_hide name="rina" wait=false]
-;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
+;背景開始、プロローグの生活区画、ファイル名＝lab_privateroom.png、別途指示あるまで継続
 #
-[bg_fade_in bg_storage="bedroom_after.png"]
+[bg_fade_in bg_storage="lab_privateroom.png"]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
@@ -565,8 +565,8 @@
 ;背景消失
 ;画面暗転
 [bg_fade_out]
-;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
-[bg_fade_in bg_storage="bedroom_after.png"]
+;背景開始、プロローグの生活区画、ファイル名＝lab_privateroom.png、別途指示あるまで継続
+[bg_fade_in bg_storage="lab_privateroom.png"]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
@@ -845,9 +845,9 @@
 ;背景消失
 ;画面暗転
 [bg_fade_out]
-;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
+;背景開始、プロローグの生活区画、ファイル名＝lab_privateroom.png、別途指示あるまで継続
 #
-[bg_fade_in bg_storage="bedroom_after.png"]
+[bg_fade_in bg_storage="lab_privateroom.png"]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
@@ -1083,9 +1083,9 @@
 ;背景消失
 ;画面暗転
 [bg_fade_out]
-;背景開始、プロローグの研究区画、ファイル名＝laboratory.png、別途指示あるまで継続
+;背景開始、プロローグの研究区画、ファイル名＝lab_researchroom.png、別途指示あるまで継続
 #
-[bg_fade_in bg_storage="laboratory.png"]
+[bg_fade_in bg_storage="lab_researchroom.png"]
 ;SE再生、ファイル名＝phone-tone1.mp3、回数＝別途指示あるまでループ
 [playse storage="rina/phone-tone1.ogg" buf=0 loop=true]
 
