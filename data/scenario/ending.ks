@@ -10,7 +10,8 @@
 [iscript]
 tf.endrolltext = [
     'シナリオ',
-    '&emsp;ゆぅさんかがり',
+    '&emsp;ゆぅさん',
+    '&emsp;かがり',
     '&emsp;みやまくわがた',
     '&emsp;dolphilia',
     '',
