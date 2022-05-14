@@ -4,7 +4,7 @@
 
 ;背景　研究所
 
-[bg_fade_in bg_storage="labo.jpg"]
+[bg_fade_in bg_storage="labo.webp"]
 ;BGM profiling開始
 [playbgm storage="rina/BGM_Profiling.ogg"]
 
@@ -48,7 +48,7 @@
 
 ;背景　研究所
 
-[bg storage="lab_hibernationroom.png" time="1000"]
+[bg storage="lab_hibernationroom.webp" time="1000"]
 ;BGM　Foresut2
 ;ゆぅさんメモ：仮？該当ファイル名のデータなし
 [playbgm storage="common/BGM_Forest1.ogg"]
@@ -195,7 +195,7 @@
 #
 ;背景　研究所　廊下
 [bg_fade_out]
-[bg_fade_in bg_storage="labo.jpg"]
+[bg_fade_in bg_storage="labo.webp"]
 
 
 外出がご希望のようなので案内する[p]
@@ -206,7 +206,7 @@
 
 
 ;背景　真っ白
-[bg storage="white.png"]
+[bg storage="white.webp"]
 
 ;SE　扉を開ける音
 [playse storage="kei/自動ドアが開く.ogg" buf=0]
@@ -365,7 +365,7 @@
 
 ;背景　研究所　扉
 [bg_fade_out]
-[bg_fade_in bg_storage="labo.jpg"]
+[bg_fade_in bg_storage="labo.webp"]
 ;BGM　kei1 
 [playbgm storage="kei/BGM_Kei1.ogg"]
 #

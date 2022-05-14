@@ -452,7 +452,7 @@
 ;背景　白
 [bg_fade_out]
 [filter]
-[bg_fade_in bg_storage="white.png"]
+[bg_fade_in bg_storage="white.webp"]
 ;BGM 魔王魂ピアノ37
 [playbgm storage="kei/BGM_魔王魂_ピアノ37.ogg"]
 

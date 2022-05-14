@@ -4,7 +4,7 @@
 
 [clearstack]
 [playbgm storage="common/BGM_Title1.ogg"]
-[bg storage ="title.png" time=100]
+[bg storage ="title.webp" time=100]
 [wait time = 200]
 
 *start 
