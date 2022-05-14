@@ -51,7 +51,7 @@
 [bg storage="sleep_room.png" time="1000"]
 ;BGM　Foresut2
 ;ゆぅさんメモ：仮？該当ファイル名のデータなし
-[playbgm storage="common/BGM_Forest1.ogg]
+[playbgm storage="common/BGM_Forest1.ogg"]
 ;継　立ち絵　特殊
 [chara_show name="kei" face="立ち絵2_特殊" top=32 time=1000 wait=false]
 
@@ -367,7 +367,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="labo.jpg"]
 ;BGM　kei1 
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 #
 [chara_show name="kei" face="立ち絵2_疑問" top=32 time=1000 wait=false]
 ひとりぶつぶつといってる姿を見ると[p]
@@ -604,7 +604,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/車内.webp"]
 ;BGM sampo
-[playbgm storage="common/BGM_sampo.ogg"]
+[playbgm storage="common/BGM_Sampo.ogg"]
 [chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
 #ロイド
 
@@ -613,7 +613,8 @@
 
 #継
 
-「まあ・・久しぶりだけど大丈夫よこれでもゴールドよ！」[p]
+「まあ大丈夫よ・・たぶん」[p]
+「これでもゴールド免許だから！」[p]
 
 
 #ロイド

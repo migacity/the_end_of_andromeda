@@ -555,7 +555,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/車内.webp"]
 
-[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
+
 ;BGM kei1
 [playbgm storage="kei/BGM_Kei1.ogg"]
 
@@ -620,7 +620,7 @@
 
 
 #継
-「食料がもしパン一枚しかなくて人が三人いれば分けるよりも二人いなくなったほうが沢山食べられるじゃない？」[p]
+「食料がもしパン一枚しかない場合に人が三人いれば、全員で分けるよりも二人いなくなったほうが沢山食べられるじゃない？」[p]
 
 
 「そういうことよ」[p]
@@ -703,16 +703,16 @@
 
 
 
-[chara_hide_all]
+
 ;CG　温泉1
 [bg storage="still/kei_温泉1.webp" time=1000 wait=true]
 
 
 
 ; BGM 魔王魂ヒーリング13
-;ゆぅさんより＞データ不明。どこかにデータありますか？
 
-[playbgm storage="common/BGM_Forest1.ogg"]
+
+[playbgm storage="kei/BGM_魔王魂_ヒーリング13.ogg"]
 
 #継
 「きもちいいぃ…」[p]
@@ -787,9 +787,10 @@
 
 [chara_hide name="hakase"]
 #
-・・・・少し胸が温かいそんな気がした[p]
+…少し胸が温かくなった…そんな気がした…[p]
 
-
+[bg_fade_out]
+[bg_fade_in bg_storage="kei/温泉.webp"]
 
 ;立ち絵　タオル　目閉じ　笑顔
 [chara_show name="kei" face="立ち絵_バスタオル_目閉じ笑顔" top=32 time=1000 wait=false]
@@ -931,13 +932,11 @@
 ;---
 
 [bg_fade_out]
-[bg storage="still/kei_神の杖1.webp" time=1000 wait=true]
+[bg_fade_in bg_storage="still/kei_神の杖1.webp"]
+;[bg storage="still/kei_神の杖1.webp" time=1000 wait=true]
 [playbgm storage="common/BGM_Kaminotsue.ogg"]
 
 ;第二章
-[bg_fade_out]
-[bg_fade_in bg_storage="kei/廃れた地.webp"]
-[chara_show name="kei" face="立ち絵_どや顔" top=32 time=1000 wait=false]
 ;CG　神の杖
 ;BGM kaminotue
 

@@ -106,7 +106,7 @@
 ;立ち絵２　目閉　通常
 [chara_show name="kei" face="立ち絵2_目閉じ通常" top=32 time=1000 wait=false]
 ;BGM kei1
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #継
 「私ね…」[p]
@@ -229,7 +229,7 @@
 ;立ち絵１　笑顔
 [chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
 ;BGM kei<Family>
-[playbgm storage="kei/BGM_kei1.ogg"]
+[playbgm storage="kei/BGM_Kei1.ogg"]
 
 #継
 「それじゃあ…もういくわ！」[p]
