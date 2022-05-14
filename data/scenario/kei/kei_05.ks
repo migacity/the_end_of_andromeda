@@ -22,7 +22,7 @@
 
 ;背景　公園
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/公園.webp"]
+[bg_fade_in bg_storage="black.png"]
 ;BGM なし
 [stopbgm]
 
@@ -973,7 +973,7 @@
 
 ;背景　森
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/森.webp"]
+[bg_fade_in bg_storage="kei/青空.webp"]
 ;BGM なし
 [stopbgm]
 ;SE　鳥の声
@@ -1017,6 +1017,7 @@
 「旅に出るわ！」[p]
 
 「それも今度は途方もないくらい壮大なね！」[p]
+
 
 
 

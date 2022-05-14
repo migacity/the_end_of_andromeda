@@ -3,7 +3,13 @@
 [freeimage layer=0]
 
 [clearstack]
+
+[layopt layer=0 visible=true]
+[image layer=0  storage="logo.webp" x=0 y=0 width=1280 time=1000]
+[wait time = 1000]
+
 [playbgm storage="common/BGM_Title1.ogg"]
+[freeimage layer=0 time=500]
 [bg storage ="title.webp" time=100]
 [wait time = 200]
 
