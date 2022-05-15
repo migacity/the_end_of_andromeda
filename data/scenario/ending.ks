@@ -84,7 +84,6 @@ tf.endrolltext = [
 ];
 tf.endrollimage = [
     ['bedroom_after.png', 'bgimage'],
-    ['labo.jpg', 'bgimage'],
     ['entrance.png', 'bgimage'],
     ['hill.png', 'bgimage'],
     ['laboratory.png', 'bgimage'],
