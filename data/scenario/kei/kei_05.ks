@@ -22,7 +22,7 @@
 
 ;背景　公園
 [bg_fade_out]
-[bg_fade_in bg_storage="black.png"]
+[bg_fade_in bg_storage="black.webp"]
 ;BGM なし
 [stopbgm]
 
