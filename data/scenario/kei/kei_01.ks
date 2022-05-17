@@ -4,7 +4,7 @@
 
 ;背景　研究所
 
-[bg_fade_in bg_storage="labo.webp"]
+[bg_fade_in bg_storage="lab_corridor.webp"]
 ;BGM profiling開始
 [playbgm storage="rina/BGM_Profiling.ogg"]
 
@@ -195,7 +195,7 @@
 #
 ;背景　研究所　廊下
 [bg_fade_out]
-[bg_fade_in bg_storage="labo.webp"]
+[bg_fade_in bg_storage="lab_corridor.webp"]
 
 
 外出がご希望のようなので案内する[p]
@@ -365,7 +365,7 @@
 
 ;背景　研究所　扉
 [bg_fade_out]
-[bg_fade_in bg_storage="labo.webp"]
+[bg_fade_in bg_storage="lab_corridor.webp"]
 ;BGM　kei1 
 [playbgm storage="kei/BGM_Kei1.ogg"]
 #

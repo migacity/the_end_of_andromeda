@@ -72,7 +72,7 @@
 
 ;背景　研究所内　
 [bg_fade_out]
-[bg_fade_in bg_storage="labo.webp"]
+[bg_fade_in bg_storage="lab_corridor.webp"]
 
 
 そこから暫く僕たちは施設で自分の身体のメンテナンス…[p]
@@ -292,7 +292,7 @@
 
 ;背景　研究所
 [bg_fade_out]
-[bg_fade_in bg_storage="labo.webp"]
+[bg_fade_in bg_storage="lab_corridor.webp"]
 ;BGM  なし
 [stopbgm]
 #
