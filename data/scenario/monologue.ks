@@ -41,7 +41,7 @@
     tf.count = 0;
 [endscript]
 
-[playbgm storage="common/BGM_Monologue.ogg"]
+[playbgm storage="common/BGM_Monologue.ogg" volume = 80]
 [playse storage="monologue.ogg" volume = 100]
 
 *monologueLoop
