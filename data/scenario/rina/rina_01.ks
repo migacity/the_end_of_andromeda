@@ -1,7 +1,7 @@
 *start
 
-;背景開始、プロローグのコールドスリープ区画、ファイル名＝sleep_room.png、別途指示あるまで継続
-[bg storage="sleep_room.png" time=1000 method="fadeIn"]
+;背景開始、プロローグのコールドスリープ区画、ファイル名＝lab_hibernationroom.webp、別途指示あるまで継続
+[bg storage="lab_hibernationroom.webp" time=1000 method="fadeIn"]
 ;BGM開始、コールドスリープ区画、ファイル名＝BGM_Room1.ogg、別途指示あるまで継続
 [playbgm storage="common/BGM_Room1.ogg"]
 
@@ -191,9 +191,9 @@
 ;画面暗転
 [bg_fade_out]
 [chara_hide name="rina" wait=false]
-;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
+;背景開始、プロローグの生活区画、ファイル名＝lab_privateroom.webp、別途指示あるまで継続
 #
-[bg_fade_in bg_storage="bedroom_after.png"]
+[bg_fade_in bg_storage="lab_privateroom.webp"]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
@@ -565,8 +565,8 @@
 ;背景消失
 ;画面暗転
 [bg_fade_out]
-;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
-[bg_fade_in bg_storage="bedroom_after.png"]
+;背景開始、プロローグの生活区画、ファイル名＝lab_privateroom.webp、別途指示あるまで継続
+[bg_fade_in bg_storage="lab_privateroom.webp"]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
@@ -845,9 +845,9 @@
 ;背景消失
 ;画面暗転
 [bg_fade_out]
-;背景開始、プロローグの生活区画、ファイル名＝bedroom_after.png、別途指示あるまで継続
+;背景開始、プロローグの生活区画、ファイル名＝lab_privateroom.webp、別途指示あるまで継続
 #
-[bg_fade_in bg_storage="bedroom_after.png"]
+[bg_fade_in bg_storage="lab_privateroom.webp"]
 ;BGM開始、夜の談話、ファイル名＝BGM_Rina1.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Rina1.ogg"]
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
@@ -1024,7 +1024,7 @@
 
 ;立ち絵消失
 ;背景消失
-[bg storage="black.png" time=1000 wait=false]
+[bg storage="black.webp" time=1000 wait=false]
 ;画面暗転
 [bg_fade_out]
 [chara_hide name="rina" wait=false time=500]
@@ -1057,7 +1057,7 @@
 ;背景消失
 ;画面暗転
 [bg_fade_out]
-[bg_fade_in bg_storage="black.png"]
+[bg_fade_in bg_storage="black.webp"]
 
 #――
 『わたしは、だれ？』[p]
@@ -1083,9 +1083,9 @@
 ;背景消失
 ;画面暗転
 [bg_fade_out]
-;背景開始、プロローグの研究区画、ファイル名＝laboratory.png、別途指示あるまで継続
+;背景開始、プロローグの研究区画、ファイル名＝lab_researchroom.webp、別途指示あるまで継続
 #
-[bg_fade_in bg_storage="laboratory.png"]
+[bg_fade_in bg_storage="lab_researchroom.webp"]
 ;SE再生、ファイル名＝phone-tone1.mp3、回数＝別途指示あるまでループ
 [playse storage="rina/phone-tone1.ogg" buf=0 loop=true]
 
@@ -1124,7 +1124,7 @@
 ;SE再生、ファイル名＝cancel-2.mp3、回数＝1回
 [playse storage="rina/cancel-2.ogg" buf=0]
 ;背景消失
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 ;背景開始、内線電話ホロ、ファイル名＝call.png、別途指示あるまで継続
 [bg storage="rina/call.webp" time=1000 wait=true]
 
@@ -1453,7 +1453,7 @@
 ;画面暗転
 [bg_fade_out]
 [chara_hide name="rina" wait=false time=500]
-;背景開始、ひとの心、ファイル名＝white.png、別途指示あるまで継続
+;背景開始、ひとの心、ファイル名＝white.webp、別途指示あるまで継続
 #
 [bg_fade_in bg_storage="rina/white.webp"]
 ;BGM無音開始
@@ -1571,7 +1571,7 @@
 ;画面暗転
 [bg_fade_out]
 ;BGM無音開始
-[bg_fade_in bg_storage="black.png"]
+[bg_fade_in bg_storage="black.webp"]
 
 #
 ―――『憑き物落とし』プロセス完了―――[p]
@@ -1687,5 +1687,5 @@
 [wait time=3000]
 ;背景消失
 [bg_fade_out]
-[bg_fade_in bg_storage="black.png" time=100]
+[bg_fade_in bg_storage="black.webp" time=100]
 [jump storage="home.ks"]

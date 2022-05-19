@@ -1,7 +1,7 @@
 *start
 
 ;背景_施設-装置室, 立ち絵_ねむねむ, 場所_デフォルト, BGM_BGM_Atria1, 
-[bg storage="sleep_room.png" time=1000 wait=true cross=true method="fadeIn"]
+[bg storage="lab_hibernationroom.webp" time=1000 wait=true cross=true method="fadeIn"]
 [chara_show name="atria" top=94 time=1000 face="sleepy" wait=false]
 [playbgm storage="atria/BGM_Atria1.ogg"]
 
@@ -104,7 +104,7 @@
 ;背景_施設-食糧庫, 立ち絵_デフォルト, 場所_デフォルト, BGM_BGM_Atria1, 
 ;※スクリプト班注釈 [bg_fade_in bg_storage=""] 食糧庫という背景画像が無い
 [playbgm storage="atria/BGM_Atria1.ogg"]
-[bg_fade_in bg_storage="sleep_room.png"]
+[bg_fade_in bg_storage="lab_hibernationroom.webp"]
 
 [chara_show name="atria" top=94 time=1000 face="sad" wait=false]
 
@@ -231,7 +231,7 @@
 
 ;背景_施設-倉庫, BGM_BGM_Atria1, 
 ;※スクリプト班注釈　倉庫の背景なし
-[bg_fade_in bg_storage="laboratory.png"]
+[bg_fade_in bg_storage="lab_researchroom.webp"]
 
 #
 倉庫に何か便利なものがあるかもしれないと考え、倉庫に向かう。釣り竿も倉庫の入り口に立てかけてあった。[p]
@@ -266,7 +266,7 @@
 
 ;背景_施設-入口, 立ち絵_デフォルト, 場所_デフォルト, 
 ;※スクリプト班注釈 施設-入口のファイルが無い
-[bg_fade_in bg_storage="laboratory.png"]
+[bg_fade_in bg_storage="lab_researchroom.webp"]
 [chara_show name="atria" top=94 time=1000 face="default" wait=false]
 
 忘れ物がないか入念にチェックした後、施設入り口に向かう。[p]
@@ -431,7 +431,7 @@
 
 ;暗転
 [bg_fade_out]
-[bg_fade_in bg_storage="black.png"]
+[bg_fade_in bg_storage="black.webp"]
 
 #ロイド
 「これだけあれば大丈夫でしょうか」[p]
@@ -476,7 +476,7 @@
 #
 
 ;背景_施設-食糧庫, BGM_BGM_Atria1, 
-[bg_fade_in bg_storage="laboratory.png"]
+[bg_fade_in bg_storage="lab_researchroom.webp"]
 [playbgm storage="atria/BGM_Atria1.ogg"]
 [chara_show name="atria" top=94 time=1000 face="default" wait=false]
 
@@ -511,7 +511,7 @@
 ;暗転
 [bg_fade_out]
 
-[bg_fade_in bg_storage="laboratory.png"]
+[bg_fade_in bg_storage="lab_researchroom.webp"]
 ;立ち絵_ねむねむ, 場所_下, 
 [chara_show name="atria" top=194 time=1000 face="sleepy" wait=false]
 
@@ -672,7 +672,7 @@
 
 ;背景_施設-外観, 立ち絵_デフォルト, BGM_BGM_Atria1, 
 ;※スクリプト班注釈　施設-外観というファイルが無い
-[bg_fade_in bg_storage="station.png"]
+[bg_fade_in bg_storage="station.webp"]
 [chara_show name="atria" top=94 time=1000 face="default" wait=false]
 [playbgm storage="atria/BGM_Atria1.ogg"]
 
@@ -734,7 +734,7 @@
 ;se停止
 [stopse]
 
-[bg_fade_in bg_storage="station.png"]
+[bg_fade_in bg_storage="station.webp"]
 ;立ち絵_ねむねむ, BGM_BGM_Atria(break), 
 [chara_show name="atria" top=94 time=1000 face="sleepy" wait=false]
 [playbgm storage="atria/BGM_Atria(break).ogg"]
@@ -788,7 +788,7 @@
 
 ;立ち絵_画面外, 場所_画面外, 
 [bg_fade_out]
-[bg_fade_in bg_storage="black.png"]
+[bg_fade_in bg_storage="black.webp"]
 
 #ロイド
 「さて次は何をしてあげましょうか」[p]
