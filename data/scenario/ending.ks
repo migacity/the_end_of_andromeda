@@ -83,15 +83,16 @@ tf.endrolltext = [
     '&emsp;らいあ市',
 ];
 tf.endrollimage = [
-    ['bedroom_after.png', 'bgimage'],
-    ['entrance.png', 'bgimage'],
-    ['hill.png', 'bgimage'],
-    ['laboratory.png', 'bgimage'],
-    ['corridor.png', 'bgimage'],
-    ['ruins.png', 'bgimage'],
-    ['school.png', 'bgimage'],
-    ['sleep_room.png', 'bgimage'],
-    ['station.png', 'bgimage'],
+    ['bedroom_before.webp', 'bgimage'],
+    ['entrance.webp', 'bgimage'],
+    ['hill.webp', 'bgimage'],
+    ['lab_corridor.webp', 'bgimage'],
+    ['lab_hibernationroom.webp', 'bgimage'],
+    ['lab_privateroom.webp', 'bgimage'],
+    ['lab_researchroom.webp', 'bgimage'],
+    ['ruins.webp', 'bgimage'],
+    ['school.webp', 'bgimage'],
+    ['station.webp', 'bgimage'],
     ['forest.webp', 'bgimage/rina'],
     ['haiki.webp', 'bgimage/rina'],
     ['nikki.webp', 'bgimage/rina'],
@@ -103,8 +104,8 @@ tf.endrollimage = [
     ['kei_CG_父2.webp', 'bgimage/still'],
     ['kei_温泉2.webp', 'bgimage/still'],
     ['kei_母_別れ1.webp', 'bgimage/still'],
-    ['hakase_awake.png', 'bgimage/still'],
-    ['hakase_coffee.png', 'bgimage/still'],
+    ['hakase_awake.webp', 'bgimage/still'],
+    ['hakase_coffee.webp', 'bgimage/still'],
 ];
 [endscript]
 
