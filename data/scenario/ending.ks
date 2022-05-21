@@ -83,7 +83,6 @@ tf.endrolltext = [
     '&emsp;らいあ市',
 ];
 tf.endrollimage = [
-    ['bedroom_before.webp', 'bgimage'],
     ['entrance.webp', 'bgimage'],
     ['hill.webp', 'bgimage'],
     ['lab_corridor.webp', 'bgimage'],
@@ -109,7 +108,7 @@ tf.endrollimage = [
 ];
 [endscript]
 
-[playbgm storage="ed_demo.wav" loop=false]
+[playbgm storage="ed.wav" loop=false]
 
 [endroll time=115000]
 
