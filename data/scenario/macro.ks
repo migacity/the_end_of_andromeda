@@ -94,7 +94,7 @@
     ; スチルスライドショー
     [layopt layer=0 visible=true]
     [backlay layer=0]
-    [image layer=0 x=100 y=180 width=640 height=360 storage="black.png" folder="bgimage" name="endrollimage"]
+    [image layer=0 x=100 y=180 width=640 height=360 storage="black.webp" folder="bgimage" name="endrollimage"]
     [wait time=200]
 
     [endroll_slide_loop counter="&tf.n"]
@@ -131,9 +131,13 @@
         [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="&tf.imageFile[0]" folder="&tf.imageFile[1]" name="endrollimage"]
         [trans layer=0 time=1000 method="fadeIn"]
         [wait time=&tf.imageTime]
+<<<<<<< HEAD
+=======
+
 ;        [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="black.webp" folder="bgimage" name="endrollimage"]
 ;        [trans layer=0 time=1000 method="fadeIn"]
 ;        [wait time=1200]
+>>>>>>> main
         
         [eval exp="mp.counter = mp.counter - 1"]
         [jump target="*endroll_slide_loop_start"]
