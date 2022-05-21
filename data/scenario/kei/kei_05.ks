@@ -22,7 +22,7 @@
 
 ;背景　公園
 [bg_fade_out]
-[bg_fade_in bg_storage="black.png"]
+[bg_fade_in bg_storage="black.webp"]
 ;BGM なし
 [stopbgm]
 
@@ -431,7 +431,7 @@
 
 
 ;演出指示　画面が真っ白になる
-[bg storage="white.png"]
+[bg storage="white.webp"]
 ;BGM 
 [playbgm storage="kei/BGM_Kei1.ogg"]
 
@@ -478,7 +478,7 @@
 
 ;背景　真っ暗
 [bg_fade_out]
-[bg_fade_in bg_storage="black.png"]
+[bg_fade_in bg_storage="black.webp"]
 
 ;BGM　なし
 [stopbgm]

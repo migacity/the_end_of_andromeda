@@ -10,7 +10,7 @@
 
 [playbgm storage="common/BGM_Title1.ogg"]
 [freeimage layer=0 time=500]
-[bg storage ="title.png" time=100]
+[bg storage ="title.webp" time=100]
 [wait time = 200]
 
 *start 

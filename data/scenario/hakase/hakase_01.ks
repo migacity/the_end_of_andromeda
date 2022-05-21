@@ -63,7 +63,7 @@
 [stopbgm]
 
 ;背景を表示
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 
 ;終焉のアンドロメダ
 ;博士ルート
@@ -77,7 +77,7 @@
 それでも僕は博士に会いたかった。[p]
 
 ;スリープ室
-[bg storage="sleep_room.png" time=1000 wait=true]
+[bg storage="lab_hibernationroom.webp" time=1000 wait=true]
 [playbgm storage="common/BGM_Room1.ogg"]
 
 #
@@ -144,9 +144,9 @@
 母親が子供にするように頭を撫でられた。[p]
 僕はこの温もりが好きだった。[p]
 
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 [stopbgm]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="lab_researchroom.webp" time=1000 wait=true]
 [playbgm storage="common/BGM_Prologue.ogg"]
 
 ;研究室
@@ -1349,7 +1349,7 @@
 [chara_hide name="hakase" time=1000 wait=true]
 
 ;夜
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 [stopbgm]
 
 #
@@ -1357,7 +1357,7 @@
 博士が研究所か出るのが見えたので、僕はそれに付いて行く。[p]
 彼女は草原で満点の星空を見上げていた。[p]
 
-[bg storage="home-background.png" time=1000 wait=true]
+[bg storage="home-background.webp" time=1000 wait=true]
 
 [chara_part name="hakase" body="side" pose="s1" eye="s2" mouth="s5" eyebrow="s2"]
 [chara_show name="hakase" time=1000 wait=true]
@@ -1703,9 +1703,9 @@
 [chara_hide name="hakase" time=1000 wait=true]
 
 ;場面転換
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 [stopbgm]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="lab_researchroom.webp" time=1000 wait=true]
 
 #博士
 「ロイド、頭は痛くないかい」[p]
@@ -1754,9 +1754,9 @@
 #
 
 ;場面転換
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 [stopbgm]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="lab_researchroom.webp" time=1000 wait=true]
 
 [chara_part name="hakase" body="front" pose="f2" eye="f4" mouth="f2" eyebrow="f2"]
 [chara_show name="hakase" time=1000 wait=true]
@@ -2052,7 +2052,7 @@
 それでも、それもいつか博士が教えてくれるだろう。[p]
 
 ;場面転換
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 
 #
 あの日、僕は真実を聞かないという選択をした。[p]

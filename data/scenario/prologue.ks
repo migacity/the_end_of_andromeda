@@ -66,7 +66,7 @@
 [stopbgm]
 
 ;背景を表示
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 
 
 #
@@ -74,7 +74,7 @@
 機械の稼働音がしてカプセルがゆっくりと開いた。[p]
 
 [playbgm storage="common/BGM_Room1.ogg"]
-[bg storage="still/hakase_awake.png" time=1000 wait=true]
+[bg storage="still/hakase_awake.webp" time=1000 wait=true]
 
 中に横たわっていた女性がゆっくりと体を起こす。[p]
 その女性──博士が気だるそうに口を開いた。[p]
@@ -128,8 +128,8 @@
 
 [stopbgm]
 
-[bg storage="black.png" time=1000 wait=true]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
+[bg storage="lab_researchroom.webp" time=1000 wait=true]
 
 [playbgm storage="common/BGM_Prologue.ogg"]
 
@@ -286,8 +286,8 @@
 
 #
 [chara_hide name="hakase" time=1000 wait=true]
-[bg storage="black.png" time=1000 wait=true]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
+[bg storage="lab_researchroom.webp" time=1000 wait=true]
 
 #
 博士はこれまでに何が起きたかを知りたがった。[p]
@@ -656,8 +656,8 @@
 [stopbgm]
 
 [chara_hide name="hakase" time=1000 wait=true]
-[bg storage="black.png" time=1000 wait=true]
-[bg storage="bedroom_after.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
+[bg storage="lab_privateroom.webp" time=1000 wait=true]
 
 [playbgm storage="hakase/what_to_do.ogg"]
 
@@ -756,9 +756,9 @@
 
 [chara_hide name="hakase" time=1000 wait=true]
 
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 [stopbgm]
-[bg storage="entrance.png" time=1000 wait=true]
+[bg storage="entrance.webp" time=1000 wait=true]
 
 #
 一人分の住居スペースを確保できたところで、博士は周辺を見てみたいと言い出した。[p]
@@ -899,8 +899,8 @@
 #
 博士の考え方は今でも変わっていないようである。[p]
 
-[bg storage="black.png" time=1000 wait=true]
-[bg storage="hill.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
+[bg storage="hill.webp" time=1000 wait=true]
 
 #
 丘の上から景色を眺める。[p]
@@ -1005,8 +1005,8 @@
 それから僕たちは食事を摂ることにした。[p]
 いつもより美味しかった気がする。[p]
 
-[bg storage="black.png" time=1000 wait=true]
-[bg storage="ruins.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
+[bg storage="ruins.webp" time=1000 wait=true]
 
 #
 食事の後に僕たちは遺跡群に向かった。[p]
@@ -1157,8 +1157,8 @@
 #
 
 [chara_hide name="hakase" time=1000 wait=true]
-[bg storage="black.png" time=1000 wait=true]
-[bg storage="school.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
+[bg storage="school.webp" time=1000 wait=true]
 
 #
 続いて向かったのがシェルター跡地だ。[p]
@@ -1248,8 +1248,8 @@
 もし研究に没頭できる学校があったのなら、楽しく過ごせただろうか。[p]
 そんなことを思いながら学校跡地をあとにした。[p]
 
-[bg storage="black.png" time=1000 wait=true]
-[bg storage="station.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
+[bg storage="station.webp" time=1000 wait=true]
 
 #
 駅前跡地に向かう。[p]
@@ -1377,9 +1377,9 @@
 僕はその先を尋ねることができなかった。[p]
 真剣な瞳が博士の決意を物語っているように見えたからだ。[p]
 
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 [stopbgm]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="lab_researchroom.webp" time=1000 wait=true]
 
 #
 研究所に戻るころには夜になっていた。[p]
@@ -1399,8 +1399,8 @@
 
 [chara_hide name="hakase" time=1000 wait=true]
 
-[bg storage="black.png" time=1000 wait=true]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
+[bg storage="lab_researchroom.webp" time=1000 wait=true]
 
 #
 あれから数日が経った、早朝のこと。[p]
@@ -1431,9 +1431,9 @@
 ついにその時が来たようだ。[p]
 博士は立ち上がり、少女たちの眠る場所に向かう。[p]
 
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 [stopbgm]
-[bg storage="corridor.png" time=1000 wait=true]
+[bg storage="lab_corridor.webp" time=1000 wait=true]
 
 僕はたまらず声をかけた。[p]
 
@@ -1501,8 +1501,8 @@
 優しく寄り添ってあげるのに必要な気遣い。[p]
 僕が質問すると、安心させるようになんでも教えてくれた。[p]
 
-[bg storage="black.png" time=1000 wait=true]
-[bg storage="sleep_room.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
+[bg storage="lab_hibernationroom.webp" time=1000 wait=true]
 
 #
 ついにこの場所にやってきた。[p]
@@ -1577,7 +1577,7 @@
 #
 
 [chara_hide_all time=1000 wait=true]
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 
 #
 ──どうか彼女たち一人一人を。[p]

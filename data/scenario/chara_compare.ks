@@ -76,8 +76,8 @@
 [stopbgm]
 
 ;背景を表示
-[bg storage="black.png" time=1000 wait=true]
-[bg storage="laboratory.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
+[bg storage="lab_researchroom.webp" time=1000 wait=true]
 
 ; キャラクターを表示する
 
@@ -91,7 +91,7 @@
 沈黙が部屋の中に満ちている。[p]
 
 [chara_hide_all time=1000 wait=true]
-[bg storage="black.png" time=1000 wait=true]
+[bg storage="black.webp" time=1000 wait=true]
 
 [jump storage="home.ks"]
 [s]

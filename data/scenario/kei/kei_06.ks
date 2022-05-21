@@ -2,7 +2,7 @@
 
 ;背景研究所
 [bg_fade_out]
-[bg_fade_in bg_storage="entrance.png"]
+[bg_fade_in bg_storage="entrance.webp"]
 
 ;立ち絵１　目閉笑顔
 [chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
@@ -72,7 +72,7 @@
 
 ;背景　研究所内　
 [bg_fade_out]
-[bg_fade_in bg_storage="labo.jpg"]
+[bg_fade_in bg_storage="lab_corridor.webp"]
 
 
 そこから暫く僕たちは施設で自分の身体のメンテナンス…[p]
@@ -292,7 +292,7 @@
 
 ;背景　研究所
 [bg_fade_out]
-[bg_fade_in bg_storage="labo.jpg"]
+[bg_fade_in bg_storage="lab_corridor.webp"]
 ;BGM  なし
 [stopbgm]
 #
@@ -313,5 +313,5 @@
 博士…約束の時まであと少しです。[p]
 
 [bg_fade_out]
-[bg_fade_in bg_storage="black.png" time=100]
+[bg_fade_in bg_storage="black.webp" time=100]
 [jump storage="home.ks"]
