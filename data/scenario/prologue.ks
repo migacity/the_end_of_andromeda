@@ -758,7 +758,7 @@
 
 [bg storage="black.webp" time=1000 wait=true]
 [stopbgm]
-[bg storage="entrance.webp" time=1000 wait=true]
+[bg storage="lab_outside.webp" time=1000 wait=true]
 
 #
 一人分の住居スペースを確保できたところで、博士は周辺を見てみたいと言い出した。[p]

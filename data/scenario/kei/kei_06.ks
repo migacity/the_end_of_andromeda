@@ -2,7 +2,7 @@
 
 ;背景研究所
 [bg_fade_out]
-[bg_fade_in bg_storage="entrance.webp"]
+[bg_fade_in bg_storage="lab_outside.webp"]
 
 ;立ち絵１　目閉笑顔
 [chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
