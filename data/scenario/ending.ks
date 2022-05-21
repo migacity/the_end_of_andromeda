@@ -108,7 +108,7 @@ tf.endrollimage = [
 ];
 [endscript]
 
-[playbgm storage="ed.wav" loop=false]
+[playbgm storage="ed.ogg" loop=false]
 
 [endroll time=115000]
 
