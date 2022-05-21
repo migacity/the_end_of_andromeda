@@ -60,7 +60,7 @@
     ; - エンディング曲を流す
 
     ; textに指定した文字列のスペースが表示されないので文字実体参照で記入します
-    [mtext text="%text" x=0 y=240 width=1280 align="center" size=120 color="0x111111" edge="0xffffff" in_effect="flipInX"]
+    [mtext text="%text" x=0 y=240 width=1280 align="center" size=100 color="0x111111" edge="0xffffff" in_effect="flipInX"]
 
     ; 一定時間が経過したのち自動的にタイトルへ戻る
     [wait time="1000"]
@@ -69,6 +69,7 @@
 ; エンドロールを流す
 [macro name="endroll"]
     [iscript]
+        tf.textline = 800-tf.endrolltext.length*55;
         tf.endrolltext = tf.endrolltext.join('<br />');
         tf.n = tf.endrollimage.length;
 
@@ -87,8 +88,8 @@
     ; エンドロール
     [layopt layer="message1" visible=true]
     [position layer="message1" page="fore" left=0 top=0 width=0 height=0 visible=false]
-    [ptext layer="message1" page="fore" text="&tf.endrolltext" size=30 x=780 y=800 width=500 align="center" color="white" name="endrolltext"]
-    [anim name="endrolltext" top=-200 time=%time]
+    [ptext layer="message1" page="fore" text="&tf.endrolltext" size=30 x=780 y=800 width=500 align="left" color="white" name="endrolltext"]
+    [anim name="endrolltext" top="&tf.textline" time=%time]
 
     ; スチルスライドショー
     [layopt layer=0 visible=true]
@@ -124,16 +125,19 @@
 
             const now = new Date();
             const partTime = Math.max(2200, tf.loopEndTime[i] - (now.getTime() - tf.startTime));
-            tf.imageTime = Math.max(1000, partTime - 1200);
+            tf.imageTime = Math.max(1000, partTime - 1000);
         [endscript]
 
         [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="&tf.imageFile[0]" folder="&tf.imageFile[1]" name="endrollimage"]
         [trans layer=0 time=1000 method="fadeIn"]
         [wait time=&tf.imageTime]
+<<<<<<< HEAD
+=======
 
-        [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="black.webp" folder="bgimage" name="endrollimage"]
-        [trans layer=0 time=1000 method="fadeIn"]
-        [wait time=1200]
+;        [image layer=0 page="back" x=100 y=180 width=640 height=360 storage="black.webp" folder="bgimage" name="endrollimage"]
+;        [trans layer=0 time=1000 method="fadeIn"]
+;        [wait time=1200]
+>>>>>>> main
         
         [eval exp="mp.counter = mp.counter - 1"]
         [jump target="*endroll_slide_loop_start"]

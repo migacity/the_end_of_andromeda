@@ -37,6 +37,7 @@
 [link storage="hakase/hakase_01.ks" target=*start]博士[endlink][r]
 [link storage="chara_compare.ks" target=*start]キャラ立ち絵[endlink]｜
 [link storage="home.ks" target=*home]キャラ選択画面[endlink]｜
+[link storage="ending.ks"]エンディング[endlink]｜
 [link target="*goto_title"]タイトルに戻る[endlink]
 [endnowait]
 [s]
