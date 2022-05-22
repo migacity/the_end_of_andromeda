@@ -1,6 +1,6 @@
 ;一番最初に呼び出されるファイル
 
-[title name="終焉のアンドロメダ(仮)"]
+[title name="終焉のアンドロメダ"]
 
 [stop_keyconfig]
 
