@@ -45,7 +45,7 @@
 [endif]
 
 ; for debugging
-[button x=240 y=467 width=227 graphic="button/button_title_scenario.png" enterimg="button/button_title_scenario_hover.png"  storage="select.ks" target="home"]
+; [button x=240 y=467 width=227 graphic="button/button_title_scenario.png" enterimg="button/button_title_scenario_hover.png"  storage="select.ks" target="home"]
 
 
 [mask_off]
