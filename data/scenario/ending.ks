@@ -83,7 +83,7 @@ tf.endrolltext = [
     '&emsp;らいあ市',
 ];
 tf.endrollimage = [
-    ['entrance.webp', 'bgimage'],
+    ['lab_outside.webp', 'bgimage'],
     ['hill.webp', 'bgimage'],
     ['lab_corridor.webp', 'bgimage'],
     ['lab_hibernationroom.webp', 'bgimage'],
@@ -112,6 +112,6 @@ tf.endrollimage = [
 
 [endroll time=115000]
 
-[ending_text text="Thank&nbsp;you&nbsp;for&nbsp;your&nbsp;playing!"]
+[ending_text text="Thank&nbsp;you&nbsp;for&nbsp;playing!"]
 
 [jump storage="title.ks"]
