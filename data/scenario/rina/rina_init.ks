@@ -8,7 +8,7 @@
 [name_create]
 
 ;キャラクターを登録 
-[chara_new name="rina" storage="chara/rina/rina-default.webp" width=631 height=1488 jname="りな"]
+[chara_new name="rina" storage="chara/rina/rina-default.webp" width=1080 height=1080 jname="りな"]
 [chara_face name="rina" face="default" storage="chara/rina/rina-default.webp"]
 [chara_face name="rina" face="hokorashige" storage="chara/rina/rina-hokorashige.webp"]
 [chara_face name="rina" face="ikari" storage="chara/rina/rina-ikari.webp"]

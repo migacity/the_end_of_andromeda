@@ -38,7 +38,7 @@
 [chara_new name="kaname" storage="chara/kei/かなめ.webp" width="1110" height="792" jname="かなめ"]
 
 ; chara_showではtop=32を指定する。
-[chara_new name="kei" storage="chara/kei/立ち絵1_目開き通常.webp" width=818 height=1787 jname="継"]
+[chara_new name="kei" storage="chara/kei/立ち絵1_目開き通常.webp" width=1080 height=1080 jname="継"]
 [chara_face name="kei" face="立ち絵2_絶望" storage="chara\kei\立ち絵2_絶望.webp"]
 [chara_face name="kei" face="立ち絵2_通常" storage="chara\kei\立ち絵2_通常.webp"]
 [chara_face name="kei" face="立ち絵2_特殊" storage="chara\kei\立ち絵2_特殊.webp"]
