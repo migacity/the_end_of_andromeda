@@ -60,7 +60,7 @@ tf.endrolltext = [
     '',
     '&emsp;背景',
     '&emsp;&emsp;ぱくたそ 様',
-    '&emsp;&emsp;ニコ二・コモンズ 様',
+    '&emsp;&emsp;ニコニ・コモンズ 様',
     '',
     '',
     '',
