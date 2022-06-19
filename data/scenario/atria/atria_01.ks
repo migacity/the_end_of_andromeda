@@ -18,6 +18,7 @@
 
 ;立ち絵_デフォルト, 
 [chara_mod name="atria" face="default" wait=true cross=false]
+
 少女はぼーっとしており、まだ状況が理解できていないようだ。[p]
 
 #ロイド
@@ -58,8 +59,8 @@
 「でも初めに会った人にこれを見せるようにって言われたのは覚えてる」[p]
 
 ;場所_小さく上下, BGM_BGM_Profiling, SE_紙出す音, 
-[anim name="atria" top="-=50" time=500 ]
-[anim name="atria" top="+=50" time=500]
+[anim name="atria" top="+=50" height="-=50"  time=500 ]
+[anim name="atria" top="-=50" height="+=50"  time=500]
 [playbgm storage="rina/BGM_Profiling.ogg"]
 [playse storage="atria/紙出す音.ogg"]
 
@@ -559,10 +560,11 @@
 
 #アトリア
 「う・み・だー！！」[p]
-[anim name="atria" top="-=50" time=250 ]
-[anim name="atria" top="+=50" time=250 ]
-[anim name="atria" top="-=50" time=250 ]
-[anim name="atria" top="+=50" time=250 ]
+; [anim name="atria" top="-=50" height=770 width=720 time=250 ]
+; [anim name="atria" top="+=50" height=720 width=720 time=250 ]
+; [anim name="atria" top="-=50" height=770 width=720 time=250 ]
+; [anim name="atria" top="+=50" height=720 width=720 time=250 ]
+[kanim name="atria" keyframe="pyon" time=1000  ]
 
 「すごくきれい！ 透き通ってる！！ お魚もいる！！！」[p]
 
@@ -721,10 +723,11 @@
 
 ;立ち絵_もぐもぐその2, 場所_上下, 
 [chara_mod name="atria" face="eating2" wait=true cross=false]
-[anim name="atria" top="-=50" time=250 ]
-[anim name="atria" top="+=50" time=250 ]
-[anim name="atria" top="-=50" time=250 ]
-[anim name="atria" top="+=50" time=250 ]
+; [anim name="atria" top="-=50" time=250 ]
+; [anim name="atria" top="+=50" time=250 ]
+; [anim name="atria" top="-=50" time=250 ]
+; [anim name="atria" top="+=50" time=250 ]
+[kanim name="atria" keyframe="pyon" time=1000  ]
 「おいしい！」[p]
 「ロイドさんもどうぞ！ まだいっぱいあるから食べて食べて！」[p]
 

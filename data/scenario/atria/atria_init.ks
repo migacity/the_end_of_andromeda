@@ -18,4 +18,12 @@
 [chara_face name="atria" face="hands_up" storage="chara/atria/手上げ.webp"]
 [chara_face name="atria" face="joy" storage="chara/atria/よろこび.webp"]
 
+;アニメーションを定義
+[keyframe name="pyon"]
+[frame p=25% y=-50 scaleY=1.1 ]
+[frame p=50% y=30 scaleY=1 ]
+[frame p=75% y=-50 scaleY=1.1 ]
+[frame p=100% y=*0 scaleY=1 ]
+[endkeyframe ]
+
 [jump storage="atria/atria_01.ks" target="*start"]
