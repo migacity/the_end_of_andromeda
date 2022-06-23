@@ -164,7 +164,7 @@
 
 
 ;立ち絵　かなめ
-[chara_show name="kaname" top="-120"]
+[chara_show name="kaname" top="0"]
 
 
 [filter name="kei" brightness="60"]
@@ -350,7 +350,7 @@
 
 
 ;立ち絵　かなめ
-[chara_show name="kaname" top="-120"]
+[chara_show name="kaname" top="0"]
 
 [filter name="kei" brightness="60"]
 [filter name="kaname" brightness="100"]
