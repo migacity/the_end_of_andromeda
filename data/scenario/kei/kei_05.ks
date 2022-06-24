@@ -4,7 +4,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/公園.webp"]
 ;立ち絵２　目閉泣き顔
-[chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=0 time=1000 wait=false]
 
 #継
 「私・・・！生きるから・・」[p]
@@ -57,7 +57,7 @@
 
 
 ;立ち絵１　目閉悲しみ
-[chara_show name="kei" face="立ち絵1_目閉_悲しみ" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目閉_悲しみ" top=0 time=1000 wait=false]
 
 #継
 「うん・・」[p]
@@ -507,7 +507,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/カプセル_ルーム.webp"]
 ;立ち絵１　泣き顔
-[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=0 time=1000 wait=false]
 ;BGM　IKEIKE
 [playbgm storage="kei/BGM_Kei(trance).ogg"]
 
@@ -557,7 +557,7 @@
 ;背景　塔　廊下
 [bg storage="kei/廊下2.webp" time="1000"]
 ;立ち絵１　通常
-[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目開き通常" top=0 time=1000 wait=false]
 ;BGM　Monologue
 [playbgm storage="common/BGM_Monologue.ogg"]
 
@@ -694,7 +694,7 @@
 
 
 ;立ち絵１　目閉じ　怒
-[chara_show name="kei" face="立ち絵1_目閉_怒り" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目閉_怒り" top=0 time=1000 wait=false]
 
 
 #継
@@ -768,7 +768,7 @@
 
 
 ;立ち絵１　目閉　怒
-[chara_show name="kei" face="立ち絵1_目閉_怒り" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目閉_怒り" top=0 time=1000 wait=false]
 
 #継
 「聞きたいことがあるの」[p]
@@ -995,7 +995,7 @@
 
 
 ;立ち絵１　目閉　どや顔
-[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=0 time=1000 wait=false]
 ;BGM　
 [playbgm storage="kei/BGM_Kei1.ogg"]
 

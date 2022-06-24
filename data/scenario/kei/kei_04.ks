@@ -4,7 +4,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２寝間着　目閉じ通常
-[chara_show name="kei" face="立ち絵1_寝間着_眠い" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_寝間着_眠い" top=0 time=1000 wait=false]
 
 ;BGM　なし
 [stopbgm]
@@ -64,7 +64,7 @@
 
 
 ;立ち絵１寝間着　驚き
-[chara_show name="kei" face="立ち絵1_寝間着_特殊" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_寝間着_特殊" top=0 time=1000 wait=false]
 
 #継
 「え！なに！？」[p]
@@ -125,7 +125,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２寝間着　目閉じ通常
-[chara_show name="kei" face="立ち絵1_寝間着_通常" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_寝間着_通常" top=0 time=1000 wait=false]
 
 
 
@@ -144,7 +144,7 @@
 
 
 ;立ち絵１　目開き笑顔
-[chara_show name="kei" face="立ち絵1_目開き笑顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目開き笑顔" top=0 time=1000 wait=false]
 
 #継
 「私も大学にいってきます」[p]
@@ -225,7 +225,7 @@
 
 
 ;立ち絵　疑問
-[chara_show name="kei" face="立ち絵1_疑問" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_疑問" top=0 time=1000 wait=false]
 
 ;BGM なし
 [stopbgm]
@@ -253,7 +253,7 @@
 ;BGM　ノイズ音
 [playse storage="kei/ノイズ音.ogg" buf=0]
 ;立ち絵２　疑問
-[chara_show name="kei" face="立ち絵2_疑問" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵2_疑問" top=0 time=1000 wait=false]
 
 #継
 「あれ・・？なんだったっけ？」[p]
@@ -281,7 +281,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２　目開き笑顔
-[chara_show name="kei" face="立ち絵2_目開き笑顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵2_目開き笑顔" top=0 time=1000 wait=false]
 ;BGM　魔王魂ピアノ34
 [playbgm storage="kei/BGM_魔王魂_ピアノ34.ogg"]
 
@@ -408,7 +408,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵寝間着　ねむい
-[chara_show name="kei" face="立ち絵2_目閉じ通常" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵2_目閉じ通常" top=0 time=1000 wait=false]
 ;BGM なし
 [stopbgm]
 
@@ -523,7 +523,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/居間.webp"]
 ;立ち絵２　泣き顔
-[chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=0 time=1000 wait=false]
 ;BGM　Incineator
 [playbgm storage="common/BGM_Incinerator.ogg"]
 
@@ -564,7 +564,7 @@
 
 
 ;立ち絵１　泣き顔
-[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=0 time=1000 wait=false]
 
 
 #継
@@ -651,7 +651,7 @@
 
 
 ;立ち絵　驚き
-[chara_show name="kei" face="立ち絵_驚き" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵_驚き" top=0 time=1000 wait=false]
 
 
 #継
@@ -934,7 +934,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/公園.webp"]
 ;立ち絵２　悲しみ
-[chara_show name="kei" face="立ち絵2_悲しみ" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵2_悲しみ" top=0 time=1000 wait=false]
 
 #継
 「そんな・・」[p]

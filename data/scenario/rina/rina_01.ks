@@ -42,7 +42,7 @@
 ;BGM開始、りなのコミカル、ファイル名＝BGM_IKEIKE.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_IKEIKE.ogg"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-sekikomi.png、指示あるまで表示継続
-[chara_show name="rina" face="sekikomi" top=1 time=1000 wait=false]
+[chara_show name="rina" face="sekikomi" top=0 time=1000 wait=false]
 
 #少女
 「げほげほげほげほー！」[p]
@@ -205,7 +205,7 @@
 彼女、りなは黙って聞いていたが思いのほか落ち着いているようだった。[p]
 
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-tameiki.png、指示あるまで表示継続
-[chara_show name="rina" face="tameiki" top=1]
+[chara_show name="rina" face="tameiki" top=0]
 
 #りな
 「実感がわかない……」[p]
@@ -490,7 +490,7 @@
 「なのでお姉さまには紙の日記で精神な落ち着きを得ることを推奨しました」[p]
 
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-warai.png、指示あるまで表示継続
-[chara_show name="rina" face="warai" top=1]
+[chara_show name="rina" face="warai" top=0]
 
 #りな
 「そっか、ロイド賢い」[p]
@@ -576,7 +576,7 @@
 「りなさん、とりあえず１万冊ほど書籍データベースを分析し人格プロファイリングの練習しました」[p]
 
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-warai.png、指示あるまで表示継続
-[chara_show name="rina" face="warai" top=1]
+[chara_show name="rina" face="warai" top=0]
 
 #りな
 「ロイドは努力家だね……それじゃあ練習テスト、わたしを分析してみよう」[p]
@@ -853,7 +853,7 @@
 ;SE再生、ファイル名＝cricket-grassland-1.mp3、回数＝別途指示あるまでループ
 [playse storage="rina/cricket-grassland-1.ogg" buf=0 loop=true]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-warai.png、指示あるまで表示継続
-[chara_show name="rina" face="warai" top=1]
+[chara_show name="rina" face="warai" top=0]
 
 #りな
 「ロイド、人格プロファイリングの練習は進んでいるみたいだね、読書量はどれくらい？」[p]
@@ -1170,7 +1170,7 @@
 #
 [bg_fade_in bg_storage="rina/haiki.webp"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-utsumuki.png、指示あるまで表示継続
-[chara_show name="rina" face="utsumuki" top=1]
+[chara_show name="rina" face="utsumuki" top=0]
 
 #
 りなは焼却炉を背に立っていた。俯いてずっと震えている。[p]
@@ -1287,7 +1287,7 @@
 #
 [bg_fade_in bg_storage="rina/haiki.webp"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-ikari.png、指示あるまで表示継続
-[chara_show name="rina" face="ikari" top=1]
+[chara_show name="rina" face="ikari" top=0]
 
 #りな
 「わたしが、お姉ちゃんを、ここから出してあげるんだ、埋葬してあげるんだ」[p]
@@ -1511,7 +1511,7 @@
 ;BGM開始、オルゴール、ファイル名=BGM_Rika.ogg、別途指示あるまで継続
 [playbgm storage="rina/BGM_Rika.ogg"]
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-odoroki.png、指示あるまで表示継続
-[chara_show name="rina" face="odoroki" top=1]
+[chara_show name="rina" face="odoroki" top=0]
 
 #
 そこには、花があった。[p]
@@ -1605,7 +1605,7 @@
 「紙の日記群は周辺に埋めておきます」[p]
 
 ;立ち絵開始、位置＝画面中央、ファイル名＝rina-default.png、指示あるまで表示継続
-[chara_show name="rina" face="default" top=1]
+[chara_show name="rina" face="default" top=0]
 
 #りな
 「うん、ありがとう」[p]

@@ -5,7 +5,7 @@
 [bg_fade_in bg_storage="lab_outside.webp"]
 
 ;立ち絵１　目閉笑顔
-[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=0 time=1000 wait=false]
 
 
 #継
@@ -104,7 +104,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/森.webp"]
 ;立ち絵２　目閉　通常
-[chara_show name="kei" face="立ち絵2_目閉じ通常" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵2_目閉じ通常" top=0 time=1000 wait=false]
 ;BGM kei1
 [playbgm storage="kei/BGM_Kei1.ogg"]
 
@@ -166,7 +166,7 @@
 
 
 ;立ち絵１　目閉じ　笑顔
-[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=0 time=1000 wait=false]
 
 
 #継
@@ -211,7 +211,7 @@
 
 
 ;立ち絵　かなめ
-[chara_show name="kaname" top=-120 time=1000 wait=false]
+[chara_show name="kaname" top=0 time=1000 wait=false]
 
 
 #かなめ
@@ -227,7 +227,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/森.webp"]
 ;立ち絵１　笑顔
-[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目閉_笑顔" top=0 time=1000 wait=false]
 ;BGM kei<Family>
 [playbgm storage="kei/BGM_Kei1.ogg"]
 
@@ -273,7 +273,7 @@
 「最後に待つだけじゃなくて、自分でほしいものは自分の意志で手に入れるのよ！」[p]
 
 ;立ち絵１　目開き笑顔
-[chara_show name="kei" face="立ち絵1_目開き笑顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目開き笑顔" top=0 time=1000 wait=false]
 
 #継
 「終末だからなによ！それで終わるなんてつまらないわ！」[p]
