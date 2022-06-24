@@ -2,7 +2,7 @@
 
 ;背景_施設-装置室, 立ち絵_ねむねむ, 場所_デフォルト, BGM_BGM_Atria1, 
 [bg storage="lab_hibernationroom.webp" time=1000 wait=true cross=true method="fadeIn"]
-[chara_show name="atria" top=94 time=1000 face="sleepy" wait=false]
+[chara_show name="atria" top=0 time=1000 face="sleepy" wait=false]
 [playbgm storage="atria/BGM_Atria1.ogg"]
 
 #
@@ -18,6 +18,7 @@
 
 ;立ち絵_デフォルト, 
 [chara_mod name="atria" face="default" wait=true cross=false]
+
 少女はぼーっとしており、まだ状況が理解できていないようだ。[p]
 
 #ロイド
@@ -40,7 +41,7 @@
 しかし少女とのコミュニケーションや少女の理解状況を調べるため少女自身からも聞いたほうがいいだろう。[p]
 
 #ロイド
-「君のお名前は？」[p]
+「あなたのお名前は？」[p]
 
 #少女
 「わたしはアトリア、君は？」[p]
@@ -58,8 +59,8 @@
 「でも初めに会った人にこれを見せるようにって言われたのは覚えてる」[p]
 
 ;場所_小さく上下, BGM_BGM_Profiling, SE_紙出す音, 
-[anim name="atria" top="+=50" time=500 ]
-[anim name="atria" top="-=50" time=500]
+[anim name="atria" top="+=50" height="-=50"  time=500 ]
+[anim name="atria" top="-=50" height="+=50"  time=500]
 [playbgm storage="rina/BGM_Profiling.ogg"]
 [playse storage="atria/紙出す音.ogg"]
 
@@ -106,7 +107,7 @@
 [playbgm storage="atria/BGM_Atria1.ogg"]
 [bg_fade_in bg_storage="lab_hibernationroom.webp"]
 
-[chara_show name="atria" top=94 time=1000 face="sad" wait=false]
+[chara_show name="atria" top=0 time=1000 face="sad" wait=false]
 
 #
 施設の食糧庫には十分量が保管されている。[p]
@@ -182,19 +183,20 @@
 #ロイド
 「でしたら魚は探さないといけないですね」[p]
 
-#アトリア
-「やったー！」[p]
 
 ;立ち絵_手上げ, 
 [chara_hide_all wait=true time=100]
-[chara_show name="atria" time=300 wait=true face="hands_up" top=-34]
+[chara_show name="atria" time=300 wait=true face="hands_up" top=0]
+
+#アトリア
+「やったー！」[p]
 
 #
 魚を食べられるからかアトリアはどんどん明るくなっているような気がする。[p]
 
 ;立ち絵_デフォルト, 
 [chara_hide_all wait=true time=100]
-[chara_show name="atria" time=300 wait=true face="default" top=94]
+[chara_show name="atria" time=300 wait=true face="default" top=0]
 
 #ロイド
 「そういえば博士が釣りについて話していたので施設の中にも釣りの道具があるかもしれませんね」[p]
@@ -267,7 +269,7 @@
 ;背景_施設-入口, 立ち絵_デフォルト, 場所_デフォルト, 
 ;※スクリプト班注釈 施設-入口のファイルが無い
 [bg_fade_in bg_storage="lab_researchroom.webp"]
-[chara_show name="atria" top=94 time=1000 face="default" wait=false]
+[chara_show name="atria" top=0 time=1000 face="default" wait=false]
 
 忘れ物がないか入念にチェックした後、施設入り口に向かう。[p]
 
@@ -310,7 +312,7 @@
 「では山菜等を中心に食べられそうなものをいろいろ集めてみましょうか」[p]
 
 ;立ち絵_かなしみ, 
-[chara_show name="atria" top=94 time=1000 face="sad" wait=false]
+[chara_show name="atria" top=0 time=1000 face="sad" wait=false]
 
 #アトリア
 「見た感じ見たことない草ばかりだなぁ……食べられるか分からないのばかりだ」[p]
@@ -349,7 +351,7 @@
 ;暗転
 [bg_fade_out]
 [bg_fade_in bg_storage="atria/森.webp"]
-[chara_show name="atria" top=94 time=1000 face="default" wait=false]
+[chara_show name="atria" top=0 time=1000 face="default" wait=false]
 
 #アトリア
 「ロイドさんはアンドロイドだったよね、何年くらい生きてるの？」[p]
@@ -392,7 +394,7 @@
 
 ;背景_森, 立ち絵_かなしみ, 場所_少し下, 
 [bg storage="atria/森.webp" time=100 wait=true cross=true]
-[chara_show name="atria" top=144 time=1000 face="sad" wait=false]
+[chara_show name="atria" top=50 time=1000 face="sad" wait=false]
 
 #アトリア
 「つかれたー」[p]
@@ -443,7 +445,7 @@
 
 ;背景_森, 立ち絵_ねむねむ, 場所_下, 
 [bg_fade_in bg_storage="atria/森.webp"]
-[chara_show name="atria" top=194 time=1000 face="sleepy" wait=false]
+[chara_show name="atria" top=100 time=1000 face="sleepy" wait=false]
 
 #
 アトリアのもとに戻ったがまだ寝ている。かなり動いていたためなかなか起きないのだろう。[p]
@@ -478,7 +480,7 @@
 ;背景_施設-食糧庫, BGM_BGM_Atria1, 
 [bg_fade_in bg_storage="lab_researchroom.webp"]
 [playbgm storage="atria/BGM_Atria1.ogg"]
-[chara_show name="atria" top=94 time=1000 face="default" wait=false]
+[chara_show name="atria" top=0 time=1000 face="default" wait=false]
 
 #
 施設まで帰ってきた。明日まとめて食べるため今日取った木の実類は保管庫に入れておこう。[p]
@@ -513,7 +515,7 @@
 
 [bg_fade_in bg_storage="lab_researchroom.webp"]
 ;立ち絵_ねむねむ, 場所_下, 
-[chara_show name="atria" top=194 time=1000 face="sleepy" wait=false]
+[chara_show name="atria" top=100 time=1000 face="sleepy" wait=false]
 
 #ロイド
 「アトリアさん、そろそろ起きてください」[p]
@@ -532,7 +534,7 @@
 
 ;立ち絵_デフォルト, 場所_デフォルト, 
 [chara_mod name="atria" face="default" wait=true cross=false]
-[anim name="atria" top=94 time=250 ]
+[anim name="atria" top=0 time=250 ]
 
 #アトリア
 「うみー！」[p]
@@ -545,7 +547,7 @@
 
 #
 ふたりはまた施設から必要になりそうなものを集める。[p]
-今回は施設からあまり離れないのであまり多くの準備はいらないだろう。[p]
+今回は施設から距離が離れていないので、最低限の準備で問題ないだろう。[p]
 
 ;暗転
 [bg_fade_out]
@@ -554,14 +556,15 @@
 [bg_fade_in bg_storage="atria/海.webp"]
 [playbgm storage="atria/BGM_Atria(Sea).ogg"]
 [playse storage="atria/海岸3.ogg" loop=true]
-[chara_show name="atria" top=94 time=1000 face="surprise" wait=false]
+[chara_show name="atria" top=0 time=1000 face="surprise" wait=false]
 
 #アトリア
 「う・み・だー！！」[p]
-[anim name="atria" top="-=50" time=250 ]
-[anim name="atria" top="+=50" time=250 ]
-[anim name="atria" top="-=50" time=250 ]
-[anim name="atria" top="+=50" time=250 ]
+; [anim name="atria" top="-=50" height=770 width=720 time=250 ]
+; [anim name="atria" top="+=50" height=720 width=720 time=250 ]
+; [anim name="atria" top="-=50" height=770 width=720 time=250 ]
+; [anim name="atria" top="+=50" height=720 width=720 time=250 ]
+[kanim name="atria" keyframe="pyon" time=1200 easing="linear"  ]
 
 「すごくきれい！ 透き通ってる！！ お魚もいる！！！」[p]
 
@@ -621,8 +624,12 @@
 #ロイド
 「案外ここみたいにだれかいるかもしれませんね」[p]
 
+[font size=40]
+
 #アトリア
 「だれかいませんかー！！」[p]
+
+[resetfont]
 
 #
 魚が逃げそうな大声で叫ぶ。当然返事はないのだが。[p]
@@ -646,8 +653,8 @@
 #ロイド
 「ではパーティの準備をしましょうか」[p]
 
-;立ち絵_おどろき, 
-[chara_mod name="atria" face="surprise" wait=true cross=false]
+;立ち絵_よろこび, 
+[chara_mod name="atria" face="joy" wait=true cross=false]
 
 #アトリア
 「わーい！！」[p]
@@ -673,7 +680,7 @@
 ;背景_施設-外観, 立ち絵_デフォルト, BGM_BGM_Atria1, 
 ;※スクリプト班注釈　施設-外観というファイルが無い
 [bg_fade_in bg_storage="station.webp"]
-[chara_show name="atria" top=94 time=1000 face="default" wait=false]
+[chara_show name="atria" top=0 time=1000 face="default" wait=false]
 [playbgm storage="atria/BGM_Atria1.ogg"]
 
 #アトリア
@@ -681,7 +688,7 @@
 
 #ロイド
 「おかえりなさい」[p]
-「では準備しましょうか、アトリアさんは昨日取った山菜と木の実の調理お願いできますか？」[p]
+「では準備しましょうか、アトリアさんは昨日取った山菜と木の実の調理をお願いできますか？」[p]
 
 #アトリア
 「おまかせあれ！」[p]
@@ -689,11 +696,17 @@
 #
 楽しみすぎて変なテンションになっていそうなアトリアに期待しつつ魚の調理に入る。[p]
 
+;暗転
+[bg_fade_out]
+[bg_fade_in bg_storage="station.webp"]
+
 ;SE_たき火, 
 [playse storage="atria/たき火.ogg" loop=true]
 シンプルに味付けして焼くだけで問題ないだろう。釣りたての魚はうまいらしい。[p]
 
 準備をしていると隣から視線を感じる。[p]
+
+[chara_show name="atria" top=0 time=1000 face="default" wait=false]
 
 #アトリア
 「魚だー！ おいしそう！」[p]
@@ -710,10 +723,11 @@
 
 ;立ち絵_もぐもぐその2, 場所_上下, 
 [chara_mod name="atria" face="eating2" wait=true cross=false]
-[anim name="atria" top="-=50" time=250 ]
-[anim name="atria" top="+=50" time=250 ]
-[anim name="atria" top="-=50" time=250 ]
-[anim name="atria" top="+=50" time=250 ]
+; [anim name="atria" top="-=50" time=250 ]
+; [anim name="atria" top="+=50" time=250 ]
+; [anim name="atria" top="-=50" time=250 ]
+; [anim name="atria" top="+=50" time=250 ]
+[kanim name="atria" keyframe="pyon" time=1000  ]
 「おいしい！」[p]
 「ロイドさんもどうぞ！ まだいっぱいあるから食べて食べて！」[p]
 
@@ -736,7 +750,7 @@
 
 [bg_fade_in bg_storage="station.webp"]
 ;立ち絵_ねむねむ, BGM_BGM_Atria(break), 
-[chara_show name="atria" top=94 time=1000 face="sleepy" wait=false]
+[chara_show name="atria" top=0 time=1000 face="sleepy" wait=false]
 [playbgm storage="atria/BGM_Atria(break).ogg"]
 「アトリアさん、ずいぶん眠そうですね」[p]
 

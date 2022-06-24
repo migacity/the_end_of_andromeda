@@ -24,9 +24,9 @@
 [chara_config ptext="chara_name_area"]
 
 ;キャラクターを登録 
-[chara_new name="rina" storage="chara/rina/rina-default.webp" width=631 height=1488 jname="りな"]
-[chara_new name="kei" storage="chara/kei/2_.webp" width=1261 height=1853 jname="継"]
-[chara_new name="atria" storage="chara/atria/デフォルト.webp" width=757 height=1276 jname="アトリア"]
+[chara_new name="rina" storage="chara/rina/rina-default.webp" width=720 height=720 jname="りな"]
+[chara_new name="kei" storage="chara/kei/立ち絵_どや顔.webp" width=720 height=720 jname="継"]
+[chara_new name="atria" storage="chara/atria/デフォルト.webp" width=720 height=720 jname="アトリア"]
 [chara_new name="hakase" storage="chara/doctor/hakase_none.png"  width=617 height=720 jname="博士_正面"]
 ;体
 [chara_layer name="hakase" part="body" id="front" storage="chara/doctor/hakase_front_body.png" zindex=1]
@@ -81,9 +81,9 @@
 
 ; キャラクターを表示する
 
-[chara_show name="rina" top=1 time=1000 wait=false]
-[chara_show name="kei" top=-144 time=1000 wait=false]
-[chara_show name="atria" top=94 time=1000 wait=false]
+[chara_show name="rina" top=0 time=1000 wait=false]
+[chara_show name="kei" top=0 time=1000 wait=false]
+[chara_show name="atria" top=0 time=1000 wait=false]
 [chara_part name="hakase" body="side" pose="s3" eye="s2" mouth="s1" eyebrow="s2"]
 [chara_show name="hakase" time=1000 wait=true]
 

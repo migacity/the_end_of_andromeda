@@ -7,7 +7,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/自宅玄関.webp"]
 
-[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目開き通常" top=0 time=1000 wait=false]
 
 #継
 「鍵は・・開いているわね」[p]
@@ -76,7 +76,7 @@
 [bg storage="kei/居間.webp" time="1000"]
 
 ;立ち絵１　泣き顔
-[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=0 time=1000 wait=false]
 
 #ロイド
 「いえ・・あの・・もしかしたらそのロボット」[p]
@@ -164,7 +164,7 @@
 
 
 ;立ち絵　かなめ
-[chara_show name="kaname" top="-120"]
+[chara_show name="kaname" top="0"]
 
 
 [filter name="kei" brightness="60"]
@@ -325,7 +325,7 @@
 
 
 ;立ち絵１　泣き顔
-[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=0 time=1000 wait=false]
 ;BGM なし
 [stopbgm]
 
@@ -350,7 +350,7 @@
 
 
 ;立ち絵　かなめ
-[chara_show name="kaname" top="-120"]
+[chara_show name="kaname" top="0"]
 
 [filter name="kei" brightness="60"]
 [filter name="kaname" brightness="100"]
@@ -421,7 +421,7 @@
 (手を伸ばしたいのに・・)[p]
 
 #
-もうその力もなくだらりとぶら下がったアームはただの鉄の塊とかしている。[p]
+もうその力もなくだらりとぶら下がったアームはただの鉄の塊と化している。[p]
 
 
 
@@ -443,7 +443,7 @@
 [filter name="kaname" brightness="60"]
 
 #
-思い出すのはこの家で家族として向かい入れられた、慌ただしくも充実した日々…[p]
+思い出すのは家族として迎え入れられてから、慌ただしくも充実した日々…[p]
 
 彼女との最初の出会いはご主人に連れられてきたところからだ[p]
 
@@ -730,17 +730,17 @@
 動物だろうか・・[p]
 
 #ロイド
-「ここがあなたの家ですか」[p]
+「ここがあなたのハウスですか」[p]
 
 #継
-継「そうよ・・正直ここまで状態が良いのが驚きなのだけれど・・」[p]
+「そうよ・・正直ここまで状態が良いのが驚きなのだけれど・・」[p]
 
 #
 いや　人の声だ　それも昔聞いたことがあるような・・[p]
 
 
 ;立ち絵１　通常
-[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目開き通常" top=0 time=1000 wait=false]
 
 
 #継
@@ -787,7 +787,7 @@
 [bg_fade_in bg_storage="kei/居間.webp"]
 
 ;立ち絵２　泣き顔
-[chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=0 time=1000 wait=false]
 
 #継
 「ずっと守ってくれていたのね・・ありがとう・・」[p]
@@ -801,11 +801,11 @@
 #
 継　僕の大事な人[p]
 
-言伝をすべて伝える[p]
+伝えるべきことは伝えた…[p]
 
 両親はもういない　きっと彼女は泣くだろう[p]
 
-でもここから先は僕も一緒にいくことはできない[p]
+でもこれから先も僕は一緒にいくことはできない[p]
 
 この身体はもう修理することもかなわないほど損傷している[p]
 
@@ -935,7 +935,7 @@ pppppppppp[p]
 
 
 ;立ち絵寝間着　特殊
-[chara_show name="kei" face="立ち絵1_寝間着_特殊" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_寝間着_特殊" top=0 time=1000 wait=false]
 
 
 #継

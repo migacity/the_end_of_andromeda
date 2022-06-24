@@ -8,7 +8,7 @@
 
 
 ;立ち絵１　通常
-[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目開き通常" top=0 time=1000 wait=false]
 
 
 #継
@@ -469,7 +469,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/車内.webp"]
 
-[chara_show name="kei" face="立ち絵1_目開き通常" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵1_目開き通常" top=0 time=1000 wait=false]
 
 ;BGM　なし
 [stopbgm]
@@ -793,10 +793,10 @@
 [bg_fade_in bg_storage="kei/温泉.webp"]
 
 ;立ち絵　タオル　目閉じ　笑顔
-[chara_show name="kei" face="立ち絵_バスタオル_目閉じ笑顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵_バスタオル_目閉じ笑顔" top=0 time=1000 wait=false]
 
 #継
-「いや～ほんと長旅の疲れが五臓六腑に染み渡るわ～」[p]
+「あ～…ここはもしかして天国では？」[p]
 
 
 
@@ -860,7 +860,7 @@
 
 
 ;立ち絵　タオル　泣き
-[chara_show name="kei" face="立ち絵_バスタオル_目閉じ泣き顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵_バスタオル_目閉じ泣き顔" top=0 time=1000 wait=false]
 
 #継
 「あ・あれ・・・あそこに！」[p]
@@ -887,7 +887,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/森.webp"]
 ;立ち絵　タオル　特殊
-[chara_show name="kei" face="立ち絵_バスタオル_特殊" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵_バスタオル_特殊" top=0 time=1000 wait=false]
 
 #継
 「くま！べあー！なんでこんなとこにいるの！？死ぬ！殺される！」[p]
@@ -916,7 +916,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/森.webp"]
 ;立ち絵１　どや顔
-[chara_show name="kei" face="立ち絵_どや顔" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵_どや顔" top=0 time=1000 wait=false]
 ;BGM　なし
 [stopbgm]
 
@@ -956,7 +956,7 @@
 [bg_fade_out]
 [bg_fade_in bg_storage="kei/廃れた地.webp"]
 ;立ち絵　絶望
-[chara_show name="kei" face="立ち絵2_絶望" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵2_絶望" top=0 time=1000 wait=false]
 
 
 #継
@@ -1153,12 +1153,12 @@
 
 
 #ロイド
-「ここがあなたの家ですか」[p]
+「ここがあなたのハウスですか」[p]
 
 
 
 ;立ち絵１　驚き
-[chara_show name="kei" face="立ち絵_驚き" top=32 time=1000 wait=false]
+[chara_show name="kei" face="立ち絵_驚き" top=0 time=1000 wait=false]
 #継
 「そうね」[p]
 
