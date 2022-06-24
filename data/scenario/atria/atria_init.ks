@@ -20,10 +20,10 @@
 
 ;アニメーションを定義
 [keyframe name="pyon"]
-[frame p=25% y=-50 scaleY=1.1 ]
-[frame p=50% y=30 scaleY=1 ]
-[frame p=75% y=-50 scaleY=1.1 ]
-[frame p=100% y=*0 scaleY=1 ]
+    [frame p=10% scaleX=1.07 scaleY=0.93 y=25 ]
+    [frame p=25% scaleX=0.93 scaleY=1.07 y=-25 ]
+    [frame p=60% scaleX=1.07 scaleY=0.93 y=25 ]
+    [frame p=75% scaleX=0.93 scaleY=1.07 y=-25 ]
 [endkeyframe ]
 
 [jump storage="atria/atria_01.ks" target="*start"]

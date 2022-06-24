@@ -564,7 +564,7 @@
 ; [anim name="atria" top="+=50" height=720 width=720 time=250 ]
 ; [anim name="atria" top="-=50" height=770 width=720 time=250 ]
 ; [anim name="atria" top="+=50" height=720 width=720 time=250 ]
-[kanim name="atria" keyframe="pyon" time=1000  ]
+[kanim name="atria" keyframe="pyon" time=1200 easing="linear"  ]
 
 「すごくきれい！ 透き通ってる！！ お魚もいる！！！」[p]
 
