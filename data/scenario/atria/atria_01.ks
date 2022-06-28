@@ -305,7 +305,7 @@
 [bg_fade_out]
 
 ;背景_森, BGM_BGM_Forest2, 
-[bg_fade_in bg_storage="atria/森.webp"]
+[bg_fade_in bg_storage="atria/at_forest.webp"]
 [playbgm storage="common/BGM_Forest2.ogg"]
 
 #ロイド
@@ -350,7 +350,7 @@
 
 ;暗転
 [bg_fade_out]
-[bg_fade_in bg_storage="atria/森.webp"]
+[bg_fade_in bg_storage="atria/at_forest.webp"]
 [chara_show name="atria" top=0 time=1000 face="default" wait=false]
 
 #アトリア
@@ -393,7 +393,7 @@
 彼女が山菜取りに慣れていると言っていたのは本当のようだ。[p]
 
 ;背景_森, 立ち絵_かなしみ, 場所_少し下, 
-[bg storage="atria/森.webp" time=100 wait=true cross=true]
+[bg storage="atria/at_forest.webp" time=100 wait=true cross=true]
 [chara_show name="atria" top=50 time=1000 face="sad" wait=false]
 
 #アトリア
@@ -444,7 +444,7 @@
 #
 
 ;背景_森, 立ち絵_ねむねむ, 場所_下, 
-[bg_fade_in bg_storage="atria/森.webp"]
+[bg_fade_in bg_storage="atria/at_forest.webp"]
 [chara_show name="atria" top=100 time=1000 face="sleepy" wait=false]
 
 #
