@@ -25,19 +25,20 @@ github pagesを用いてプレイ可能です。下記にアクセスしてく�
 
 制作: らいあ市
 
-原案: dolphilia  
-制作進行: かがり  
+原案: dolphilia, かがり  
+制作進行: かがり
 シナリオ: ゆぅさん, かがり, みやまくわがた, dolphilia  
-設定協力: ギムレット  
-モノローグ語り: ちっぷす  
 グラフィック: ゆぅさん, かがり, みやまくわがた, dolphilia, hisayosi  
 デザイン協力: 頭痛, ぬのひと  
-BGM: 止由  
+オリジナルBGM, エンディング曲:
+  楽曲：止由
+  歌：ちっぷす
+ナレーション: ちっぷす
 サウンド: ※フリー素材配布元一覧
 背景: ※フリー素材配布元一覧
 スクリプト: idomshi, 純硫黄, ゆぅさん, dolphilia  
 <!-- WEB制作: idomshi   -->
-アドバイザー: タク  
+アドバイザー: タク, ギムレット
 テスト: みが市民
 
 フリー素材配布元:
@@ -48,4 +49,4 @@ BGM,SE
 　魔王魂( https://maou.audio/category/bgm/ )
 背景
 　ぱくたそ( https://www.pakutaso.com/ )
-　ニコ二・コモンズ( https://commons.nicovideo.jp/ )
+　ニコニ・コモンズ( https://commons.nicovideo.jp/ )
