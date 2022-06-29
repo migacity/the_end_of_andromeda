@@ -2,7 +2,7 @@
 
 ;背景　居間
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 ;立ち絵２寝間着　目閉じ通常
 [chara_show name="kei" face="立ち絵1_寝間着_眠い" top=0 time=1000 wait=false]
 
@@ -28,7 +28,7 @@
 
 
 ;SE　ニュースの音
-[playse storage="kei/ニュース音声.ogg" buf=0]
+[playse storage="kei/news.ogg" buf=0]
 
 #
 本日は4月25日●曜日！天気は晴れ　今日も一日頑張りましょう！[p]
@@ -43,7 +43,7 @@
 ;立ち絵なし
 [chara_hide_all]
 ;BGM　魔王魂ヒーリング16
-[playbgm storage="kei/BGM_魔王魂_ヒーリング16.ogg"]
+[playbgm storage="kei/BGM_mao_heal16.ogg"]
 
 
 #父
@@ -123,7 +123,7 @@
 その二人の背を見ながら私も朝食を食べ始める[p]
 
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 ;立ち絵２寝間着　目閉じ通常
 [chara_show name="kei" face="立ち絵1_寝間着_通常" top=0 time=1000 wait=false]
 
@@ -140,7 +140,7 @@
 「ごちそうさま！」[p]
 
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 
 
 ;立ち絵１　目開き笑顔
@@ -174,7 +174,7 @@
 
 ;背景　電車内部
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/電車内2.webp"]
+[bg_fade_in bg_storage="kei/ke_train_in.webp"]
 ;電車　音
 ;BGM　　なし
 [stopbgm]
@@ -218,7 +218,7 @@
 
 ;背景　塔
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/塔_外観.webp"]
+[bg_fade_in bg_storage="kei/ke_tower_out.webp"]
 
 ふと空を見上げるとやたらと高い建物が目に入った[p]
 
@@ -249,9 +249,9 @@
 
 #
 ;背景　ノイズ
-[bg storage="kei/ノイズ.webp" time="1000" wait=false]
+[bg storage="kei/ke_noise.webp" time="1000" wait=false]
 ;BGM　ノイズ音
-[playse storage="kei/ノイズ音.ogg" buf=0]
+[playse storage="kei/noise.ogg" buf=0]
 ;立ち絵２　疑問
 [chara_show name="kei" face="立ち絵2_疑問" top=0 time=1000 wait=false]
 
@@ -266,10 +266,10 @@
 「何か思い出そうとしたような・・」[p]
 
 ;背景　ノイズ
-;[bg storage="kei/ノイズ.webp" time="1000"]
+;[bg storage="kei/ke_noise.webp" time="1000"]
 
 ;BGM　ノイズ音
-[playse storage="kei/ノイズ音.ogg" buf=0]
+[playse storage="kei/noise.ogg" buf=0]
 ;立ち絵２　目開き笑顔
 
 [chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
@@ -279,11 +279,11 @@
 
 ;背景　居間
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 ;立ち絵２　目開き笑顔
 [chara_show name="kei" face="立ち絵2_目開き笑顔" top=0 time=1000 wait=false]
 ;BGM　魔王魂ピアノ34
-[playbgm storage="kei/BGM_魔王魂_ピアノ34.ogg"]
+[playbgm storage="kei/BGM_mao_piano34.ogg"]
 
 #継
 「ただいまー！」[p]
@@ -348,7 +348,7 @@
 
 
 ;BGM　魔王魂ピアノ34
-[playbgm storage="kei/BGM_魔王魂_ピアノ34.ogg"]
+[playbgm storage="kei/BGM_mao_piano34.ogg"]
 ;立ち絵１　通常
 [chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 
@@ -364,8 +364,8 @@
 
 ;BGM　ノイズ音
 ;背景　ノイズ
-[bg storage="kei/ノイズ.webp" time="1000" wait=false]
-[playse storage="kei/ノイズ音.ogg" buf=0]
+[bg storage="kei/ke_noise.webp" time="1000" wait=false]
+[playse storage="kei/noise.ogg" buf=0]
 
 #
 かなめのことを考えたらまた頭が痛くなった[p]
@@ -377,9 +377,9 @@
 
 ;背景　居間
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 ;BGM 魔王魂ピアノ37
-[playbgm storage="kei/BGM_魔王魂_ピアノ37.ogg"]
+[playbgm storage="kei/BGM_mao_piano37.ogg"]
 
 #父
 「そうだ母さん…今日の弁当も美味しかった…特にハンバーグの一つが絶品だったよ」[p]
@@ -406,7 +406,7 @@
 
 ;背景居間
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 ;立ち絵寝間着　ねむい
 [chara_show name="kei" face="立ち絵2_目閉じ通常" top=0 time=1000 wait=false]
 ;BGM なし
@@ -428,7 +428,7 @@
 今日も特に見るわけでもないテレビの音が聞こえる[p]
 
 ;ニュースの音
-[playse storage="kei/ニュース音声.ogg" buf=0]
+[playse storage="kei/news.ogg" buf=0]
 
 #
 本日は4月25日　○曜日　今日も頑張りましょう！[p]
@@ -483,8 +483,8 @@
 頭が痛い[p]
 
 ;背景　ノイズ
-[bg storage="kei/ノイズ.webp" time="1000" wait=false]
-[playse storage="kei/ノイズ音.ogg" buf=0]
+[bg storage="kei/ke_noise.webp" time="1000" wait=false]
+[playse storage="kei/noise.ogg" buf=0]
 ;BGM　なし
 [stopbgm]
 
@@ -521,7 +521,7 @@
 
 ;背景　　　居間
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 ;立ち絵２　泣き顔
 [chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=0 time=1000 wait=false]
 ;BGM　Incineator
@@ -545,9 +545,9 @@
 
 ;背景　街並み
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/街並み.webp"]
+[bg_fade_in bg_storage="kei/ke_street.webp"]
 ;SE　歩行
-[playse storage="kei/歩行音.ogg" buf=0]
+[playse storage="kei/walking.ogg" buf=0]
 ;BGM　なし
 [stopbgm]
 
@@ -619,7 +619,7 @@
 
 ;背景　公園
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/公園.webp"]
+[bg_fade_in bg_storage="kei/ke_park.webp"]
 ;BGM　Kei1
 [playbgm storage="kei/BGM_Kei1.ogg"]
 
@@ -735,7 +735,7 @@
 ;立ち絵１　目開き通常
 [chara_mod name="kei" face="立ち絵1_目開き通常" cross=false]
 ;BGM　魔王魂ヒーリング16
-[playbgm storage="kei/BGM_魔王魂_ヒーリング16.ogg"]
+[playbgm storage="kei/BGM_mao_heal16.ogg"]
 
 #父
 「昔、ここで遊んでいたことを覚えているか？」[p]
@@ -877,7 +877,7 @@
 
 ;CG 戦争
 [chara_hide_all ]
-[bg storage="still/kei_戦争.webp" time=1000 wait=true]
+[bg storage="still/kei_war.webp" time=1000 wait=true]
 ;BGM kaminotue
 [playbgm storage="common/BGM_Kaminotsue.ogg"]
 
@@ -932,7 +932,7 @@
 
 ;背景　公園
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/公園.webp"]
+[bg_fade_in bg_storage="kei/ke_park.webp"]
 ;立ち絵２　悲しみ
 [chara_show name="kei" face="立ち絵2_悲しみ" top=0 time=1000 wait=false]
 
@@ -1061,7 +1061,7 @@
 
 ;CG　父との別れ１
 [chara_hide_all ]
-[bg storage="still/kei_CG_父1.webp" time=1000 wait=true]
+[bg storage="still/kei_father_1.webp" time=1000 wait=true]
 ;BGM kei <family>
 [playbgm storage="kei/BGM_Kei(Family).ogg"]
 

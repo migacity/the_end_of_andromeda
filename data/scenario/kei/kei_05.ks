@@ -2,7 +2,7 @@
 
 ;背景　公園
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/公園.webp"]
+[bg_fade_in bg_storage="kei/ke_park.webp"]
 ;立ち絵２　目閉泣き顔
 [chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=0 time=1000 wait=false]
 
@@ -46,9 +46,9 @@
 
 ;背景　居間
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 ;BGM 魔王魂ピアノ34
-[playbgm storage="kei/BGM_魔王魂_ピアノ34.ogg"]
+[playbgm storage="kei/BGM_mao_piano34.ogg"]
 
 #母
 
@@ -338,7 +338,7 @@
 
 ;CG母との別れ
 [chara_hide_all ]
-[bg storage="still/kei_母_別れ1.webp" time=1000 wait=true]
+[bg storage="still/kei_mother.webp" time=1000 wait=true]
 ;BGM kei<Family>
 [playbgm storage="kei/BGM_Kei1.ogg"]
 
@@ -409,7 +409,7 @@
 
 ;背景　塔外観
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/塔_外観.webp"]
+[bg_fade_in bg_storage="kei/ke_tower_out.webp"]
 ;BGM 停止
 [stopbgm]
 
@@ -505,7 +505,7 @@
 
 ;背景　塔　内部　カプセルルーム
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/カプセル_ルーム.webp"]
+[bg_fade_in bg_storage="kei/ke_capsule_room.webp"]
 ;立ち絵１　泣き顔
 [chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=0 time=1000 wait=false]
 ;BGM　IKEIKE
@@ -555,7 +555,7 @@
 
 
 ;背景　塔　廊下
-[bg storage="kei/廊下2.webp" time="1000"]
+[bg storage="kei/ke_corridor.webp" time="1000"]
 ;立ち絵１　通常
 [chara_show name="kei" face="立ち絵1_目開き通常" top=0 time=1000 wait=false]
 ;BGM　Monologue
@@ -681,7 +681,7 @@
 
 
 ;背景　塔　扉
-[bg storage="kei/塔_扉.webp" time="1000"]
+[bg storage="kei/ke_tower_door.webp" time="1000"]
 
 
 #
@@ -723,7 +723,7 @@
 
 
 ;SE　自動ドア開閉
-[playse storage="kei/自動ドアが開く.ogg" buf=0]
+[playse storage="kei/auto_door_open.ogg" buf=0]
 
 
 #ロイド
@@ -751,7 +751,7 @@
 
 ;背景　塔内部　マザールーム
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/マザールーム.webp"]
+[bg_fade_in bg_storage="kei/ke_mother_room.webp"]
 ;立ち絵なし
 ; BGM なし
 [stopbgm]
@@ -973,11 +973,11 @@
 
 ;背景　森
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/青空.webp"]
+[bg_fade_in bg_storage="kei/ke_bluesky.webp"]
 ;BGM なし
 [stopbgm]
 ;SE　鳥の声
-[playse storage="kei/鳥の声.ogg" buf=0]
+[playse storage="kei/bird.ogg" buf=0]
 
 #
 
@@ -1011,7 +1011,7 @@
 ;立ち絵２　目開き笑顔
 [chara_mod name="kei" face="立ち絵2_目開き笑顔" cross=false]
 ;BGM　魔王魂ヒーリング13
-[playbgm storage="kei/BGM_魔王魂_ヒーリング13.ogg"]
+[playbgm storage="kei/BGM_mao_heal13.ogg"]
 
 #継
 「旅に出るわ！」[p]

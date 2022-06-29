@@ -209,13 +209,13 @@
 [bg storage="white.webp"]
 
 ;SE　扉を開ける音
-[playse storage="kei/自動ドアが開く.ogg" buf=0]
+[playse storage="kei/auto_door_open.ogg" buf=0]
 
 [wait time="500" ]
 ;背景　森
-[bg storage="kei/森.webp" time="200"]
+[bg storage="kei/ke_forest.webp" time="200"]
 ;SE　鳥の囀り音
-[playse storage="kei/鳥の声.ogg" buf=0]
+[playse storage="kei/bird.ogg" buf=0]
 ;立ち絵　呆れ
 [chara_show name="kei" face="立ち絵1_目閉_悲しみ" top=0 time=1000 wait=false]
 
@@ -336,7 +336,7 @@
 
 
 ;SE　起動音
-[playse storage="kei/機械音.ogg" buf=0]
+[playse storage="kei/machanical.ogg" buf=0]
 
 #
 
@@ -602,7 +602,7 @@
 
 ;背景　車内
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/車内.webp"]
+[bg_fade_in bg_storage="kei/ke_car_in.webp"]
 ;BGM sampo
 [playbgm storage="common/BGM_Sampo.ogg"]
 [chara_show name="kei" face="立ち絵1_目開き通常" top=0 time=1000 wait=false]
@@ -657,7 +657,7 @@
 
 ;背景　森
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/森.webp"]
+[bg_fade_in bg_storage="kei/ke_forest.webp"]
 ;BGM  IKEIKE 
 [playbgm storage="rina/BGM_IKEIKE.ogg"]
 [chara_show name="kei" face="立ち絵1_目開き通常" top=0 time=1000 wait=false]
@@ -810,7 +810,7 @@
 
 
 ;背景　荒廃した街並み
-[bg storage="kei/荒廃した街並み1.webp" time="100"]
+[bg storage="kei/ke_ruins_1.webp" time="100"]
 ;BGM kei<trance>
 [playbgm storage="kei/BGM_Kei(trance).ogg"]
 [chara_show name="kei" face="立ち絵1_目開き通常" top=0 time=1000 wait=false]

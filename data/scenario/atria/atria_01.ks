@@ -62,7 +62,7 @@
 [anim name="atria" top="+=50" height="-=50"  time=500 ]
 [anim name="atria" top="-=50" height="+=50"  time=500]
 [playbgm storage="rina/BGM_Profiling.ogg"]
-[playse storage="atria/紙出す音.ogg"]
+[playse storage="atria/take_paper.ogg"]
 
 #
 ポケットから小さなメモ書きを取り出す。[p]
@@ -214,7 +214,7 @@
 「地図に印があるところは危ないので入らないようにお願いしますね」[p]
 
 ;SE_革靴で走る, 
-[playse storage="atria/革靴で走る.ogg"]
+[playse storage="atria/run_leather_shoes.ogg"]
 
 #
 そう言って地図を渡すと、アトリアは走って施設の奥へと消えていった。[p]
@@ -305,7 +305,7 @@
 [bg_fade_out]
 
 ;背景_森, BGM_BGM_Forest2, 
-[bg_fade_in bg_storage="atria/森.webp"]
+[bg_fade_in bg_storage="atria/at_forest.webp"]
 [playbgm storage="common/BGM_Forest2.ogg"]
 
 #ロイド
@@ -342,7 +342,7 @@
 「それがよさそうですね、いっぱい集めましょう」[p]
 
 ;SE_茂みガサガサ, 
-[playse storage="atria/茂みガサガサ.ogg"]
+[playse storage="atria/bush.ogg"]
 
 #
 二人は雑談しながら森の中へ進んでいく。[p]
@@ -350,7 +350,7 @@
 
 ;暗転
 [bg_fade_out]
-[bg_fade_in bg_storage="atria/森.webp"]
+[bg_fade_in bg_storage="atria/at_forest.webp"]
 [chara_show name="atria" top=0 time=1000 face="default" wait=false]
 
 #アトリア
@@ -393,7 +393,7 @@
 彼女が山菜取りに慣れていると言っていたのは本当のようだ。[p]
 
 ;背景_森, 立ち絵_かなしみ, 場所_少し下, 
-[bg storage="atria/森.webp" time=100 wait=true cross=true]
+[bg storage="atria/at_forest.webp" time=100 wait=true cross=true]
 [chara_show name="atria" top=50 time=1000 face="sad" wait=false]
 
 #アトリア
@@ -421,7 +421,7 @@
 [bg_fade_out]
 
 ;背景_森-丘, 立ち絵_画面外, 場所_画面外, 
-[bg_fade_in bg_storage="atria/丘.webp"]
+[bg_fade_in bg_storage="atria/at_hill.webp"]
 周りを見渡すと施設の近くの海に防波堤のようなものがある。[p]
 若干朽ちているようにも見えるが釣りをするにはもってこいな場所だ。次はそこに向かうことにしよう。[p]
 
@@ -444,7 +444,7 @@
 #
 
 ;背景_森, 立ち絵_ねむねむ, 場所_下, 
-[bg_fade_in bg_storage="atria/森.webp"]
+[bg_fade_in bg_storage="atria/at_forest.webp"]
 [chara_show name="atria" top=100 time=1000 face="sleepy" wait=false]
 
 #
@@ -553,9 +553,9 @@
 [bg_fade_out]
 
 ;背景_海, 立ち絵_おどろき, 場所_上下, BGM_BGM_Atria(Sea), SE_海岸3, 
-[bg_fade_in bg_storage="atria/海.webp"]
+[bg_fade_in bg_storage="atria/at_sea.webp"]
 [playbgm storage="atria/BGM_Atria(Sea).ogg"]
-[playse storage="atria/海岸3.ogg" loop=true]
+[playse storage="atria/coast3.ogg" loop=true]
 [chara_show name="atria" top=0 time=1000 face="surprise" wait=false]
 
 #アトリア
@@ -701,7 +701,7 @@
 [bg_fade_in bg_storage="station.webp"]
 
 ;SE_たき火, 
-[playse storage="atria/たき火.ogg" loop=true]
+[playse storage="atria/bonfire.ogg" loop=true]
 シンプルに味付けして焼くだけで問題ないだろう。釣りたての魚はうまいらしい。[p]
 
 準備をしていると隣から視線を感じる。[p]
