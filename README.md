@@ -26,27 +26,27 @@ github pagesを用いてプレイ可能です。下記にアクセスしてく�
 制作: らいあ市
 
 原案: dolphilia, かがり  
-制作進行: かがり
+制作進行: かがり  
 シナリオ: ゆぅさん, かがり, みやまくわがた, dolphilia  
 グラフィック: ゆぅさん, かがり, みやまくわがた, dolphilia, hisayosi  
 デザイン協力: 頭痛, ぬのひと  
-オリジナルBGM, エンディング曲:
-  楽曲：止由
-  歌：ちっぷす
-ナレーション: ちっぷす
-サウンド: ※フリー素材配布元一覧
-背景: ※フリー素材配布元一覧
+オリジナルBGM, エンディング曲:  
+  楽曲：止由  
+  歌：ちっぷす  
+ナレーション: ちっぷす  
+サウンド: ※フリー素材配布元一覧  
+背景: ※フリー素材配布元一覧  
 スクリプト: idomshi, 純硫黄, ゆぅさん, dolphilia  
 <!-- WEB制作: idomshi   -->
-アドバイザー: タク, ギムレット
-テスト: みが市民
+アドバイザー: タク, ギムレット  
+テスト: みが市民  
 
-フリー素材配布元:
-BGM,SE
-　効果音ラボ( https://soundeffect-lab.info/ )
-　効果音辞典( https://sounddictionary.info/ )
-　効果音工房( https://umipla.com/ )
-　魔王魂( https://maou.audio/category/bgm/ )
-背景
-　ぱくたそ( https://www.pakutaso.com/ )
-　ニコニ・コモンズ( https://commons.nicovideo.jp/ )
+フリー素材配布元:  
+BGM,SE  
+　効果音ラボ( https://soundeffect-lab.info/ )  
+　効果音辞典( https://sounddictionary.info/ )  
+　効果音工房( https://umipla.com/ )  
+　魔王魂( https://maou.audio/category/bgm/ )  
+背景  
+　ぱくたそ( https://www.pakutaso.com/ )  
+　ニコニ・コモンズ( https://commons.nicovideo.jp/ )  
