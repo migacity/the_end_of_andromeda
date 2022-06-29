@@ -5,7 +5,7 @@
 
 ;背景　自宅　玄関
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/自宅玄関.webp"]
+[bg_fade_in bg_storage="kei/ke_entrance.webp"]
 
 [chara_show name="kei" face="立ち絵1_目開き通常" top=0 time=1000 wait=false]
 
@@ -45,7 +45,7 @@
 
 [chara_hide_all ]
 ;CGかなめ発見
-[bg storage="still/kei_CGかなめ.webp" time=1000 wait=true cross=true ]
+[bg storage="still/kei_kaname.webp" time=1000 wait=true cross=true ]
 
 #
 ありえないはずと思いながらもどこか期待している自分がいる[p]
@@ -73,7 +73,7 @@
 #継
 「ずっと守ってくれていたのね・・ありがとう・・」[p]
 
-[bg storage="kei/居間.webp" time="1000"]
+[bg storage="kei/ke_living.webp" time="1000"]
 
 ;立ち絵１　泣き顔
 [chara_show name="kei" face="立ち絵1_目閉_泣き顔" top=0 time=1000 wait=false]
@@ -85,7 +85,7 @@
 「ごめんなさい・・今はもう少しこうさせ・・」[p]
 
 ;SE　起動音
-[playse storage="kei/機械音.ogg" buf=0]
+[playse storage="kei/machanical.ogg" buf=0]
 
 
 ;立ち絵２　驚き
@@ -250,10 +250,10 @@
 ;居間
 [bg_fade_out]
 [filter]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 ;BGM ＜魔王魂ピアノ39>
 
-[playbgm storage="kei/BGM_魔王魂_ピアノ39.ogg"]
+[playbgm storage="kei/BGM_mao_piano39.ogg"]
 ;立ち絵なし
 
 
@@ -454,7 +454,7 @@
 [filter]
 [bg_fade_in bg_storage="white.webp"]
 ;BGM 魔王魂ピアノ37
-[playbgm storage="kei/BGM_魔王魂_ピアノ37.ogg"]
+[playbgm storage="kei/BGM_mao_piano37.ogg"]
 
 ;フィルタリセット
 
@@ -501,7 +501,7 @@
 ;背景　公園
 [bg_fade_out]
 [filter blur="5"]
-[bg_fade_in bg_storage="kei/公園.webp"]
+[bg_fade_in bg_storage="kei/ke_park.webp"]
 ;演出指示　ノイズ
 
 
@@ -527,7 +527,7 @@
 ;背景　自室
 [bg_fade_out]
 [filter sepia="100" blur="5"]
-[bg_fade_in bg_storage="kei/自室.webp"]
+[bg_fade_in bg_storage="kei/ke_myroom.webp"]
 
 
 #継
@@ -555,7 +555,7 @@
 ;背景　居間
 [bg_fade_out]
 [filter blur="5"]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 
 #継
 「見てみて！制服！どう？似合ってる？」[p]
@@ -587,7 +587,7 @@
 
 ;背景　自室
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/自室.webp"]
+[bg_fade_in bg_storage="kei/ke_myroom.webp"]
 
 
 #継
@@ -606,7 +606,7 @@
 
 ;背景　居間
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 
 #父
 「相談がある」[p]
@@ -668,7 +668,7 @@
 
 ;背景　居間
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 
 #
 それからというもの[p]
@@ -784,7 +784,7 @@
 
 [bg_fade_out]
 [filter]
-[bg_fade_in bg_storage="kei/居間.webp"]
+[bg_fade_in bg_storage="kei/ke_living.webp"]
 
 ;立ち絵２　泣き顔
 [chara_show name="kei" face="立ち絵2_目閉じ泣き顔" top=0 time=1000 wait=false]
@@ -907,12 +907,12 @@
 
 ;背景　自室
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/自室.webp"]
+[bg_fade_in bg_storage="kei/ke_myroom.webp"]
 
 
 ;SE　目覚まし
 
-[playse storage="kei/目覚まし時計のアラーム.ogg" buf=0]
+[playse storage="kei/alarm.ogg" buf=0]
 pppppppppp[p]
 
 #継

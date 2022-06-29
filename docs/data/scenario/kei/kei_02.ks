@@ -2,7 +2,7 @@
 
 ;背景　荒廃した街並み２
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/荒廃した街並み2_内部.webp"]
+[bg_fade_in bg_storage="kei/ke_ruins_2.webp"]
 
 
 
@@ -441,7 +441,7 @@
 
 ;背景　荒廃した道路
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/荒廃した道路.webp"]
+[bg_fade_in bg_storage="kei/ke_road.webp"]
 
 ;BGM Forest1
 [playbgm storage="common/BGM_Forest1.ogg"]
@@ -467,7 +467,7 @@
 
 ;背景　車内
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/車内.webp"]
+[bg_fade_in bg_storage="kei/ke_car_in.webp"]
 
 [chara_show name="kei" face="立ち絵1_目開き通常" top=0 time=1000 wait=false]
 
@@ -553,7 +553,7 @@
 
 ;背景　車内
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/車内.webp"]
+[bg_fade_in bg_storage="kei/ke_car_in.webp"]
 
 
 ;BGM kei1
@@ -705,14 +705,14 @@
 
 
 ;CG　温泉1
-[bg storage="still/kei_温泉1.webp" time=1000 wait=true]
+[bg storage="still/kei_spring_1.webp" time=1000 wait=true]
 
 
 
 ; BGM 魔王魂ヒーリング13
 
 
-[playbgm storage="kei/BGM_魔王魂_ヒーリング13.ogg"]
+[playbgm storage="kei/BGM_mao_heal13.ogg"]
 
 #継
 「きもちいいぃ…」[p]
@@ -746,7 +746,7 @@
 
 
 ;CG　温泉２
-[bg storage="still/kei_温泉2.webp" time=1000 wait=true]
+[bg storage="still/kei_spring_2.webp" time=1000 wait=true]
 
 #継
 「ええ！折角だしあなたの想い人の博士が目覚めたらくればいいわ！」[p]
@@ -770,7 +770,7 @@
 
 ;背景　温泉
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/温泉.webp"]
+[bg_fade_in bg_storage="kei/ke_spring.webp"]
 ;立ち絵　博士
 [chara_new name="hakase" storage="chara/doctor/hakase_none.png"  width=617 height=720 jname="博士_正面"]
 [chara_layer name="hakase" part="body" id="front" storage="chara/doctor/hakase_front_body.png" zindex=1]
@@ -790,7 +790,7 @@
 …少し胸が温かくなった…そんな気がした…[p]
 
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/温泉.webp"]
+[bg_fade_in bg_storage="kei/ke_spring.webp"]
 
 ;立ち絵　タオル　目閉じ　笑顔
 [chara_show name="kei" face="立ち絵_バスタオル_目閉じ笑顔" top=0 time=1000 wait=false]
@@ -845,7 +845,7 @@
 
 ;背景　温泉
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/温泉.webp"]
+[bg_fade_in bg_storage="kei/ke_spring.webp"]
 ;立ち絵なし
 ;BGM ikeike
 [playbgm storage="rina/BGM_IKEIKE.ogg"]
@@ -885,7 +885,7 @@
 
 ;背景　森
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/森.webp"]
+[bg_fade_in bg_storage="kei/ke_forest.webp"]
 ;立ち絵　タオル　特殊
 [chara_show name="kei" face="立ち絵_バスタオル_特殊" top=0 time=1000 wait=false]
 
@@ -896,7 +896,7 @@
 
 ;背景　車内
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/車内.webp"]
+[bg_fade_in bg_storage="kei/ke_car_in.webp"]
 ;立ち絵なし
 ;ＢＧＭ　Kei<hetoheto>
 [playbgm storage="kei/BGM_Kei(hetoheto).ogg"]
@@ -914,7 +914,7 @@
 
 ;背景　森
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/森.webp"]
+[bg_fade_in bg_storage="kei/ke_forest.webp"]
 ;立ち絵１　どや顔
 [chara_show name="kei" face="立ち絵_どや顔" top=0 time=1000 wait=false]
 ;BGM　なし
@@ -932,8 +932,8 @@
 ;---
 
 [bg_fade_out]
-[bg_fade_in bg_storage="still/kei_神の杖1.webp"]
-;[bg storage="still/kei_神の杖1.webp" time=1000 wait=true]
+[bg_fade_in bg_storage="still/kei_wand.webp"]
+;[bg storage="still/kei_wand.webp" time=1000 wait=true]
 [playbgm storage="common/BGM_Kaminotsue.ogg"]
 
 ;第二章
@@ -954,7 +954,7 @@
 
 ;背景　廃れた地
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/廃れた地.webp"]
+[bg_fade_in bg_storage="kei/ke_abondoned.webp"]
 ;立ち絵　絶望
 [chara_show name="kei" face="立ち絵2_絶望" top=0 time=1000 wait=false]
 
@@ -1127,7 +1127,7 @@
 
 ;背景　荒廃した街並み１
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/荒廃した街並み1.webp"]
+[bg_fade_in bg_storage="kei/ke_ruins_1.webp"]
 ;BGM なし
 [stopbgm]
 
@@ -1145,7 +1145,7 @@
 
 ;背景　自宅　
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/自宅.webp"]
+[bg_fade_in bg_storage="kei/ke_myhouse.webp"]
 
 
 

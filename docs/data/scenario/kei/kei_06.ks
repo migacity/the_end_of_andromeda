@@ -102,7 +102,7 @@
 
 ;背景　森
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/森.webp"]
+[bg_fade_in bg_storage="kei/ke_forest.webp"]
 ;立ち絵２　目閉　通常
 [chara_show name="kei" face="立ち絵2_目閉じ通常" top=0 time=1000 wait=false]
 ;BGM kei1
@@ -225,7 +225,7 @@
 
 ;背景　森
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/森.webp"]
+[bg_fade_in bg_storage="kei/ke_forest.webp"]
 ;立ち絵１　笑顔
 [chara_show name="kei" face="立ち絵1_目閉_笑顔" top=0 time=1000 wait=false]
 ;BGM kei<Family>
@@ -257,7 +257,7 @@
 
 ;背景　野原
 [bg_fade_out]
-[bg_fade_in bg_storage="kei/野原.webp"]
+[bg_fade_in bg_storage="kei/ke_field.webp"]
 
 #
 彼女は歩き出す　今度は僕とは別の道を[p]
